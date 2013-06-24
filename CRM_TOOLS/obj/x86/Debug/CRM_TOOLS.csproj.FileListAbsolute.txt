@@ -1,0 +1,11 @@
+C:\CRM_TOOLS\CRM_TOOLS\obj\x86\Debug\CRM_TOOLS.exe
+C:\CRM_TOOLS\CRM_TOOLS\obj\x86\Debug\CRM_TOOLS.pdb
+C:\CRM_TOOLS\CRM_TOOLS\obj\x86\Debug\CRM_TOOLS.csprojResolveAssemblyReference.cache
+C:\CRM_TOOLS\CRM_TOOLS\obj\x86\Debug\CRM_TOOLS.Pantallas.Form2.resources
+C:\CRM_TOOLS\CRM_TOOLS\obj\x86\Debug\CRM_TOOLS.Pantallas.Login.resources
+C:\CRM_TOOLS\CRM_TOOLS\obj\x86\Debug\CRM_TOOLS.Pantallas.Principal.resources
+C:\CRM_TOOLS\CRM_TOOLS\obj\x86\Debug\CRM_TOOLS.Pantallas.RadRibbonForm1.resources
+C:\CRM_TOOLS\CRM_TOOLS\obj\x86\Debug\CRM_TOOLS.Properties.Resources.resources
+C:\CRM_TOOLS\CRM_TOOLS\obj\x86\Debug\CRM_TOOLS.csproj.GenerateResource.Cache
+C:\CRM_TOOLS\CRM_TOOLS\bin\Debug\CRM_TOOLS.exe
+C:\CRM_TOOLS\CRM_TOOLS\bin\Debug\CRM_TOOLS.pdb

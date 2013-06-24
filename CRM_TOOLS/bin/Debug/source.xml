@@ -1,0 +1,135 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Project>
+    <Id>0</Id>
+    <Name>Sellout</Name>
+  </Project>
+  <Project>
+    <Id>1</Id>
+    <ParentId>0</ParentId>
+    <Name>Proceso de Importacion</Name>
+  </Project>
+  <Project>
+    <Id>2</Id>
+    <ParentId>1</ParentId>
+    <Name>Importacion de Sellout</Name>
+  </Project>
+  <Project>
+    <Id>3</Id>
+    <ParentId>1</ParentId>
+    <Name>Importacion de Clientes</Name>
+  </Project>
+  <Project>
+    <Id>4</Id>
+    <ParentId>0</ParentId>
+    <Name>Proceso de Calculos</Name>
+  </Project>
+  <Project>
+    <Id>5</Id>
+    <ParentId>4</ParentId>
+    <Name>Calculos de ABC</Name>
+  </Project>
+  <Project>
+    <Id>6</Id>
+    <ParentId>4</ParentId>
+    <Name>Calculos de Oportunidades</Name>
+  </Project>
+  <Project>
+    <Id>7</Id>
+    <ParentId>4</ParentId>
+    <Name>Calculos de KPI'S</Name>
+  </Project>
+  <Project>
+    <Id>8</Id>
+    <ParentId>0</ParentId>
+    <Name>Mantenimientos de Datos</Name>
+  </Project>
+  <Project>
+    <Id>10</Id>
+    <ParentId>8</ParentId>
+    <Name>Clientes</Name>
+  </Project>
+  <Project>
+    <Id>11</Id>
+    <ParentId>8</ParentId>
+    <Name>Master de Productos KC</Name>
+  </Project>
+  <Project>
+    <Id>12</Id>
+    <ParentId>8</ParentId>
+    <Name>Productos Equivalentes</Name>
+  </Project>
+  <Project>
+    <Id>13</Id>
+    <ParentId>8</ParentId>
+    <Name>Agrupoacion de Productos</Name>
+  </Project>
+  <Project>
+    <Id>14</Id>
+    <ParentId>8</ParentId>
+    <Name>Distribuidores</Name>
+  </Project>
+  <Project>
+    <Id>15</Id>
+    <ParentId>8</ParentId>
+    <Name>KAM'S</Name>
+  </Project>
+  <Project>
+    <Id>16</Id>
+    <ParentId>8</ParentId>
+    <Name>Pais</Name>
+  </Project>
+  <Project>
+    <Id>17</Id>
+    <ParentId>8</ParentId>
+    <Name>Segmentos</Name>
+  </Project>
+  <Project>
+    <Id>18</Id>
+    <ParentId>8</ParentId>
+    <Name>Nuevos Segmentos</Name>
+  </Project>
+  <Project>
+    <Id>19</Id>
+    <ParentId>8</ParentId>
+    <Name>Conglomerados</Name>
+  </Project>
+  <Project>
+    <Id>20</Id>
+    <ParentId>8</ParentId>
+    <Name>Cuentas Globales</Name>
+  </Project>
+  <Project>
+    <Id>21</Id>
+    <Name>Sellin</Name>
+  </Project>
+  <Project>
+    <Id>22</Id>
+    <ParentId>21</ParentId>
+    <Name>Proceso de Importacion</Name>
+  </Project>
+  <Project>
+    <Id>23</Id>
+    <ParentId>21</ParentId>
+    <Name>Proceso de Calculos</Name>
+  </Project>
+  <Project>
+    <Id>24</Id>
+    <ParentId>21</ParentId>
+    <Name>Mantenimientos de Datos</Name>
+  </Project>
+  <Project>
+    <Id>25</Id>
+    <Name>MKTOOLS</Name>
+  </Project>
+  <Project>
+    <Id>26</Id>
+    <ParentId>25</ParentId>
+    <Name>Proceso de Importacion</Name>
+  </Project>
+  <Project>
+    <Id>27</Id>
+    <ParentId>25</ParentId>
+    <Name>Mantenimientos de Datos</Name>
+  </Project>
+</NewDataSet>
