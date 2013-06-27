@@ -54,29 +54,30 @@ namespace CRM_TOOLS.Pantallas
             project.Rows.Add(4, 0, "Proceso de Calculos");
             project.Rows.Add(5, 4, "Calculos de ABC");
             project.Rows.Add(6, 4, "Calculos de Oportunidades");
-            project.Rows.Add(7, 4, "Calculos de KPI'S");
+            project.Rows.Add(7, 4, "Calculos de KPIs");
 
             project.Rows.Add(8, 0, "Mantenimientos de Datos");
             project.Rows.Add(10, 8, "Clientes");
-            project.Rows.Add(11, 8, "Master de Productos KC");
-            project.Rows.Add(12, 8, "Productos Equivalentes");
-            project.Rows.Add(13, 8, "Agrupoacion de Productos");
-            project.Rows.Add(14, 8, "Distribuidores");
-            project.Rows.Add(15, 8, "KAM'S");
-            project.Rows.Add(16, 8, "Pais");
-            project.Rows.Add(17, 8, "Segmentos");
-            project.Rows.Add(18, 8, "Nuevos Segmentos");
-            project.Rows.Add(19, 8, "Conglomerados");
-            project.Rows.Add(20, 8, "Cuentas Globales");
+            project.Rows.Add(11, 8, "Agrupacion de Clientes");
+            project.Rows.Add(12, 8, "Master de Productos KC");
+            project.Rows.Add(13, 8, "Productos Equivalentes");
+            project.Rows.Add(14, 8, "Agrupoacion de Productos");
+            project.Rows.Add(15, 8, "Distribuidores");
+            project.Rows.Add(16, 8, "KAMs");
+            project.Rows.Add(17, 8, "Pais");
+            project.Rows.Add(18, 8, "Segmentos");
+            project.Rows.Add(19, 8, "Nuevos Segmentos");
+            project.Rows.Add(20, 8, "Conglomerados");
+            project.Rows.Add(21, 8, "Cuentas Globales");
 
-            project.Rows.Add(21, DBNull.Value, "Sellin");
-            project.Rows.Add(22, 21, "Proceso de Importacion");
-            project.Rows.Add(23, 21, "Proceso de Calculos");
-            project.Rows.Add(24, 21, "Mantenimientos de Datos");
+            project.Rows.Add(22, DBNull.Value, "Sellin");
+            project.Rows.Add(23, 22, "Proceso de Importacion");
+            project.Rows.Add(24, 22, "Proceso de Calculos");
+            project.Rows.Add(25, 22, "Mantenimientos de Datos");
 
-            project.Rows.Add(25, DBNull.Value, "MKTOOLS");
-            project.Rows.Add(26, 25, "Proceso de Importacion");
-            project.Rows.Add(27, 25, "Mantenimientos de Datos");
+            project.Rows.Add(26, DBNull.Value, "MKTOOLS");
+            project.Rows.Add(27, 25, "Proceso de Importacion");
+            project.Rows.Add(28, 25, "Mantenimientos de Datos");
 
            
 
@@ -100,49 +101,377 @@ namespace CRM_TOOLS.Pantallas
 
         private void projectsTreeView_SelectedNodeChanged(object sender, RadTreeViewEventArgs e)
         {
-            if (bugsGrid.FilterDescriptors.Count > 1)
-            {
-                for (int i = 0; i < bugsGrid.FilterDescriptors.Count; i++)
-                {
-                    if (bugsGrid.FilterDescriptors[i].PropertyName == "ProjectId")
+           
+          
+                
+                    if (proyectsTV.SelectedNode.Text== "Importacion de Sellout")
                     {
-                        bugsGrid.FilterDescriptors.RemoveAt(i);
-                    }
-                    if (gridSellout.FilterDescriptors[i].PropertyName == "ProjectId")
+                        tabImportSellout.Enabled = true;
+                        tabImportCliente.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                       // tabImportSellout.Show();
+                        
+                    } if (proyectsTV.SelectedNode.Text == "Importacion de Clientes")
                     {
-                        gridSellout.FilterDescriptors.RemoveAt(i);
-                    }
-                }
-            }
+                        tabImportCliente.Enabled = true;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                       // tabImportCliente.Show();
+                        
 
-            if ((int)e.Node.Value == 0)
-            {
-                return;
-            }
-            else
-            {
-                FilterDescriptor filter = new FilterDescriptor();
-                filter.PropertyName = "ProjectId";
-                filter.Operator = FilterOperator.IsEqualTo;
-                filter.Value = e.Node.Value;
-                this.bugsGrid.FilterDescriptors.Add(filter);
-                this.gridSellout.FilterDescriptors.Add(filter);
-            }
+                    } if (proyectsTV.SelectedNode.Text == "Calculos de ABC")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = true;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                       // tabCalculoABC.Show();
+
+                    } if (proyectsTV.SelectedNode.Text == "Calculos de Oportunidades")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = true;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                       // tabCalculoOP.Show();
+
+                    } if (proyectsTV.SelectedNode.Text == "Calculos de KPIs")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = true;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                       // tabCalculoKPI.Show();
+
+                    } if (proyectsTV.SelectedNode.Text == "Clientes")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = true;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                       // tabClientes.Show();
+
+                    }
+                    if (proyectsTV.SelectedNode.Text == "Agrupacion de Clientes")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = true;
+                       // tabAgruparC.Show();
+                    } if (proyectsTV.SelectedNode.Text == "Master de Productos KC")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = true;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                        //tabMasterP.Show();
+
+                    } if (proyectsTV.SelectedNode.Text == "Productos Equivalentes")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = true;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                       // tabProductosE.Show();
+
+                    } if (proyectsTV.SelectedNode.Text == "Agrupacion de Productos")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = true;
+                        tabAgruparC.Enabled = false;
+                        //tabAgruparP.Show();
+
+                    } if (proyectsTV.SelectedNode.Text == "Distribuidores")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = true;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                        //tabDistribuidor.Show();
+
+                    }
+                    if (proyectsTV.SelectedNode.Text == "KAMs")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = true;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                        //tabKAM.Show();
+
+                    } if (proyectsTV.SelectedNode.Text == "Pais")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = true;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                        //tabPais.Show();
+
+                    } if (proyectsTV.SelectedNode.Text == "Segmentos")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = true;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                        //tabSegmento.Show();
+
+                    } if (proyectsTV.SelectedNode.Text == "Nuevos Segmentos")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = true;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                        //tabNuevosSegmentos.Show();
+
+                    }
+                    if (proyectsTV.SelectedNode.Text == "Conglomerados")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = false;
+                        tabConglomerados.Enabled = true;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                        //tabConglomerados.Show();
+
+                    }
+                    if (proyectsTV.SelectedNode.Text == "Cuentas Globales")
+                    {
+                        tabImportCliente.Enabled = false;
+                        tabImportSellout.Enabled = false;
+                        tabKAM.Enabled = false;
+                        tabMasterP.Enabled = false;
+                        tabNuevosSegmentos.Enabled = false;
+                        tabPais.Enabled = false;
+                        tabProductosE.Enabled = false;
+                        tabSegmento.Enabled = false;
+                        tabDistribuidor.Enabled = false;
+                        tabCuentasGlobales.Enabled = true;
+                        tabConglomerados.Enabled = false;
+                        tabClientes.Enabled = false;
+                        tabCalculoOP.Enabled = false;
+                        tabCalculoKPI.Enabled = false;
+                        tabCalculoABC.Enabled = false;
+                        tabAgruparP.Enabled = false;
+                        tabAgruparC.Enabled = false;
+                       // tabCuentasGlobales.Show();
+
+                    }
+               
+            
+
         }
 
-        private void radTreeView1_SelectedNodeChanged(object sender, RadTreeViewEventArgs e)
-        {
-
-        }
-
-     
-       
-       
-      
-
-       
-
-       
+        
 
        
                       
