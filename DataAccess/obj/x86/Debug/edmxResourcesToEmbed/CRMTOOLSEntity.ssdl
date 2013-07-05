@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="kcpdis0dbModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="kcpdis0dbModelStoreContainer">
+    <EntitySet Name="CAJAS" EntityType="kcpdis0dbModel.Store.CAJAS" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="CLIENTES" EntityType="kcpdis0dbModel.Store.CLIENTES" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="CLIENTESDI_X_KAM" EntityType="kcpdis0dbModel.Store.CLIENTESDI_X_KAM" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="DISTRIBUIDORES" EntityType="kcpdis0dbModel.Store.DISTRIBUIDORES" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="DIVISION_TERRITORIAL" EntityType="kcpdis0dbModel.Store.DIVISION_TERRITORIAL" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="DOLARES" EntityType="kcpdis0dbModel.Store.DOLARES" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="GLOBAL_ACCOUNTS" EntityType="kcpdis0dbModel.Store.GLOBAL_ACCOUNTS" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="JERARQUIA_GLOBAL" EntityType="kcpdis0dbModel.Store.JERARQUIA_GLOBAL" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="JERARQUIA_LAO" EntityType="kcpdis0dbModel.Store.JERARQUIA_LAO" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="KAM" EntityType="kcpdis0dbModel.Store.KAM" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="LOG_LOGIN" EntityType="kcpdis0dbModel.Store.LOG_LOGIN" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PAISES" EntityType="kcpdis0dbModel.Store.PAISES" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PLATAFORMA_X_CLIENTES" EntityType="kcpdis0dbModel.Store.PLATAFORMA_X_CLIENTES" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PLATAFORMAS" EntityType="kcpdis0dbModel.Store.PLATAFORMAS" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PRIVILEGIOS" EntityType="kcpdis0dbModel.Store.PRIVILEGIOS" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PRIVILEGIOS_X_ROL" EntityType="kcpdis0dbModel.Store.PRIVILEGIOS_X_ROL" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PRODUCTOS" EntityType="kcpdis0dbModel.Store.PRODUCTOS" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PRODUCTOS_EQUIVALENTES" EntityType="kcpdis0dbModel.Store.PRODUCTOS_EQUIVALENTES" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="ROLES" EntityType="kcpdis0dbModel.Store.ROLES" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="ROLES_X_USUARIO" EntityType="kcpdis0dbModel.Store.ROLES_X_USUARIO" store:Type="Tables" store:Schema="kcpdis0dbo" store:Name="ROLES_X_USUARIO">
+      <DefiningQuery>SELECT 
+      [ROLES_X_USUARIO].[USER_ID] AS [USER_ID], 
+      [ROLES_X_USUARIO].[ID_ROL] AS [ID_ROL]
+      FROM [kcpdis0dbo].[ROLES_X_USUARIO] AS [ROLES_X_USUARIO]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SEGMENTOS" EntityType="kcpdis0dbModel.Store.SEGMENTOS" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="SELLIN" EntityType="kcpdis0dbModel.Store.SELLIN" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="SELLOUT" EntityType="kcpdis0dbModel.Store.SELLOUT" store:Type="Tables" store:Schema="kcpdis0dbo" store:Name="SELLOUT">
+      <DefiningQuery>SELECT 
+      [SELLOUT].[ANIO] AS [ANIO], 
+      [SELLOUT].[MES] AS [MES], 
+      [SELLOUT].[SECUENCIA_MES] AS [SECUENCIA_MES], 
+      [SELLOUT].[FECHA] AS [FECHA], 
+      [SELLOUT].[ID_COUNTRY] AS [ID_COUNTRY], 
+      [SELLOUT].[CODIGO_CLIENTE] AS [CODIGO_CLIENTE], 
+      [SELLOUT].[CODIGO_CLIENTE_COMPUESTO] AS [CODIGO_CLIENTE_COMPUESTO], 
+      [SELLOUT].[NOMBRE_CLIENTE] AS [NOMBRE_CLIENTE], 
+      [SELLOUT].[CODIGO_DISTRIBUIDOR] AS [CODIGO_DISTRIBUIDOR], 
+      [SELLOUT].[CODIGO_VENDEDOR] AS [CODIGO_VENDEDOR], 
+      [SELLOUT].[NOMBRE_VENDEDOR] AS [NOMBRE_VENDEDOR], 
+      [SELLOUT].[CODIGO_PRODUCTO_DISTRIBUIDOR] AS [CODIGO_PRODUCTO_DISTRIBUIDOR], 
+      [SELLOUT].[CODIGO_PRODUCTOS_SAP] AS [CODIGO_PRODUCTOS_SAP], 
+      [SELLOUT].[BULTOS] AS [BULTOS], 
+      [SELLOUT].[VENTA_MONEDA_LOCAL] AS [VENTA_MONEDA_LOCAL], 
+      [SELLOUT].[VENTA_DOLARES] AS [VENTA_DOLARES]
+      FROM [kcpdis0dbo].[SELLOUT] AS [SELLOUT]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SUB_SEGMENTO" EntityType="kcpdis0dbModel.Store.SUB_SEGMENTO" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="USERS" EntityType="kcpdis0dbModel.Store.USERS" store:Type="Tables" Schema="kcpdis0dbo" />
+    <AssociationSet Name="FK_CLIENTES_CAJAS" Association="kcpdis0dbModel.Store.FK_CLIENTES_CAJAS">
+      <End Role="CAJAS" EntitySet="CAJAS" />
+      <End Role="CLIENTES" EntitySet="CLIENTES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTES_CLIENTESDI_X_KAM" Association="kcpdis0dbModel.Store.FK_CLIENTES_CLIENTESDI_X_KAM">
+      <End Role="CLIENTESDI_X_KAM" EntitySet="CLIENTESDI_X_KAM" />
+      <End Role="CLIENTES" EntitySet="CLIENTES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTES_DOLARES" Association="kcpdis0dbModel.Store.FK_CLIENTES_DOLARES">
+      <End Role="DOLARES" EntitySet="DOLARES" />
+      <End Role="CLIENTES" EntitySet="CLIENTES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTES_GLOBAL_ACCOUNTS" Association="kcpdis0dbModel.Store.FK_CLIENTES_GLOBAL_ACCOUNTS">
+      <End Role="GLOBAL_ACCOUNTS" EntitySet="GLOBAL_ACCOUNTS" />
+      <End Role="CLIENTES" EntitySet="CLIENTES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTES_PLATAFORMA_X_CLIENTES" Association="kcpdis0dbModel.Store.FK_CLIENTES_PLATAFORMA_X_CLIENTES">
+      <End Role="PLATAFORMA_X_CLIENTES" EntitySet="PLATAFORMA_X_CLIENTES" />
+      <End Role="CLIENTES" EntitySet="CLIENTES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTES_SELLIN" Association="kcpdis0dbModel.Store.FK_CLIENTES_SELLIN">
+      <End Role="SELLIN" EntitySet="SELLIN" />
+      <End Role="CLIENTES" EntitySet="CLIENTES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTESDI_X_KAM_KAM" Association="kcpdis0dbModel.Store.FK_CLIENTESDI_X_KAM_KAM">
+      <End Role="KAM" EntitySet="KAM" />
+      <End Role="CLIENTESDI_X_KAM" EntitySet="CLIENTESDI_X_KAM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DIVISION_TERRITORIAL_PAISES" Association="kcpdis0dbModel.Store.FK_DIVISION_TERRITORIAL_PAISES">
+      <End Role="PAISES" EntitySet="PAISES" />
+      <End Role="DIVISION_TERRITORIAL" EntitySet="DIVISION_TERRITORIAL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JERARQUIA_GLOBAL_JERARQUIA_LAO" Association="kcpdis0dbModel.Store.FK_JERARQUIA_GLOBAL_JERARQUIA_LAO">
+      <End Role="JERARQUIA_LAO" EntitySet="JERARQUIA_LAO" />
+      <End Role="JERARQUIA_GLOBAL" EntitySet="JERARQUIA_GLOBAL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LOG_LOGIN_USERS" Association="kcpdis0dbModel.Store.FK_LOG_LOGIN_USERS">
+      <End Role="USERS" EntitySet="USERS" />
+      <End Role="LOG_LOGIN" EntitySet="LOG_LOGIN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS" Association="kcpdis0dbModel.Store.FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS">
+      <End Role="PLATAFORMAS" EntitySet="PLATAFORMAS" />
+      <End Role="PLATAFORMA_X_CLIENTES" EntitySet="PLATAFORMA_X_CLIENTES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS" Association="kcpdis0dbModel.Store.FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS">
+      <End Role="PRIVILEGIOS" EntitySet="PRIVILEGIOS" />
+      <End Role="PRIVILEGIOS_X_ROL" EntitySet="PRIVILEGIOS_X_ROL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRIVILEGIOS_X_ROL_ROLES" Association="kcpdis0dbModel.Store.FK_PRIVILEGIOS_X_ROL_ROLES">
+      <End Role="ROLES" EntitySet="ROLES" />
+      <End Role="PRIVILEGIOS_X_ROL" EntitySet="PRIVILEGIOS_X_ROL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS" Association="kcpdis0dbModel.Store.FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS">
+      <End Role="PRODUCTOS" EntitySet="PRODUCTOS" />
+      <End Role="PRODUCTOS_EQUIVALENTES" EntitySet="PRODUCTOS_EQUIVALENTES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ROLES_X_USUARIO_ROLES" Association="kcpdis0dbModel.Store.FK_ROLES_X_USUARIO_ROLES">
+      <End Role="ROLES" EntitySet="ROLES" />
+      <End Role="ROLES_X_USUARIO" EntitySet="ROLES_X_USUARIO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ROLES_X_USUARIO_USERS" Association="kcpdis0dbModel.Store.FK_ROLES_X_USUARIO_USERS">
+      <End Role="USERS" EntitySet="USERS" />
+      <End Role="ROLES_X_USUARIO" EntitySet="ROLES_X_USUARIO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SELLIN_PAISES" Association="kcpdis0dbModel.Store.FK_SELLIN_PAISES">
+      <End Role="PAISES" EntitySet="PAISES" />
+      <End Role="SELLIN" EntitySet="SELLIN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SELLOUT_DISTRIBUIDORES" Association="kcpdis0dbModel.Store.FK_SELLOUT_DISTRIBUIDORES">
+      <End Role="DISTRIBUIDORES" EntitySet="DISTRIBUIDORES" />
+      <End Role="SELLOUT" EntitySet="SELLOUT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SELLOUT_PRODUCTOS_EQUIVALENTES" Association="kcpdis0dbModel.Store.FK_SELLOUT_PRODUCTOS_EQUIVALENTES">
+      <End Role="PRODUCTOS_EQUIVALENTES" EntitySet="PRODUCTOS_EQUIVALENTES" />
+      <End Role="SELLOUT" EntitySet="SELLOUT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUB_SEGMENTO_SEGMENTOS" Association="kcpdis0dbModel.Store.FK_SUB_SEGMENTO_SEGMENTOS">
+      <End Role="SEGMENTOS" EntitySet="SEGMENTOS" />
+      <End Role="SUB_SEGMENTO" EntitySet="SUB_SEGMENTO" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CAJAS">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Q" Type="text" Nullable="false" />
+    <Property Name="Folded Bath" Type="int" Nullable="false" />
+    <Property Name="Jumbo Roll Bath" Type="int" Nullable="false" />
+    <Property Name="Standard Roll Bath" Type="int" Nullable="false" />
+    <Property Name="Group Bath Tissue" Type="int" Nullable="false" />
+    <Property Name="Washroom Facial Flats" Type="int" Nullable="false" />
+    <Property Name="Washroom Facial Pocket Pack" Type="int" Nullable="false" />
+    <Property Name="Washroom Facial Uprights" Type="int" Nullable="false" />
+    <Property Name="Group Facial" Type="int" Nullable="false" />
+    <Property Name="Air Fresheners" Type="int" Nullable="false" />
+    <Property Name="Disposal Containers" Type="int" Nullable="false" />
+    <Property Name="Sanitary Bags" Type="int" Nullable="false" />
+    <Property Name="Seat Covers" Type="int" Nullable="false" />
+    <Property Name="Seat Sanitizers" Type="int" Nullable="false" />
+    <Property Name="Urinal Screens" Type="int" Nullable="false" />
+    <Property Name="Group HH&amp;T Other" Type="int" Nullable="false" />
+    <Property Name="Skincare Bag-in-Box" Type="int" Nullable="false" />
+    <Property Name="Skincare Bottles" Type="int" Nullable="false" />
+    <Property Name="Skincare Bulk" Type="int" Nullable="false" />
+    <Property Name="Skincare Cassette" Type="int" Nullable="false" />
+    <Property Name="Skincare SureTouch" Type="int" Nullable="false" />
+    <Property Name="Group Skincare" Type="int" Nullable="false" />
+    <Property Name="Packaged Beverage" Type="int" Nullable="false" />
+    <Property Name="Packaged Dinner" Type="int" Nullable="false" />
+    <Property Name="Packaged Luncheon" Type="int" Nullable="false" />
+    <Property Name="Tabletop Dispenser" Type="int" Nullable="false" />
+    <Property Name="Group Tabletop" Type="int" Nullable="false" />
+    <Property Name="Center Pull Towels" Type="int" Nullable="false" />
+    <Property Name="Folded Towels" Type="int" Nullable="false" />
+    <Property Name="Hard Rolled Towels" Type="int" Nullable="false" />
+    <Property Name="Kitchen Rolled Towels" Type="int" Nullable="false" />
+    <Property Name="Group Towels" Type="int" Nullable="false" />
+    <Property Name="Skincare Hand Sanitizer Bag-in" Type="int" Nullable="false" />
+    <Property Name="Group Hand Sanitizer" Type="int" Nullable="false" />
+    <Property Name="Industrial Apparel" Type="int" Nullable="false" />
+    <Property Name="Industrial Face Protection" Type="int" Nullable="false" />
+    <Property Name="Industrial Gloves" Type="int" Nullable="false" />
+    <Property Name="Industrial Head Protection" Type="int" Nullable="false" />
+    <Property Name="Industrial Hearing" Type="int" Nullable="false" />
+    <Property Name="Industrial Respirators" Type="int" Nullable="false" />
+    <Property Name="Industrial Vision" Type="int" Nullable="false" />
+    <Property Name="Group Industrial PPE" Type="int" Nullable="false" />
+    <Property Name="Industrial Welding Accessories" Type="int" Nullable="false" />
+    <Property Name="Industrial Welding Helmets" Type="int" Nullable="false" />
+    <Property Name="Group Industrial Welding" Type="int" Nullable="false" />
+    <Property Name="Industrial WKZ Channelizers/Drums/Cones" Type="int" Nullable="false" />
+    <Property Name="Industrial WKZ Highway Safety" Type="int" Nullable="false" />
+    <Property Name="Industrial WKZ Hi-Viz &amp; Seasonal" Type="int" Nullable="false" />
+    <Property Name="Industrial WKZ Other Industrial Safety" Type="int" Nullable="false" />
+    <Property Name="Group Industrial Work Zone" Type="int" Nullable="false" />
+    <Property Name="Tissue Parent Roll Sales KCP" Type="int" Nullable="false" />
+    <Property Name="Group Other KCP" Type="int" Nullable="false" />
+    <Property Name="Lab Apparel" Type="int" Nullable="false" />
+    <Property Name="Group Scientific PPE" Type="int" Nullable="false" />
+    <Property Name="Extended Use Wipers" Type="int" Nullable="false" />
+    <Property Name="Group Extended Use Wipers" Type="int" Nullable="false" />
+    <Property Name="Limited Use Wipers" Type="int" Nullable="false" />
+    <Property Name="Group Limited Use Wipers" Type="int" Nullable="false" />
+    <Property Name="Other Wipers" Type="int" Nullable="false" />
+    <Property Name="Group Other Wipers" Type="int" Nullable="false" />
+    <Property Name="Specialty Wipers" Type="int" Nullable="false" />
+    <Property Name="Group Specialty Wipers" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CLIENTES">
+    <Key>
+      <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+      <PropertyRef Name="CODIGO_CLIENTE" />
+    </Key>
+    <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="CODIGO_CLIENTE" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NOMBRE_CLIENTE" Type="nvarchar" Nullable="false" MaxLength="70" />
+    <Property Name="CODIGO_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CODIGO_VENDEDOR" Type="nvarchar" MaxLength="50" />
+    <Property Name="NOMBRE_VENDEDOR" Type="nvarchar" MaxLength="70" />
+    <Property Name="CIUDAD" Type="nvarchar" MaxLength="50" />
+    <Property Name="DIRECCION" Type="ntext" />
+    <Property Name="TELEFONO_CLIENTE" Type="nvarchar" MaxLength="15" />
+    <Property Name="CEDULA_JURIDICA" Type="nvarchar" MaxLength="100" />
+    <Property Name="NOMBRE_CONTACTO" Type="nvarchar" MaxLength="50" />
+    <Property Name="TELEFONO_CONTACTO" Type="nvarchar" MaxLength="15" />
+    <Property Name="E_MAIL" Type="nchar" MaxLength="50" />
+    <Property Name="SEGMENTO_SC_ID" Type="int" />
+    <Property Name="SEGMENTO_KC_ID" Type="int" />
+    <Property Name="SUBSEGMENTO_ID" Type="int" />
+    <Property Name="TIPO_ABC_DISTRIBUIDOR" Type="nchar" MaxLength="5" />
+    <Property Name="TIPO_ABC_PAIS" Type="nchar" MaxLength="5" />
+    <Property Name="TIPO_ABC_REGION" Type="nchar" MaxLength="5" />
+    <Property Name="TIPO_ABC_SUBREGION" Type="nchar" MaxLength="5" />
+    <Property Name="GRUPO_CLIENTE" Type="nvarchar" MaxLength="70" />
+    <Property Name="GLOBAL_ACCOUNT_ID" Type="int" />
+    <Property Name="STATUS_CLIENTE" Type="bit" />
+    <Property Name="SALES_TYPE" Type="text" />
+    <Property Name="FECHA_CREACION" Type="date" Nullable="false" />
+    <Property Name="FECHA_ACTUALIZACION" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CLIENTESDI_X_KAM">
+    <Key>
+      <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+    </Key>
+    <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="KAM_ID" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="DISTRIBUIDORES">
+    <Key>
+      <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+    </Key>
+    <Property Name="CODIGO_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NOMBRE_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="80" />
+    <Property Name="NOMBRE_CORTO" Type="nvarchar" MaxLength="50" />
+    <Property Name="KAM_ID" Type="nvarchar" MaxLength="10" />
+    <Property Name="PAIS" Type="nvarchar" MaxLength="6" />
+    <Property Name="UseOnKPI" Type="bit" />
+    <Property Name="GBA" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DIVISION_TERRITORIAL">
+    <Key>
+      <PropertyRef Name="COUNTRY_ID" />
+      <PropertyRef Name="DIVISION_ID" />
+      <PropertyRef Name="CITY_ID" />
+    </Key>
+    <Property Name="COUNTRY_ID" Type="nvarchar" Nullable="false" MaxLength="6" />
+    <Property Name="DIVISION_ID" Type="nvarchar" Nullable="false" MaxLength="6" />
+    <Property Name="CITY_ID" Type="nvarchar" Nullable="false" MaxLength="6" />
+    <Property Name="DIVISION_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CITY_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DOLARES">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Q" Type="text" Nullable="false" />
+    <Property Name="Folded Bath" Type="int" Nullable="false" />
+    <Property Name="Jumbo Roll Bath" Type="int" Nullable="false" />
+    <Property Name="Standard Roll Bath" Type="int" Nullable="false" />
+    <Property Name="Group Bath Tissue" Type="int" Nullable="false" />
+    <Property Name="Washroom Facial Flats" Type="int" Nullable="false" />
+    <Property Name="Washroom Facial Pocket Pack" Type="int" Nullable="false" />
+    <Property Name="Washroom Facial Uprights" Type="int" Nullable="false" />
+    <Property Name="Group Facial" Type="int" Nullable="false" />
+    <Property Name="Air Fresheners" Type="int" Nullable="false" />
+    <Property Name="Disposal Containers" Type="int" Nullable="false" />
+    <Property Name="Sanitary Bags" Type="int" Nullable="false" />
+    <Property Name="Seat Covers" Type="int" Nullable="false" />
+    <Property Name="Seat Sanitizers" Type="int" Nullable="false" />
+    <Property Name="Urinal Screens" Type="int" Nullable="false" />
+    <Property Name="Group HH&amp;T Other" Type="int" Nullable="false" />
+    <Property Name="Skincare Bag-in-Box" Type="int" Nullable="false" />
+    <Property Name="Skincare Bottles" Type="int" Nullable="false" />
+    <Property Name="Skincare Bulk" Type="int" Nullable="false" />
+    <Property Name="Skincare Cassette" Type="int" Nullable="false" />
+    <Property Name="Skincare SureTouch" Type="int" Nullable="false" />
+    <Property Name="Group Skincare" Type="int" Nullable="false" />
+    <Property Name="Packaged Beverage" Type="int" Nullable="false" />
+    <Property Name="Packaged Dinner" Type="int" Nullable="false" />
+    <Property Name="Packaged Luncheon" Type="int" Nullable="false" />
+    <Property Name="Tabletop Dispenser" Type="int" Nullable="false" />
+    <Property Name="Group Tabletop" Type="int" Nullable="false" />
+    <Property Name="Center Pull Towels" Type="int" Nullable="false" />
+    <Property Name="Folded Towels" Type="int" Nullable="false" />
+    <Property Name="Hard Rolled Towels" Type="int" Nullable="false" />
+    <Property Name="Kitchen Rolled Towels" Type="int" Nullable="false" />
+    <Property Name="Group Towels" Type="int" Nullable="false" />
+    <Property Name="Skincare Hand Sanitizer Bag-in" Type="int" Nullable="false" />
+    <Property Name="Group Hand Sanitizer" Type="int" Nullable="false" />
+    <Property Name="Industrial Apparel" Type="int" Nullable="false" />
+    <Property Name="Industrial Face Protection" Type="int" Nullable="false" />
+    <Property Name="Industrial Gloves" Type="int" Nullable="false" />
+    <Property Name="Industrial Head Protection" Type="int" Nullable="false" />
+    <Property Name="Industrial Hearing" Type="int" Nullable="false" />
+    <Property Name="Industrial Respirators" Type="int" Nullable="false" />
+    <Property Name="Industrial Vision" Type="int" Nullable="false" />
+    <Property Name="Group Industrial PPE" Type="int" Nullable="false" />
+    <Property Name="Industrial Welding Accessories" Type="int" Nullable="false" />
+    <Property Name="Industrial Welding Helmets" Type="int" Nullable="false" />
+    <Property Name="Group Industrial Welding" Type="int" Nullable="false" />
+    <Property Name="Industrial WKZ Channelizers/Drums/Cones" Type="int" Nullable="false" />
+    <Property Name="Industrial WKZ Highway Safety" Type="int" Nullable="false" />
+    <Property Name="Industrial WKZ Hi-Viz &amp; Seasonal" Type="int" Nullable="false" />
+    <Property Name="Industrial WKZ Other Industrial Safety" Type="int" Nullable="false" />
+    <Property Name="Group Industrial Work Zone" Type="int" Nullable="false" />
+    <Property Name="Tissue Parent Roll Sales KCP" Type="int" Nullable="false" />
+    <Property Name="Group Other KCP" Type="int" Nullable="false" />
+    <Property Name="Lab Apparel" Type="int" Nullable="false" />
+    <Property Name="Group Scientific PPE" Type="int" Nullable="false" />
+    <Property Name="Extended Use Wipers" Type="int" Nullable="false" />
+    <Property Name="Group Extended Use Wipers" Type="int" Nullable="false" />
+    <Property Name="Limited Use Wipers" Type="int" Nullable="false" />
+    <Property Name="Group Limited Use Wipers" Type="int" Nullable="false" />
+    <Property Name="Other Wipers" Type="int" Nullable="false" />
+    <Property Name="Group Other Wipers" Type="int" Nullable="false" />
+    <Property Name="Specialty Wipers" Type="int" Nullable="false" />
+    <Property Name="Group Specialty Wipers" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GLOBAL_ACCOUNTS">
+    <Key>
+      <PropertyRef Name="GLOBAL_ACCOUNT_ID" />
+    </Key>
+    <Property Name="GLOBAL_ACCOUNT_ID" Type="int" Nullable="false" />
+    <Property Name="NOMBRE_GLOBAL_ACCOUNT" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="JERARQUIA_GLOBAL">
+    <Key>
+      <PropertyRef Name="CODIGO" />
+    </Key>
+    <Property Name="CODIGO" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="L4" Type="nvarchar" MaxLength="50" />
+    <Property Name="L5" Type="nvarchar" MaxLength="50" />
+    <Property Name="L12_MATERIAL" Type="nvarchar" MaxLength="50" />
+    <Property Name="LAO_GROUP" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="STRATEGIC_GROUP" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NIVEL1" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NIVEL2" Type="nvarchar" MaxLength="50" />
+    <Property Name="NIVEL3" Type="nvarchar" MaxLength="50" />
+    <Property Name="NIVEL4" Type="nvarchar" MaxLength="50" />
+    <Property Name="NIVEL5" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="JERARQUIA_LAO">
+    <Key>
+      <PropertyRef Name="CODIGO" />
+    </Key>
+    <Property Name="CODIGO" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="L1_SEGMENT" Type="nvarchar" MaxLength="50" />
+    <Property Name="L2_PLATFORM" Type="nvarchar" MaxLength="50" />
+    <Property Name="L3_BUSINESS" Type="nvarchar" MaxLength="50" />
+    <Property Name="L4_BUSINESS_SUBGROUP" Type="nvarchar" MaxLength="50" />
+    <Property Name="L5_CATEGORY" Type="nvarchar" MaxLength="50" />
+    <Property Name="L6_BRAND_CATEGORY" Type="nvarchar" MaxLength="50" />
+    <Property Name="L7_VARIANT_1" Type="nvarchar" MaxLength="50" />
+    <Property Name="L8_VARIANT_2" Type="nvarchar" MaxLength="50" />
+    <Property Name="L9_FORMAT" Type="nvarchar" MaxLength="50" />
+    <Property Name="L10_PACKING" Type="nvarchar" MaxLength="50" />
+    <Property Name="L11_SKU" Type="nvarchar" MaxLength="50" />
+    <Property Name="L12_MATERIAL" Type="nvarchar" MaxLength="50" />
+    <Property Name="REGION" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="KAM">
+    <Key>
+      <PropertyRef Name="KAM_ID" />
+    </Key>
+    <Property Name="KAM_ID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="KAM_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="KAM_eMAIL" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="KAM_ACTIVE" Type="bit" Nullable="false" />
+    <Property Name="GBA" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="LOG_LOGIN">
+    <Key>
+      <PropertyRef Name="LOG_ID" />
+    </Key>
+    <Property Name="LOG_ID" Type="int" Nullable="false" />
+    <Property Name="LOGIN_ID" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="USER_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LOGIN" Type="datetime" Nullable="false" />
+    <Property Name="LOGOUT" Type="datetime" />
+    <Property Name="HISTORY" Type="ntext" />
+  </EntityType>
+  <EntityType Name="PAISES">
+    <Key>
+      <PropertyRef Name="ID_COUNTRY" />
+    </Key>
+    <Property Name="ID_COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
+    <Property Name="COUNTRY_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="REGION" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SUB_REGION" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SALES_ORGANIZATION" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TAX_RATE" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PLATAFORMA_X_CLIENTES">
+    <Key>
+      <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+    </Key>
+    <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="CODIGO_PLATAFORMA" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PLATAFORMAS">
+    <Key>
+      <PropertyRef Name="CODIGO_PLATAFORMA" />
+    </Key>
+    <Property Name="CODIGO_PLATAFORMA" Type="int" Nullable="false" />
+    <Property Name="NOMBRE_PLATAFORMA" Type="nvarchar" Nullable="false" MaxLength="70" />
+    <Property Name="DESCRIPCION_PLATAFORMA" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="PRIVILEGIOS">
+    <Key>
+      <PropertyRef Name="PRIVILEGIO_ID" />
+    </Key>
+    <Property Name="PRIVILEGIO_ID" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="DESCRIPCION" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRIVILEGIOS_X_ROL">
+    <Key>
+      <PropertyRef Name="PRIVILEGIO_ID" />
+    </Key>
+    <Property Name="PRIVILEGIO_ID" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="ID_ROL" Type="nvarchar" Nullable="false" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="PRODUCTOS">
+    <Key>
+      <PropertyRef Name="CODIGO_MATERIAL" />
+    </Key>
+    <Property Name="CODIGO_MATERIAL" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="CODIGO_CORTO" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="DESCRIPCION" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="STRATEGIC_GROUP" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LAO_GROUP" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NIVEL1" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NIVEL2" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NIVEL3" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NIVEL4" Type="nvarchar" MaxLength="50" />
+    <Property Name="NIVEL5" Type="nvarchar" MaxLength="50" />
+    <Property Name="FACTOR_GSU" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRODUCTOS_EQUIVALENTES">
+    <Key>
+      <PropertyRef Name="CODIGO_PRODUCTO_DISTRIBUIDOR" />
+      <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+      <PropertyRef Name="ID_COUNTRY" />
+    </Key>
+    <Property Name="CODIGO_PRODUCTO_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CODIGO_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ID_COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
+    <Property Name="DESCRIPCION_PRODUCTO_DISTR" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CODIGO_PRODUCTO_SAP" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="TIPO_MEDIDA" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="ROLES">
+    <Key>
+      <PropertyRef Name="ID_ROL" />
+    </Key>
+    <Property Name="ID_ROL" Type="nvarchar" Nullable="false" MaxLength="6" />
+    <Property Name="NOMBRE_ROL" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'kcpdis0db.kcpdis0dbo.ROLES_X_USUARIO' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ROLES_X_USUARIO">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="ID_ROL" />
+    </Key>
+    <Property Name="USER_ID" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="ID_ROL" Type="nvarchar" Nullable="false" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="SEGMENTOS">
+    <Key>
+      <PropertyRef Name="SEGMENT_ID" />
+    </Key>
+    <Property Name="SEGMENT_ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SEGMENT_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SEGMENT_NAME_ING" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SELLIN">
+    <Key>
+      <PropertyRef Name="CODIGO_CLIENTE" />
+    </Key>
+    <Property Name="CONCEPTO" Type="text" Nullable="false" />
+    <Property Name="MES" Type="int" Nullable="false" />
+    <Property Name="ANIO" Type="int" Nullable="false" />
+    <Property Name="TIPO" Type="text" Nullable="false" />
+    <Property Name="CODIGO_CLIENTE" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NOMBRE_CLIENTE_FINAL" Type="nvarchar" Nullable="false" MaxLength="70" />
+    <Property Name="CODIGO_PRODUCTO_SAP" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NOMBRE_PRODUCTO" Type="nvarchar" Nullable="false" MaxLength="70" />
+    <Property Name="NETSALES_US" Type="text" Nullable="false" />
+    <Property Name="SALES_CASES_US" Type="int" Nullable="false" />
+    <Property Name="OPEN_US" Type="int" Nullable="false" />
+    <Property Name="FORECAST_US" Type="int" Nullable="false" />
+    <Property Name="ID_COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'kcpdis0db.kcpdis0dbo.SELLOUT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="SELLOUT">
+    <Key>
+      <PropertyRef Name="ANIO" />
+      <PropertyRef Name="MES" />
+      <PropertyRef Name="SECUENCIA_MES" />
+      <PropertyRef Name="ID_COUNTRY" />
+      <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+      <PropertyRef Name="NOMBRE_CLIENTE" />
+      <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+      <PropertyRef Name="CODIGO_PRODUCTO_DISTRIBUIDOR" />
+      <PropertyRef Name="CODIGO_PRODUCTOS_SAP" />
+    </Key>
+    <Property Name="ANIO" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="MES" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="SECUENCIA_MES" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="FECHA" Type="date" />
+    <Property Name="ID_COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
+    <Property Name="CODIGO_CLIENTE" Type="nvarchar" MaxLength="50" />
+    <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="NOMBRE_CLIENTE" Type="nvarchar" Nullable="false" MaxLength="70" />
+    <Property Name="CODIGO_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CODIGO_VENDEDOR" Type="nvarchar" MaxLength="50" />
+    <Property Name="NOMBRE_VENDEDOR" Type="nvarchar" MaxLength="70" />
+    <Property Name="CODIGO_PRODUCTO_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CODIGO_PRODUCTOS_SAP" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BULTOS" Type="money" />
+    <Property Name="VENTA_MONEDA_LOCAL" Type="money" />
+    <Property Name="VENTA_DOLARES" Type="money" />
+  </EntityType>
+  <EntityType Name="SUB_SEGMENTO">
+    <Key>
+      <PropertyRef Name="SEGMENT_ID" />
+      <PropertyRef Name="SUB_SEGMENT" />
+    </Key>
+    <Property Name="SEGMENT_ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SUB_SEGMENT" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="USERS">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="USER_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PASSWORD" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="LOGIN_ID" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="STATUS" Type="bit" Nullable="false" />
+    <Property Name="ID_COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
+    <Property Name="E_MAIL" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_CLIENTES_CAJAS">
+    <End Role="CAJAS" Type="kcpdis0dbModel.Store.CAJAS" Multiplicity="1" />
+    <End Role="CLIENTES" Type="kcpdis0dbModel.Store.CLIENTES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAJAS">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="CLIENTES">
+        <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTES_CLIENTESDI_X_KAM">
+    <End Role="CLIENTESDI_X_KAM" Type="kcpdis0dbModel.Store.CLIENTESDI_X_KAM" Multiplicity="1" />
+    <End Role="CLIENTES" Type="kcpdis0dbModel.Store.CLIENTES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTESDI_X_KAM">
+        <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+      </Principal>
+      <Dependent Role="CLIENTES">
+        <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTES_DOLARES">
+    <End Role="DOLARES" Type="kcpdis0dbModel.Store.DOLARES" Multiplicity="1" />
+    <End Role="CLIENTES" Type="kcpdis0dbModel.Store.CLIENTES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DOLARES">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="CLIENTES">
+        <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTES_GLOBAL_ACCOUNTS">
+    <End Role="GLOBAL_ACCOUNTS" Type="kcpdis0dbModel.Store.GLOBAL_ACCOUNTS" Multiplicity="0..1" />
+    <End Role="CLIENTES" Type="kcpdis0dbModel.Store.CLIENTES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GLOBAL_ACCOUNTS">
+        <PropertyRef Name="GLOBAL_ACCOUNT_ID" />
+      </Principal>
+      <Dependent Role="CLIENTES">
+        <PropertyRef Name="GLOBAL_ACCOUNT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTES_PLATAFORMA_X_CLIENTES">
+    <End Role="PLATAFORMA_X_CLIENTES" Type="kcpdis0dbModel.Store.PLATAFORMA_X_CLIENTES" Multiplicity="1" />
+    <End Role="CLIENTES" Type="kcpdis0dbModel.Store.CLIENTES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PLATAFORMA_X_CLIENTES">
+        <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+      </Principal>
+      <Dependent Role="CLIENTES">
+        <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTES_SELLIN">
+    <End Role="SELLIN" Type="kcpdis0dbModel.Store.SELLIN" Multiplicity="1" />
+    <End Role="CLIENTES" Type="kcpdis0dbModel.Store.CLIENTES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SELLIN">
+        <PropertyRef Name="CODIGO_CLIENTE" />
+      </Principal>
+      <Dependent Role="CLIENTES">
+        <PropertyRef Name="CODIGO_CLIENTE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTESDI_X_KAM_KAM">
+    <End Role="KAM" Type="kcpdis0dbModel.Store.KAM" Multiplicity="1" />
+    <End Role="CLIENTESDI_X_KAM" Type="kcpdis0dbModel.Store.CLIENTESDI_X_KAM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KAM">
+        <PropertyRef Name="KAM_ID" />
+      </Principal>
+      <Dependent Role="CLIENTESDI_X_KAM">
+        <PropertyRef Name="KAM_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DIVISION_TERRITORIAL_PAISES">
+    <End Role="PAISES" Type="kcpdis0dbModel.Store.PAISES" Multiplicity="1" />
+    <End Role="DIVISION_TERRITORIAL" Type="kcpdis0dbModel.Store.DIVISION_TERRITORIAL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PAISES">
+        <PropertyRef Name="ID_COUNTRY" />
+      </Principal>
+      <Dependent Role="DIVISION_TERRITORIAL">
+        <PropertyRef Name="COUNTRY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JERARQUIA_GLOBAL_JERARQUIA_LAO">
+    <End Role="JERARQUIA_LAO" Type="kcpdis0dbModel.Store.JERARQUIA_LAO" Multiplicity="1" />
+    <End Role="JERARQUIA_GLOBAL" Type="kcpdis0dbModel.Store.JERARQUIA_GLOBAL" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="JERARQUIA_LAO">
+        <PropertyRef Name="CODIGO" />
+      </Principal>
+      <Dependent Role="JERARQUIA_GLOBAL">
+        <PropertyRef Name="CODIGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LOG_LOGIN_USERS">
+    <End Role="USERS" Type="kcpdis0dbModel.Store.USERS" Multiplicity="1" />
+    <End Role="LOG_LOGIN" Type="kcpdis0dbModel.Store.LOG_LOGIN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USERS">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="LOG_LOGIN">
+        <PropertyRef Name="LOGIN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS">
+    <End Role="PLATAFORMAS" Type="kcpdis0dbModel.Store.PLATAFORMAS" Multiplicity="1" />
+    <End Role="PLATAFORMA_X_CLIENTES" Type="kcpdis0dbModel.Store.PLATAFORMA_X_CLIENTES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PLATAFORMAS">
+        <PropertyRef Name="CODIGO_PLATAFORMA" />
+      </Principal>
+      <Dependent Role="PLATAFORMA_X_CLIENTES">
+        <PropertyRef Name="CODIGO_PLATAFORMA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS">
+    <End Role="PRIVILEGIOS" Type="kcpdis0dbModel.Store.PRIVILEGIOS" Multiplicity="1" />
+    <End Role="PRIVILEGIOS_X_ROL" Type="kcpdis0dbModel.Store.PRIVILEGIOS_X_ROL" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="PRIVILEGIOS">
+        <PropertyRef Name="PRIVILEGIO_ID" />
+      </Principal>
+      <Dependent Role="PRIVILEGIOS_X_ROL">
+        <PropertyRef Name="PRIVILEGIO_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRIVILEGIOS_X_ROL_ROLES">
+    <End Role="ROLES" Type="kcpdis0dbModel.Store.ROLES" Multiplicity="1" />
+    <End Role="PRIVILEGIOS_X_ROL" Type="kcpdis0dbModel.Store.PRIVILEGIOS_X_ROL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROLES">
+        <PropertyRef Name="ID_ROL" />
+      </Principal>
+      <Dependent Role="PRIVILEGIOS_X_ROL">
+        <PropertyRef Name="ID_ROL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS">
+    <End Role="PRODUCTOS" Type="kcpdis0dbModel.Store.PRODUCTOS" Multiplicity="1" />
+    <End Role="PRODUCTOS_EQUIVALENTES" Type="kcpdis0dbModel.Store.PRODUCTOS_EQUIVALENTES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCTOS">
+        <PropertyRef Name="CODIGO_MATERIAL" />
+      </Principal>
+      <Dependent Role="PRODUCTOS_EQUIVALENTES">
+        <PropertyRef Name="CODIGO_PRODUCTO_SAP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ROLES_X_USUARIO_ROLES">
+    <End Role="ROLES" Type="kcpdis0dbModel.Store.ROLES" Multiplicity="1" />
+    <End Role="ROLES_X_USUARIO" Type="kcpdis0dbModel.Store.ROLES_X_USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROLES">
+        <PropertyRef Name="ID_ROL" />
+      </Principal>
+      <Dependent Role="ROLES_X_USUARIO">
+        <PropertyRef Name="ID_ROL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ROLES_X_USUARIO_USERS">
+    <End Role="USERS" Type="kcpdis0dbModel.Store.USERS" Multiplicity="1" />
+    <End Role="ROLES_X_USUARIO" Type="kcpdis0dbModel.Store.ROLES_X_USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USERS">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="ROLES_X_USUARIO">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SELLIN_PAISES">
+    <End Role="PAISES" Type="kcpdis0dbModel.Store.PAISES" Multiplicity="1" />
+    <End Role="SELLIN" Type="kcpdis0dbModel.Store.SELLIN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PAISES">
+        <PropertyRef Name="ID_COUNTRY" />
+      </Principal>
+      <Dependent Role="SELLIN">
+        <PropertyRef Name="ID_COUNTRY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SELLOUT_DISTRIBUIDORES">
+    <End Role="DISTRIBUIDORES" Type="kcpdis0dbModel.Store.DISTRIBUIDORES" Multiplicity="1" />
+    <End Role="SELLOUT" Type="kcpdis0dbModel.Store.SELLOUT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DISTRIBUIDORES">
+        <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+      </Principal>
+      <Dependent Role="SELLOUT">
+        <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SELLOUT_PRODUCTOS_EQUIVALENTES">
+    <End Role="PRODUCTOS_EQUIVALENTES" Type="kcpdis0dbModel.Store.PRODUCTOS_EQUIVALENTES" Multiplicity="1" />
+    <End Role="SELLOUT" Type="kcpdis0dbModel.Store.SELLOUT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCTOS_EQUIVALENTES">
+        <PropertyRef Name="CODIGO_PRODUCTO_DISTRIBUIDOR" />
+        <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+        <PropertyRef Name="ID_COUNTRY" />
+      </Principal>
+      <Dependent Role="SELLOUT">
+        <PropertyRef Name="CODIGO_PRODUCTO_DISTRIBUIDOR" />
+        <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+        <PropertyRef Name="ID_COUNTRY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUB_SEGMENTO_SEGMENTOS">
+    <End Role="SEGMENTOS" Type="kcpdis0dbModel.Store.SEGMENTOS" Multiplicity="1" />
+    <End Role="SUB_SEGMENTO" Type="kcpdis0dbModel.Store.SUB_SEGMENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SEGMENTOS">
+        <PropertyRef Name="SEGMENT_ID" />
+      </Principal>
+      <Dependent Role="SUB_SEGMENTO">
+        <PropertyRef Name="SEGMENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

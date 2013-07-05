@@ -36,6 +36,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -69,11 +72,47 @@
     <Reference Include="TelerikData, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pantallas\Form2.cs">
+    <Compile Include="Pantallas\Calculos\Calc_ABC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pantallas\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Pantallas\Calculos\Calc_ABC.Designer.cs">
+      <DependentUpon>Calc_ABC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Calculos\Calc_KPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Calculos\Calc_KPI.Designer.cs">
+      <DependentUpon>Calc_KPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Calculos\Calc_Oportunidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Calculos\Calc_Oportunidades.Designer.cs">
+      <DependentUpon>Calc_Oportunidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Importacion\frmImportCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Importacion\frmImportCliente.Designer.cs">
+      <DependentUpon>frmImportCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Importacion\frmImportSellin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Importacion\frmImportSellin.Designer.cs">
+      <DependentUpon>frmImportSellin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Importacion\frmImportSellout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Importacion\frmImportSellout.Designer.cs">
+      <DependentUpon>frmImportSellout.cs</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\Login.cs">
       <SubType>Form</SubType>
@@ -81,31 +120,229 @@
     <Compile Include="Pantallas\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmListaPrivilegios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmListaPrivilegios.Designer.cs">
+      <DependentUpon>frmListaPrivilegios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmListaRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmListaRoles.Designer.cs">
+      <DependentUpon>frmListaRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmListaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmListaUsuario.Designer.cs">
+      <DependentUpon>frmListaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmMKTtool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmMKTtool.Designer.cs">
+      <DependentUpon>frmMKTtool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmPrivilegios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmPrivilegios.Designer.cs">
+      <DependentUpon>frmPrivilegios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmRoles.Designer.cs">
+      <DependentUpon>frmRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_AgruparProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_AgruparProducto.Designer.cs">
+      <DependentUpon>Mante_AgruparProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_Clientes.Designer.cs">
+      <DependentUpon>Mante_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_Conglomerado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_Conglomerado.Designer.cs">
+      <DependentUpon>Mante_Conglomerado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_CuentasGlobales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_CuentasGlobales.Designer.cs">
+      <DependentUpon>Mante_CuentasGlobales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_Distribuidor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_Distribuidor.Designer.cs">
+      <DependentUpon>Mante_Distribuidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_KAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_KAM.Designer.cs">
+      <DependentUpon>Mante_KAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_NuevoSegmento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_NuevoSegmento.Designer.cs">
+      <DependentUpon>Mante_NuevoSegmento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_Paises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_Paises.Designer.cs">
+      <DependentUpon>Mante_Paises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_Plataformas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_Plataformas.Designer.cs">
+      <DependentUpon>Mante_Plataformas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_ProductoEquivalente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_ProductoEquivalente.Designer.cs">
+      <DependentUpon>Mante_ProductoEquivalente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_Productos.Designer.cs">
+      <DependentUpon>Mante_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_Segmentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\Mante_Segmentos.Designer.cs">
+      <DependentUpon>Mante_Segmentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\RegistroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\RegistroUsuario.Designer.cs">
+      <DependentUpon>RegistroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\TipoActivacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\TipoActivacion.Designer.cs">
+      <DependentUpon>TipoActivacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pantallas\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pantallas\RadRibbonForm1.cs">
+    <Compile Include="Pantallas\RadForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pantallas\RadRibbonForm1.Designer.cs">
-      <DependentUpon>RadRibbonForm1.cs</DependentUpon>
+    <Compile Include="Pantallas\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Pantallas\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Pantallas\Calculos\Calc_ABC.resx">
+      <DependentUpon>Calc_ABC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Calculos\Calc_KPI.resx">
+      <DependentUpon>Calc_KPI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Calculos\Calc_Oportunidades.resx">
+      <DependentUpon>Calc_Oportunidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Importacion\frmImportCliente.resx">
+      <DependentUpon>frmImportCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Importacion\frmImportSellin.resx">
+      <DependentUpon>frmImportSellin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Importacion\frmImportSellout.resx">
+      <DependentUpon>frmImportSellout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\frmListaPrivilegios.resx">
+      <DependentUpon>frmListaPrivilegios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\frmListaRoles.resx">
+      <DependentUpon>frmListaRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\frmListaUsuario.resx">
+      <DependentUpon>frmListaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\frmMKTtool.resx">
+      <DependentUpon>frmMKTtool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\frmPrivilegios.resx">
+      <DependentUpon>frmPrivilegios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\frmRoles.resx">
+      <DependentUpon>frmRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_AgruparProducto.resx">
+      <DependentUpon>Mante_AgruparProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_Clientes.resx">
+      <DependentUpon>Mante_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_Conglomerado.resx">
+      <DependentUpon>Mante_Conglomerado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_CuentasGlobales.resx">
+      <DependentUpon>Mante_CuentasGlobales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_Distribuidor.resx">
+      <DependentUpon>Mante_Distribuidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_KAM.resx">
+      <DependentUpon>Mante_KAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_NuevoSegmento.resx">
+      <DependentUpon>Mante_NuevoSegmento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_Paises.resx">
+      <DependentUpon>Mante_Paises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_Plataformas.resx">
+      <DependentUpon>Mante_Plataformas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_ProductoEquivalente.resx">
+      <DependentUpon>Mante_ProductoEquivalente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_Productos.resx">
+      <DependentUpon>Mante_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_Segmentos.resx">
+      <DependentUpon>Mante_Segmentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\RegistroUsuario.resx">
+      <DependentUpon>RegistroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\TipoActivacion.resx">
+      <DependentUpon>TipoActivacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pantallas\RadRibbonForm1.resx">
-      <DependentUpon>RadRibbonForm1.cs</DependentUpon>
+    <EmbeddedResource Include="Pantallas\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,6 +354,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -127,11 +367,15 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{0DE4104B-EED1-4167-A59B-30D85921C859}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Clases\Stylesheet.css" />
     <Content Include="Resources\Add.png" />
-    <Content Include="Resources\bug-logo.png" />
     <Content Include="Resources\ControlDefault.png" />
     <Content Include="Resources\Edit.png" />
     <None Include="Resources\KCP Logo %284%29.jpg" />

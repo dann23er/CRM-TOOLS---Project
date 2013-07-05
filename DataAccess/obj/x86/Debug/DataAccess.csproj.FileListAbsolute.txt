@@ -1,0 +1,6 @@
+C:\CRM_TOOLS\DataAccess\bin\Debug\DataAccess.exe.config
+C:\CRM_TOOLS\DataAccess\bin\Debug\DataAccess.exe
+C:\CRM_TOOLS\DataAccess\bin\Debug\DataAccess.pdb
+C:\CRM_TOOLS\DataAccess\obj\x86\Debug\DataAccess.exe
+C:\CRM_TOOLS\DataAccess\obj\x86\Debug\DataAccess.pdb
+C:\CRM_TOOLS\DataAccess\obj\x86\Debug\DataAccess.csprojResolveAssemblyReference.cache

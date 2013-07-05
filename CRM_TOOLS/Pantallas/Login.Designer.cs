@@ -38,11 +38,13 @@
             this.office2007BlackTheme1 = new Telerik.WinControls.Themes.Office2007BlackTheme();
             this.telerikMetroBlueTheme1 = new Telerik.WinControls.Themes.TelerikMetroBlueTheme();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
+            this.btCerrarL = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btEntrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btCerrarL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +73,7 @@
             // 
             // btEntrar
             // 
-            this.btEntrar.Location = new System.Drawing.Point(192, 210);
+            this.btEntrar.Location = new System.Drawing.Point(129, 210);
             this.btEntrar.Name = "btEntrar";
             this.btEntrar.Size = new System.Drawing.Size(70, 24);
             this.btEntrar.TabIndex = 2;
@@ -99,12 +101,25 @@
             this.radLabel2.TabIndex = 4;
             this.radLabel2.Text = "Contraseña";
             // 
+            // btCerrarL
+            // 
+            this.btCerrarL.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btCerrarL.Location = new System.Drawing.Point(205, 210);
+            this.btCerrarL.Name = "btCerrarL";
+            this.btCerrarL.Size = new System.Drawing.Size(72, 24);
+            this.btCerrarL.TabIndex = 5;
+            this.btCerrarL.Text = "Cerrar";
+            this.btCerrarL.ThemeName = "TelerikMetroBlue";
+            this.btCerrarL.Click += new System.EventHandler(this.btCerrarL_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.CancelButton = this.btCerrarL;
             this.ClientSize = new System.Drawing.Size(331, 276);
+            this.Controls.Add(this.btCerrarL);
             this.Controls.Add(this.radLabel2);
             this.Controls.Add(this.radLabel1);
             this.Controls.Add(this.btEntrar);
@@ -124,6 +139,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btEntrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btCerrarL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -141,5 +157,6 @@
         private Telerik.WinControls.Themes.Office2007BlackTheme office2007BlackTheme1;
         private Telerik.WinControls.Themes.TelerikMetroBlueTheme telerikMetroBlueTheme1;
         private Telerik.WinControls.Themes.TelerikMetroTheme telerikMetroTheme1;
+        private Telerik.WinControls.UI.RadButton btCerrarL;
     }
 }

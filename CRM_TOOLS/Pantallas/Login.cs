@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Objects;
+using System.Data.Objects.DataClasses;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Telerik.WinControls;
 using System.Data.SqlClient;
+using DataAccess;
+using System.Linq;
 
 
 namespace CRM_TOOLS.Pantallas
@@ -32,8 +36,13 @@ namespace CRM_TOOLS.Pantallas
 
         #endregion
 
+        CRMTOOLSEntities Entity = new CRMTOOLSEntities();
+
         public Login()
         {
+          
+
+ 
             InitializeComponent();
         }
 
@@ -48,11 +57,12 @@ namespace CRM_TOOLS.Pantallas
 
             if (txtPass.Text.Length > 0 && txtUser.Text.Length > 0)
             {
-                if (UserAuthenticacion(txtUser.Text, txtPass.Text))
+                if (UserLogin(txtUser.Text, txtPass.Text))
                 {
                     Authenticar = true;
-                    Principal p = new Principal();
-                    p.Show();
+                  
+                    RadForm1 rf = new RadForm1();
+                    rf.Show();
                     this.Visible = false;
                    
                 }
@@ -66,32 +76,45 @@ namespace CRM_TOOLS.Pantallas
             else // contraseña o usuario si esta vacio
             {
                 Authenticar = false;
-                MessageBox.Show("Necesita un usuario y una contraseña para continuar");
+                MessageBox.Show("Necesita un Usuario y una Contraseña para continuar");
             }
 
         }
 
    
-        private bool UserAuthenticacion(string p, string p_2)
+       
+
+        private void btCerrarL_Click(object sender, EventArgs e)
         {
-            try
-            {
-                int result = 1;//(int)UsersTableAdapter.GetUserIDByUsernameAndPassword(p, p_2);
-                Authenticar = true;
-                if (result > 0) return true;
-            }
-            catch (Exception) 
-            {
-                Authenticar = false;
-                return false;
-            }
-            Authenticar = false;
-            return false;
+            this.Close();
+            Application.Exit();
         }
 
-      
 
-       
+
+
+         public bool UserLogin(string User, string Pass)
+            {
+                             
+                var query = from user in Entity.USERS
+                            where user.USER_NAME==User && user.PASSWORD==Pass
+                            select user;
+
+                if (query.Count() != 0)
+                {
+                    
+                    return true;
+                }
+                else
+                {
+                  
+                    return false;
+                }
+
+
+
+            }
+
 
       
         

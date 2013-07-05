@@ -71,13 +71,10 @@ namespace CRM_TOOLS.Pantallas
             project.Rows.Add(21, 8, "Cuentas Globales");
 
             project.Rows.Add(22, DBNull.Value, "Sellin");
-            project.Rows.Add(23, 22, "Proceso de Importacion");
-            project.Rows.Add(24, 22, "Proceso de Calculos");
-            project.Rows.Add(25, 22, "Mantenimientos de Datos");
+         
 
             project.Rows.Add(26, DBNull.Value, "MKTOOLS");
-            project.Rows.Add(27, 25, "Proceso de Importacion");
-            project.Rows.Add(28, 25, "Mantenimientos de Datos");
+           
 
            
 
@@ -101,7 +98,7 @@ namespace CRM_TOOLS.Pantallas
 
         private void projectsTreeView_SelectedNodeChanged(object sender, RadTreeViewEventArgs e)
         {
-           
+
           
                 
                     if (proyectsTV.SelectedNode.Text== "Importacion de Sellout")
@@ -123,7 +120,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                       // tabImportSellout.Show();
+                        tabImportSellout.Show();
                         
                     } if (proyectsTV.SelectedNode.Text == "Importacion de Clientes")
                     {
@@ -144,7 +141,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                       // tabImportCliente.Show();
+                        tabImportCliente.Show();
                         
 
                     } if (proyectsTV.SelectedNode.Text == "Calculos de ABC")
@@ -166,7 +163,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = true;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                       // tabCalculoABC.Show();
+                       tabCalculoABC.Show();
 
                     } if (proyectsTV.SelectedNode.Text == "Calculos de Oportunidades")
                     {
@@ -187,7 +184,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                       // tabCalculoOP.Show();
+                        tabCalculoOP.Show();
 
                     } if (proyectsTV.SelectedNode.Text == "Calculos de KPIs")
                     {
@@ -208,7 +205,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                       // tabCalculoKPI.Show();
+                        tabCalculoKPI.Show();
 
                     } if (proyectsTV.SelectedNode.Text == "Clientes")
                     {
@@ -229,7 +226,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                       // tabClientes.Show();
+                        tabClientes.Show();
 
                     }
                     if (proyectsTV.SelectedNode.Text == "Agrupacion de Clientes")
@@ -251,7 +248,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = true;
-                       // tabAgruparC.Show();
+                        tabAgruparC.Show();
                     } if (proyectsTV.SelectedNode.Text == "Master de Productos KC")
                     {
                         tabImportCliente.Enabled = false;
@@ -271,7 +268,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                        //tabMasterP.Show();
+                        tabMasterP.Show();
 
                     } if (proyectsTV.SelectedNode.Text == "Productos Equivalentes")
                     {
@@ -292,7 +289,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                       // tabProductosE.Show();
+                        tabProductosE.Show();
 
                     } if (proyectsTV.SelectedNode.Text == "Agrupacion de Productos")
                     {
@@ -313,7 +310,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = true;
                         tabAgruparC.Enabled = false;
-                        //tabAgruparP.Show();
+                        tabAgruparP.Show();
 
                     } if (proyectsTV.SelectedNode.Text == "Distribuidores")
                     {
@@ -334,7 +331,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                        //tabDistribuidor.Show();
+                        tabDistribuidor.Show();
 
                     }
                     if (proyectsTV.SelectedNode.Text == "KAMs")
@@ -356,7 +353,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                        //tabKAM.Show();
+                        tabKAM.Show();
 
                     } if (proyectsTV.SelectedNode.Text == "Pais")
                     {
@@ -377,7 +374,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                        //tabPais.Show();
+                        tabPais.Show();
 
                     } if (proyectsTV.SelectedNode.Text == "Segmentos")
                     {
@@ -398,7 +395,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                        //tabSegmento.Show();
+                        tabSegmento.Show();
 
                     } if (proyectsTV.SelectedNode.Text == "Nuevos Segmentos")
                     {
@@ -419,7 +416,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                        //tabNuevosSegmentos.Show();
+                        tabNuevosSegmentos.Show();
 
                     }
                     if (proyectsTV.SelectedNode.Text == "Conglomerados")
@@ -441,7 +438,7 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                        //tabConglomerados.Show();
+                        tabConglomerados.Show();
 
                     }
                     if (proyectsTV.SelectedNode.Text == "Cuentas Globales")
@@ -463,13 +460,15 @@ namespace CRM_TOOLS.Pantallas
                         tabCalculoABC.Enabled = false;
                         tabAgruparP.Enabled = false;
                         tabAgruparC.Enabled = false;
-                       // tabCuentasGlobales.Show();
+                        tabCuentasGlobales.Show();
 
                     }
-               
-            
+
+                    
 
         }
+
+     
 
         
 

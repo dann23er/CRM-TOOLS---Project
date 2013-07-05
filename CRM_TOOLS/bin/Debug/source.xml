@@ -109,32 +109,7 @@
     <Name>Sellin</Name>
   </Project>
   <Project>
-    <Id>23</Id>
-    <ParentId>22</ParentId>
-    <Name>Proceso de Importacion</Name>
-  </Project>
-  <Project>
-    <Id>24</Id>
-    <ParentId>22</ParentId>
-    <Name>Proceso de Calculos</Name>
-  </Project>
-  <Project>
-    <Id>25</Id>
-    <ParentId>22</ParentId>
-    <Name>Mantenimientos de Datos</Name>
-  </Project>
-  <Project>
     <Id>26</Id>
     <Name>MKTOOLS</Name>
-  </Project>
-  <Project>
-    <Id>27</Id>
-    <ParentId>25</ParentId>
-    <Name>Proceso de Importacion</Name>
-  </Project>
-  <Project>
-    <Id>28</Id>
-    <ParentId>25</ParentId>
-    <Name>Mantenimientos de Datos</Name>
   </Project>
 </NewDataSet>
