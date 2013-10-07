@@ -31,7 +31,7 @@ namespace CRM_TOOLS.Pantallas
         private Mante_KAM K;
         private Mante_Paises Ps;
         private Mante_Segmentos S;
-        private Mante_NuevoSegmento NS;
+       // private Mante_NuevoSegmento NS;
         private Mante_Conglomerado C;
         private Mante_CuentasGlobales CG;
         private frmMKTtool MT;
@@ -39,14 +39,15 @@ namespace CRM_TOOLS.Pantallas
         private frmListaPrivilegios PV;
         private frmListaUsuario LU;
         private RegistroUsuario RU;
+        private frmNuevoSegmento NS;
+        private Dashboard d;
         #endregion
 
 
         public RadForm1()
         {
             InitializeComponent();
-          
-          
+
         }
 
 
@@ -222,7 +223,7 @@ namespace CRM_TOOLS.Pantallas
             {
                 K = new Mante_KAM();
                 K.MdiParent = this;
-                Pl.FormClosed += delegate { Pl = null; };
+                K.FormClosed += delegate { K = null; };
                 K.Show();
             }
             else
@@ -261,7 +262,7 @@ namespace CRM_TOOLS.Pantallas
         {
             if (NS == null)
             {
-                NS = new Mante_NuevoSegmento();
+                NS = new frmNuevoSegmento(S);
                 NS.MdiParent = this;
                 NS.FormClosed += delegate { NS = null; };
                 NS.Show();
@@ -391,6 +392,25 @@ namespace CRM_TOOLS.Pantallas
         }
 
         #endregion
+
+        private void RadForm1_Load(object sender, EventArgs e)
+        {
+            if (d == null)
+            {
+                d = new Dashboard();
+                d.MdiParent = this;
+                d.FormClosed += delegate { d = null; };
+                d.Show();
+         
+            }
+            else
+            {
+                MessageBox.Show("Ya esta Abierta la Ventana!!!");
+            }
+
+        }
+
+       
 
 
 

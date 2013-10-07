@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CRMToolsEntitiesStoreContainer" CdmEntityContainer="CRMToolEntities">
+    <EntitySetMapping Name="CAJAS">
+      <EntityTypeMapping TypeName="CRMToolsEntities.CAJAS">
+        <MappingFragment StoreEntitySet="CAJAS">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Q" ColumnName="Q" />
+          <ScalarProperty Name="Folded_Bath" ColumnName="Folded Bath" />
+          <ScalarProperty Name="Jumbo_Roll_Bath" ColumnName="Jumbo Roll Bath" />
+          <ScalarProperty Name="Standard_Roll_Bath" ColumnName="Standard Roll Bath" />
+          <ScalarProperty Name="Group_Bath_Tissue" ColumnName="Group Bath Tissue" />
+          <ScalarProperty Name="Washroom_Facial_Flats" ColumnName="Washroom Facial Flats" />
+          <ScalarProperty Name="Washroom_Facial_Pocket_Pack" ColumnName="Washroom Facial Pocket Pack" />
+          <ScalarProperty Name="Washroom_Facial_Uprights" ColumnName="Washroom Facial Uprights" />
+          <ScalarProperty Name="Group_Facial" ColumnName="Group Facial" />
+          <ScalarProperty Name="Air_Fresheners" ColumnName="Air Fresheners" />
+          <ScalarProperty Name="Disposal_Containers" ColumnName="Disposal Containers" />
+          <ScalarProperty Name="Sanitary_Bags" ColumnName="Sanitary Bags" />
+          <ScalarProperty Name="Seat_Covers" ColumnName="Seat Covers" />
+          <ScalarProperty Name="Seat_Sanitizers" ColumnName="Seat Sanitizers" />
+          <ScalarProperty Name="Urinal_Screens" ColumnName="Urinal Screens" />
+          <ScalarProperty Name="Group_HH_T_Other" ColumnName="Group HH&amp;T Other" />
+          <ScalarProperty Name="Skincare_Bag_in_Box" ColumnName="Skincare Bag-in-Box" />
+          <ScalarProperty Name="Skincare_Bottles" ColumnName="Skincare Bottles" />
+          <ScalarProperty Name="Skincare_Bulk" ColumnName="Skincare Bulk" />
+          <ScalarProperty Name="Skincare_Cassette" ColumnName="Skincare Cassette" />
+          <ScalarProperty Name="Skincare_SureTouch" ColumnName="Skincare SureTouch" />
+          <ScalarProperty Name="Group_Skincare" ColumnName="Group Skincare" />
+          <ScalarProperty Name="Packaged_Beverage" ColumnName="Packaged Beverage" />
+          <ScalarProperty Name="Packaged_Dinner" ColumnName="Packaged Dinner" />
+          <ScalarProperty Name="Packaged_Luncheon" ColumnName="Packaged Luncheon" />
+          <ScalarProperty Name="Tabletop_Dispenser" ColumnName="Tabletop Dispenser" />
+          <ScalarProperty Name="Group_Tabletop" ColumnName="Group Tabletop" />
+          <ScalarProperty Name="Center_Pull_Towels" ColumnName="Center Pull Towels" />
+          <ScalarProperty Name="Folded_Towels" ColumnName="Folded Towels" />
+          <ScalarProperty Name="Hard_Rolled_Towels" ColumnName="Hard Rolled Towels" />
+          <ScalarProperty Name="Kitchen_Rolled_Towels" ColumnName="Kitchen Rolled Towels" />
+          <ScalarProperty Name="Group_Towels" ColumnName="Group Towels" />
+          <ScalarProperty Name="Skincare_Hand_Sanitizer_Bag_in" ColumnName="Skincare Hand Sanitizer Bag-in" />
+          <ScalarProperty Name="Group_Hand_Sanitizer" ColumnName="Group Hand Sanitizer" />
+          <ScalarProperty Name="Industrial_Apparel" ColumnName="Industrial Apparel" />
+          <ScalarProperty Name="Industrial_Face_Protection" ColumnName="Industrial Face Protection" />
+          <ScalarProperty Name="Industrial_Gloves" ColumnName="Industrial Gloves" />
+          <ScalarProperty Name="Industrial_Head_Protection" ColumnName="Industrial Head Protection" />
+          <ScalarProperty Name="Industrial_Hearing" ColumnName="Industrial Hearing" />
+          <ScalarProperty Name="Industrial_Respirators" ColumnName="Industrial Respirators" />
+          <ScalarProperty Name="Industrial_Vision" ColumnName="Industrial Vision" />
+          <ScalarProperty Name="Group_Industrial_PPE" ColumnName="Group Industrial PPE" />
+          <ScalarProperty Name="Industrial_Welding_Accessories" ColumnName="Industrial Welding Accessories" />
+          <ScalarProperty Name="Industrial_Welding_Helmets" ColumnName="Industrial Welding Helmets" />
+          <ScalarProperty Name="Group_Industrial_Welding" ColumnName="Group Industrial Welding" />
+          <ScalarProperty Name="Industrial_WKZ_Channelizers_Drums_Cones" ColumnName="Industrial WKZ Channelizers/Drums/Cones" />
+          <ScalarProperty Name="Industrial_WKZ_Highway_Safety" ColumnName="Industrial WKZ Highway Safety" />
+          <ScalarProperty Name="Industrial_WKZ_Hi_Viz___Seasonal" ColumnName="Industrial WKZ Hi-Viz &amp; Seasonal" />
+          <ScalarProperty Name="Industrial_WKZ_Other_Industrial_Safety" ColumnName="Industrial WKZ Other Industrial Safety" />
+          <ScalarProperty Name="Group_Industrial_Work_Zone" ColumnName="Group Industrial Work Zone" />
+          <ScalarProperty Name="Tissue_Parent_Roll_Sales_KCP" ColumnName="Tissue Parent Roll Sales KCP" />
+          <ScalarProperty Name="Group_Other_KCP" ColumnName="Group Other KCP" />
+          <ScalarProperty Name="Lab_Apparel" ColumnName="Lab Apparel" />
+          <ScalarProperty Name="Group_Scientific_PPE" ColumnName="Group Scientific PPE" />
+          <ScalarProperty Name="Extended_Use_Wipers" ColumnName="Extended Use Wipers" />
+          <ScalarProperty Name="Group_Extended_Use_Wipers" ColumnName="Group Extended Use Wipers" />
+          <ScalarProperty Name="Limited_Use_Wipers" ColumnName="Limited Use Wipers" />
+          <ScalarProperty Name="Group_Limited_Use_Wipers" ColumnName="Group Limited Use Wipers" />
+          <ScalarProperty Name="Other_Wipers" ColumnName="Other Wipers" />
+          <ScalarProperty Name="Group_Other_Wipers" ColumnName="Group Other Wipers" />
+          <ScalarProperty Name="Specialty_Wipers" ColumnName="Specialty Wipers" />
+          <ScalarProperty Name="Group_Specialty_Wipers" ColumnName="Group Specialty Wipers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTES">
+      <EntityTypeMapping TypeName="CRMToolsEntities.CLIENTES">
+        <MappingFragment StoreEntitySet="CLIENTES">
+          <ScalarProperty Name="GLOBAL_ACCOUNT_NAME" ColumnName="GLOBAL_ACCOUNT_NAME" />
+          <ScalarProperty Name="AGRUPAR" ColumnName="AGRUPAR" />
+          <ScalarProperty Name="PLATAFORMAS" ColumnName="PLATAFORMAS" />
+          <ScalarProperty Name="NOMBRE_DISTRIBUIDOR" ColumnName="NOMBRE_DISTRIBUIDOR" />
+          <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+          <ScalarProperty Name="NOMBRE_COMERCIAL" ColumnName="NOMBRE_COMERCIAL" />
+          <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
+          <ScalarProperty Name="CODIGO_CLIENTE" ColumnName="CODIGO_CLIENTE" />
+          <ScalarProperty Name="NOMBRE_CLIENTE" ColumnName="NOMBRE_CLIENTE" />
+          <ScalarProperty Name="CODIGO_DISTRIBUIDOR" ColumnName="CODIGO_DISTRIBUIDOR" />
+          <ScalarProperty Name="CODIGO_VENDEDOR" ColumnName="CODIGO_VENDEDOR" />
+          <ScalarProperty Name="NOMBRE_VENDEDOR" ColumnName="NOMBRE_VENDEDOR" />
+          <ScalarProperty Name="CIUDAD" ColumnName="CIUDAD" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="TELEFONO_CLIENTE" ColumnName="TELEFONO_CLIENTE" />
+          <ScalarProperty Name="CEDULA_JURIDICA" ColumnName="CEDULA_JURIDICA" />
+          <ScalarProperty Name="NOMBRE_CONTACTO" ColumnName="NOMBRE_CONTACTO" />
+          <ScalarProperty Name="TELEFONO_CONTACTO" ColumnName="TELEFONO_CONTACTO" />
+          <ScalarProperty Name="E_MAIL" ColumnName="E_MAIL" />
+          <ScalarProperty Name="SEGMENTO_SC_ID" ColumnName="SEGMENTO_SC_ID" />
+          <ScalarProperty Name="SEGMENTO_KC_ID" ColumnName="SEGMENTO_KC_ID" />
+          <ScalarProperty Name="SUBSEGMENTO_ID" ColumnName="SUBSEGMENTO_ID" />
+          <ScalarProperty Name="TIPO_ABC_DISTRIBUIDOR" ColumnName="TIPO_ABC_DISTRIBUIDOR" />
+          <ScalarProperty Name="TIPO_ABC_PAIS" ColumnName="TIPO_ABC_PAIS" />
+          <ScalarProperty Name="TIPO_ABC_REGION" ColumnName="TIPO_ABC_REGION" />
+          <ScalarProperty Name="TIPO_ABC_SUBREGION" ColumnName="TIPO_ABC_SUBREGION" />
+          <ScalarProperty Name="GRUPO_CLIENTE" ColumnName="GRUPO_CLIENTE" />
+          <ScalarProperty Name="GLOBAL_ACCOUNT_ID" ColumnName="GLOBAL_ACCOUNT_ID" />
+          <ScalarProperty Name="STATUS_CLIENTE" ColumnName="STATUS_CLIENTE" />
+          <ScalarProperty Name="SALES_TYPE" ColumnName="SALES_TYPE" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="FECHA_ACTUALIZACION" ColumnName="FECHA_ACTUALIZACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTESDI_X_KAM">
+      <EntityTypeMapping TypeName="CRMToolsEntities.CLIENTESDI_X_KAM">
+        <MappingFragment StoreEntitySet="CLIENTESDI_X_KAM">
+          <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
+          <ScalarProperty Name="KAM_ID" ColumnName="KAM_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DISTRIBUIDORES">
+      <EntityTypeMapping TypeName="CRMToolsEntities.DISTRIBUIDORES">
+        <MappingFragment StoreEntitySet="DISTRIBUIDORES">
+          <ScalarProperty Name="Import" ColumnName="Import" />
+          <ScalarProperty Name="CODIGO_DISTRIBUIDOR" ColumnName="CODIGO_DISTRIBUIDOR" />
+          <ScalarProperty Name="NOMBRE_DISTRIBUIDOR" ColumnName="NOMBRE_DISTRIBUIDOR" />
+          <ScalarProperty Name="NOMBRE_CORTO" ColumnName="NOMBRE_CORTO" />
+          <ScalarProperty Name="KAM_ID" ColumnName="KAM_ID" />
+          <ScalarProperty Name="PAIS" ColumnName="PAIS" />
+          <ScalarProperty Name="UseOnKPI" ColumnName="UseOnKPI" />
+          <ScalarProperty Name="GBA" ColumnName="GBA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIVISION_TERRITORIAL">
+      <EntityTypeMapping TypeName="CRMToolsEntities.DIVISION_TERRITORIAL">
+        <MappingFragment StoreEntitySet="DIVISION_TERRITORIAL">
+          <ScalarProperty Name="COUNTRY_ID" ColumnName="COUNTRY_ID" />
+          <ScalarProperty Name="DIVISION_ID" ColumnName="DIVISION_ID" />
+          <ScalarProperty Name="CITY_ID" ColumnName="CITY_ID" />
+          <ScalarProperty Name="DIVISION_NAME" ColumnName="DIVISION_NAME" />
+          <ScalarProperty Name="CITY_NAME" ColumnName="CITY_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DOLARES">
+      <EntityTypeMapping TypeName="CRMToolsEntities.DOLARES">
+        <MappingFragment StoreEntitySet="DOLARES">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Q" ColumnName="Q" />
+          <ScalarProperty Name="Folded_Bath" ColumnName="Folded Bath" />
+          <ScalarProperty Name="Jumbo_Roll_Bath" ColumnName="Jumbo Roll Bath" />
+          <ScalarProperty Name="Standard_Roll_Bath" ColumnName="Standard Roll Bath" />
+          <ScalarProperty Name="Group_Bath_Tissue" ColumnName="Group Bath Tissue" />
+          <ScalarProperty Name="Washroom_Facial_Flats" ColumnName="Washroom Facial Flats" />
+          <ScalarProperty Name="Washroom_Facial_Pocket_Pack" ColumnName="Washroom Facial Pocket Pack" />
+          <ScalarProperty Name="Washroom_Facial_Uprights" ColumnName="Washroom Facial Uprights" />
+          <ScalarProperty Name="Group_Facial" ColumnName="Group Facial" />
+          <ScalarProperty Name="Air_Fresheners" ColumnName="Air Fresheners" />
+          <ScalarProperty Name="Disposal_Containers" ColumnName="Disposal Containers" />
+          <ScalarProperty Name="Sanitary_Bags" ColumnName="Sanitary Bags" />
+          <ScalarProperty Name="Seat_Covers" ColumnName="Seat Covers" />
+          <ScalarProperty Name="Seat_Sanitizers" ColumnName="Seat Sanitizers" />
+          <ScalarProperty Name="Urinal_Screens" ColumnName="Urinal Screens" />
+          <ScalarProperty Name="Group_HH_T_Other" ColumnName="Group HH&amp;T Other" />
+          <ScalarProperty Name="Skincare_Bag_in_Box" ColumnName="Skincare Bag-in-Box" />
+          <ScalarProperty Name="Skincare_Bottles" ColumnName="Skincare Bottles" />
+          <ScalarProperty Name="Skincare_Bulk" ColumnName="Skincare Bulk" />
+          <ScalarProperty Name="Skincare_Cassette" ColumnName="Skincare Cassette" />
+          <ScalarProperty Name="Skincare_SureTouch" ColumnName="Skincare SureTouch" />
+          <ScalarProperty Name="Group_Skincare" ColumnName="Group Skincare" />
+          <ScalarProperty Name="Packaged_Beverage" ColumnName="Packaged Beverage" />
+          <ScalarProperty Name="Packaged_Dinner" ColumnName="Packaged Dinner" />
+          <ScalarProperty Name="Packaged_Luncheon" ColumnName="Packaged Luncheon" />
+          <ScalarProperty Name="Tabletop_Dispenser" ColumnName="Tabletop Dispenser" />
+          <ScalarProperty Name="Group_Tabletop" ColumnName="Group Tabletop" />
+          <ScalarProperty Name="Center_Pull_Towels" ColumnName="Center Pull Towels" />
+          <ScalarProperty Name="Folded_Towels" ColumnName="Folded Towels" />
+          <ScalarProperty Name="Hard_Rolled_Towels" ColumnName="Hard Rolled Towels" />
+          <ScalarProperty Name="Kitchen_Rolled_Towels" ColumnName="Kitchen Rolled Towels" />
+          <ScalarProperty Name="Group_Towels" ColumnName="Group Towels" />
+          <ScalarProperty Name="Skincare_Hand_Sanitizer_Bag_in" ColumnName="Skincare Hand Sanitizer Bag-in" />
+          <ScalarProperty Name="Group_Hand_Sanitizer" ColumnName="Group Hand Sanitizer" />
+          <ScalarProperty Name="Industrial_Apparel" ColumnName="Industrial Apparel" />
+          <ScalarProperty Name="Industrial_Face_Protection" ColumnName="Industrial Face Protection" />
+          <ScalarProperty Name="Industrial_Gloves" ColumnName="Industrial Gloves" />
+          <ScalarProperty Name="Industrial_Head_Protection" ColumnName="Industrial Head Protection" />
+          <ScalarProperty Name="Industrial_Hearing" ColumnName="Industrial Hearing" />
+          <ScalarProperty Name="Industrial_Respirators" ColumnName="Industrial Respirators" />
+          <ScalarProperty Name="Industrial_Vision" ColumnName="Industrial Vision" />
+          <ScalarProperty Name="Group_Industrial_PPE" ColumnName="Group Industrial PPE" />
+          <ScalarProperty Name="Industrial_Welding_Accessories" ColumnName="Industrial Welding Accessories" />
+          <ScalarProperty Name="Industrial_Welding_Helmets" ColumnName="Industrial Welding Helmets" />
+          <ScalarProperty Name="Group_Industrial_Welding" ColumnName="Group Industrial Welding" />
+          <ScalarProperty Name="Industrial_WKZ_Channelizers_Drums_Cones" ColumnName="Industrial WKZ Channelizers/Drums/Cones" />
+          <ScalarProperty Name="Industrial_WKZ_Highway_Safety" ColumnName="Industrial WKZ Highway Safety" />
+          <ScalarProperty Name="Industrial_WKZ_Hi_Viz___Seasonal" ColumnName="Industrial WKZ Hi-Viz &amp; Seasonal" />
+          <ScalarProperty Name="Industrial_WKZ_Other_Industrial_Safety" ColumnName="Industrial WKZ Other Industrial Safety" />
+          <ScalarProperty Name="Group_Industrial_Work_Zone" ColumnName="Group Industrial Work Zone" />
+          <ScalarProperty Name="Tissue_Parent_Roll_Sales_KCP" ColumnName="Tissue Parent Roll Sales KCP" />
+          <ScalarProperty Name="Group_Other_KCP" ColumnName="Group Other KCP" />
+          <ScalarProperty Name="Lab_Apparel" ColumnName="Lab Apparel" />
+          <ScalarProperty Name="Group_Scientific_PPE" ColumnName="Group Scientific PPE" />
+          <ScalarProperty Name="Extended_Use_Wipers" ColumnName="Extended Use Wipers" />
+          <ScalarProperty Name="Group_Extended_Use_Wipers" ColumnName="Group Extended Use Wipers" />
+          <ScalarProperty Name="Limited_Use_Wipers" ColumnName="Limited Use Wipers" />
+          <ScalarProperty Name="Group_Limited_Use_Wipers" ColumnName="Group Limited Use Wipers" />
+          <ScalarProperty Name="Other_Wipers" ColumnName="Other Wipers" />
+          <ScalarProperty Name="Group_Other_Wipers" ColumnName="Group Other Wipers" />
+          <ScalarProperty Name="Specialty_Wipers" ColumnName="Specialty Wipers" />
+          <ScalarProperty Name="Group_Specialty_Wipers" ColumnName="Group Specialty Wipers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GLOBAL_ACCOUNTS">
+      <EntityTypeMapping TypeName="CRMToolsEntities.GLOBAL_ACCOUNTS">
+        <MappingFragment StoreEntitySet="GLOBAL_ACCOUNTS">
+          <ScalarProperty Name="GLOBAL_ACCOUNT_ID" ColumnName="GLOBAL_ACCOUNT_ID" />
+          <ScalarProperty Name="NOMBRE_GLOBAL_ACCOUNT" ColumnName="NOMBRE_GLOBAL_ACCOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JERARQUIA_GLOBAL">
+      <EntityTypeMapping TypeName="CRMToolsEntities.JERARQUIA_GLOBAL">
+        <MappingFragment StoreEntitySet="JERARQUIA_GLOBAL">
+          <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+          <ScalarProperty Name="L4" ColumnName="L4" />
+          <ScalarProperty Name="L5" ColumnName="L5" />
+          <ScalarProperty Name="L12_MATERIAL" ColumnName="L12_MATERIAL" />
+          <ScalarProperty Name="LAO_GROUP" ColumnName="LAO_GROUP" />
+          <ScalarProperty Name="STRATEGIC_GROUP" ColumnName="STRATEGIC_GROUP" />
+          <ScalarProperty Name="NIVEL1" ColumnName="NIVEL1" />
+          <ScalarProperty Name="NIVEL2" ColumnName="NIVEL2" />
+          <ScalarProperty Name="NIVEL3" ColumnName="NIVEL3" />
+          <ScalarProperty Name="NIVEL4" ColumnName="NIVEL4" />
+          <ScalarProperty Name="NIVEL5" ColumnName="NIVEL5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JERARQUIA_LAO">
+      <EntityTypeMapping TypeName="CRMToolsEntities.JERARQUIA_LAO">
+        <MappingFragment StoreEntitySet="JERARQUIA_LAO">
+          <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+          <ScalarProperty Name="L1_SEGMENT" ColumnName="L1_SEGMENT" />
+          <ScalarProperty Name="L2_PLATFORM" ColumnName="L2_PLATFORM" />
+          <ScalarProperty Name="L3_BUSINESS" ColumnName="L3_BUSINESS" />
+          <ScalarProperty Name="L4_BUSINESS_SUBGROUP" ColumnName="L4_BUSINESS_SUBGROUP" />
+          <ScalarProperty Name="L5_CATEGORY" ColumnName="L5_CATEGORY" />
+          <ScalarProperty Name="L6_BRAND_CATEGORY" ColumnName="L6_BRAND_CATEGORY" />
+          <ScalarProperty Name="L7_VARIANT_1" ColumnName="L7_VARIANT_1" />
+          <ScalarProperty Name="L8_VARIANT_2" ColumnName="L8_VARIANT_2" />
+          <ScalarProperty Name="L9_FORMAT" ColumnName="L9_FORMAT" />
+          <ScalarProperty Name="L10_PACKING" ColumnName="L10_PACKING" />
+          <ScalarProperty Name="L11_SKU" ColumnName="L11_SKU" />
+          <ScalarProperty Name="L12_MATERIAL" ColumnName="L12_MATERIAL" />
+          <ScalarProperty Name="REGION" ColumnName="REGION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KAM">
+      <EntityTypeMapping TypeName="CRMToolsEntities.KAM">
+        <MappingFragment StoreEntitySet="KAM">
+          <ScalarProperty Name="KAM_ID" ColumnName="KAM_ID" />
+          <ScalarProperty Name="KAM_NAME" ColumnName="KAM_NAME" />
+          <ScalarProperty Name="KAM_eMAIL" ColumnName="KAM_eMAIL" />
+          <ScalarProperty Name="KAM_ACTIVE" ColumnName="KAM_ACTIVE" />
+          <ScalarProperty Name="GBA" ColumnName="GBA" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOG_LOGIN">
+      <EntityTypeMapping TypeName="CRMToolsEntities.LOG_LOGIN">
+        <MappingFragment StoreEntitySet="LOG_LOGIN">
+          <ScalarProperty Name="LOG_ID" ColumnName="LOG_ID" />
+          <ScalarProperty Name="LOGIN_ID" ColumnName="LOGIN_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="LOGIN" ColumnName="LOGIN" />
+          <ScalarProperty Name="LOGOUT" ColumnName="LOGOUT" />
+          <ScalarProperty Name="HISTORY" ColumnName="HISTORY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PAISES">
+      <EntityTypeMapping TypeName="CRMToolsEntities.PAISES">
+        <MappingFragment StoreEntitySet="PAISES">
+          <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+          <ScalarProperty Name="COUNTRY_NAME" ColumnName="COUNTRY_NAME" />
+          <ScalarProperty Name="REGION" ColumnName="REGION" />
+          <ScalarProperty Name="SUB_REGION" ColumnName="SUB_REGION" />
+          <ScalarProperty Name="SALES_ORGANIZATION" ColumnName="SALES_ORGANIZATION" />
+          <ScalarProperty Name="TAX_RATE" ColumnName="TAX_RATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PLATAFORMA_X_CLIENTES">
+      <EntityTypeMapping TypeName="CRMToolsEntities.PLATAFORMA_X_CLIENTES">
+        <MappingFragment StoreEntitySet="PLATAFORMA_X_CLIENTES">
+          <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
+          <ScalarProperty Name="CODIGO_PLATAFORMA" ColumnName="CODIGO_PLATAFORMA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PLATAFORMAS">
+      <EntityTypeMapping TypeName="CRMToolsEntities.PLATAFORMAS">
+        <MappingFragment StoreEntitySet="PLATAFORMAS">
+          <ScalarProperty Name="CODIGO_PLATAFORMA" ColumnName="CODIGO_PLATAFORMA" />
+          <ScalarProperty Name="NOMBRE_PLATAFORMA" ColumnName="NOMBRE_PLATAFORMA" />
+          <ScalarProperty Name="DESCRIPCION_PLATAFORMA" ColumnName="DESCRIPCION_PLATAFORMA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRIVILEGIOS">
+      <EntityTypeMapping TypeName="CRMToolsEntities.PRIVILEGIOS">
+        <MappingFragment StoreEntitySet="PRIVILEGIOS">
+          <ScalarProperty Name="PRIVILEGIO_ID" ColumnName="PRIVILEGIO_ID" />
+          <ScalarProperty Name="PRIVILEGIO_LLAVE" ColumnName="PRIVILEGIO_LLAVE" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRIVILEGIOS_X_ROL">
+      <EntityTypeMapping TypeName="CRMToolsEntities.PRIVILEGIOS_X_ROL">
+        <MappingFragment StoreEntitySet="PRIVILEGIOS_X_ROL">
+          <ScalarProperty Name="PRIVILEGIOXROLID" ColumnName="PRIVILEGIOXROLID" />
+          <ScalarProperty Name="PRIVILEGIO_ID" ColumnName="PRIVILEGIO_ID" />
+          <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODUCTOS">
+      <EntityTypeMapping TypeName="CRMToolsEntities.PRODUCTOS">
+        <MappingFragment StoreEntitySet="PRODUCTOS">
+          <ScalarProperty Name="CODIGO_MATERIAL" ColumnName="CODIGO_MATERIAL" />
+          <ScalarProperty Name="CODIGO_CORTO" ColumnName="CODIGO_CORTO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="STRATEGIC_GROUP" ColumnName="STRATEGIC_GROUP" />
+          <ScalarProperty Name="LAO_GROUP" ColumnName="LAO_GROUP" />
+          <ScalarProperty Name="NIVEL1" ColumnName="NIVEL1" />
+          <ScalarProperty Name="NIVEL2" ColumnName="NIVEL2" />
+          <ScalarProperty Name="NIVEL3" ColumnName="NIVEL3" />
+          <ScalarProperty Name="NIVEL4" ColumnName="NIVEL4" />
+          <ScalarProperty Name="NIVEL5" ColumnName="NIVEL5" />
+          <ScalarProperty Name="FACTOR_GSU" ColumnName="FACTOR_GSU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROLES">
+      <EntityTypeMapping TypeName="CRMToolsEntities.ROLES">
+        <MappingFragment StoreEntitySet="ROLES">
+          <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+          <ScalarProperty Name="NOMBRE_ROL" ColumnName="NOMBRE_ROL" />
+          <ScalarProperty Name="DESCRIPCION_ROL" ColumnName="DESCRIPCION_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROLES_X_USUARIO">
+      <EntityTypeMapping TypeName="CRMToolsEntities.ROLES_X_USUARIO">
+        <MappingFragment StoreEntitySet="ROLES_X_USUARIO">
+          <ScalarProperty Name="ROLXUSERID" ColumnName="ROLXUSERID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SELLIN">
+      <EntityTypeMapping TypeName="CRMToolsEntities.SELLIN">
+        <MappingFragment StoreEntitySet="SELLIN">
+          <ScalarProperty Name="ID_SELLIN" ColumnName="ID_SELLIN" />
+          <ScalarProperty Name="CONCEPTO" ColumnName="CONCEPTO" />
+          <ScalarProperty Name="MES" ColumnName="MES" />
+          <ScalarProperty Name="ANIO" ColumnName="ANIO" />
+          <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+          <ScalarProperty Name="CODIGO_CLIENTE" ColumnName="CODIGO_CLIENTE" />
+          <ScalarProperty Name="NOMBRE_CLIENTE_FINAL" ColumnName="NOMBRE_CLIENTE_FINAL" />
+          <ScalarProperty Name="CODIGO_PRODUCTO_SAP" ColumnName="CODIGO_PRODUCTO_SAP" />
+          <ScalarProperty Name="NOMBRE_PRODUCTO" ColumnName="NOMBRE_PRODUCTO" />
+          <ScalarProperty Name="NETSALES_US" ColumnName="NETSALES_US" />
+          <ScalarProperty Name="SALES_CASES_US" ColumnName="SALES_CASES_US" />
+          <ScalarProperty Name="OPEN_US" ColumnName="OPEN_US" />
+          <ScalarProperty Name="FORECAST_US" ColumnName="FORECAST_US" />
+          <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERS">
+      <EntityTypeMapping TypeName="CRMToolsEntities.USERS">
+        <MappingFragment StoreEntitySet="USERS">
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="LOGIN_ID" ColumnName="LOGIN_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+          <ScalarProperty Name="E_MAIL" ColumnName="E_MAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRIVILEGIOSXUSER">
+      <EntityTypeMapping TypeName="CRMToolsEntities.PRIVILEGIOSXUSER">
+        <MappingFragment StoreEntitySet="PRIVILEGIOSXUSER">
+          <ScalarProperty Name="PRIVILEGIO_ID" ColumnName="PRIVILEGIO_ID" />
+          <ScalarProperty Name="PRIVILEGIO_LLAVE" ColumnName="PRIVILEGIO_LLAVE" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+          <ScalarProperty Name="NOMBRE_ROL" ColumnName="NOMBRE_ROL" />
+          <ScalarProperty Name="DESCRIPCION_ROL" ColumnName="DESCRIPCION_ROL" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="LOGIN_ID" ColumnName="LOGIN_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+          <ScalarProperty Name="E_MAIL" ColumnName="E_MAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUB_SEGMENTO">
+      <EntityTypeMapping TypeName="CRMToolsEntities.SUB_SEGMENTO">
+        <MappingFragment StoreEntitySet="SUB_SEGMENTO">
+          <ScalarProperty Name="SUB_SEGMENT" ColumnName="SUB_SEGMENT" />
+          <ScalarProperty Name="SEGMENT_ID" ColumnName="SEGMENT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EQUIVALENCIAS_SEGMENTOS">
+      <EntityTypeMapping TypeName="CRMToolsEntities.EQUIVALENCIAS_SEGMENTOS">
+        <MappingFragment StoreEntitySet="EQUIVALENCIAS_SEGMENTOS">
+          <ScalarProperty Name="FECHA_ACTUALIZACION" ColumnName="FECHA_ACTUALIZACION" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="SEGMENT_ID" ColumnName="SEGMENT_ID" />
+          <ScalarProperty Name="NAME_SEGMENT_IMPORT" ColumnName="NAME_SEGMENT_IMPORT" />
+          <ScalarProperty Name="COD_SEGMENT_IMPORT" ColumnName="COD_SEGMENT_IMPORT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SEGMENTOS">
+      <EntityTypeMapping TypeName="CRMToolsEntities.SEGMENTOS">
+        <MappingFragment StoreEntitySet="SEGMENTOS">
+          <ScalarProperty Name="SEGMENT_NAME_ING" ColumnName="SEGMENT_NAME_ING" />
+          <ScalarProperty Name="SEGMENT_NAME" ColumnName="SEGMENT_NAME" />
+          <ScalarProperty Name="SEGMENT_ID" ColumnName="SEGMENT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GRUPOS_PRODUCTOS">
+      <EntityTypeMapping TypeName="CRMToolsEntities.GRUPOS_PRODUCTOS">
+        <MappingFragment StoreEntitySet="GRUPOS_PRODUCTOS">
+          <ScalarProperty Name="NIVEL5" ColumnName="NIVEL5" />
+          <ScalarProperty Name="NIVEL4" ColumnName="NIVEL4" />
+          <ScalarProperty Name="NIVEL3" ColumnName="NIVEL3" />
+          <ScalarProperty Name="NIVEL2" ColumnName="NIVEL2" />
+          <ScalarProperty Name="NIVEL1" ColumnName="NIVEL1" />
+          <ScalarProperty Name="ESTRATEGIC_GROUP" ColumnName="ESTRATEGIC_GROUP" />
+          <ScalarProperty Name="LAO_GROUP" ColumnName="LAO_GROUP" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODUCTOS_EQUIVALENTES">
+      <EntityTypeMapping TypeName="CRMToolsEntities.PRODUCTOS_EQUIVALENTES">
+        <MappingFragment StoreEntitySet="PRODUCTOS_EQUIVALENTES">
+          <ScalarProperty Name="VALOR" ColumnName="VALOR" />
+          <ScalarProperty Name="VC" ColumnName="VC" />
+          <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+          <ScalarProperty Name="TIPO_MEDIDA" ColumnName="TIPO_MEDIDA" />
+          <ScalarProperty Name="CODIGO_PRODUCTO_SAP" ColumnName="CODIGO_PRODUCTO_SAP" />
+          <ScalarProperty Name="DESCRIPCION_PRODUCTO_DISTR" ColumnName="DESCRIPCION_PRODUCTO_DISTR" />
+          <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+          <ScalarProperty Name="CODIGO_DISTRIBUIDOR" ColumnName="CODIGO_DISTRIBUIDOR" />
+          <ScalarProperty Name="CODIGO_PRODUCTO_DISTRIBUIDOR" ColumnName="CODIGO_PRODUCTO_DISTRIBUIDOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SELLOUT">
+      <EntityTypeMapping TypeName="CRMToolsEntities.SELLOUT">
+        <MappingFragment StoreEntitySet="SELLOUT">
+          <ScalarProperty Name="VENTA_DOLARES" ColumnName="VENTA_DOLARES" />
+          <ScalarProperty Name="VENTA_MONEDA_LOCAL" ColumnName="VENTA_MONEDA_LOCAL" />
+          <ScalarProperty Name="BULTOS" ColumnName="BULTOS" />
+          <ScalarProperty Name="CODIGO_PRODUCTOS_SAP" ColumnName="CODIGO_PRODUCTOS_SAP" />
+          <ScalarProperty Name="CODIGO_PRODUCTO_DISTRIBUIDOR" ColumnName="CODIGO_PRODUCTO_DISTRIBUIDOR" />
+          <ScalarProperty Name="NOMBRE_CLIENTE" ColumnName="NOMBRE_CLIENTE" />
+          <ScalarProperty Name="CODIGO_CLIENTE" ColumnName="CODIGO_CLIENTE" />
+          <ScalarProperty Name="NOMBRE_VENDEDOR" ColumnName="NOMBRE_VENDEDOR" />
+          <ScalarProperty Name="CODIGO_VENDEDOR" ColumnName="CODIGO_VENDEDOR" />
+          <ScalarProperty Name="CODIGO_DISTRIBUIDOR" ColumnName="CODIGO_DISTRIBUIDOR" />
+          <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
+          <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="SECUENCIA_MES" ColumnName="SECUENCIA_MES" />
+          <ScalarProperty Name="MES" ColumnName="MES" />
+          <ScalarProperty Name="ANIO" ColumnName="ANIO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VENTAS_NUEVAS">
+      <EntityTypeMapping TypeName="CRMToolsEntities.VENTAS_NUEVAS">
+        <MappingFragment StoreEntitySet="VENTAS_NUEVAS">
+          <ScalarProperty Name="TOTAL_VENTAS_NUEVAS" ColumnName="TOTAL_VENTAS_NUEVAS" />
+          <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
+          <ScalarProperty Name="CODIGO_DISTRIBUIDOR" ColumnName="CODIGO_DISTRIBUIDOR" />
+          <ScalarProperty Name="SECUENCIA" ColumnName="SECUENCIA" />
+          <ScalarProperty Name="PAIS" ColumnName="PAIS" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTES_VIEW">
+      <EntityTypeMapping TypeName="CRMToolsEntities.CLIENTES_VIEW">
+        <MappingFragment StoreEntitySet="CLIENTES_VIEW">
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="NAME_SEGMENT_IMPORT" ColumnName="NAME_SEGMENT_IMPORT" />
+          <ScalarProperty Name="COD_SEGMENT_IMPORT" ColumnName="COD_SEGMENT_IMPORT" />
+          <ScalarProperty Name="SEGMENT_NAME_ING" ColumnName="SEGMENT_NAME_ING" />
+          <ScalarProperty Name="SEGMENT_NAME" ColumnName="SEGMENT_NAME" />
+          <ScalarProperty Name="SEGMENT_ID" ColumnName="SEGMENT_ID" />
+          <ScalarProperty Name="AGRUPAR" ColumnName="AGRUPAR" />
+          <ScalarProperty Name="FECHA_ACTUALIZACION" ColumnName="FECHA_ACTUALIZACION" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="SALES_TYPE" ColumnName="SALES_TYPE" />
+          <ScalarProperty Name="STATUS_CLIENTE" ColumnName="STATUS_CLIENTE" />
+          <ScalarProperty Name="GLOBAL_ACCOUNT_ID" ColumnName="GLOBAL_ACCOUNT_ID" />
+          <ScalarProperty Name="PLATAFORMAS" ColumnName="PLATAFORMAS" />
+          <ScalarProperty Name="GRUPO_CLIENTE" ColumnName="GRUPO_CLIENTE" />
+          <ScalarProperty Name="TIPO_ABC_SUBREGION" ColumnName="TIPO_ABC_SUBREGION" />
+          <ScalarProperty Name="TIPO_ABC_REGION" ColumnName="TIPO_ABC_REGION" />
+          <ScalarProperty Name="TIPO_ABC_PAIS" ColumnName="TIPO_ABC_PAIS" />
+          <ScalarProperty Name="TIPO_ABC_DISTRIBUIDOR" ColumnName="TIPO_ABC_DISTRIBUIDOR" />
+          <ScalarProperty Name="SUBSEGMENTO_ID" ColumnName="SUBSEGMENTO_ID" />
+          <ScalarProperty Name="SEGMENTO_KC_ID" ColumnName="SEGMENTO_KC_ID" />
+          <ScalarProperty Name="SEGMENTO_SC_ID" ColumnName="SEGMENTO_SC_ID" />
+          <ScalarProperty Name="E_MAIL" ColumnName="E_MAIL" />
+          <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+          <ScalarProperty Name="NOMBRE_COMERCIAL" ColumnName="NOMBRE_COMERCIAL" />
+          <ScalarProperty Name="TELEFONO_CONTACTO" ColumnName="TELEFONO_CONTACTO" />
+          <ScalarProperty Name="NOMBRE_CONTACTO" ColumnName="NOMBRE_CONTACTO" />
+          <ScalarProperty Name="CEDULA_JURIDICA" ColumnName="CEDULA_JURIDICA" />
+          <ScalarProperty Name="TELEFONO_CLIENTE" ColumnName="TELEFONO_CLIENTE" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="CIUDAD" ColumnName="CIUDAD" />
+          <ScalarProperty Name="NOMBRE_VENDEDOR" ColumnName="NOMBRE_VENDEDOR" />
+          <ScalarProperty Name="CODIGO_VENDEDOR" ColumnName="CODIGO_VENDEDOR" />
+          <ScalarProperty Name="NOMBRE_DISTRIBUIDOR" ColumnName="NOMBRE_DISTRIBUIDOR" />
+          <ScalarProperty Name="CODIGO_DISTRIBUIDOR" ColumnName="CODIGO_DISTRIBUIDOR" />
+          <ScalarProperty Name="NOMBRE_CLIENTE" ColumnName="NOMBRE_CLIENTE" />
+          <ScalarProperty Name="CODIGO_CLIENTE" ColumnName="CODIGO_CLIENTE" />
+          <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

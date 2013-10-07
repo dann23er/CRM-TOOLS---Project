@@ -39,9 +39,6 @@
             this.radLabel56 = new Telerik.WinControls.UI.RadLabel();
             this.radTextBox4 = new Telerik.WinControls.UI.RadTextBox();
             this.radTextBox3 = new Telerik.WinControls.UI.RadTextBox();
-            this.btCancel = new Telerik.WinControls.UI.RadButton();
-            this.btReiniciar = new Telerik.WinControls.UI.RadButton();
-            this.btFiltrar = new Telerik.WinControls.UI.RadButton();
             this.radGroupBox32 = new Telerik.WinControls.UI.RadGroupBox();
             this.radCheckBox3 = new Telerik.WinControls.UI.RadCheckBox();
             this.radCheckBox4 = new Telerik.WinControls.UI.RadCheckBox();
@@ -237,7 +234,7 @@
             this.rdFP = new Telerik.WinControls.UI.RadCheckBox();
             this.rdApp = new Telerik.WinControls.UI.RadCheckBox();
             this.rdIP = new Telerik.WinControls.UI.RadCheckBox();
-            this.radPageViewPage8 = new Telerik.WinControls.UI.RadPageViewPage();
+            this.page = new Telerik.WinControls.UI.RadPageViewPage();
             this.radGroupBox55 = new Telerik.WinControls.UI.RadGroupBox();
             this.rdOKCPNO = new Telerik.WinControls.UI.RadRadioButton();
             this.OKCPSI = new Telerik.WinControls.UI.RadRadioButton();
@@ -246,6 +243,12 @@
             this.rdSPPNO = new Telerik.WinControls.UI.RadRadioButton();
             this.rdSPPSI = new Telerik.WinControls.UI.RadRadioButton();
             this.rdSPP = new Telerik.WinControls.UI.RadCheckBox();
+            this.btCancel = new Telerik.WinControls.UI.RadButton();
+            this.btReiniciar = new Telerik.WinControls.UI.RadButton();
+            this.btFiltrar = new Telerik.WinControls.UI.RadButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox34)).BeginInit();
             this.radGroupBox34.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel59)).BeginInit();
@@ -258,9 +261,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel56)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btCancel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btReiniciar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btFiltrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox32)).BeginInit();
             this.radGroupBox32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radCheckBox3)).BeginInit();
@@ -481,7 +481,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdFP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdApp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdIP)).BeginInit();
-            this.radPageViewPage8.SuspendLayout();
+            this.page.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox55)).BeginInit();
             this.radGroupBox55.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdOKCPNO)).BeginInit();
@@ -492,6 +492,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdSPPNO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdSPPSI)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdSPP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btReiniciar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btFiltrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -518,7 +524,7 @@
             this.radGroupBox34.Size = new System.Drawing.Size(347, 317);
             this.radGroupBox34.TabIndex = 20;
             this.radGroupBox34.Text = "Sub y Categorias";
-            this.radGroupBox34.ThemeName = "Windows7";
+            this.radGroupBox34.ThemeName = "TelerikMetroBlue";
             // 
             // radLabel59
             // 
@@ -587,7 +593,7 @@
             this.radGroupBox33.Size = new System.Drawing.Size(353, 302);
             this.radGroupBox33.TabIndex = 19;
             this.radGroupBox33.Text = "Geografia";
-            this.radGroupBox33.ThemeName = "Windows7";
+            this.radGroupBox33.ThemeName = "TelerikMetroBlue";
             // 
             // radLabel57
             // 
@@ -633,30 +639,6 @@
             this.radTextBox3.TabIndex = 0;
             this.radTextBox3.TabStop = false;
             // 
-            // btCancel
-            // 
-            this.btCancel.Location = new System.Drawing.Point(663, 107);
-            this.btCancel.Name = "btCancel";
-            this.btCancel.Size = new System.Drawing.Size(93, 24);
-            this.btCancel.TabIndex = 18;
-            this.btCancel.Text = "Cancelar";
-            // 
-            // btReiniciar
-            // 
-            this.btReiniciar.Location = new System.Drawing.Point(663, 69);
-            this.btReiniciar.Name = "btReiniciar";
-            this.btReiniciar.Size = new System.Drawing.Size(93, 24);
-            this.btReiniciar.TabIndex = 17;
-            this.btReiniciar.Text = "Reiniciar";
-            // 
-            // btFiltrar
-            // 
-            this.btFiltrar.Location = new System.Drawing.Point(663, 34);
-            this.btFiltrar.Name = "btFiltrar";
-            this.btFiltrar.Size = new System.Drawing.Size(93, 24);
-            this.btFiltrar.TabIndex = 16;
-            this.btFiltrar.Text = "Filtrar";
-            // 
             // radGroupBox32
             // 
             this.radGroupBox32.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
@@ -679,7 +661,7 @@
             this.radGroupBox32.Size = new System.Drawing.Size(98, 100);
             this.radGroupBox32.TabIndex = 15;
             this.radGroupBox32.Text = "Pais";
-            this.radGroupBox32.ThemeName = "Windows7";
+            this.radGroupBox32.ThemeName = "TelerikMetroBlue";
             // 
             // radCheckBox3
             // 
@@ -727,7 +709,7 @@
             this.radGroupBox31.Size = new System.Drawing.Size(98, 100);
             this.radGroupBox31.TabIndex = 14;
             this.radGroupBox31.Text = "Distribuidor";
-            this.radGroupBox31.ThemeName = "Windows7";
+            this.radGroupBox31.ThemeName = "TelerikMetroBlue";
             // 
             // rdC
             // 
@@ -785,7 +767,7 @@
             this.radGroupBox30.Size = new System.Drawing.Size(266, 206);
             this.radGroupBox30.TabIndex = 13;
             this.radGroupBox30.Text = "Segmentos";
-            this.radGroupBox30.ThemeName = "Windows7";
+            this.radGroupBox30.ThemeName = "TelerikMetroBlue";
             // 
             // rdOther
             // 
@@ -912,7 +894,7 @@
             this.radGroupBox29.Size = new System.Drawing.Size(97, 100);
             this.radGroupBox29.TabIndex = 12;
             this.radGroupBox29.Text = "Tipo de Venta";
-            this.radGroupBox29.ThemeName = "Windows7";
+            this.radGroupBox29.ThemeName = "TelerikMetroBlue";
             // 
             // radCheckBox2
             // 
@@ -938,13 +920,13 @@
             this.radPageView5.Controls.Add(this.radPageViewPage5);
             this.radPageView5.Controls.Add(this.radPageViewPage6);
             this.radPageView5.Controls.Add(this.radPageViewPage7);
-            this.radPageView5.Controls.Add(this.radPageViewPage8);
+            this.radPageView5.Controls.Add(this.page);
             this.radPageView5.Location = new System.Drawing.Point(140, 258);
             this.radPageView5.Name = "radPageView5";
-            this.radPageView5.SelectedPage = this.radPageViewPage8;
+            this.radPageView5.SelectedPage = this.page;
             this.radPageView5.Size = new System.Drawing.Size(749, 407);
             this.radPageView5.TabIndex = 11;
-            this.radPageView5.ThemeName = "Windows7";
+            this.radPageView5.ThemeName = "TelerikMetroBlue";
             // 
             // radPageViewPage1
             // 
@@ -954,9 +936,9 @@
             this.radPageViewPage1.Controls.Add(this.radGroupBox38);
             this.radPageViewPage1.Controls.Add(this.radGroupBox36);
             this.radPageViewPage1.Controls.Add(this.radGroupBox35);
-            this.radPageViewPage1.Location = new System.Drawing.Point(11, 37);
+            this.radPageViewPage1.Location = new System.Drawing.Point(5, 31);
             this.radPageViewPage1.Name = "radPageViewPage1";
-            this.radPageViewPage1.Size = new System.Drawing.Size(727, 327);
+            this.radPageViewPage1.Size = new System.Drawing.Size(739, 371);
             this.radPageViewPage1.Text = "Paises";
             // 
             // radGroupBox40
@@ -2695,14 +2677,14 @@
             this.rdIP.TabIndex = 0;
             this.rdIP.Text = "Industrial PPE";
             // 
-            // radPageViewPage8
+            // page
             // 
-            this.radPageViewPage8.Controls.Add(this.radGroupBox55);
-            this.radPageViewPage8.Controls.Add(this.radGroupBox56);
-            this.radPageViewPage8.Location = new System.Drawing.Point(11, 37);
-            this.radPageViewPage8.Name = "radPageViewPage8";
-            this.radPageViewPage8.Size = new System.Drawing.Size(727, 359);
-            this.radPageViewPage8.Text = "Other KCP";
+            this.page.Controls.Add(this.radGroupBox55);
+            this.page.Controls.Add(this.radGroupBox56);
+            this.page.Location = new System.Drawing.Point(5, 31);
+            this.page.Name = "page";
+            this.page.Size = new System.Drawing.Size(739, 371);
+            this.page.Text = "Other KCP";
             // 
             // radGroupBox55
             // 
@@ -2725,7 +2707,7 @@
             this.radGroupBox55.RootElement.Padding = new System.Windows.Forms.Padding(2, 18, 2, 2);
             this.radGroupBox55.Size = new System.Drawing.Size(248, 29);
             this.radGroupBox55.TabIndex = 8;
-            this.radGroupBox55.ThemeName = "Windows7";
+            this.radGroupBox55.ThemeName = "TelerikMetroBlue";
             // 
             // rdOKCPNO
             // 
@@ -2772,7 +2754,7 @@
             this.radGroupBox56.RootElement.Padding = new System.Windows.Forms.Padding(2, 18, 2, 2);
             this.radGroupBox56.Size = new System.Drawing.Size(248, 29);
             this.radGroupBox56.TabIndex = 9;
-            this.radGroupBox56.ThemeName = "Windows7";
+            this.radGroupBox56.ThemeName = "TelerikMetro";
             // 
             // rdSPPNO
             // 
@@ -2798,6 +2780,63 @@
             this.rdSPP.TabIndex = 0;
             this.rdSPP.Text = "Scientific PPE";
             // 
+            // btCancel
+            // 
+            this.btCancel.Image = global::CRM_TOOLS.Properties.Resources.close1;
+            this.btCancel.Location = new System.Drawing.Point(663, 83);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.Size = new System.Drawing.Size(93, 39);
+            this.btCancel.TabIndex = 18;
+            this.btCancel.Text = "   Cancelar";
+            this.btCancel.ThemeName = "TelerikMetroBlue";
+            // 
+            // btReiniciar
+            // 
+            this.btReiniciar.Image = global::CRM_TOOLS.Properties.Resources.loop3;
+            this.btReiniciar.Location = new System.Drawing.Point(663, 132);
+            this.btReiniciar.Name = "btReiniciar";
+            this.btReiniciar.Size = new System.Drawing.Size(93, 38);
+            this.btReiniciar.TabIndex = 17;
+            this.btReiniciar.Text = "   Reiniciar";
+            this.btReiniciar.ThemeName = "TelerikMetroBlue";
+            // 
+            // btFiltrar
+            // 
+            this.btFiltrar.Image = global::CRM_TOOLS.Properties.Resources.search;
+            this.btFiltrar.Location = new System.Drawing.Point(663, 34);
+            this.btFiltrar.Name = "btFiltrar";
+            this.btFiltrar.Size = new System.Drawing.Size(93, 39);
+            this.btFiltrar.TabIndex = 16;
+            this.btFiltrar.Text = "Filtrar";
+            this.btFiltrar.ThemeName = "TelerikMetroBlue";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::CRM_TOOLS.Properties.Resources.fondo5;
+            this.pictureBox3.Location = new System.Drawing.Point(-9, 13);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(281, 358);
+            this.pictureBox3.TabIndex = 23;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::CRM_TOOLS.Properties.Resources.fondo5;
+            this.pictureBox4.Location = new System.Drawing.Point(-9, 287);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(281, 152);
+            this.pictureBox4.TabIndex = 24;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(631, 232);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(798, 682);
+            this.pictureBox2.TabIndex = 25;
+            this.pictureBox2.TabStop = false;
+            // 
             // frmMKTtool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2813,6 +2852,9 @@
             this.Controls.Add(this.radGroupBox30);
             this.Controls.Add(this.radGroupBox29);
             this.Controls.Add(this.radPageView5);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMKTtool";
             // 
@@ -2837,9 +2879,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel56)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btCancel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btReiniciar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btFiltrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox32)).EndInit();
             this.radGroupBox32.ResumeLayout(false);
             this.radGroupBox32.PerformLayout();
@@ -3084,7 +3123,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdFP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdApp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdIP)).EndInit();
-            this.radPageViewPage8.ResumeLayout(false);
+            this.page.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox55)).EndInit();
             this.radGroupBox55.ResumeLayout(false);
             this.radGroupBox55.PerformLayout();
@@ -3097,6 +3136,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdSPPNO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdSPPSI)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdSPP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btReiniciar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btFiltrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -3312,7 +3357,7 @@
         private Telerik.WinControls.UI.RadCheckBox rdFP;
         private Telerik.WinControls.UI.RadCheckBox rdApp;
         private Telerik.WinControls.UI.RadCheckBox rdIP;
-        private Telerik.WinControls.UI.RadPageViewPage radPageViewPage8;
+        private Telerik.WinControls.UI.RadPageViewPage page;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox55;
         private Telerik.WinControls.UI.RadRadioButton rdOKCPNO;
         private Telerik.WinControls.UI.RadRadioButton OKCPSI;
@@ -3321,5 +3366,8 @@
         private Telerik.WinControls.UI.RadRadioButton rdSPPNO;
         private Telerik.WinControls.UI.RadRadioButton rdSPPSI;
         private Telerik.WinControls.UI.RadCheckBox rdSPP;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -538,8 +538,8 @@
             // 
             this.radMenu1.Controls.Add(this.btCerrar);
             this.radMenu1.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radMenuSellout,
             this.radMenuSellin,
+            this.radMenuSellout,
             this.radMenuMKT,
             this.radMenuConfig});
             this.radMenu1.Location = new System.Drawing.Point(0, 0);
@@ -558,11 +558,11 @@
             // 
             this.btCerrar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btCerrar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btCerrar.Location = new System.Drawing.Point(901, 4);
+            this.btCerrar.Location = new System.Drawing.Point(874, 4);
             this.btCerrar.Name = "btCerrar";
-            this.btCerrar.Size = new System.Drawing.Size(72, 22);
+            this.btCerrar.Size = new System.Drawing.Size(99, 22);
             this.btCerrar.TabIndex = 0;
-            this.btCerrar.Text = "Cerrar ";
+            this.btCerrar.Text = "Cerrar  Sesion";
             this.btCerrar.ThemeName = "TelerikMetroBlue";
             this.btCerrar.Click += new System.EventHandler(this.btCerrar_Click);
             // 
@@ -638,6 +638,7 @@
             this.Text = "CRM-TOOLS";
             this.ThemeName = "TelerikMetroBlue";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.RadForm1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radMenuComboItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
             this.radMenu1.ResumeLayout(false);

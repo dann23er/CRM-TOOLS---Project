@@ -36,6 +36,9 @@
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.btGuardar = new Telerik.WinControls.UI.RadButton();
             this.btCancel = new Telerik.WinControls.UI.RadButton();
+            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
+            this.txtID = new Telerik.WinControls.UI.RadTextBox();
+            this.telerikMetroBlueTheme1 = new Telerik.WinControls.Themes.TelerikMetroBlueTheme();
             ((System.ComponentModel.ISupportInitialize)(this.txtLlave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescrip)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
@@ -43,34 +46,36 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btGuardar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // txtLlave
             // 
-            this.txtLlave.Location = new System.Drawing.Point(446, 184);
+            this.txtLlave.Location = new System.Drawing.Point(25, 157);
             this.txtLlave.Name = "txtLlave";
-            this.txtLlave.Size = new System.Drawing.Size(301, 20);
+            this.txtLlave.Size = new System.Drawing.Size(365, 20);
             this.txtLlave.TabIndex = 0;
             this.txtLlave.TabStop = false;
             // 
             // txtDescrip
             // 
-            this.txtDescrip.Location = new System.Drawing.Point(446, 257);
+            this.txtDescrip.Location = new System.Drawing.Point(25, 222);
             this.txtDescrip.Multiline = true;
             this.txtDescrip.Name = "txtDescrip";
             // 
             // 
             // 
             this.txtDescrip.RootElement.StretchVertically = true;
-            this.txtDescrip.Size = new System.Drawing.Size(468, 210);
+            this.txtDescrip.Size = new System.Drawing.Size(468, 234);
             this.txtDescrip.TabIndex = 1;
             this.txtDescrip.TabStop = false;
             // 
             // radLabel1
             // 
             this.radLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radLabel1.Location = new System.Drawing.Point(446, 156);
+            this.radLabel1.Location = new System.Drawing.Point(25, 129);
             this.radLabel1.Name = "radLabel1";
             this.radLabel1.Size = new System.Drawing.Size(138, 22);
             this.radLabel1.TabIndex = 2;
@@ -79,7 +84,7 @@
             // radLabel2
             // 
             this.radLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radLabel2.Location = new System.Drawing.Point(446, 229);
+            this.radLabel2.Location = new System.Drawing.Point(25, 194);
             this.radLabel2.Name = "radLabel2";
             this.radLabel2.Size = new System.Drawing.Size(98, 22);
             this.radLabel2.TabIndex = 3;
@@ -89,7 +94,7 @@
             // 
             this.radLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radLabel3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radLabel3.Location = new System.Drawing.Point(533, 65);
+            this.radLabel3.Location = new System.Drawing.Point(154, 12);
             this.radLabel3.Name = "radLabel3";
             this.radLabel3.Size = new System.Drawing.Size(214, 32);
             this.radLabel3.TabIndex = 4;
@@ -97,27 +102,50 @@
             // 
             // btGuardar
             // 
-            this.btGuardar.Location = new System.Drawing.Point(608, 535);
+            this.btGuardar.Location = new System.Drawing.Point(185, 522);
             this.btGuardar.Name = "btGuardar";
             this.btGuardar.Size = new System.Drawing.Size(130, 24);
             this.btGuardar.TabIndex = 5;
             this.btGuardar.Text = "Guardar";
             this.btGuardar.ThemeName = "TelerikMetroBlue";
+            this.btGuardar.Click += new System.EventHandler(this.btGuardar_Click);
             // 
             // btCancel
             // 
-            this.btCancel.Location = new System.Drawing.Point(762, 535);
+            this.btCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btCancel.Location = new System.Drawing.Point(339, 522);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(130, 24);
             this.btCancel.TabIndex = 6;
             this.btCancel.Text = "Cancelar";
             this.btCancel.ThemeName = "TelerikMetroBlue";
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
+            // 
+            // radLabel4
+            // 
+            this.radLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radLabel4.Location = new System.Drawing.Point(25, 61);
+            this.radLabel4.Name = "radLabel4";
+            this.radLabel4.Size = new System.Drawing.Size(24, 22);
+            this.radLabel4.TabIndex = 8;
+            this.radLabel4.Text = "ID";
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(25, 89);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(77, 20);
+            this.txtID.TabIndex = 7;
+            this.txtID.TabStop = false;
             // 
             // frmPrivilegios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1420, 814);
+            this.CancelButton = this.btCancel;
+            this.ClientSize = new System.Drawing.Size(531, 589);
+            this.Controls.Add(this.radLabel4);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.btCancel);
             this.Controls.Add(this.btGuardar);
             this.Controls.Add(this.radLabel3);
@@ -134,7 +162,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Privilegios";
             this.ThemeName = "TelerikMetroBlue";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.txtLlave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescrip)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
@@ -142,6 +169,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btGuardar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -157,6 +186,9 @@
         private Telerik.WinControls.UI.RadLabel radLabel3;
         private Telerik.WinControls.UI.RadButton btGuardar;
         private Telerik.WinControls.UI.RadButton btCancel;
+        private Telerik.WinControls.UI.RadLabel radLabel4;
+        private Telerik.WinControls.UI.RadTextBox txtID;
+        private Telerik.WinControls.Themes.TelerikMetroBlueTheme telerikMetroBlueTheme1;
 
     }
 }

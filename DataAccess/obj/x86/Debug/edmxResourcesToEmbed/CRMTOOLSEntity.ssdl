@@ -1,34 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="kcpdis0dbModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
-  <EntityContainer Name="kcpdis0dbModelStoreContainer">
-    <EntitySet Name="CAJAS" EntityType="kcpdis0dbModel.Store.CAJAS" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="CLIENTES" EntityType="kcpdis0dbModel.Store.CLIENTES" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="CLIENTESDI_X_KAM" EntityType="kcpdis0dbModel.Store.CLIENTESDI_X_KAM" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="DISTRIBUIDORES" EntityType="kcpdis0dbModel.Store.DISTRIBUIDORES" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="DIVISION_TERRITORIAL" EntityType="kcpdis0dbModel.Store.DIVISION_TERRITORIAL" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="DOLARES" EntityType="kcpdis0dbModel.Store.DOLARES" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="GLOBAL_ACCOUNTS" EntityType="kcpdis0dbModel.Store.GLOBAL_ACCOUNTS" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="JERARQUIA_GLOBAL" EntityType="kcpdis0dbModel.Store.JERARQUIA_GLOBAL" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="JERARQUIA_LAO" EntityType="kcpdis0dbModel.Store.JERARQUIA_LAO" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="KAM" EntityType="kcpdis0dbModel.Store.KAM" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="LOG_LOGIN" EntityType="kcpdis0dbModel.Store.LOG_LOGIN" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="PAISES" EntityType="kcpdis0dbModel.Store.PAISES" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="PLATAFORMA_X_CLIENTES" EntityType="kcpdis0dbModel.Store.PLATAFORMA_X_CLIENTES" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="PLATAFORMAS" EntityType="kcpdis0dbModel.Store.PLATAFORMAS" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="PRIVILEGIOS" EntityType="kcpdis0dbModel.Store.PRIVILEGIOS" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="PRIVILEGIOS_X_ROL" EntityType="kcpdis0dbModel.Store.PRIVILEGIOS_X_ROL" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="PRODUCTOS" EntityType="kcpdis0dbModel.Store.PRODUCTOS" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="PRODUCTOS_EQUIVALENTES" EntityType="kcpdis0dbModel.Store.PRODUCTOS_EQUIVALENTES" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="ROLES" EntityType="kcpdis0dbModel.Store.ROLES" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="ROLES_X_USUARIO" EntityType="kcpdis0dbModel.Store.ROLES_X_USUARIO" store:Type="Tables" store:Schema="kcpdis0dbo" store:Name="ROLES_X_USUARIO">
-      <DefiningQuery>SELECT 
-      [ROLES_X_USUARIO].[USER_ID] AS [USER_ID], 
-      [ROLES_X_USUARIO].[ID_ROL] AS [ID_ROL]
-      FROM [kcpdis0dbo].[ROLES_X_USUARIO] AS [ROLES_X_USUARIO]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="SEGMENTOS" EntityType="kcpdis0dbModel.Store.SEGMENTOS" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="SELLIN" EntityType="kcpdis0dbModel.Store.SELLIN" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="SELLOUT" EntityType="kcpdis0dbModel.Store.SELLOUT" store:Type="Tables" store:Schema="kcpdis0dbo" store:Name="SELLOUT">
+<Schema Namespace="CRMTOOLSEntitiesModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="CRMTOOLSEntitiesModelStoreContainer">
+    <EntitySet Name="CAJAS" EntityType="CRMTOOLSEntitiesModel.Store.CAJAS" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="CLIENTES" EntityType="CRMTOOLSEntitiesModel.Store.CLIENTES" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="CLIENTESDI_X_KAM" EntityType="CRMTOOLSEntitiesModel.Store.CLIENTESDI_X_KAM" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="DISTRIBUIDORES" EntityType="CRMTOOLSEntitiesModel.Store.DISTRIBUIDORES" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="DIVISION_TERRITORIAL" EntityType="CRMTOOLSEntitiesModel.Store.DIVISION_TERRITORIAL" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="DOLARES" EntityType="CRMTOOLSEntitiesModel.Store.DOLARES" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="GLOBAL_ACCOUNTS" EntityType="CRMTOOLSEntitiesModel.Store.GLOBAL_ACCOUNTS" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="JERARQUIA_GLOBAL" EntityType="CRMTOOLSEntitiesModel.Store.JERARQUIA_GLOBAL" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="JERARQUIA_LAO" EntityType="CRMTOOLSEntitiesModel.Store.JERARQUIA_LAO" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="KAM" EntityType="CRMTOOLSEntitiesModel.Store.KAM" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="LOG_LOGIN" EntityType="CRMTOOLSEntitiesModel.Store.LOG_LOGIN" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PAISES" EntityType="CRMTOOLSEntitiesModel.Store.PAISES" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PLATAFORMA_X_CLIENTES" EntityType="CRMTOOLSEntitiesModel.Store.PLATAFORMA_X_CLIENTES" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PLATAFORMAS" EntityType="CRMTOOLSEntitiesModel.Store.PLATAFORMAS" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PRIVILEGIOS" EntityType="CRMTOOLSEntitiesModel.Store.PRIVILEGIOS" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PRIVILEGIOS_X_ROL" EntityType="CRMTOOLSEntitiesModel.Store.PRIVILEGIOS_X_ROL" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PRODUCTOS" EntityType="CRMTOOLSEntitiesModel.Store.PRODUCTOS" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PRODUCTOS_EQUIVALENTES" EntityType="CRMTOOLSEntitiesModel.Store.PRODUCTOS_EQUIVALENTES" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="ROLES" EntityType="CRMTOOLSEntitiesModel.Store.ROLES" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="ROLES_X_USUARIO" EntityType="CRMTOOLSEntitiesModel.Store.ROLES_X_USUARIO" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="SEGMENTOS" EntityType="CRMTOOLSEntitiesModel.Store.SEGMENTOS" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="SELLIN" EntityType="CRMTOOLSEntitiesModel.Store.SELLIN" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="SELLOUT" EntityType="CRMTOOLSEntitiesModel.Store.SELLOUT" store:Type="Tables" store:Schema="kcpdis0dbo" store:Name="SELLOUT">
       <DefiningQuery>SELECT 
       [SELLOUT].[ANIO] AS [ANIO], 
       [SELLOUT].[MES] AS [MES], 
@@ -48,85 +43,104 @@
       [SELLOUT].[VENTA_DOLARES] AS [VENTA_DOLARES]
       FROM [kcpdis0dbo].[SELLOUT] AS [SELLOUT]</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="SUB_SEGMENTO" EntityType="kcpdis0dbModel.Store.SUB_SEGMENTO" store:Type="Tables" Schema="kcpdis0dbo" />
-    <EntitySet Name="USERS" EntityType="kcpdis0dbModel.Store.USERS" store:Type="Tables" Schema="kcpdis0dbo" />
-    <AssociationSet Name="FK_CLIENTES_CAJAS" Association="kcpdis0dbModel.Store.FK_CLIENTES_CAJAS">
+    <EntitySet Name="SUB_SEGMENTO" EntityType="CRMTOOLSEntitiesModel.Store.SUB_SEGMENTO" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="USERS" EntityType="CRMTOOLSEntitiesModel.Store.USERS" store:Type="Tables" Schema="kcpdis0dbo" />
+    <EntitySet Name="PRIVILEGIOSXUSER" EntityType="CRMTOOLSEntitiesModel.Store.PRIVILEGIOSXUSER" store:Type="Views" store:Schema="kcpdis0dbo" store:Name="PRIVILEGIOSXUSER">
+      <DefiningQuery>SELECT 
+      [PRIVILEGIOSXUSER].[PRIVILEGIO_ID] AS [PRIVILEGIO_ID], 
+      [PRIVILEGIOSXUSER].[PRIVILEGIO_LLAVE] AS [PRIVILEGIO_LLAVE], 
+      [PRIVILEGIOSXUSER].[DESCRIPCION] AS [DESCRIPCION], 
+      [PRIVILEGIOSXUSER].[ID_ROL] AS [ID_ROL], 
+      [PRIVILEGIOSXUSER].[NOMBRE_ROL] AS [NOMBRE_ROL], 
+      [PRIVILEGIOSXUSER].[DESCRIPCION_ROL] AS [DESCRIPCION_ROL], 
+      [PRIVILEGIOSXUSER].[USER_ID] AS [USER_ID], 
+      [PRIVILEGIOSXUSER].[USER_NAME] AS [USER_NAME], 
+      [PRIVILEGIOSXUSER].[PASSWORD] AS [PASSWORD], 
+      [PRIVILEGIOSXUSER].[LOGIN_ID] AS [LOGIN_ID], 
+      [PRIVILEGIOSXUSER].[NAME] AS [NAME], 
+      [PRIVILEGIOSXUSER].[LAST_NAME] AS [LAST_NAME], 
+      [PRIVILEGIOSXUSER].[STATUS] AS [STATUS], 
+      [PRIVILEGIOSXUSER].[ID_COUNTRY] AS [ID_COUNTRY], 
+      [PRIVILEGIOSXUSER].[E_MAIL] AS [E_MAIL]
+      FROM [kcpdis0dbo].[PRIVILEGIOSXUSER] AS [PRIVILEGIOSXUSER]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_CLIENTES_CAJAS" Association="CRMTOOLSEntitiesModel.Store.FK_CLIENTES_CAJAS">
       <End Role="CAJAS" EntitySet="CAJAS" />
       <End Role="CLIENTES" EntitySet="CLIENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_CLIENTES_CLIENTESDI_X_KAM" Association="kcpdis0dbModel.Store.FK_CLIENTES_CLIENTESDI_X_KAM">
+    <AssociationSet Name="FK_CLIENTES_CLIENTESDI_X_KAM" Association="CRMTOOLSEntitiesModel.Store.FK_CLIENTES_CLIENTESDI_X_KAM">
       <End Role="CLIENTESDI_X_KAM" EntitySet="CLIENTESDI_X_KAM" />
       <End Role="CLIENTES" EntitySet="CLIENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_CLIENTES_DOLARES" Association="kcpdis0dbModel.Store.FK_CLIENTES_DOLARES">
+    <AssociationSet Name="FK_CLIENTES_DOLARES" Association="CRMTOOLSEntitiesModel.Store.FK_CLIENTES_DOLARES">
       <End Role="DOLARES" EntitySet="DOLARES" />
       <End Role="CLIENTES" EntitySet="CLIENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_CLIENTES_GLOBAL_ACCOUNTS" Association="kcpdis0dbModel.Store.FK_CLIENTES_GLOBAL_ACCOUNTS">
+    <AssociationSet Name="FK_CLIENTES_GLOBAL_ACCOUNTS" Association="CRMTOOLSEntitiesModel.Store.FK_CLIENTES_GLOBAL_ACCOUNTS">
       <End Role="GLOBAL_ACCOUNTS" EntitySet="GLOBAL_ACCOUNTS" />
       <End Role="CLIENTES" EntitySet="CLIENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_CLIENTES_PLATAFORMA_X_CLIENTES" Association="kcpdis0dbModel.Store.FK_CLIENTES_PLATAFORMA_X_CLIENTES">
+    <AssociationSet Name="FK_CLIENTES_PLATAFORMA_X_CLIENTES" Association="CRMTOOLSEntitiesModel.Store.FK_CLIENTES_PLATAFORMA_X_CLIENTES">
       <End Role="PLATAFORMA_X_CLIENTES" EntitySet="PLATAFORMA_X_CLIENTES" />
       <End Role="CLIENTES" EntitySet="CLIENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_CLIENTES_SELLIN" Association="kcpdis0dbModel.Store.FK_CLIENTES_SELLIN">
+    <AssociationSet Name="FK_CLIENTES_SELLIN" Association="CRMTOOLSEntitiesModel.Store.FK_CLIENTES_SELLIN">
       <End Role="SELLIN" EntitySet="SELLIN" />
       <End Role="CLIENTES" EntitySet="CLIENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_CLIENTESDI_X_KAM_KAM" Association="kcpdis0dbModel.Store.FK_CLIENTESDI_X_KAM_KAM">
+    <AssociationSet Name="FK_CLIENTESDI_X_KAM_KAM" Association="CRMTOOLSEntitiesModel.Store.FK_CLIENTESDI_X_KAM_KAM">
       <End Role="KAM" EntitySet="KAM" />
       <End Role="CLIENTESDI_X_KAM" EntitySet="CLIENTESDI_X_KAM" />
     </AssociationSet>
-    <AssociationSet Name="FK_DIVISION_TERRITORIAL_PAISES" Association="kcpdis0dbModel.Store.FK_DIVISION_TERRITORIAL_PAISES">
+    <AssociationSet Name="FK_DIVISION_TERRITORIAL_PAISES" Association="CRMTOOLSEntitiesModel.Store.FK_DIVISION_TERRITORIAL_PAISES">
       <End Role="PAISES" EntitySet="PAISES" />
       <End Role="DIVISION_TERRITORIAL" EntitySet="DIVISION_TERRITORIAL" />
     </AssociationSet>
-    <AssociationSet Name="FK_JERARQUIA_GLOBAL_JERARQUIA_LAO" Association="kcpdis0dbModel.Store.FK_JERARQUIA_GLOBAL_JERARQUIA_LAO">
+    <AssociationSet Name="FK_JERARQUIA_GLOBAL_JERARQUIA_LAO" Association="CRMTOOLSEntitiesModel.Store.FK_JERARQUIA_GLOBAL_JERARQUIA_LAO">
       <End Role="JERARQUIA_LAO" EntitySet="JERARQUIA_LAO" />
       <End Role="JERARQUIA_GLOBAL" EntitySet="JERARQUIA_GLOBAL" />
     </AssociationSet>
-    <AssociationSet Name="FK_LOG_LOGIN_USERS" Association="kcpdis0dbModel.Store.FK_LOG_LOGIN_USERS">
+    <AssociationSet Name="FK_LOG_LOGIN_USERS" Association="CRMTOOLSEntitiesModel.Store.FK_LOG_LOGIN_USERS">
       <End Role="USERS" EntitySet="USERS" />
       <End Role="LOG_LOGIN" EntitySet="LOG_LOGIN" />
     </AssociationSet>
-    <AssociationSet Name="FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS" Association="kcpdis0dbModel.Store.FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS">
+    <AssociationSet Name="FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS" Association="CRMTOOLSEntitiesModel.Store.FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS">
       <End Role="PLATAFORMAS" EntitySet="PLATAFORMAS" />
       <End Role="PLATAFORMA_X_CLIENTES" EntitySet="PLATAFORMA_X_CLIENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS" Association="kcpdis0dbModel.Store.FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS">
+    <AssociationSet Name="FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS" Association="CRMTOOLSEntitiesModel.Store.FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS">
       <End Role="PRIVILEGIOS" EntitySet="PRIVILEGIOS" />
       <End Role="PRIVILEGIOS_X_ROL" EntitySet="PRIVILEGIOS_X_ROL" />
     </AssociationSet>
-    <AssociationSet Name="FK_PRIVILEGIOS_X_ROL_ROLES" Association="kcpdis0dbModel.Store.FK_PRIVILEGIOS_X_ROL_ROLES">
+    <AssociationSet Name="FK_PRIVILEGIOS_X_ROL_ROLES" Association="CRMTOOLSEntitiesModel.Store.FK_PRIVILEGIOS_X_ROL_ROLES">
       <End Role="ROLES" EntitySet="ROLES" />
       <End Role="PRIVILEGIOS_X_ROL" EntitySet="PRIVILEGIOS_X_ROL" />
     </AssociationSet>
-    <AssociationSet Name="FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS" Association="kcpdis0dbModel.Store.FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS">
+    <AssociationSet Name="FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS" Association="CRMTOOLSEntitiesModel.Store.FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS">
       <End Role="PRODUCTOS" EntitySet="PRODUCTOS" />
       <End Role="PRODUCTOS_EQUIVALENTES" EntitySet="PRODUCTOS_EQUIVALENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_ROLES_X_USUARIO_ROLES" Association="kcpdis0dbModel.Store.FK_ROLES_X_USUARIO_ROLES">
+    <AssociationSet Name="FK_ROLES_X_USUARIO_ROLES" Association="CRMTOOLSEntitiesModel.Store.FK_ROLES_X_USUARIO_ROLES">
       <End Role="ROLES" EntitySet="ROLES" />
       <End Role="ROLES_X_USUARIO" EntitySet="ROLES_X_USUARIO" />
     </AssociationSet>
-    <AssociationSet Name="FK_ROLES_X_USUARIO_USERS" Association="kcpdis0dbModel.Store.FK_ROLES_X_USUARIO_USERS">
+    <AssociationSet Name="FK_ROLES_X_USUARIO_USERS" Association="CRMTOOLSEntitiesModel.Store.FK_ROLES_X_USUARIO_USERS">
       <End Role="USERS" EntitySet="USERS" />
       <End Role="ROLES_X_USUARIO" EntitySet="ROLES_X_USUARIO" />
     </AssociationSet>
-    <AssociationSet Name="FK_SELLIN_PAISES" Association="kcpdis0dbModel.Store.FK_SELLIN_PAISES">
+    <AssociationSet Name="FK_SELLIN_PAISES" Association="CRMTOOLSEntitiesModel.Store.FK_SELLIN_PAISES">
       <End Role="PAISES" EntitySet="PAISES" />
       <End Role="SELLIN" EntitySet="SELLIN" />
     </AssociationSet>
-    <AssociationSet Name="FK_SELLOUT_DISTRIBUIDORES" Association="kcpdis0dbModel.Store.FK_SELLOUT_DISTRIBUIDORES">
+    <AssociationSet Name="FK_SELLOUT_DISTRIBUIDORES" Association="CRMTOOLSEntitiesModel.Store.FK_SELLOUT_DISTRIBUIDORES">
       <End Role="DISTRIBUIDORES" EntitySet="DISTRIBUIDORES" />
       <End Role="SELLOUT" EntitySet="SELLOUT" />
     </AssociationSet>
-    <AssociationSet Name="FK_SELLOUT_PRODUCTOS_EQUIVALENTES" Association="kcpdis0dbModel.Store.FK_SELLOUT_PRODUCTOS_EQUIVALENTES">
+    <AssociationSet Name="FK_SELLOUT_PRODUCTOS_EQUIVALENTES" Association="CRMTOOLSEntitiesModel.Store.FK_SELLOUT_PRODUCTOS_EQUIVALENTES">
       <End Role="PRODUCTOS_EQUIVALENTES" EntitySet="PRODUCTOS_EQUIVALENTES" />
       <End Role="SELLOUT" EntitySet="SELLOUT" />
     </AssociationSet>
-    <AssociationSet Name="FK_SUB_SEGMENTO_SEGMENTOS" Association="kcpdis0dbModel.Store.FK_SUB_SEGMENTO_SEGMENTOS">
+    <AssociationSet Name="FK_SUB_SEGMENTO_SEGMENTOS" Association="CRMTOOLSEntitiesModel.Store.FK_SUB_SEGMENTO_SEGMENTOS">
       <End Role="SEGMENTOS" EntitySet="SEGMENTOS" />
       <End Role="SUB_SEGMENTO" EntitySet="SUB_SEGMENTO" />
     </AssociationSet>
@@ -424,15 +438,17 @@
     <Key>
       <PropertyRef Name="PRIVILEGIO_ID" />
     </Key>
-    <Property Name="PRIVILEGIO_ID" Type="nvarchar" Nullable="false" MaxLength="20" />
-    <Property Name="DESCRIPCION" Type="text" Nullable="false" />
+    <Property Name="PRIVILEGIO_ID" Type="int" Nullable="false" />
+    <Property Name="PRIVILEGIO_LLAVE" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DESCRIPCION" Type="nvarchar" Nullable="false" MaxLength="100" />
   </EntityType>
   <EntityType Name="PRIVILEGIOS_X_ROL">
     <Key>
-      <PropertyRef Name="PRIVILEGIO_ID" />
+      <PropertyRef Name="PRIVILEGIOXROLID" />
     </Key>
-    <Property Name="PRIVILEGIO_ID" Type="nvarchar" Nullable="false" MaxLength="20" />
-    <Property Name="ID_ROL" Type="nvarchar" Nullable="false" MaxLength="6" />
+    <Property Name="PRIVILEGIOXROLID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PRIVILEGIO_ID" Type="int" Nullable="false" />
+    <Property Name="ID_ROL" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="PRODUCTOS">
     <Key>
@@ -467,19 +483,17 @@
     <Key>
       <PropertyRef Name="ID_ROL" />
     </Key>
-    <Property Name="ID_ROL" Type="nvarchar" Nullable="false" MaxLength="6" />
+    <Property Name="ID_ROL" Type="int" Nullable="false" />
     <Property Name="NOMBRE_ROL" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DESCRIPCION_ROL" Type="nvarchar" MaxLength="50" />
   </EntityType>
-  <!--Errors Found During Generation:
-      warning 6002: The table/view 'kcpdis0db.kcpdis0dbo.ROLES_X_USUARIO' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
-      -->
   <EntityType Name="ROLES_X_USUARIO">
     <Key>
-      <PropertyRef Name="USER_ID" />
-      <PropertyRef Name="ID_ROL" />
+      <PropertyRef Name="ROLXUSERID" />
     </Key>
+    <Property Name="ROLXUSERID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="USER_ID" Type="nvarchar" Nullable="false" MaxLength="30" />
-    <Property Name="ID_ROL" Type="nvarchar" Nullable="false" MaxLength="6" />
+    <Property Name="ID_ROL" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="SEGMENTOS">
     <Key>
@@ -555,13 +569,48 @@
     <Property Name="USER_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
     <Property Name="PASSWORD" Type="nvarchar" Nullable="false" MaxLength="30" />
     <Property Name="LOGIN_ID" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="LAST_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="STATUS" Type="bit" Nullable="false" />
+    <Property Name="ID_COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
+    <Property Name="E_MAIL" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'kcpdis0db.kcpdis0dbo.PRIVILEGIOSXUSER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="PRIVILEGIOSXUSER">
+    <Key>
+      <PropertyRef Name="PRIVILEGIO_ID" />
+      <PropertyRef Name="DESCRIPCION" />
+      <PropertyRef Name="ID_ROL" />
+      <PropertyRef Name="NOMBRE_ROL" />
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="USER_NAME" />
+      <PropertyRef Name="PASSWORD" />
+      <PropertyRef Name="LOGIN_ID" />
+      <PropertyRef Name="STATUS" />
+      <PropertyRef Name="ID_COUNTRY" />
+      <PropertyRef Name="E_MAIL" />
+    </Key>
+    <Property Name="PRIVILEGIO_ID" Type="int" Nullable="false" />
+    <Property Name="PRIVILEGIO_LLAVE" Type="nvarchar" MaxLength="50" />
+    <Property Name="DESCRIPCION" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="ID_ROL" Type="int" Nullable="false" />
+    <Property Name="NOMBRE_ROL" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DESCRIPCION_ROL" Type="nvarchar" MaxLength="50" />
+    <Property Name="USER_ID" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="USER_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PASSWORD" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="LOGIN_ID" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="LAST_NAME" Type="nvarchar" MaxLength="50" />
     <Property Name="STATUS" Type="bit" Nullable="false" />
     <Property Name="ID_COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
     <Property Name="E_MAIL" Type="nvarchar" Nullable="false" MaxLength="50" />
   </EntityType>
   <Association Name="FK_CLIENTES_CAJAS">
-    <End Role="CAJAS" Type="kcpdis0dbModel.Store.CAJAS" Multiplicity="1" />
-    <End Role="CLIENTES" Type="kcpdis0dbModel.Store.CLIENTES" Multiplicity="*" />
+    <End Role="CAJAS" Type="CRMTOOLSEntitiesModel.Store.CAJAS" Multiplicity="1" />
+    <End Role="CLIENTES" Type="CRMTOOLSEntitiesModel.Store.CLIENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CAJAS">
         <PropertyRef Name="Codigo" />
@@ -572,8 +621,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CLIENTES_CLIENTESDI_X_KAM">
-    <End Role="CLIENTESDI_X_KAM" Type="kcpdis0dbModel.Store.CLIENTESDI_X_KAM" Multiplicity="1" />
-    <End Role="CLIENTES" Type="kcpdis0dbModel.Store.CLIENTES" Multiplicity="*" />
+    <End Role="CLIENTESDI_X_KAM" Type="CRMTOOLSEntitiesModel.Store.CLIENTESDI_X_KAM" Multiplicity="1" />
+    <End Role="CLIENTES" Type="CRMTOOLSEntitiesModel.Store.CLIENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CLIENTESDI_X_KAM">
         <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
@@ -584,8 +633,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CLIENTES_DOLARES">
-    <End Role="DOLARES" Type="kcpdis0dbModel.Store.DOLARES" Multiplicity="1" />
-    <End Role="CLIENTES" Type="kcpdis0dbModel.Store.CLIENTES" Multiplicity="*" />
+    <End Role="DOLARES" Type="CRMTOOLSEntitiesModel.Store.DOLARES" Multiplicity="1" />
+    <End Role="CLIENTES" Type="CRMTOOLSEntitiesModel.Store.CLIENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="DOLARES">
         <PropertyRef Name="Codigo" />
@@ -596,8 +645,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CLIENTES_GLOBAL_ACCOUNTS">
-    <End Role="GLOBAL_ACCOUNTS" Type="kcpdis0dbModel.Store.GLOBAL_ACCOUNTS" Multiplicity="0..1" />
-    <End Role="CLIENTES" Type="kcpdis0dbModel.Store.CLIENTES" Multiplicity="*" />
+    <End Role="GLOBAL_ACCOUNTS" Type="CRMTOOLSEntitiesModel.Store.GLOBAL_ACCOUNTS" Multiplicity="0..1" />
+    <End Role="CLIENTES" Type="CRMTOOLSEntitiesModel.Store.CLIENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="GLOBAL_ACCOUNTS">
         <PropertyRef Name="GLOBAL_ACCOUNT_ID" />
@@ -608,8 +657,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CLIENTES_PLATAFORMA_X_CLIENTES">
-    <End Role="PLATAFORMA_X_CLIENTES" Type="kcpdis0dbModel.Store.PLATAFORMA_X_CLIENTES" Multiplicity="1" />
-    <End Role="CLIENTES" Type="kcpdis0dbModel.Store.CLIENTES" Multiplicity="*" />
+    <End Role="PLATAFORMA_X_CLIENTES" Type="CRMTOOLSEntitiesModel.Store.PLATAFORMA_X_CLIENTES" Multiplicity="1" />
+    <End Role="CLIENTES" Type="CRMTOOLSEntitiesModel.Store.CLIENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PLATAFORMA_X_CLIENTES">
         <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
@@ -620,8 +669,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CLIENTES_SELLIN">
-    <End Role="SELLIN" Type="kcpdis0dbModel.Store.SELLIN" Multiplicity="1" />
-    <End Role="CLIENTES" Type="kcpdis0dbModel.Store.CLIENTES" Multiplicity="*" />
+    <End Role="SELLIN" Type="CRMTOOLSEntitiesModel.Store.SELLIN" Multiplicity="1" />
+    <End Role="CLIENTES" Type="CRMTOOLSEntitiesModel.Store.CLIENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="SELLIN">
         <PropertyRef Name="CODIGO_CLIENTE" />
@@ -632,8 +681,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CLIENTESDI_X_KAM_KAM">
-    <End Role="KAM" Type="kcpdis0dbModel.Store.KAM" Multiplicity="1" />
-    <End Role="CLIENTESDI_X_KAM" Type="kcpdis0dbModel.Store.CLIENTESDI_X_KAM" Multiplicity="*" />
+    <End Role="KAM" Type="CRMTOOLSEntitiesModel.Store.KAM" Multiplicity="1" />
+    <End Role="CLIENTESDI_X_KAM" Type="CRMTOOLSEntitiesModel.Store.CLIENTESDI_X_KAM" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="KAM">
         <PropertyRef Name="KAM_ID" />
@@ -644,8 +693,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_DIVISION_TERRITORIAL_PAISES">
-    <End Role="PAISES" Type="kcpdis0dbModel.Store.PAISES" Multiplicity="1" />
-    <End Role="DIVISION_TERRITORIAL" Type="kcpdis0dbModel.Store.DIVISION_TERRITORIAL" Multiplicity="*" />
+    <End Role="PAISES" Type="CRMTOOLSEntitiesModel.Store.PAISES" Multiplicity="1" />
+    <End Role="DIVISION_TERRITORIAL" Type="CRMTOOLSEntitiesModel.Store.DIVISION_TERRITORIAL" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PAISES">
         <PropertyRef Name="ID_COUNTRY" />
@@ -656,8 +705,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_JERARQUIA_GLOBAL_JERARQUIA_LAO">
-    <End Role="JERARQUIA_LAO" Type="kcpdis0dbModel.Store.JERARQUIA_LAO" Multiplicity="1" />
-    <End Role="JERARQUIA_GLOBAL" Type="kcpdis0dbModel.Store.JERARQUIA_GLOBAL" Multiplicity="0..1" />
+    <End Role="JERARQUIA_LAO" Type="CRMTOOLSEntitiesModel.Store.JERARQUIA_LAO" Multiplicity="1" />
+    <End Role="JERARQUIA_GLOBAL" Type="CRMTOOLSEntitiesModel.Store.JERARQUIA_GLOBAL" Multiplicity="0..1" />
     <ReferentialConstraint>
       <Principal Role="JERARQUIA_LAO">
         <PropertyRef Name="CODIGO" />
@@ -668,8 +717,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_LOG_LOGIN_USERS">
-    <End Role="USERS" Type="kcpdis0dbModel.Store.USERS" Multiplicity="1" />
-    <End Role="LOG_LOGIN" Type="kcpdis0dbModel.Store.LOG_LOGIN" Multiplicity="*" />
+    <End Role="USERS" Type="CRMTOOLSEntitiesModel.Store.USERS" Multiplicity="1" />
+    <End Role="LOG_LOGIN" Type="CRMTOOLSEntitiesModel.Store.LOG_LOGIN" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="USERS">
         <PropertyRef Name="USER_ID" />
@@ -680,8 +729,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS">
-    <End Role="PLATAFORMAS" Type="kcpdis0dbModel.Store.PLATAFORMAS" Multiplicity="1" />
-    <End Role="PLATAFORMA_X_CLIENTES" Type="kcpdis0dbModel.Store.PLATAFORMA_X_CLIENTES" Multiplicity="*" />
+    <End Role="PLATAFORMAS" Type="CRMTOOLSEntitiesModel.Store.PLATAFORMAS" Multiplicity="1" />
+    <End Role="PLATAFORMA_X_CLIENTES" Type="CRMTOOLSEntitiesModel.Store.PLATAFORMA_X_CLIENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PLATAFORMAS">
         <PropertyRef Name="CODIGO_PLATAFORMA" />
@@ -692,8 +741,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS">
-    <End Role="PRIVILEGIOS" Type="kcpdis0dbModel.Store.PRIVILEGIOS" Multiplicity="1" />
-    <End Role="PRIVILEGIOS_X_ROL" Type="kcpdis0dbModel.Store.PRIVILEGIOS_X_ROL" Multiplicity="0..1" />
+    <End Role="PRIVILEGIOS" Type="CRMTOOLSEntitiesModel.Store.PRIVILEGIOS" Multiplicity="1" />
+    <End Role="PRIVILEGIOS_X_ROL" Type="CRMTOOLSEntitiesModel.Store.PRIVILEGIOS_X_ROL" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PRIVILEGIOS">
         <PropertyRef Name="PRIVILEGIO_ID" />
@@ -704,8 +753,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_PRIVILEGIOS_X_ROL_ROLES">
-    <End Role="ROLES" Type="kcpdis0dbModel.Store.ROLES" Multiplicity="1" />
-    <End Role="PRIVILEGIOS_X_ROL" Type="kcpdis0dbModel.Store.PRIVILEGIOS_X_ROL" Multiplicity="*" />
+    <End Role="ROLES" Type="CRMTOOLSEntitiesModel.Store.ROLES" Multiplicity="1" />
+    <End Role="PRIVILEGIOS_X_ROL" Type="CRMTOOLSEntitiesModel.Store.PRIVILEGIOS_X_ROL" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="ROLES">
         <PropertyRef Name="ID_ROL" />
@@ -716,8 +765,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS">
-    <End Role="PRODUCTOS" Type="kcpdis0dbModel.Store.PRODUCTOS" Multiplicity="1" />
-    <End Role="PRODUCTOS_EQUIVALENTES" Type="kcpdis0dbModel.Store.PRODUCTOS_EQUIVALENTES" Multiplicity="*" />
+    <End Role="PRODUCTOS" Type="CRMTOOLSEntitiesModel.Store.PRODUCTOS" Multiplicity="1" />
+    <End Role="PRODUCTOS_EQUIVALENTES" Type="CRMTOOLSEntitiesModel.Store.PRODUCTOS_EQUIVALENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PRODUCTOS">
         <PropertyRef Name="CODIGO_MATERIAL" />
@@ -728,8 +777,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_ROLES_X_USUARIO_ROLES">
-    <End Role="ROLES" Type="kcpdis0dbModel.Store.ROLES" Multiplicity="1" />
-    <End Role="ROLES_X_USUARIO" Type="kcpdis0dbModel.Store.ROLES_X_USUARIO" Multiplicity="*" />
+    <End Role="ROLES" Type="CRMTOOLSEntitiesModel.Store.ROLES" Multiplicity="1" />
+    <End Role="ROLES_X_USUARIO" Type="CRMTOOLSEntitiesModel.Store.ROLES_X_USUARIO" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="ROLES">
         <PropertyRef Name="ID_ROL" />
@@ -740,8 +789,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_ROLES_X_USUARIO_USERS">
-    <End Role="USERS" Type="kcpdis0dbModel.Store.USERS" Multiplicity="1" />
-    <End Role="ROLES_X_USUARIO" Type="kcpdis0dbModel.Store.ROLES_X_USUARIO" Multiplicity="*" />
+    <End Role="USERS" Type="CRMTOOLSEntitiesModel.Store.USERS" Multiplicity="1" />
+    <End Role="ROLES_X_USUARIO" Type="CRMTOOLSEntitiesModel.Store.ROLES_X_USUARIO" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="USERS">
         <PropertyRef Name="USER_ID" />
@@ -752,8 +801,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_SELLIN_PAISES">
-    <End Role="PAISES" Type="kcpdis0dbModel.Store.PAISES" Multiplicity="1" />
-    <End Role="SELLIN" Type="kcpdis0dbModel.Store.SELLIN" Multiplicity="*" />
+    <End Role="PAISES" Type="CRMTOOLSEntitiesModel.Store.PAISES" Multiplicity="1" />
+    <End Role="SELLIN" Type="CRMTOOLSEntitiesModel.Store.SELLIN" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PAISES">
         <PropertyRef Name="ID_COUNTRY" />
@@ -764,8 +813,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_SELLOUT_DISTRIBUIDORES">
-    <End Role="DISTRIBUIDORES" Type="kcpdis0dbModel.Store.DISTRIBUIDORES" Multiplicity="1" />
-    <End Role="SELLOUT" Type="kcpdis0dbModel.Store.SELLOUT" Multiplicity="*" />
+    <End Role="DISTRIBUIDORES" Type="CRMTOOLSEntitiesModel.Store.DISTRIBUIDORES" Multiplicity="1" />
+    <End Role="SELLOUT" Type="CRMTOOLSEntitiesModel.Store.SELLOUT" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="DISTRIBUIDORES">
         <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
@@ -776,8 +825,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_SELLOUT_PRODUCTOS_EQUIVALENTES">
-    <End Role="PRODUCTOS_EQUIVALENTES" Type="kcpdis0dbModel.Store.PRODUCTOS_EQUIVALENTES" Multiplicity="1" />
-    <End Role="SELLOUT" Type="kcpdis0dbModel.Store.SELLOUT" Multiplicity="*" />
+    <End Role="PRODUCTOS_EQUIVALENTES" Type="CRMTOOLSEntitiesModel.Store.PRODUCTOS_EQUIVALENTES" Multiplicity="1" />
+    <End Role="SELLOUT" Type="CRMTOOLSEntitiesModel.Store.SELLOUT" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PRODUCTOS_EQUIVALENTES">
         <PropertyRef Name="CODIGO_PRODUCTO_DISTRIBUIDOR" />
@@ -792,8 +841,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_SUB_SEGMENTO_SEGMENTOS">
-    <End Role="SEGMENTOS" Type="kcpdis0dbModel.Store.SEGMENTOS" Multiplicity="1" />
-    <End Role="SUB_SEGMENTO" Type="kcpdis0dbModel.Store.SUB_SEGMENTO" Multiplicity="*" />
+    <End Role="SEGMENTOS" Type="CRMTOOLSEntitiesModel.Store.SEGMENTOS" Multiplicity="1" />
+    <End Role="SUB_SEGMENTO" Type="CRMTOOLSEntitiesModel.Store.SUB_SEGMENTO" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="SEGMENTOS">
         <PropertyRef Name="SEGMENT_ID" />

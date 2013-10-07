@@ -1,0 +1,2442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CRMToolsEntities.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="CRMToolsEntitiesStoreContainer">
+          <EntitySet Name="CAJAS" EntityType="CRMToolsEntities.Store.CAJAS" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="CLIENTES" EntityType="CRMToolsEntities.Store.CLIENTES" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="CLIENTESDI_X_KAM" EntityType="CRMToolsEntities.Store.CLIENTESDI_X_KAM" store:Type="Tables" store:Schema="kcpdis0dbo" store:Name="CLIENTESDI_X_KAM">
+            <DefiningQuery>SELECT 
+      [CLIENTESDI_X_KAM].[CODIGO_CLIENTE_COMPUESTO] AS [CODIGO_CLIENTE_COMPUESTO], 
+      [CLIENTESDI_X_KAM].[KAM_ID] AS [KAM_ID]
+      FROM [kcpdis0dbo].[CLIENTESDI_X_KAM] AS [CLIENTESDI_X_KAM]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="DISTRIBUIDORES" EntityType="CRMToolsEntities.Store.DISTRIBUIDORES" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="DIVISION_TERRITORIAL" EntityType="CRMToolsEntities.Store.DIVISION_TERRITORIAL" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="DOLARES" EntityType="CRMToolsEntities.Store.DOLARES" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="EQUIVALENCIAS_SEGMENTOS" EntityType="CRMToolsEntities.Store.EQUIVALENCIAS_SEGMENTOS" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="GLOBAL_ACCOUNTS" EntityType="CRMToolsEntities.Store.GLOBAL_ACCOUNTS" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="GRUPOS_PRODUCTOS" EntityType="CRMToolsEntities.Store.GRUPOS_PRODUCTOS" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="JERARQUIA_GLOBAL" EntityType="CRMToolsEntities.Store.JERARQUIA_GLOBAL" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="JERARQUIA_LAO" EntityType="CRMToolsEntities.Store.JERARQUIA_LAO" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="KAM" EntityType="CRMToolsEntities.Store.KAM" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="LOG_LOGIN" EntityType="CRMToolsEntities.Store.LOG_LOGIN" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="PAISES" EntityType="CRMToolsEntities.Store.PAISES" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="PLATAFORMA_X_CLIENTES" EntityType="CRMToolsEntities.Store.PLATAFORMA_X_CLIENTES" store:Type="Tables" store:Schema="kcpdis0dbo" store:Name="PLATAFORMA_X_CLIENTES">
+            <DefiningQuery>SELECT 
+      [PLATAFORMA_X_CLIENTES].[CODIGO_CLIENTE_COMPUESTO] AS [CODIGO_CLIENTE_COMPUESTO], 
+      [PLATAFORMA_X_CLIENTES].[CODIGO_PLATAFORMA] AS [CODIGO_PLATAFORMA]
+      FROM [kcpdis0dbo].[PLATAFORMA_X_CLIENTES] AS [PLATAFORMA_X_CLIENTES]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="PLATAFORMAS" EntityType="CRMToolsEntities.Store.PLATAFORMAS" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="PRIVILEGIOS" EntityType="CRMToolsEntities.Store.PRIVILEGIOS" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="PRIVILEGIOS_X_ROL" EntityType="CRMToolsEntities.Store.PRIVILEGIOS_X_ROL" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="PRODUCTOS" EntityType="CRMToolsEntities.Store.PRODUCTOS" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="PRODUCTOS_EQUIVALENTES" EntityType="CRMToolsEntities.Store.PRODUCTOS_EQUIVALENTES" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="ROLES" EntityType="CRMToolsEntities.Store.ROLES" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="ROLES_X_USUARIO" EntityType="CRMToolsEntities.Store.ROLES_X_USUARIO" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="SEGMENTOS" EntityType="CRMToolsEntities.Store.SEGMENTOS" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="SELLIN" EntityType="CRMToolsEntities.Store.SELLIN" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="SELLOUT" EntityType="CRMToolsEntities.Store.SELLOUT" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="SUB_SEGMENTO" EntityType="CRMToolsEntities.Store.SUB_SEGMENTO" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="USERS" EntityType="CRMToolsEntities.Store.USERS" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="VENTAS_NUEVAS" EntityType="CRMToolsEntities.Store.VENTAS_NUEVAS" store:Type="Tables" Schema="kcpdis0dbo" />
+          <EntitySet Name="CLIENTES_VIEW" EntityType="CRMToolsEntities.Store.CLIENTES_VIEW" store:Type="Views" store:Schema="kcpdis0dbo" store:Name="CLIENTES_VIEW">
+            <DefiningQuery>SELECT 
+      [CLIENTES_VIEW].[CODIGO_CLIENTE_COMPUESTO] AS [CODIGO_CLIENTE_COMPUESTO], 
+      [CLIENTES_VIEW].[CODIGO_CLIENTE] AS [CODIGO_CLIENTE], 
+      [CLIENTES_VIEW].[NOMBRE_CLIENTE] AS [NOMBRE_CLIENTE], 
+      [CLIENTES_VIEW].[CODIGO_DISTRIBUIDOR] AS [CODIGO_DISTRIBUIDOR], 
+      [CLIENTES_VIEW].[NOMBRE_DISTRIBUIDOR] AS [NOMBRE_DISTRIBUIDOR], 
+      [CLIENTES_VIEW].[CODIGO_VENDEDOR] AS [CODIGO_VENDEDOR], 
+      [CLIENTES_VIEW].[NOMBRE_VENDEDOR] AS [NOMBRE_VENDEDOR], 
+      [CLIENTES_VIEW].[CIUDAD] AS [CIUDAD], 
+      [CLIENTES_VIEW].[DIRECCION] AS [DIRECCION], 
+      [CLIENTES_VIEW].[TELEFONO_CLIENTE] AS [TELEFONO_CLIENTE], 
+      [CLIENTES_VIEW].[CEDULA_JURIDICA] AS [CEDULA_JURIDICA], 
+      [CLIENTES_VIEW].[NOMBRE_CONTACTO] AS [NOMBRE_CONTACTO], 
+      [CLIENTES_VIEW].[TELEFONO_CONTACTO] AS [TELEFONO_CONTACTO], 
+      [CLIENTES_VIEW].[NOMBRE_COMERCIAL] AS [NOMBRE_COMERCIAL], 
+      [CLIENTES_VIEW].[ID_COUNTRY] AS [ID_COUNTRY], 
+      [CLIENTES_VIEW].[E_MAIL] AS [E_MAIL], 
+      [CLIENTES_VIEW].[SEGMENTO_SC_ID] AS [SEGMENTO_SC_ID], 
+      [CLIENTES_VIEW].[SEGMENTO_KC_ID] AS [SEGMENTO_KC_ID], 
+      [CLIENTES_VIEW].[SUBSEGMENTO_ID] AS [SUBSEGMENTO_ID], 
+      [CLIENTES_VIEW].[TIPO_ABC_DISTRIBUIDOR] AS [TIPO_ABC_DISTRIBUIDOR], 
+      [CLIENTES_VIEW].[TIPO_ABC_PAIS] AS [TIPO_ABC_PAIS], 
+      [CLIENTES_VIEW].[TIPO_ABC_REGION] AS [TIPO_ABC_REGION], 
+      [CLIENTES_VIEW].[TIPO_ABC_SUBREGION] AS [TIPO_ABC_SUBREGION], 
+      [CLIENTES_VIEW].[GRUPO_CLIENTE] AS [GRUPO_CLIENTE], 
+      [CLIENTES_VIEW].[PLATAFORMAS] AS [PLATAFORMAS], 
+      [CLIENTES_VIEW].[GLOBAL_ACCOUNT_ID] AS [GLOBAL_ACCOUNT_ID], 
+      [CLIENTES_VIEW].[STATUS_CLIENTE] AS [STATUS_CLIENTE], 
+      [CLIENTES_VIEW].[SALES_TYPE] AS [SALES_TYPE], 
+      [CLIENTES_VIEW].[FECHA_CREACION] AS [FECHA_CREACION], 
+      [CLIENTES_VIEW].[FECHA_ACTUALIZACION] AS [FECHA_ACTUALIZACION], 
+      [CLIENTES_VIEW].[AGRUPAR] AS [AGRUPAR], 
+      [CLIENTES_VIEW].[SEGMENT_ID] AS [SEGMENT_ID], 
+      [CLIENTES_VIEW].[SEGMENT_NAME] AS [SEGMENT_NAME], 
+      [CLIENTES_VIEW].[SEGMENT_NAME_ING] AS [SEGMENT_NAME_ING], 
+      [CLIENTES_VIEW].[COD_SEGMENT_IMPORT] AS [COD_SEGMENT_IMPORT], 
+      [CLIENTES_VIEW].[NAME_SEGMENT_IMPORT] AS [NAME_SEGMENT_IMPORT], 
+      [CLIENTES_VIEW].[Expr1] AS [Expr1]
+      FROM [kcpdis0dbo].[CLIENTES_VIEW] AS [CLIENTES_VIEW]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="PRIVILEGIOSXUSER" EntityType="CRMToolsEntities.Store.PRIVILEGIOSXUSER" store:Type="Views" store:Schema="kcpdis0dbo" store:Name="PRIVILEGIOSXUSER">
+            <DefiningQuery>SELECT 
+      [PRIVILEGIOSXUSER].[PRIVILEGIO_ID] AS [PRIVILEGIO_ID], 
+      [PRIVILEGIOSXUSER].[PRIVILEGIO_LLAVE] AS [PRIVILEGIO_LLAVE], 
+      [PRIVILEGIOSXUSER].[DESCRIPCION] AS [DESCRIPCION], 
+      [PRIVILEGIOSXUSER].[ID_ROL] AS [ID_ROL], 
+      [PRIVILEGIOSXUSER].[NOMBRE_ROL] AS [NOMBRE_ROL], 
+      [PRIVILEGIOSXUSER].[DESCRIPCION_ROL] AS [DESCRIPCION_ROL], 
+      [PRIVILEGIOSXUSER].[USER_ID] AS [USER_ID], 
+      [PRIVILEGIOSXUSER].[USER_NAME] AS [USER_NAME], 
+      [PRIVILEGIOSXUSER].[PASSWORD] AS [PASSWORD], 
+      [PRIVILEGIOSXUSER].[LOGIN_ID] AS [LOGIN_ID], 
+      [PRIVILEGIOSXUSER].[NAME] AS [NAME], 
+      [PRIVILEGIOSXUSER].[LAST_NAME] AS [LAST_NAME], 
+      [PRIVILEGIOSXUSER].[STATUS] AS [STATUS], 
+      [PRIVILEGIOSXUSER].[ID_COUNTRY] AS [ID_COUNTRY], 
+      [PRIVILEGIOSXUSER].[E_MAIL] AS [E_MAIL]
+      FROM [kcpdis0dbo].[PRIVILEGIOSXUSER] AS [PRIVILEGIOSXUSER]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_CLIENTES_GLOBAL_ACCOUNTS" Association="CRMToolsEntities.Store.FK_CLIENTES_GLOBAL_ACCOUNTS">
+            <End Role="GLOBAL_ACCOUNTS" EntitySet="GLOBAL_ACCOUNTS" />
+            <End Role="CLIENTES" EntitySet="CLIENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CLIENTESDI_X_KAM_KAM" Association="CRMToolsEntities.Store.FK_CLIENTESDI_X_KAM_KAM">
+            <End Role="KAM" EntitySet="KAM" />
+            <End Role="CLIENTESDI_X_KAM" EntitySet="CLIENTESDI_X_KAM" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DIVISION_TERRITORIAL_PAISES" Association="CRMToolsEntities.Store.FK_DIVISION_TERRITORIAL_PAISES">
+            <End Role="PAISES" EntitySet="PAISES" />
+            <End Role="DIVISION_TERRITORIAL" EntitySet="DIVISION_TERRITORIAL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EQUIVALENCIAS_SEGMENTOS_SEGMENTOS" Association="CRMToolsEntities.Store.FK_EQUIVALENCIAS_SEGMENTOS_SEGMENTOS">
+            <End Role="SEGMENTOS" EntitySet="SEGMENTOS" />
+            <End Role="EQUIVALENCIAS_SEGMENTOS" EntitySet="EQUIVALENCIAS_SEGMENTOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JERARQUIA_GLOBAL_JERARQUIA_LAO" Association="CRMToolsEntities.Store.FK_JERARQUIA_GLOBAL_JERARQUIA_LAO">
+            <End Role="JERARQUIA_LAO" EntitySet="JERARQUIA_LAO" />
+            <End Role="JERARQUIA_GLOBAL" EntitySet="JERARQUIA_GLOBAL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LOG_LOGIN_USERS" Association="CRMToolsEntities.Store.FK_LOG_LOGIN_USERS">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="LOG_LOGIN" EntitySet="LOG_LOGIN" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS" Association="CRMToolsEntities.Store.FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS">
+            <End Role="PLATAFORMAS" EntitySet="PLATAFORMAS" />
+            <End Role="PLATAFORMA_X_CLIENTES" EntitySet="PLATAFORMA_X_CLIENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS" Association="CRMToolsEntities.Store.FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS">
+            <End Role="PRIVILEGIOS" EntitySet="PRIVILEGIOS" />
+            <End Role="PRIVILEGIOS_X_ROL" EntitySet="PRIVILEGIOS_X_ROL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRIVILEGIOS_X_ROL_ROLES" Association="CRMToolsEntities.Store.FK_PRIVILEGIOS_X_ROL_ROLES">
+            <End Role="ROLES" EntitySet="ROLES" />
+            <End Role="PRIVILEGIOS_X_ROL" EntitySet="PRIVILEGIOS_X_ROL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ROLES_X_USUARIO_ROLES" Association="CRMToolsEntities.Store.FK_ROLES_X_USUARIO_ROLES">
+            <End Role="ROLES" EntitySet="ROLES" />
+            <End Role="ROLES_X_USUARIO" EntitySet="ROLES_X_USUARIO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ROLES_X_USUARIO_USERS" Association="CRMToolsEntities.Store.FK_ROLES_X_USUARIO_USERS">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="ROLES_X_USUARIO" EntitySet="ROLES_X_USUARIO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SELLIN_PAISES" Association="CRMToolsEntities.Store.FK_SELLIN_PAISES">
+            <End Role="PAISES" EntitySet="PAISES" />
+            <End Role="SELLIN" EntitySet="SELLIN" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SELLOUT_DISTRIBUIDORES" Association="CRMToolsEntities.Store.FK_SELLOUT_DISTRIBUIDORES">
+            <End Role="DISTRIBUIDORES" EntitySet="DISTRIBUIDORES" />
+            <End Role="SELLOUT" EntitySet="SELLOUT" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CAJAS">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Name="Codigo" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Q" Type="text" Nullable="false" />
+          <Property Name="Folded Bath" Type="int" Nullable="false" />
+          <Property Name="Jumbo Roll Bath" Type="int" Nullable="false" />
+          <Property Name="Standard Roll Bath" Type="int" Nullable="false" />
+          <Property Name="Group Bath Tissue" Type="int" Nullable="false" />
+          <Property Name="Washroom Facial Flats" Type="int" Nullable="false" />
+          <Property Name="Washroom Facial Pocket Pack" Type="int" Nullable="false" />
+          <Property Name="Washroom Facial Uprights" Type="int" Nullable="false" />
+          <Property Name="Group Facial" Type="int" Nullable="false" />
+          <Property Name="Air Fresheners" Type="int" Nullable="false" />
+          <Property Name="Disposal Containers" Type="int" Nullable="false" />
+          <Property Name="Sanitary Bags" Type="int" Nullable="false" />
+          <Property Name="Seat Covers" Type="int" Nullable="false" />
+          <Property Name="Seat Sanitizers" Type="int" Nullable="false" />
+          <Property Name="Urinal Screens" Type="int" Nullable="false" />
+          <Property Name="Group HH&amp;T Other" Type="int" Nullable="false" />
+          <Property Name="Skincare Bag-in-Box" Type="int" Nullable="false" />
+          <Property Name="Skincare Bottles" Type="int" Nullable="false" />
+          <Property Name="Skincare Bulk" Type="int" Nullable="false" />
+          <Property Name="Skincare Cassette" Type="int" Nullable="false" />
+          <Property Name="Skincare SureTouch" Type="int" Nullable="false" />
+          <Property Name="Group Skincare" Type="int" Nullable="false" />
+          <Property Name="Packaged Beverage" Type="int" Nullable="false" />
+          <Property Name="Packaged Dinner" Type="int" Nullable="false" />
+          <Property Name="Packaged Luncheon" Type="int" Nullable="false" />
+          <Property Name="Tabletop Dispenser" Type="int" Nullable="false" />
+          <Property Name="Group Tabletop" Type="int" Nullable="false" />
+          <Property Name="Center Pull Towels" Type="int" Nullable="false" />
+          <Property Name="Folded Towels" Type="int" Nullable="false" />
+          <Property Name="Hard Rolled Towels" Type="int" Nullable="false" />
+          <Property Name="Kitchen Rolled Towels" Type="int" Nullable="false" />
+          <Property Name="Group Towels" Type="int" Nullable="false" />
+          <Property Name="Skincare Hand Sanitizer Bag-in" Type="int" Nullable="false" />
+          <Property Name="Group Hand Sanitizer" Type="int" Nullable="false" />
+          <Property Name="Industrial Apparel" Type="int" Nullable="false" />
+          <Property Name="Industrial Face Protection" Type="int" Nullable="false" />
+          <Property Name="Industrial Gloves" Type="int" Nullable="false" />
+          <Property Name="Industrial Head Protection" Type="int" Nullable="false" />
+          <Property Name="Industrial Hearing" Type="int" Nullable="false" />
+          <Property Name="Industrial Respirators" Type="int" Nullable="false" />
+          <Property Name="Industrial Vision" Type="int" Nullable="false" />
+          <Property Name="Group Industrial PPE" Type="int" Nullable="false" />
+          <Property Name="Industrial Welding Accessories" Type="int" Nullable="false" />
+          <Property Name="Industrial Welding Helmets" Type="int" Nullable="false" />
+          <Property Name="Group Industrial Welding" Type="int" Nullable="false" />
+          <Property Name="Industrial WKZ Channelizers/Drums/Cones" Type="int" Nullable="false" />
+          <Property Name="Industrial WKZ Highway Safety" Type="int" Nullable="false" />
+          <Property Name="Industrial WKZ Hi-Viz &amp; Seasonal" Type="int" Nullable="false" />
+          <Property Name="Industrial WKZ Other Industrial Safety" Type="int" Nullable="false" />
+          <Property Name="Group Industrial Work Zone" Type="int" Nullable="false" />
+          <Property Name="Tissue Parent Roll Sales KCP" Type="int" Nullable="false" />
+          <Property Name="Group Other KCP" Type="int" Nullable="false" />
+          <Property Name="Lab Apparel" Type="int" Nullable="false" />
+          <Property Name="Group Scientific PPE" Type="int" Nullable="false" />
+          <Property Name="Extended Use Wipers" Type="int" Nullable="false" />
+          <Property Name="Group Extended Use Wipers" Type="int" Nullable="false" />
+          <Property Name="Limited Use Wipers" Type="int" Nullable="false" />
+          <Property Name="Group Limited Use Wipers" Type="int" Nullable="false" />
+          <Property Name="Other Wipers" Type="int" Nullable="false" />
+          <Property Name="Group Other Wipers" Type="int" Nullable="false" />
+          <Property Name="Specialty Wipers" Type="int" Nullable="false" />
+          <Property Name="Group Specialty Wipers" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CLIENTES">
+          <Key>
+            <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+            <PropertyRef Name="CODIGO_CLIENTE" />
+          </Key>
+          <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="CODIGO_CLIENTE" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="NOMBRE_CLIENTE" Type="nvarchar" Nullable="false" MaxLength="70" />
+          <Property Name="CODIGO_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="NOMBRE_DISTRIBUIDOR" Type="nvarchar" MaxLength="70" />
+          <Property Name="CODIGO_VENDEDOR" Type="nvarchar" MaxLength="50" />
+          <Property Name="NOMBRE_VENDEDOR" Type="nvarchar" MaxLength="70" />
+          <Property Name="CIUDAD" Type="nvarchar" MaxLength="50" />
+          <Property Name="DIRECCION" Type="ntext" />
+          <Property Name="TELEFONO_CLIENTE" Type="nvarchar" MaxLength="15" />
+          <Property Name="CEDULA_JURIDICA" Type="nvarchar" MaxLength="100" />
+          <Property Name="NOMBRE_CONTACTO" Type="nvarchar" MaxLength="50" />
+          <Property Name="TELEFONO_CONTACTO" Type="nvarchar" MaxLength="15" />
+          <Property Name="NOMBRE_COMERCIAL" Type="nvarchar" MaxLength="50" />
+          <Property Name="ID_COUNTRY" Type="nvarchar" MaxLength="6" />
+          <Property Name="E_MAIL" Type="nchar" MaxLength="50" />
+          <Property Name="SEGMENTO_SC_ID" Type="int" />
+          <Property Name="SEGMENTO_KC_ID" Type="int" />
+          <Property Name="SUBSEGMENTO_ID" Type="int" />
+          <Property Name="TIPO_ABC_DISTRIBUIDOR" Type="nchar" MaxLength="5" />
+          <Property Name="TIPO_ABC_PAIS" Type="nchar" MaxLength="5" />
+          <Property Name="TIPO_ABC_REGION" Type="nchar" MaxLength="5" />
+          <Property Name="TIPO_ABC_SUBREGION" Type="nchar" MaxLength="5" />
+          <Property Name="GRUPO_CLIENTE" Type="nvarchar" MaxLength="70" />
+          <Property Name="PLATAFORMAS" Type="nvarchar" MaxLength="30" />
+          <Property Name="GLOBAL_ACCOUNT_ID" Type="int" />
+          <Property Name="GLOBAL_ACCOUNT_NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="STATUS_CLIENTE" Type="bit" />
+          <Property Name="SALES_TYPE" Type="text" />
+          <Property Name="FECHA_CREACION" Type="date" Nullable="false" />
+          <Property Name="FECHA_ACTUALIZACION" Type="date" Nullable="false" />
+          <Property Name="AGRUPAR" Type="bit" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'kcpdis0db.kcpdis0dbo.CLIENTESDI_X_KAM' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="CLIENTESDI_X_KAM">
+          <Key>
+            <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+            
+          </Key>
+          <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="KAM_ID" Type="nvarchar" Nullable="false" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="DISTRIBUIDORES">
+          <Key>
+            <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+          </Key>
+          <Property Name="CODIGO_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="NOMBRE_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="80" />
+          <Property Name="NOMBRE_CORTO" Type="nvarchar" MaxLength="50" />
+          <Property Name="KAM_ID" Type="nvarchar" MaxLength="10" />
+          <Property Name="GBA" Type="nvarchar" MaxLength="50" />
+          <Property Name="PAIS" Type="nvarchar" MaxLength="6" />
+          <Property Name="Import" Type="bit" />
+          <Property Name="UseOnKPI" Type="bit" />
+        </EntityType>
+        <EntityType Name="DIVISION_TERRITORIAL">
+          <Key>
+            <PropertyRef Name="COUNTRY_ID" />
+            <PropertyRef Name="DIVISION_ID" />
+            <PropertyRef Name="CITY_ID" />
+          </Key>
+          <Property Name="COUNTRY_ID" Type="nvarchar" Nullable="false" MaxLength="6" />
+          <Property Name="DIVISION_ID" Type="nvarchar" Nullable="false" MaxLength="6" />
+          <Property Name="CITY_ID" Type="nvarchar" Nullable="false" MaxLength="6" />
+          <Property Name="DIVISION_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CITY_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DOLARES">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Name="Codigo" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Q" Type="text" Nullable="false" />
+          <Property Name="Folded Bath" Type="int" Nullable="false" />
+          <Property Name="Jumbo Roll Bath" Type="int" Nullable="false" />
+          <Property Name="Standard Roll Bath" Type="int" Nullable="false" />
+          <Property Name="Group Bath Tissue" Type="int" Nullable="false" />
+          <Property Name="Washroom Facial Flats" Type="int" Nullable="false" />
+          <Property Name="Washroom Facial Pocket Pack" Type="int" Nullable="false" />
+          <Property Name="Washroom Facial Uprights" Type="int" Nullable="false" />
+          <Property Name="Group Facial" Type="int" Nullable="false" />
+          <Property Name="Air Fresheners" Type="int" Nullable="false" />
+          <Property Name="Disposal Containers" Type="int" Nullable="false" />
+          <Property Name="Sanitary Bags" Type="int" Nullable="false" />
+          <Property Name="Seat Covers" Type="int" Nullable="false" />
+          <Property Name="Seat Sanitizers" Type="int" Nullable="false" />
+          <Property Name="Urinal Screens" Type="int" Nullable="false" />
+          <Property Name="Group HH&amp;T Other" Type="int" Nullable="false" />
+          <Property Name="Skincare Bag-in-Box" Type="int" Nullable="false" />
+          <Property Name="Skincare Bottles" Type="int" Nullable="false" />
+          <Property Name="Skincare Bulk" Type="int" Nullable="false" />
+          <Property Name="Skincare Cassette" Type="int" Nullable="false" />
+          <Property Name="Skincare SureTouch" Type="int" Nullable="false" />
+          <Property Name="Group Skincare" Type="int" Nullable="false" />
+          <Property Name="Packaged Beverage" Type="int" Nullable="false" />
+          <Property Name="Packaged Dinner" Type="int" Nullable="false" />
+          <Property Name="Packaged Luncheon" Type="int" Nullable="false" />
+          <Property Name="Tabletop Dispenser" Type="int" Nullable="false" />
+          <Property Name="Group Tabletop" Type="int" Nullable="false" />
+          <Property Name="Center Pull Towels" Type="int" Nullable="false" />
+          <Property Name="Folded Towels" Type="int" Nullable="false" />
+          <Property Name="Hard Rolled Towels" Type="int" Nullable="false" />
+          <Property Name="Kitchen Rolled Towels" Type="int" Nullable="false" />
+          <Property Name="Group Towels" Type="int" Nullable="false" />
+          <Property Name="Skincare Hand Sanitizer Bag-in" Type="int" Nullable="false" />
+          <Property Name="Group Hand Sanitizer" Type="int" Nullable="false" />
+          <Property Name="Industrial Apparel" Type="int" Nullable="false" />
+          <Property Name="Industrial Face Protection" Type="int" Nullable="false" />
+          <Property Name="Industrial Gloves" Type="int" Nullable="false" />
+          <Property Name="Industrial Head Protection" Type="int" Nullable="false" />
+          <Property Name="Industrial Hearing" Type="int" Nullable="false" />
+          <Property Name="Industrial Respirators" Type="int" Nullable="false" />
+          <Property Name="Industrial Vision" Type="int" Nullable="false" />
+          <Property Name="Group Industrial PPE" Type="int" Nullable="false" />
+          <Property Name="Industrial Welding Accessories" Type="int" Nullable="false" />
+          <Property Name="Industrial Welding Helmets" Type="int" Nullable="false" />
+          <Property Name="Group Industrial Welding" Type="int" Nullable="false" />
+          <Property Name="Industrial WKZ Channelizers/Drums/Cones" Type="int" Nullable="false" />
+          <Property Name="Industrial WKZ Highway Safety" Type="int" Nullable="false" />
+          <Property Name="Industrial WKZ Hi-Viz &amp; Seasonal" Type="int" Nullable="false" />
+          <Property Name="Industrial WKZ Other Industrial Safety" Type="int" Nullable="false" />
+          <Property Name="Group Industrial Work Zone" Type="int" Nullable="false" />
+          <Property Name="Tissue Parent Roll Sales KCP" Type="int" Nullable="false" />
+          <Property Name="Group Other KCP" Type="int" Nullable="false" />
+          <Property Name="Lab Apparel" Type="int" Nullable="false" />
+          <Property Name="Group Scientific PPE" Type="int" Nullable="false" />
+          <Property Name="Extended Use Wipers" Type="int" Nullable="false" />
+          <Property Name="Group Extended Use Wipers" Type="int" Nullable="false" />
+          <Property Name="Limited Use Wipers" Type="int" Nullable="false" />
+          <Property Name="Group Limited Use Wipers" Type="int" Nullable="false" />
+          <Property Name="Other Wipers" Type="int" Nullable="false" />
+          <Property Name="Group Other Wipers" Type="int" Nullable="false" />
+          <Property Name="Specialty Wipers" Type="int" Nullable="false" />
+          <Property Name="Group Specialty Wipers" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EQUIVALENCIAS_SEGMENTOS">
+          <Key>
+            <PropertyRef Name="COD_SEGMENT_IMPORT" />
+          </Key>
+          <Property Name="COD_SEGMENT_IMPORT" Type="int" Nullable="false" />
+          <Property Name="NAME_SEGMENT_IMPORT" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="SEGMENT_ID" Type="int" Nullable="false" />
+          <Property Name="FECHA_CREACION" Type="datetime" />
+          <Property Name="FECHA_ACTUALIZACION" Type="datetime" />
+        </EntityType>
+        <EntityType Name="GLOBAL_ACCOUNTS">
+          <Key>
+            <PropertyRef Name="GLOBAL_ACCOUNT_ID" />
+          </Key>
+          <Property Name="GLOBAL_ACCOUNT_ID" Type="int" Nullable="false" />
+          <Property Name="NOMBRE_GLOBAL_ACCOUNT" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="GRUPOS_PRODUCTOS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LAO_GROUP" Type="nvarchar" MaxLength="50" />
+          <Property Name="ESTRATEGIC_GROUP" Type="nvarchar" MaxLength="50" />
+          <Property Name="NIVEL1" Type="nvarchar" MaxLength="50" />
+          <Property Name="NIVEL2" Type="nvarchar" MaxLength="50" />
+          <Property Name="NIVEL3" Type="nvarchar" MaxLength="50" />
+          <Property Name="NIVEL4" Type="nvarchar" MaxLength="50" />
+          <Property Name="NIVEL5" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="JERARQUIA_GLOBAL">
+          <Key>
+            <PropertyRef Name="CODIGO" />
+          </Key>
+          <Property Name="CODIGO" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="L4" Type="nvarchar" MaxLength="50" />
+          <Property Name="L5" Type="nvarchar" MaxLength="50" />
+          <Property Name="L12_MATERIAL" Type="nvarchar" MaxLength="50" />
+          <Property Name="LAO_GROUP" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="STRATEGIC_GROUP" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="NIVEL1" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="NIVEL2" Type="nvarchar" MaxLength="50" />
+          <Property Name="NIVEL3" Type="nvarchar" MaxLength="50" />
+          <Property Name="NIVEL4" Type="nvarchar" MaxLength="50" />
+          <Property Name="NIVEL5" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="JERARQUIA_LAO">
+          <Key>
+            <PropertyRef Name="CODIGO" />
+          </Key>
+          <Property Name="CODIGO" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="L1_SEGMENT" Type="nvarchar" MaxLength="50" />
+          <Property Name="L2_PLATFORM" Type="nvarchar" MaxLength="50" />
+          <Property Name="L3_BUSINESS" Type="nvarchar" MaxLength="50" />
+          <Property Name="L4_BUSINESS_SUBGROUP" Type="nvarchar" MaxLength="50" />
+          <Property Name="L5_CATEGORY" Type="nvarchar" MaxLength="50" />
+          <Property Name="L6_BRAND_CATEGORY" Type="nvarchar" MaxLength="50" />
+          <Property Name="L7_VARIANT_1" Type="nvarchar" MaxLength="50" />
+          <Property Name="L8_VARIANT_2" Type="nvarchar" MaxLength="50" />
+          <Property Name="L9_FORMAT" Type="nvarchar" MaxLength="50" />
+          <Property Name="L10_PACKING" Type="nvarchar" MaxLength="50" />
+          <Property Name="L11_SKU" Type="nvarchar" MaxLength="50" />
+          <Property Name="L12_MATERIAL" Type="nvarchar" MaxLength="50" />
+          <Property Name="REGION" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="KAM">
+          <Key>
+            <PropertyRef Name="KAM_ID" />
+          </Key>
+          <Property Name="KAM_ID" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="KAM_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="KAM_eMAIL" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="KAM_ACTIVE" Type="bit" Nullable="false" />
+          <Property Name="GBA" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
+        </EntityType>
+        <EntityType Name="LOG_LOGIN">
+          <Key>
+            <PropertyRef Name="LOG_ID" />
+          </Key>
+          <Property Name="LOG_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LOGIN_ID" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="USER_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="LOGIN" Type="datetime" />
+          <Property Name="LOGOUT" Type="datetime" />
+          <Property Name="HISTORY" Type="ntext" />
+        </EntityType>
+        <EntityType Name="PAISES">
+          <Key>
+            <PropertyRef Name="ID_COUNTRY" />
+          </Key>
+          <Property Name="ID_COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
+          <Property Name="COUNTRY_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="REGION" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="SUB_REGION" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="SALES_ORGANIZATION" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="TAX_RATE" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'kcpdis0db.kcpdis0dbo.PLATAFORMA_X_CLIENTES' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="PLATAFORMA_X_CLIENTES">
+          <Key>
+            <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+            
+          </Key>
+          <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="CODIGO_PLATAFORMA" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PLATAFORMAS">
+          <Key>
+            <PropertyRef Name="CODIGO_PLATAFORMA" />
+          </Key>
+          <Property Name="CODIGO_PLATAFORMA" Type="int" Nullable="false" />
+          <Property Name="NOMBRE_PLATAFORMA" Type="nvarchar" Nullable="false" MaxLength="70" />
+          <Property Name="DESCRIPCION_PLATAFORMA" Type="nvarchar" Nullable="false" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="PRIVILEGIOS">
+          <Key>
+            <PropertyRef Name="PRIVILEGIO_ID" />
+          </Key>
+          <Property Name="PRIVILEGIO_ID" Type="int" Nullable="false" />
+          <Property Name="PRIVILEGIO_LLAVE" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="DESCRIPCION" Type="nvarchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="PRIVILEGIOS_X_ROL">
+          <Key>
+            <PropertyRef Name="PRIVILEGIOXROLID" />
+          </Key>
+          <Property Name="PRIVILEGIOXROLID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PRIVILEGIO_ID" Type="int" Nullable="false" />
+          <Property Name="ID_ROL" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PRODUCTOS">
+          <Key>
+            <PropertyRef Name="CODIGO_MATERIAL" />
+          </Key>
+          <Property Name="CODIGO_MATERIAL" Type="nvarchar" Nullable="false" MaxLength="40" />
+          <Property Name="DESCRIPCION" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CODIGO_CORTO" Type="nvarchar" Nullable="false" MaxLength="40" />
+          <Property Name="NIVEL1" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="NIVEL2" Type="nvarchar" MaxLength="50" />
+          <Property Name="NIVEL3" Type="nvarchar" MaxLength="50" />
+          <Property Name="NIVEL4" Type="nvarchar" MaxLength="50" />
+          <Property Name="NIVEL5" Type="nvarchar" MaxLength="50" />
+          <Property Name="FACTOR_GSU" Type="real" Nullable="false" />
+          <Property Name="LAO_GROUP" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="STRATEGIC_GROUP" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PRODUCTOS_EQUIVALENTES">
+          <Key>
+            <PropertyRef Name="CODIGO_PRODUCTO_DISTRIBUIDOR" />
+            <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+            <PropertyRef Name="ID_COUNTRY" />
+          </Key>
+          <Property Name="CODIGO_PRODUCTO_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CODIGO_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ID_COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
+          <Property Name="DESCRIPCION_PRODUCTO_DISTR" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CODIGO_PRODUCTO_SAP" Type="nvarchar" Nullable="false" MaxLength="40" />
+          <Property Name="TIPO_MEDIDA" Type="nvarchar" MaxLength="10" />
+          <Property Name="CANTIDAD" Type="int" />
+          <Property Name="VC" Type="real" />
+          <Property Name="VALOR" Type="real" />
+        </EntityType>
+        <EntityType Name="ROLES">
+          <Key>
+            <PropertyRef Name="ID_ROL" />
+          </Key>
+          <Property Name="ID_ROL" Type="int" Nullable="false" />
+          <Property Name="NOMBRE_ROL" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="DESCRIPCION_ROL" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ROLES_X_USUARIO">
+          <Key>
+            <PropertyRef Name="ROLXUSERID" />
+          </Key>
+          <Property Name="ROLXUSERID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="USER_ID" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="ID_ROL" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SEGMENTOS">
+          <Key>
+            <PropertyRef Name="SEGMENT_ID" />
+          </Key>
+          <Property Name="SEGMENT_ID" Type="int" Nullable="false" />
+          <Property Name="SEGMENT_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="SEGMENT_NAME_ING" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="SELLIN">
+          <Key>
+            <PropertyRef Name="ID_SELLIN" />
+          </Key>
+          <Property Name="ID_SELLIN" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CONCEPTO" Type="text" Nullable="false" />
+          <Property Name="MES" Type="int" Nullable="false" />
+          <Property Name="ANIO" Type="int" Nullable="false" />
+          <Property Name="TIPO" Type="text" Nullable="false" />
+          <Property Name="CODIGO_CLIENTE" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="NOMBRE_CLIENTE_FINAL" Type="nvarchar" Nullable="false" MaxLength="70" />
+          <Property Name="CODIGO_PRODUCTO_SAP" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="NOMBRE_PRODUCTO" Type="nvarchar" Nullable="false" MaxLength="70" />
+          <Property Name="NETSALES_US" Type="text" Nullable="false" />
+          <Property Name="SALES_CASES_US" Type="int" Nullable="false" />
+          <Property Name="OPEN_US" Type="int" Nullable="false" />
+          <Property Name="FORECAST_US" Type="int" Nullable="false" />
+          <Property Name="ID_COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
+        </EntityType>
+        <EntityType Name="SELLOUT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ANIO" Type="int" Nullable="false" />
+          <Property Name="MES" Type="int" Nullable="false" />
+          <Property Name="SECUENCIA_MES" Type="int" Nullable="false" />
+          <Property Name="FECHA" Type="date" />
+          <Property Name="ID_COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
+          <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="CODIGO_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CODIGO_VENDEDOR" Type="nvarchar" MaxLength="50" />
+          <Property Name="NOMBRE_VENDEDOR" Type="nvarchar" MaxLength="70" />
+          <Property Name="CODIGO_CLIENTE" Type="nvarchar" MaxLength="50" />
+          <Property Name="NOMBRE_CLIENTE" Type="nvarchar" Nullable="false" MaxLength="70" />
+          <Property Name="CODIGO_PRODUCTO_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CODIGO_PRODUCTOS_SAP" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="BULTOS" Type="real" />
+          <Property Name="VENTA_MONEDA_LOCAL" Type="money" />
+          <Property Name="VENTA_DOLARES" Type="money" />
+        </EntityType>
+        <EntityType Name="SUB_SEGMENTO">
+          <Key>
+            <PropertyRef Name="SEGMENT_ID" />
+            <PropertyRef Name="SUB_SEGMENT" />
+          </Key>
+          <Property Name="SEGMENT_ID" Type="int" Nullable="false" />
+          <Property Name="SUB_SEGMENT" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="USERS">
+          <Key>
+            <PropertyRef Name="USER_ID" />
+          </Key>
+          <Property Name="USER_ID" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="USER_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="PASSWORD" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="LOGIN_ID" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="LAST_NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="STATUS" Type="bit" Nullable="false" />
+          <Property Name="ID_COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
+          <Property Name="E_MAIL" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="FECHA_CREACION" Type="datetime" />
+        </EntityType>
+        <EntityType Name="VENTAS_NUEVAS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PAIS" Type="nvarchar" Nullable="false" MaxLength="6" />
+          <Property Name="SECUENCIA" Type="int" Nullable="false" />
+          <Property Name="CODIGO_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="TOTAL_VENTAS_NUEVAS" Type="money" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'kcpdis0db.kcpdis0dbo.CLIENTES_VIEW' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="CLIENTES_VIEW">
+          <Key>
+            <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+            <PropertyRef Name="CODIGO_CLIENTE" />
+            <PropertyRef Name="NOMBRE_CLIENTE" />
+            <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+            <PropertyRef Name="FECHA_CREACION" />
+            <PropertyRef Name="FECHA_ACTUALIZACION" />
+            <PropertyRef Name="SEGMENT_ID" />
+            <PropertyRef Name="SEGMENT_NAME" />
+            <PropertyRef Name="COD_SEGMENT_IMPORT" />
+            <PropertyRef Name="NAME_SEGMENT_IMPORT" />
+            <PropertyRef Name="Expr1" />
+          </Key>
+          <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="CODIGO_CLIENTE" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="NOMBRE_CLIENTE" Type="nvarchar" Nullable="false" MaxLength="70" />
+          <Property Name="CODIGO_DISTRIBUIDOR" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="NOMBRE_DISTRIBUIDOR" Type="nvarchar" MaxLength="70" />
+          <Property Name="CODIGO_VENDEDOR" Type="nvarchar" MaxLength="50" />
+          <Property Name="NOMBRE_VENDEDOR" Type="nvarchar" MaxLength="70" />
+          <Property Name="CIUDAD" Type="nvarchar" MaxLength="50" />
+          <Property Name="DIRECCION" Type="ntext" />
+          <Property Name="TELEFONO_CLIENTE" Type="nvarchar" MaxLength="15" />
+          <Property Name="CEDULA_JURIDICA" Type="nvarchar" MaxLength="100" />
+          <Property Name="NOMBRE_CONTACTO" Type="nvarchar" MaxLength="50" />
+          <Property Name="TELEFONO_CONTACTO" Type="nvarchar" MaxLength="15" />
+          <Property Name="NOMBRE_COMERCIAL" Type="nvarchar" MaxLength="50" />
+          <Property Name="ID_COUNTRY" Type="nvarchar" MaxLength="6" />
+          <Property Name="E_MAIL" Type="nchar" MaxLength="50" />
+          <Property Name="SEGMENTO_SC_ID" Type="int" />
+          <Property Name="SEGMENTO_KC_ID" Type="int" />
+          <Property Name="SUBSEGMENTO_ID" Type="int" />
+          <Property Name="TIPO_ABC_DISTRIBUIDOR" Type="nchar" MaxLength="5" />
+          <Property Name="TIPO_ABC_PAIS" Type="nchar" MaxLength="5" />
+          <Property Name="TIPO_ABC_REGION" Type="nchar" MaxLength="5" />
+          <Property Name="TIPO_ABC_SUBREGION" Type="nchar" MaxLength="5" />
+          <Property Name="GRUPO_CLIENTE" Type="nvarchar" MaxLength="70" />
+          <Property Name="PLATAFORMAS" Type="nvarchar" MaxLength="30" />
+          <Property Name="GLOBAL_ACCOUNT_ID" Type="int" />
+          <Property Name="STATUS_CLIENTE" Type="bit" />
+          <Property Name="SALES_TYPE" Type="text" />
+          <Property Name="FECHA_CREACION" Type="date" Nullable="false" />
+          <Property Name="FECHA_ACTUALIZACION" Type="date" Nullable="false" />
+          <Property Name="AGRUPAR" Type="bit" />
+          <Property Name="SEGMENT_ID" Type="int" Nullable="false" />
+          <Property Name="SEGMENT_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="SEGMENT_NAME_ING" Type="varchar" MaxLength="50" />
+          <Property Name="COD_SEGMENT_IMPORT" Type="int" Nullable="false" />
+          <Property Name="NAME_SEGMENT_IMPORT" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Expr1" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'kcpdis0db.kcpdis0dbo.PRIVILEGIOSXUSER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="PRIVILEGIOSXUSER">
+          <Key>
+            <PropertyRef Name="PRIVILEGIO_ID" />
+            <PropertyRef Name="DESCRIPCION" />
+            <PropertyRef Name="ID_ROL" />
+            <PropertyRef Name="NOMBRE_ROL" />
+            <PropertyRef Name="USER_ID" />
+            <PropertyRef Name="USER_NAME" />
+            <PropertyRef Name="PASSWORD" />
+            <PropertyRef Name="LOGIN_ID" />
+            <PropertyRef Name="STATUS" />
+            <PropertyRef Name="ID_COUNTRY" />
+            <PropertyRef Name="E_MAIL" />
+          </Key>
+          <Property Name="PRIVILEGIO_ID" Type="int" Nullable="false" />
+          <Property Name="PRIVILEGIO_LLAVE" Type="nvarchar" MaxLength="50" />
+          <Property Name="DESCRIPCION" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ID_ROL" Type="int" Nullable="false" />
+          <Property Name="NOMBRE_ROL" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="DESCRIPCION_ROL" Type="nvarchar" MaxLength="50" />
+          <Property Name="USER_ID" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="USER_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="PASSWORD" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="LOGIN_ID" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="LAST_NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="STATUS" Type="bit" Nullable="false" />
+          <Property Name="ID_COUNTRY" Type="nvarchar" Nullable="false" MaxLength="6" />
+          <Property Name="E_MAIL" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_CLIENTES_GLOBAL_ACCOUNTS">
+          <End Role="GLOBAL_ACCOUNTS" Type="CRMToolsEntities.Store.GLOBAL_ACCOUNTS" Multiplicity="0..1" />
+          <End Role="CLIENTES" Type="CRMToolsEntities.Store.CLIENTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GLOBAL_ACCOUNTS">
+              <PropertyRef Name="GLOBAL_ACCOUNT_ID" />
+            </Principal>
+            <Dependent Role="CLIENTES">
+              <PropertyRef Name="GLOBAL_ACCOUNT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CLIENTESDI_X_KAM_KAM">
+          <End Role="KAM" Type="CRMToolsEntities.Store.KAM" Multiplicity="1" />
+          <End Role="CLIENTESDI_X_KAM" Type="CRMToolsEntities.Store.CLIENTESDI_X_KAM" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KAM">
+              <PropertyRef Name="KAM_ID" />
+            </Principal>
+            <Dependent Role="CLIENTESDI_X_KAM">
+              <PropertyRef Name="KAM_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DIVISION_TERRITORIAL_PAISES">
+          <End Role="PAISES" Type="CRMToolsEntities.Store.PAISES" Multiplicity="1" />
+          <End Role="DIVISION_TERRITORIAL" Type="CRMToolsEntities.Store.DIVISION_TERRITORIAL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PAISES">
+              <PropertyRef Name="ID_COUNTRY" />
+            </Principal>
+            <Dependent Role="DIVISION_TERRITORIAL">
+              <PropertyRef Name="COUNTRY_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EQUIVALENCIAS_SEGMENTOS_SEGMENTOS">
+          <End Role="SEGMENTOS" Type="CRMToolsEntities.Store.SEGMENTOS" Multiplicity="1" />
+          <End Role="EQUIVALENCIAS_SEGMENTOS" Type="CRMToolsEntities.Store.EQUIVALENCIAS_SEGMENTOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SEGMENTOS">
+              <PropertyRef Name="SEGMENT_ID" />
+            </Principal>
+            <Dependent Role="EQUIVALENCIAS_SEGMENTOS">
+              <PropertyRef Name="SEGMENT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JERARQUIA_GLOBAL_JERARQUIA_LAO">
+          <End Role="JERARQUIA_LAO" Type="CRMToolsEntities.Store.JERARQUIA_LAO" Multiplicity="1" />
+          <End Role="JERARQUIA_GLOBAL" Type="CRMToolsEntities.Store.JERARQUIA_GLOBAL" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="JERARQUIA_LAO">
+              <PropertyRef Name="CODIGO" />
+            </Principal>
+            <Dependent Role="JERARQUIA_GLOBAL">
+              <PropertyRef Name="CODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LOG_LOGIN_USERS">
+          <End Role="USERS" Type="CRMToolsEntities.Store.USERS" Multiplicity="1" />
+          <End Role="LOG_LOGIN" Type="CRMToolsEntities.Store.LOG_LOGIN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="LOG_LOGIN">
+              <PropertyRef Name="LOGIN_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS">
+          <End Role="PLATAFORMAS" Type="CRMToolsEntities.Store.PLATAFORMAS" Multiplicity="1" />
+          <End Role="PLATAFORMA_X_CLIENTES" Type="CRMToolsEntities.Store.PLATAFORMA_X_CLIENTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PLATAFORMAS">
+              <PropertyRef Name="CODIGO_PLATAFORMA" />
+            </Principal>
+            <Dependent Role="PLATAFORMA_X_CLIENTES">
+              <PropertyRef Name="CODIGO_PLATAFORMA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS">
+          <End Role="PRIVILEGIOS" Type="CRMToolsEntities.Store.PRIVILEGIOS" Multiplicity="1" />
+          <End Role="PRIVILEGIOS_X_ROL" Type="CRMToolsEntities.Store.PRIVILEGIOS_X_ROL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRIVILEGIOS">
+              <PropertyRef Name="PRIVILEGIO_ID" />
+            </Principal>
+            <Dependent Role="PRIVILEGIOS_X_ROL">
+              <PropertyRef Name="PRIVILEGIO_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRIVILEGIOS_X_ROL_ROLES">
+          <End Role="ROLES" Type="CRMToolsEntities.Store.ROLES" Multiplicity="1" />
+          <End Role="PRIVILEGIOS_X_ROL" Type="CRMToolsEntities.Store.PRIVILEGIOS_X_ROL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ROLES">
+              <PropertyRef Name="ID_ROL" />
+            </Principal>
+            <Dependent Role="PRIVILEGIOS_X_ROL">
+              <PropertyRef Name="ID_ROL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ROLES_X_USUARIO_ROLES">
+          <End Role="ROLES" Type="CRMToolsEntities.Store.ROLES" Multiplicity="1" />
+          <End Role="ROLES_X_USUARIO" Type="CRMToolsEntities.Store.ROLES_X_USUARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ROLES">
+              <PropertyRef Name="ID_ROL" />
+            </Principal>
+            <Dependent Role="ROLES_X_USUARIO">
+              <PropertyRef Name="ID_ROL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ROLES_X_USUARIO_USERS">
+          <End Role="USERS" Type="CRMToolsEntities.Store.USERS" Multiplicity="1" />
+          <End Role="ROLES_X_USUARIO" Type="CRMToolsEntities.Store.ROLES_X_USUARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="ROLES_X_USUARIO">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SELLIN_PAISES">
+          <End Role="PAISES" Type="CRMToolsEntities.Store.PAISES" Multiplicity="1" />
+          <End Role="SELLIN" Type="CRMToolsEntities.Store.SELLIN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PAISES">
+              <PropertyRef Name="ID_COUNTRY" />
+            </Principal>
+            <Dependent Role="SELLIN">
+              <PropertyRef Name="ID_COUNTRY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SELLOUT_DISTRIBUIDORES">
+          <End Role="DISTRIBUIDORES" Type="CRMToolsEntities.Store.DISTRIBUIDORES" Multiplicity="1" />
+          <End Role="SELLOUT" Type="CRMToolsEntities.Store.SELLOUT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DISTRIBUIDORES">
+              <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+            </Principal>
+            <Dependent Role="SELLOUT">
+              <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CRMToolsEntities" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="CRMToolEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CAJAS" EntityType="CRMToolsEntities.CAJAS" />
+          <EntitySet Name="CLIENTES" EntityType="CRMToolsEntities.CLIENTES" />
+          <EntitySet Name="CLIENTESDI_X_KAM" EntityType="CRMToolsEntities.CLIENTESDI_X_KAM" />
+          <EntitySet Name="DISTRIBUIDORES" EntityType="CRMToolsEntities.DISTRIBUIDORES" />
+          <EntitySet Name="DIVISION_TERRITORIAL" EntityType="CRMToolsEntities.DIVISION_TERRITORIAL" />
+          <EntitySet Name="DOLARES" EntityType="CRMToolsEntities.DOLARES" />
+          <EntitySet Name="GLOBAL_ACCOUNTS" EntityType="CRMToolsEntities.GLOBAL_ACCOUNTS" />
+          <EntitySet Name="JERARQUIA_GLOBAL" EntityType="CRMToolsEntities.JERARQUIA_GLOBAL" />
+          <EntitySet Name="JERARQUIA_LAO" EntityType="CRMToolsEntities.JERARQUIA_LAO" />
+          <EntitySet Name="KAM" EntityType="CRMToolsEntities.KAM" />
+          <EntitySet Name="LOG_LOGIN" EntityType="CRMToolsEntities.LOG_LOGIN" />
+          <EntitySet Name="PAISES" EntityType="CRMToolsEntities.PAISES" />
+          <EntitySet Name="PLATAFORMA_X_CLIENTES" EntityType="CRMToolsEntities.PLATAFORMA_X_CLIENTES" />
+          <EntitySet Name="PLATAFORMAS" EntityType="CRMToolsEntities.PLATAFORMAS" />
+          <EntitySet Name="PRIVILEGIOS" EntityType="CRMToolsEntities.PRIVILEGIOS" />
+          <EntitySet Name="PRIVILEGIOS_X_ROL" EntityType="CRMToolsEntities.PRIVILEGIOS_X_ROL" />
+          <EntitySet Name="PRODUCTOS" EntityType="CRMToolsEntities.PRODUCTOS" />
+          <EntitySet Name="ROLES" EntityType="CRMToolsEntities.ROLES" />
+          <EntitySet Name="ROLES_X_USUARIO" EntityType="CRMToolsEntities.ROLES_X_USUARIO" />
+          <EntitySet Name="SELLIN" EntityType="CRMToolsEntities.SELLIN" />
+          <EntitySet Name="USERS" EntityType="CRMToolsEntities.USERS" />
+          <EntitySet Name="PRIVILEGIOSXUSER" EntityType="CRMToolsEntities.PRIVILEGIOSXUSER" />
+          <AssociationSet Name="FK_CLIENTES_CAJAS" Association="CRMToolsEntities.FK_CLIENTES_CAJAS">
+            <End EntitySet="CAJAS" Role="CAJAS" />
+            <End EntitySet="CLIENTES" Role="CLIENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CLIENTES_CLIENTESDI_X_KAM" Association="CRMToolsEntities.FK_CLIENTES_CLIENTESDI_X_KAM">
+            <End Role="CLIENTESDI_X_KAM" EntitySet="CLIENTESDI_X_KAM" />
+            <End Role="CLIENTES" EntitySet="CLIENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CLIENTES_DOLARES" Association="CRMToolsEntities.FK_CLIENTES_DOLARES">
+            <End EntitySet="DOLARES" Role="DOLARES" />
+            <End EntitySet="CLIENTES" Role="CLIENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CLIENTES_GLOBAL_ACCOUNTS" Association="CRMToolsEntities.FK_CLIENTES_GLOBAL_ACCOUNTS">
+            <End Role="GLOBAL_ACCOUNTS" EntitySet="GLOBAL_ACCOUNTS" />
+            <End Role="CLIENTES" EntitySet="CLIENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CLIENTESDI_X_KAM_KAM" Association="CRMToolsEntities.FK_CLIENTESDI_X_KAM_KAM">
+            <End Role="KAM" EntitySet="KAM" />
+            <End Role="CLIENTESDI_X_KAM" EntitySet="CLIENTESDI_X_KAM" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DIVISION_TERRITORIAL_PAISES" Association="CRMToolsEntities.FK_DIVISION_TERRITORIAL_PAISES">
+            <End Role="PAISES" EntitySet="PAISES" />
+            <End Role="DIVISION_TERRITORIAL" EntitySet="DIVISION_TERRITORIAL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JERARQUIA_GLOBAL_JERARQUIA_LAO" Association="CRMToolsEntities.FK_JERARQUIA_GLOBAL_JERARQUIA_LAO">
+            <End Role="JERARQUIA_LAO" EntitySet="JERARQUIA_LAO" />
+            <End Role="JERARQUIA_GLOBAL" EntitySet="JERARQUIA_GLOBAL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LOG_LOGIN_USERS" Association="CRMToolsEntities.FK_LOG_LOGIN_USERS">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="LOG_LOGIN" EntitySet="LOG_LOGIN" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SELLIN_PAISES" Association="CRMToolsEntities.FK_SELLIN_PAISES">
+            <End Role="PAISES" EntitySet="PAISES" />
+            <End Role="SELLIN" EntitySet="SELLIN" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS" Association="CRMToolsEntities.FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS">
+            <End Role="PLATAFORMAS" EntitySet="PLATAFORMAS" />
+            <End Role="PLATAFORMA_X_CLIENTES" EntitySet="PLATAFORMA_X_CLIENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS" Association="CRMToolsEntities.FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS">
+            <End Role="PRIVILEGIOS" EntitySet="PRIVILEGIOS" />
+            <End Role="PRIVILEGIOS_X_ROL" EntitySet="PRIVILEGIOS_X_ROL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PRIVILEGIOS_X_ROL_ROLES" Association="CRMToolsEntities.FK_PRIVILEGIOS_X_ROL_ROLES">
+            <End Role="ROLES" EntitySet="ROLES" />
+            <End Role="PRIVILEGIOS_X_ROL" EntitySet="PRIVILEGIOS_X_ROL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ROLES_X_USUARIO_ROLES" Association="CRMToolsEntities.FK_ROLES_X_USUARIO_ROLES">
+            <End Role="ROLES" EntitySet="ROLES" />
+            <End Role="ROLES_X_USUARIO" EntitySet="ROLES_X_USUARIO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ROLES_X_USUARIO_USERS" Association="CRMToolsEntities.FK_ROLES_X_USUARIO_USERS">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="ROLES_X_USUARIO" EntitySet="ROLES_X_USUARIO" />
+          </AssociationSet>
+          <EntitySet Name="SUB_SEGMENTO" EntityType="CRMToolsEntities.SUB_SEGMENTO" />
+          <EntitySet Name="EQUIVALENCIAS_SEGMENTOS" EntityType="CRMToolsEntities.EQUIVALENCIAS_SEGMENTOS" />
+          <EntitySet Name="SEGMENTOS" EntityType="CRMToolsEntities.SEGMENTOS" />
+          <AssociationSet Name="FK_EQUIVALENCIAS_SEGMENTOS_SEGMENTOS" Association="CRMToolsEntities.FK_EQUIVALENCIAS_SEGMENTOS_SEGMENTOS">
+            <End Role="SEGMENTOS" EntitySet="SEGMENTOS" />
+            <End Role="EQUIVALENCIAS_SEGMENTOS" EntitySet="EQUIVALENCIAS_SEGMENTOS" />
+          </AssociationSet>
+          <EntitySet Name="GRUPOS_PRODUCTOS" EntityType="CRMToolsEntities.GRUPOS_PRODUCTOS" />
+          <EntitySet Name="PRODUCTOS_EQUIVALENTES" EntityType="CRMToolsEntities.PRODUCTOS_EQUIVALENTES" />
+          <EntitySet Name="SELLOUT" EntityType="CRMToolsEntities.SELLOUT" />
+          <AssociationSet Name="FK_SELLOUT_DISTRIBUIDORES" Association="CRMToolsEntities.FK_SELLOUT_DISTRIBUIDORES">
+            <End EntitySet="DISTRIBUIDORES" Role="DISTRIBUIDORES" />
+            <End EntitySet="SELLOUT" Role="SELLOUT" />
+          </AssociationSet>
+          <EntitySet Name="VENTAS_NUEVAS" EntityType="CRMToolsEntities.VENTAS_NUEVAS" />
+          <EntitySet Name="CLIENTES_VIEW" EntityType="CRMToolsEntities.CLIENTES_VIEW" />
+          </EntityContainer>
+        <EntityType Name="CAJAS">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Q" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Folded_Bath" Type="Int32" Nullable="false" />
+          <Property Name="Jumbo_Roll_Bath" Type="Int32" Nullable="false" />
+          <Property Name="Standard_Roll_Bath" Type="Int32" Nullable="false" />
+          <Property Name="Group_Bath_Tissue" Type="Int32" Nullable="false" />
+          <Property Name="Washroom_Facial_Flats" Type="Int32" Nullable="false" />
+          <Property Name="Washroom_Facial_Pocket_Pack" Type="Int32" Nullable="false" />
+          <Property Name="Washroom_Facial_Uprights" Type="Int32" Nullable="false" />
+          <Property Name="Group_Facial" Type="Int32" Nullable="false" />
+          <Property Name="Air_Fresheners" Type="Int32" Nullable="false" />
+          <Property Name="Disposal_Containers" Type="Int32" Nullable="false" />
+          <Property Name="Sanitary_Bags" Type="Int32" Nullable="false" />
+          <Property Name="Seat_Covers" Type="Int32" Nullable="false" />
+          <Property Name="Seat_Sanitizers" Type="Int32" Nullable="false" />
+          <Property Name="Urinal_Screens" Type="Int32" Nullable="false" />
+          <Property Name="Group_HH_T_Other" Type="Int32" Nullable="false" />
+          <Property Name="Skincare_Bag_in_Box" Type="Int32" Nullable="false" />
+          <Property Name="Skincare_Bottles" Type="Int32" Nullable="false" />
+          <Property Name="Skincare_Bulk" Type="Int32" Nullable="false" />
+          <Property Name="Skincare_Cassette" Type="Int32" Nullable="false" />
+          <Property Name="Skincare_SureTouch" Type="Int32" Nullable="false" />
+          <Property Name="Group_Skincare" Type="Int32" Nullable="false" />
+          <Property Name="Packaged_Beverage" Type="Int32" Nullable="false" />
+          <Property Name="Packaged_Dinner" Type="Int32" Nullable="false" />
+          <Property Name="Packaged_Luncheon" Type="Int32" Nullable="false" />
+          <Property Name="Tabletop_Dispenser" Type="Int32" Nullable="false" />
+          <Property Name="Group_Tabletop" Type="Int32" Nullable="false" />
+          <Property Name="Center_Pull_Towels" Type="Int32" Nullable="false" />
+          <Property Name="Folded_Towels" Type="Int32" Nullable="false" />
+          <Property Name="Hard_Rolled_Towels" Type="Int32" Nullable="false" />
+          <Property Name="Kitchen_Rolled_Towels" Type="Int32" Nullable="false" />
+          <Property Name="Group_Towels" Type="Int32" Nullable="false" />
+          <Property Name="Skincare_Hand_Sanitizer_Bag_in" Type="Int32" Nullable="false" />
+          <Property Name="Group_Hand_Sanitizer" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Apparel" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Face_Protection" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Gloves" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Head_Protection" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Hearing" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Respirators" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Vision" Type="Int32" Nullable="false" />
+          <Property Name="Group_Industrial_PPE" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Welding_Accessories" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Welding_Helmets" Type="Int32" Nullable="false" />
+          <Property Name="Group_Industrial_Welding" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_WKZ_Channelizers_Drums_Cones" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_WKZ_Highway_Safety" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_WKZ_Hi_Viz___Seasonal" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_WKZ_Other_Industrial_Safety" Type="Int32" Nullable="false" />
+          <Property Name="Group_Industrial_Work_Zone" Type="Int32" Nullable="false" />
+          <Property Name="Tissue_Parent_Roll_Sales_KCP" Type="Int32" Nullable="false" />
+          <Property Name="Group_Other_KCP" Type="Int32" Nullable="false" />
+          <Property Name="Lab_Apparel" Type="Int32" Nullable="false" />
+          <Property Name="Group_Scientific_PPE" Type="Int32" Nullable="false" />
+          <Property Name="Extended_Use_Wipers" Type="Int32" Nullable="false" />
+          <Property Name="Group_Extended_Use_Wipers" Type="Int32" Nullable="false" />
+          <Property Name="Limited_Use_Wipers" Type="Int32" Nullable="false" />
+          <Property Name="Group_Limited_Use_Wipers" Type="Int32" Nullable="false" />
+          <Property Name="Other_Wipers" Type="Int32" Nullable="false" />
+          <Property Name="Group_Other_Wipers" Type="Int32" Nullable="false" />
+          <Property Name="Specialty_Wipers" Type="Int32" Nullable="false" />
+          <Property Name="Group_Specialty_Wipers" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CLIENTES" Relationship="CRMToolsEntities.FK_CLIENTES_CAJAS" FromRole="CAJAS" ToRole="CLIENTES" />
+        </EntityType>
+        <EntityType Name="CLIENTES">
+          <Key>
+            <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+            <PropertyRef Name="CODIGO_CLIENTE" />
+          </Key>
+          <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="CODIGO_CLIENTE" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NOMBRE_CLIENTE" Type="String" Nullable="false" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="CODIGO_DISTRIBUIDOR" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CODIGO_VENDEDOR" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NOMBRE_VENDEDOR" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="CIUDAD" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DIRECCION" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="TELEFONO_CLIENTE" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="CEDULA_JURIDICA" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="NOMBRE_CONTACTO" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TELEFONO_CONTACTO" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="E_MAIL" Type="String" MaxLength="50" Unicode="true" FixedLength="true" />
+          <Property Name="SEGMENTO_SC_ID" Type="Int32" />
+          <Property Name="SEGMENTO_KC_ID" Type="Int32" />
+          <Property Name="SUBSEGMENTO_ID" Type="Int32" />
+          <Property Name="TIPO_ABC_DISTRIBUIDOR" Type="String" MaxLength="5" Unicode="true" FixedLength="true" />
+          <Property Name="TIPO_ABC_PAIS" Type="String" MaxLength="5" Unicode="true" FixedLength="true" />
+          <Property Name="TIPO_ABC_REGION" Type="String" MaxLength="5" Unicode="true" FixedLength="true" />
+          <Property Name="TIPO_ABC_SUBREGION" Type="String" MaxLength="5" Unicode="true" FixedLength="true" />
+          <Property Name="GRUPO_CLIENTE" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="GLOBAL_ACCOUNT_ID" Type="Int32" />
+          <Property Name="STATUS_CLIENTE" Type="Boolean" />
+          <Property Name="SALES_TYPE" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA_CREACION" Type="DateTime" Nullable="false" />
+          <Property Name="FECHA_ACTUALIZACION" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="CAJAS" Relationship="CRMToolsEntities.FK_CLIENTES_CAJAS" FromRole="CLIENTES" ToRole="CAJAS" />
+          <NavigationProperty Name="CLIENTESDI_X_KAM" Relationship="CRMToolsEntities.FK_CLIENTES_CLIENTESDI_X_KAM" FromRole="CLIENTES" ToRole="CLIENTESDI_X_KAM" />
+          <NavigationProperty Name="DOLARES" Relationship="CRMToolsEntities.FK_CLIENTES_DOLARES" FromRole="CLIENTES" ToRole="DOLARES" />
+          <NavigationProperty Name="GLOBAL_ACCOUNTS" Relationship="CRMToolsEntities.FK_CLIENTES_GLOBAL_ACCOUNTS" FromRole="CLIENTES" ToRole="GLOBAL_ACCOUNTS" />
+          <Property Type="String" Name="NOMBRE_COMERCIAL" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ID_COUNTRY" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOMBRE_DISTRIBUIDOR" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PLATAFORMAS" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="AGRUPAR" />
+          <Property Type="String" Name="GLOBAL_ACCOUNT_NAME" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CLIENTESDI_X_KAM">
+          <Key>
+            <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+          </Key>
+          <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="KAM_ID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="CLIENTES" Relationship="CRMToolsEntities.FK_CLIENTES_CLIENTESDI_X_KAM" FromRole="CLIENTESDI_X_KAM" ToRole="CLIENTES" />
+          <NavigationProperty Name="KAM" Relationship="CRMToolsEntities.FK_CLIENTESDI_X_KAM_KAM" FromRole="CLIENTESDI_X_KAM" ToRole="KAM" />
+        </EntityType>
+        <EntityType Name="DISTRIBUIDORES">
+          <Key>
+            <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+          </Key>
+          <Property Name="CODIGO_DISTRIBUIDOR" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NOMBRE_DISTRIBUIDOR" Type="String" Nullable="false" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="NOMBRE_CORTO" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="KAM_ID" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="PAIS" Type="String" MaxLength="6" Unicode="true" FixedLength="false" />
+          <Property Name="UseOnKPI" Type="Boolean" />
+          <Property Name="GBA" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Type="Boolean" Name="Import" />
+          <NavigationProperty Name="SELLOUT" Relationship="CRMToolsEntities.FK_SELLOUT_DISTRIBUIDORES" FromRole="DISTRIBUIDORES" ToRole="SELLOUT" />
+        </EntityType>
+        <EntityType Name="DIVISION_TERRITORIAL">
+          <Key>
+            <PropertyRef Name="COUNTRY_ID" />
+            <PropertyRef Name="DIVISION_ID" />
+            <PropertyRef Name="CITY_ID" />
+          </Key>
+          <Property Name="COUNTRY_ID" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
+          <Property Name="DIVISION_ID" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
+          <Property Name="CITY_ID" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
+          <Property Name="DIVISION_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CITY_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="PAISES" Relationship="CRMToolsEntities.FK_DIVISION_TERRITORIAL_PAISES" FromRole="DIVISION_TERRITORIAL" ToRole="PAISES" />
+        </EntityType>
+        <EntityType Name="DOLARES">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Q" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Folded_Bath" Type="Int32" Nullable="false" />
+          <Property Name="Jumbo_Roll_Bath" Type="Int32" Nullable="false" />
+          <Property Name="Standard_Roll_Bath" Type="Int32" Nullable="false" />
+          <Property Name="Group_Bath_Tissue" Type="Int32" Nullable="false" />
+          <Property Name="Washroom_Facial_Flats" Type="Int32" Nullable="false" />
+          <Property Name="Washroom_Facial_Pocket_Pack" Type="Int32" Nullable="false" />
+          <Property Name="Washroom_Facial_Uprights" Type="Int32" Nullable="false" />
+          <Property Name="Group_Facial" Type="Int32" Nullable="false" />
+          <Property Name="Air_Fresheners" Type="Int32" Nullable="false" />
+          <Property Name="Disposal_Containers" Type="Int32" Nullable="false" />
+          <Property Name="Sanitary_Bags" Type="Int32" Nullable="false" />
+          <Property Name="Seat_Covers" Type="Int32" Nullable="false" />
+          <Property Name="Seat_Sanitizers" Type="Int32" Nullable="false" />
+          <Property Name="Urinal_Screens" Type="Int32" Nullable="false" />
+          <Property Name="Group_HH_T_Other" Type="Int32" Nullable="false" />
+          <Property Name="Skincare_Bag_in_Box" Type="Int32" Nullable="false" />
+          <Property Name="Skincare_Bottles" Type="Int32" Nullable="false" />
+          <Property Name="Skincare_Bulk" Type="Int32" Nullable="false" />
+          <Property Name="Skincare_Cassette" Type="Int32" Nullable="false" />
+          <Property Name="Skincare_SureTouch" Type="Int32" Nullable="false" />
+          <Property Name="Group_Skincare" Type="Int32" Nullable="false" />
+          <Property Name="Packaged_Beverage" Type="Int32" Nullable="false" />
+          <Property Name="Packaged_Dinner" Type="Int32" Nullable="false" />
+          <Property Name="Packaged_Luncheon" Type="Int32" Nullable="false" />
+          <Property Name="Tabletop_Dispenser" Type="Int32" Nullable="false" />
+          <Property Name="Group_Tabletop" Type="Int32" Nullable="false" />
+          <Property Name="Center_Pull_Towels" Type="Int32" Nullable="false" />
+          <Property Name="Folded_Towels" Type="Int32" Nullable="false" />
+          <Property Name="Hard_Rolled_Towels" Type="Int32" Nullable="false" />
+          <Property Name="Kitchen_Rolled_Towels" Type="Int32" Nullable="false" />
+          <Property Name="Group_Towels" Type="Int32" Nullable="false" />
+          <Property Name="Skincare_Hand_Sanitizer_Bag_in" Type="Int32" Nullable="false" />
+          <Property Name="Group_Hand_Sanitizer" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Apparel" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Face_Protection" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Gloves" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Head_Protection" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Hearing" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Respirators" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Vision" Type="Int32" Nullable="false" />
+          <Property Name="Group_Industrial_PPE" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Welding_Accessories" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_Welding_Helmets" Type="Int32" Nullable="false" />
+          <Property Name="Group_Industrial_Welding" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_WKZ_Channelizers_Drums_Cones" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_WKZ_Highway_Safety" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_WKZ_Hi_Viz___Seasonal" Type="Int32" Nullable="false" />
+          <Property Name="Industrial_WKZ_Other_Industrial_Safety" Type="Int32" Nullable="false" />
+          <Property Name="Group_Industrial_Work_Zone" Type="Int32" Nullable="false" />
+          <Property Name="Tissue_Parent_Roll_Sales_KCP" Type="Int32" Nullable="false" />
+          <Property Name="Group_Other_KCP" Type="Int32" Nullable="false" />
+          <Property Name="Lab_Apparel" Type="Int32" Nullable="false" />
+          <Property Name="Group_Scientific_PPE" Type="Int32" Nullable="false" />
+          <Property Name="Extended_Use_Wipers" Type="Int32" Nullable="false" />
+          <Property Name="Group_Extended_Use_Wipers" Type="Int32" Nullable="false" />
+          <Property Name="Limited_Use_Wipers" Type="Int32" Nullable="false" />
+          <Property Name="Group_Limited_Use_Wipers" Type="Int32" Nullable="false" />
+          <Property Name="Other_Wipers" Type="Int32" Nullable="false" />
+          <Property Name="Group_Other_Wipers" Type="Int32" Nullable="false" />
+          <Property Name="Specialty_Wipers" Type="Int32" Nullable="false" />
+          <Property Name="Group_Specialty_Wipers" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CLIENTES" Relationship="CRMToolsEntities.FK_CLIENTES_DOLARES" FromRole="DOLARES" ToRole="CLIENTES" />
+        </EntityType>
+        <EntityType Name="GLOBAL_ACCOUNTS">
+          <Key>
+            <PropertyRef Name="GLOBAL_ACCOUNT_ID" />
+          </Key>
+          <Property Name="GLOBAL_ACCOUNT_ID" Type="Int32" Nullable="false" />
+          <Property Name="NOMBRE_GLOBAL_ACCOUNT" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="CLIENTES" Relationship="CRMToolsEntities.FK_CLIENTES_GLOBAL_ACCOUNTS" FromRole="GLOBAL_ACCOUNTS" ToRole="CLIENTES" />
+        </EntityType>
+        <EntityType Name="JERARQUIA_GLOBAL">
+          <Key>
+            <PropertyRef Name="CODIGO" />
+          </Key>
+          <Property Name="CODIGO" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L4" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L5" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L12_MATERIAL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LAO_GROUP" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="STRATEGIC_GROUP" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NIVEL1" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NIVEL2" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NIVEL3" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NIVEL4" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NIVEL5" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="JERARQUIA_LAO" Relationship="CRMToolsEntities.FK_JERARQUIA_GLOBAL_JERARQUIA_LAO" FromRole="JERARQUIA_GLOBAL" ToRole="JERARQUIA_LAO" />
+        </EntityType>
+        <EntityType Name="JERARQUIA_LAO">
+          <Key>
+            <PropertyRef Name="CODIGO" />
+          </Key>
+          <Property Name="CODIGO" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L1_SEGMENT" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L2_PLATFORM" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L3_BUSINESS" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L4_BUSINESS_SUBGROUP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L5_CATEGORY" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L6_BRAND_CATEGORY" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L7_VARIANT_1" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L8_VARIANT_2" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L9_FORMAT" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L10_PACKING" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L11_SKU" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="L12_MATERIAL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="REGION" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="JERARQUIA_GLOBAL" Relationship="CRMToolsEntities.FK_JERARQUIA_GLOBAL_JERARQUIA_LAO" FromRole="JERARQUIA_LAO" ToRole="JERARQUIA_GLOBAL" />
+        </EntityType>
+        <EntityType Name="KAM">
+          <Key>
+            <PropertyRef Name="KAM_ID" />
+          </Key>
+          <Property Name="KAM_ID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="KAM_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="KAM_eMAIL" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="KAM_ACTIVE" Type="Boolean" Nullable="false" />
+          <Property Name="GBA" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="COUNTRY" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="CLIENTESDI_X_KAM" Relationship="CRMToolsEntities.FK_CLIENTESDI_X_KAM_KAM" FromRole="KAM" ToRole="CLIENTESDI_X_KAM" />
+        </EntityType>
+        <EntityType Name="LOG_LOGIN">
+          <Key>
+            <PropertyRef Name="LOG_ID" />
+          </Key>
+          <Property Name="LOG_ID" Type="Int32" Nullable="false" />
+          <Property Name="LOGIN_ID" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="USER_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LOGIN" Type="DateTime" Nullable="false" />
+          <Property Name="LOGOUT" Type="DateTime" />
+          <Property Name="HISTORY" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="USERS" Relationship="CRMToolsEntities.FK_LOG_LOGIN_USERS" FromRole="LOG_LOGIN" ToRole="USERS" />
+        </EntityType>
+        <EntityType Name="PAISES">
+          <Key>
+            <PropertyRef Name="ID_COUNTRY" />
+          </Key>
+          <Property Name="ID_COUNTRY" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
+          <Property Name="COUNTRY_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="REGION" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SUB_REGION" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SALES_ORGANIZATION" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TAX_RATE" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="DIVISION_TERRITORIAL" Relationship="CRMToolsEntities.FK_DIVISION_TERRITORIAL_PAISES" FromRole="PAISES" ToRole="DIVISION_TERRITORIAL" />
+          <NavigationProperty Name="SELLIN" Relationship="CRMToolsEntities.FK_SELLIN_PAISES" FromRole="PAISES" ToRole="SELLIN" />
+        </EntityType>
+        <EntityType Name="PLATAFORMA_X_CLIENTES">
+          <Key>
+            <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+          </Key>
+          <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="CODIGO_PLATAFORMA" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="PLATAFORMAS" Relationship="CRMToolsEntities.FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS" FromRole="PLATAFORMA_X_CLIENTES" ToRole="PLATAFORMAS" />
+        </EntityType>
+        <EntityType Name="PLATAFORMAS">
+          <Key>
+            <PropertyRef Name="CODIGO_PLATAFORMA" />
+          </Key>
+          <Property Name="CODIGO_PLATAFORMA" Type="Int32" Nullable="false" />
+          <Property Name="NOMBRE_PLATAFORMA" Type="String" Nullable="false" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="DESCRIPCION_PLATAFORMA" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="PLATAFORMA_X_CLIENTES" Relationship="CRMToolsEntities.FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS" FromRole="PLATAFORMAS" ToRole="PLATAFORMA_X_CLIENTES" />
+        </EntityType>
+        <EntityType Name="PRIVILEGIOS">
+          <Key>
+            <PropertyRef Name="PRIVILEGIO_ID" />
+          </Key>
+          <Property Name="PRIVILEGIO_ID" Type="Int32" Nullable="false" />
+          <Property Name="PRIVILEGIO_LLAVE" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DESCRIPCION" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="PRIVILEGIOS_X_ROL" Relationship="CRMToolsEntities.FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS" FromRole="PRIVILEGIOS" ToRole="PRIVILEGIOS_X_ROL" />
+        </EntityType>
+        <EntityType Name="PRIVILEGIOS_X_ROL">
+          <Key>
+            <PropertyRef Name="PRIVILEGIOXROLID" />
+          </Key>
+          <Property Name="PRIVILEGIOXROLID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PRIVILEGIO_ID" Type="Int32" Nullable="false" />
+          <Property Name="ID_ROL" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="PRIVILEGIOS" Relationship="CRMToolsEntities.FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS" FromRole="PRIVILEGIOS_X_ROL" ToRole="PRIVILEGIOS" />
+          <NavigationProperty Name="ROLES" Relationship="CRMToolsEntities.FK_PRIVILEGIOS_X_ROL_ROLES" FromRole="PRIVILEGIOS_X_ROL" ToRole="ROLES" />
+        </EntityType>
+        <EntityType Name="PRODUCTOS">
+          <Key>
+            <PropertyRef Name="CODIGO_MATERIAL" />
+          </Key>
+          <Property Name="CODIGO_MATERIAL" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+          <Property Name="CODIGO_CORTO" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+          <Property Name="DESCRIPCION" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="STRATEGIC_GROUP" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LAO_GROUP" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NIVEL1" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NIVEL2" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NIVEL3" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NIVEL4" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NIVEL5" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="FACTOR_GSU" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ROLES">
+          <Key>
+            <PropertyRef Name="ID_ROL" />
+          </Key>
+          <Property Name="ID_ROL" Type="Int32" Nullable="false" />
+          <Property Name="NOMBRE_ROL" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DESCRIPCION_ROL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="PRIVILEGIOS_X_ROL" Relationship="CRMToolsEntities.FK_PRIVILEGIOS_X_ROL_ROLES" FromRole="ROLES" ToRole="PRIVILEGIOS_X_ROL" />
+          <NavigationProperty Name="ROLES_X_USUARIO" Relationship="CRMToolsEntities.FK_ROLES_X_USUARIO_ROLES" FromRole="ROLES" ToRole="ROLES_X_USUARIO" />
+        </EntityType>
+        <EntityType Name="ROLES_X_USUARIO">
+          <Key>
+            <PropertyRef Name="ROLXUSERID" />
+          </Key>
+          <Property Name="ROLXUSERID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USER_ID" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="ID_ROL" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ROLES" Relationship="CRMToolsEntities.FK_ROLES_X_USUARIO_ROLES" FromRole="ROLES_X_USUARIO" ToRole="ROLES" />
+          <NavigationProperty Name="USERS" Relationship="CRMToolsEntities.FK_ROLES_X_USUARIO_USERS" FromRole="ROLES_X_USUARIO" ToRole="USERS" />
+        </EntityType>
+        <EntityType Name="SELLIN">
+          <Key>
+            <PropertyRef Name="ID_SELLIN" />
+          </Key>
+          <Property Name="CONCEPTO" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="MES" Type="Int32" Nullable="false" />
+          <Property Name="ANIO" Type="Int32" Nullable="false" />
+          <Property Name="TIPO" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="CODIGO_CLIENTE" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NOMBRE_CLIENTE_FINAL" Type="String" Nullable="false" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="CODIGO_PRODUCTO_SAP" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NOMBRE_PRODUCTO" Type="String" Nullable="false" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="NETSALES_US" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="SALES_CASES_US" Type="Int32" Nullable="false" />
+          <Property Name="OPEN_US" Type="Int32" Nullable="false" />
+          <Property Name="FORECAST_US" Type="Int32" Nullable="false" />
+          <Property Name="ID_COUNTRY" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="PAISES" Relationship="CRMToolsEntities.FK_SELLIN_PAISES" FromRole="SELLIN" ToRole="PAISES" />
+          <Property Type="Int32" Name="ID_SELLIN" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="USERS">
+          <Key>
+            <PropertyRef Name="USER_ID" />
+          </Key>
+          <Property Name="USER_ID" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="USER_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PASSWORD" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="LOGIN_ID" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="NAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LAST_NAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="STATUS" Type="Boolean" Nullable="false" />
+          <Property Name="ID_COUNTRY" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
+          <Property Name="E_MAIL" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="LOG_LOGIN" Relationship="CRMToolsEntities.FK_LOG_LOGIN_USERS" FromRole="USERS" ToRole="LOG_LOGIN" />
+          <NavigationProperty Name="ROLES_X_USUARIO" Relationship="CRMToolsEntities.FK_ROLES_X_USUARIO_USERS" FromRole="USERS" ToRole="ROLES_X_USUARIO" />
+          <Property Type="DateTime" Name="FECHA_CREACION" />
+        </EntityType>
+        <EntityType Name="PRIVILEGIOSXUSER">
+          <Key>
+            <PropertyRef Name="PRIVILEGIO_ID" />
+            <PropertyRef Name="DESCRIPCION" />
+            <PropertyRef Name="ID_ROL" />
+            <PropertyRef Name="NOMBRE_ROL" />
+            <PropertyRef Name="USER_ID" />
+            <PropertyRef Name="USER_NAME" />
+            <PropertyRef Name="PASSWORD" />
+            <PropertyRef Name="LOGIN_ID" />
+            <PropertyRef Name="STATUS" />
+            <PropertyRef Name="ID_COUNTRY" />
+            <PropertyRef Name="E_MAIL" />
+          </Key>
+          <Property Name="PRIVILEGIO_ID" Type="Int32" Nullable="false" />
+          <Property Name="PRIVILEGIO_LLAVE" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DESCRIPCION" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ID_ROL" Type="Int32" Nullable="false" />
+          <Property Name="NOMBRE_ROL" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DESCRIPCION_ROL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="USER_ID" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="USER_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PASSWORD" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="LOGIN_ID" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="NAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LAST_NAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="STATUS" Type="Boolean" Nullable="false" />
+          <Property Name="ID_COUNTRY" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
+          <Property Name="E_MAIL" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_CLIENTES_CAJAS">
+          <End Type="CRMToolsEntities.CAJAS" Multiplicity="1" Role="CAJAS" />
+          <End Type="CRMToolsEntities.CLIENTES" Multiplicity="*" Role="CLIENTES" />
+          <ReferentialConstraint>
+            <Principal Role="CAJAS">
+              <PropertyRef Name="Codigo" />
+            </Principal>
+            <Dependent Role="CLIENTES">
+              <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CLIENTES_CLIENTESDI_X_KAM">
+          <End Role="CLIENTESDI_X_KAM" Type="CRMToolsEntities.CLIENTESDI_X_KAM" Multiplicity="1" />
+          <End Role="CLIENTES" Type="CRMToolsEntities.CLIENTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLIENTESDI_X_KAM">
+              <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+            </Principal>
+            <Dependent Role="CLIENTES">
+              <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CLIENTES_DOLARES">
+          <End Type="CRMToolsEntities.DOLARES" Multiplicity="1" Role="DOLARES" />
+          <End Type="CRMToolsEntities.CLIENTES" Multiplicity="*" Role="CLIENTES" />
+          <ReferentialConstraint>
+            <Principal Role="DOLARES">
+              <PropertyRef Name="Codigo" />
+            </Principal>
+            <Dependent Role="CLIENTES">
+              <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CLIENTES_GLOBAL_ACCOUNTS">
+          <End Role="GLOBAL_ACCOUNTS" Type="CRMToolsEntities.GLOBAL_ACCOUNTS" Multiplicity="0..1" />
+          <End Role="CLIENTES" Type="CRMToolsEntities.CLIENTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GLOBAL_ACCOUNTS">
+              <PropertyRef Name="GLOBAL_ACCOUNT_ID" />
+            </Principal>
+            <Dependent Role="CLIENTES">
+              <PropertyRef Name="GLOBAL_ACCOUNT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CLIENTESDI_X_KAM_KAM">
+          <End Role="KAM" Type="CRMToolsEntities.KAM" Multiplicity="1" />
+          <End Role="CLIENTESDI_X_KAM" Type="CRMToolsEntities.CLIENTESDI_X_KAM" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KAM">
+              <PropertyRef Name="KAM_ID" />
+            </Principal>
+            <Dependent Role="CLIENTESDI_X_KAM">
+              <PropertyRef Name="KAM_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DIVISION_TERRITORIAL_PAISES">
+          <End Role="PAISES" Type="CRMToolsEntities.PAISES" Multiplicity="1" />
+          <End Role="DIVISION_TERRITORIAL" Type="CRMToolsEntities.DIVISION_TERRITORIAL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PAISES">
+              <PropertyRef Name="ID_COUNTRY" />
+            </Principal>
+            <Dependent Role="DIVISION_TERRITORIAL">
+              <PropertyRef Name="COUNTRY_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JERARQUIA_GLOBAL_JERARQUIA_LAO">
+          <End Role="JERARQUIA_LAO" Type="CRMToolsEntities.JERARQUIA_LAO" Multiplicity="1" />
+          <End Role="JERARQUIA_GLOBAL" Type="CRMToolsEntities.JERARQUIA_GLOBAL" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="JERARQUIA_LAO">
+              <PropertyRef Name="CODIGO" />
+            </Principal>
+            <Dependent Role="JERARQUIA_GLOBAL">
+              <PropertyRef Name="CODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LOG_LOGIN_USERS">
+          <End Role="USERS" Type="CRMToolsEntities.USERS" Multiplicity="1" />
+          <End Role="LOG_LOGIN" Type="CRMToolsEntities.LOG_LOGIN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="LOG_LOGIN">
+              <PropertyRef Name="LOGIN_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SELLIN_PAISES">
+          <End Role="PAISES" Type="CRMToolsEntities.PAISES" Multiplicity="1" />
+          <End Role="SELLIN" Type="CRMToolsEntities.SELLIN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PAISES">
+              <PropertyRef Name="ID_COUNTRY" />
+            </Principal>
+            <Dependent Role="SELLIN">
+              <PropertyRef Name="ID_COUNTRY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS">
+          <End Role="PLATAFORMAS" Type="CRMToolsEntities.PLATAFORMAS" Multiplicity="1" />
+          <End Role="PLATAFORMA_X_CLIENTES" Type="CRMToolsEntities.PLATAFORMA_X_CLIENTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PLATAFORMAS">
+              <PropertyRef Name="CODIGO_PLATAFORMA" />
+            </Principal>
+            <Dependent Role="PLATAFORMA_X_CLIENTES">
+              <PropertyRef Name="CODIGO_PLATAFORMA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS">
+          <End Role="PRIVILEGIOS" Type="CRMToolsEntities.PRIVILEGIOS" Multiplicity="1" />
+          <End Role="PRIVILEGIOS_X_ROL" Type="CRMToolsEntities.PRIVILEGIOS_X_ROL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRIVILEGIOS">
+              <PropertyRef Name="PRIVILEGIO_ID" />
+            </Principal>
+            <Dependent Role="PRIVILEGIOS_X_ROL">
+              <PropertyRef Name="PRIVILEGIO_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PRIVILEGIOS_X_ROL_ROLES">
+          <End Role="ROLES" Type="CRMToolsEntities.ROLES" Multiplicity="1" />
+          <End Role="PRIVILEGIOS_X_ROL" Type="CRMToolsEntities.PRIVILEGIOS_X_ROL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ROLES">
+              <PropertyRef Name="ID_ROL" />
+            </Principal>
+            <Dependent Role="PRIVILEGIOS_X_ROL">
+              <PropertyRef Name="ID_ROL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ROLES_X_USUARIO_ROLES">
+          <End Role="ROLES" Type="CRMToolsEntities.ROLES" Multiplicity="1" />
+          <End Role="ROLES_X_USUARIO" Type="CRMToolsEntities.ROLES_X_USUARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ROLES">
+              <PropertyRef Name="ID_ROL" />
+            </Principal>
+            <Dependent Role="ROLES_X_USUARIO">
+              <PropertyRef Name="ID_ROL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ROLES_X_USUARIO_USERS">
+          <End Role="USERS" Type="CRMToolsEntities.USERS" Multiplicity="1" />
+          <End Role="ROLES_X_USUARIO" Type="CRMToolsEntities.ROLES_X_USUARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="ROLES_X_USUARIO">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SUB_SEGMENTO">
+          <Key>
+            <PropertyRef Name="SEGMENT_ID" />
+            <PropertyRef Name="SUB_SEGMENT" />
+          </Key>
+          <Property Type="Int32" Name="SEGMENT_ID" Nullable="false" />
+          <Property Type="String" Name="SUB_SEGMENT" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EQUIVALENCIAS_SEGMENTOS">
+          <Key>
+            <PropertyRef Name="COD_SEGMENT_IMPORT" />
+          </Key>
+          <Property Type="Int32" Name="COD_SEGMENT_IMPORT" Nullable="false" />
+          <Property Type="String" Name="NAME_SEGMENT_IMPORT" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SEGMENT_ID" Nullable="false" />
+          <Property Type="DateTime" Name="FECHA_CREACION" />
+          <Property Type="DateTime" Name="FECHA_ACTUALIZACION" />
+          <NavigationProperty Name="SEGMENTOS" Relationship="CRMToolsEntities.FK_EQUIVALENCIAS_SEGMENTOS_SEGMENTOS" FromRole="EQUIVALENCIAS_SEGMENTOS" ToRole="SEGMENTOS" />
+        </EntityType>
+        <EntityType Name="SEGMENTOS">
+          <Key>
+            <PropertyRef Name="SEGMENT_ID" />
+          </Key>
+          <Property Type="Int32" Name="SEGMENT_ID" Nullable="false" />
+          <Property Type="String" Name="SEGMENT_NAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SEGMENT_NAME_ING" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="EQUIVALENCIAS_SEGMENTOS" Relationship="CRMToolsEntities.FK_EQUIVALENCIAS_SEGMENTOS_SEGMENTOS" FromRole="SEGMENTOS" ToRole="EQUIVALENCIAS_SEGMENTOS" />
+        </EntityType>
+        <Association Name="FK_EQUIVALENCIAS_SEGMENTOS_SEGMENTOS">
+          <End Type="CRMToolsEntities.SEGMENTOS" Role="SEGMENTOS" Multiplicity="1" />
+          <End Type="CRMToolsEntities.EQUIVALENCIAS_SEGMENTOS" Role="EQUIVALENCIAS_SEGMENTOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SEGMENTOS">
+              <PropertyRef Name="SEGMENT_ID" />
+            </Principal>
+            <Dependent Role="EQUIVALENCIAS_SEGMENTOS">
+              <PropertyRef Name="SEGMENT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="GRUPOS_PRODUCTOS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="LAO_GROUP" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ESTRATEGIC_GROUP" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NIVEL1" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NIVEL2" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NIVEL3" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NIVEL4" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NIVEL5" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PRODUCTOS_EQUIVALENTES">
+          <Key>
+            <PropertyRef Name="CODIGO_PRODUCTO_DISTRIBUIDOR" />
+            <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+            <PropertyRef Name="ID_COUNTRY" />
+          </Key>
+          <Property Name="CODIGO_PRODUCTO_DISTRIBUIDOR" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="CODIGO_DISTRIBUIDOR" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="ID_COUNTRY" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="DESCRIPCION_PRODUCTO_DISTR" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="CODIGO_PRODUCTO_SAP" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="TIPO_MEDIDA" MaxLength="10" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="CANTIDAD" Type="Int32" />
+          <Property Name="VC" Type="Single" />
+          <Property Name="VALOR" Type="Single" />
+        </EntityType>
+        <EntityType Name="SELLOUT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+          <Property Name="ANIO" Nullable="false" Type="Int32" />
+          <Property Name="MES" Nullable="false" Type="Int32" />
+          <Property Name="SECUENCIA_MES" Nullable="false" Type="Int32" />
+          <Property Name="FECHA" Type="DateTime" />
+          <Property Name="ID_COUNTRY" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="CODIGO_CLIENTE_COMPUESTO" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="CODIGO_DISTRIBUIDOR" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="CODIGO_VENDEDOR" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="NOMBRE_VENDEDOR" MaxLength="70" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="CODIGO_CLIENTE" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="NOMBRE_CLIENTE" Nullable="false" MaxLength="70" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="CODIGO_PRODUCTO_DISTRIBUIDOR" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="CODIGO_PRODUCTOS_SAP" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="BULTOS" Type="Single" />
+          <Property Name="VENTA_MONEDA_LOCAL" Precision="19" Scale="4" Type="Decimal" />
+          <Property Name="VENTA_DOLARES" Precision="19" Scale="4" Type="Decimal" />
+          <NavigationProperty Name="DISTRIBUIDORES" Relationship="CRMToolsEntities.FK_SELLOUT_DISTRIBUIDORES" FromRole="SELLOUT" ToRole="DISTRIBUIDORES" />
+        </EntityType>
+        <Association Name="FK_SELLOUT_DISTRIBUIDORES">
+          <End Type="CRMToolsEntities.DISTRIBUIDORES" Multiplicity="1" Role="DISTRIBUIDORES" />
+          <End Type="CRMToolsEntities.SELLOUT" Multiplicity="*" Role="SELLOUT" />
+          <ReferentialConstraint>
+            <Principal Role="DISTRIBUIDORES">
+              <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+            </Principal>
+            <Dependent Role="SELLOUT">
+              <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="VENTAS_NUEVAS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="PAIS" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SECUENCIA" Nullable="false" />
+          <Property Type="String" Name="CODIGO_DISTRIBUIDOR" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODIGO_CLIENTE_COMPUESTO" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="TOTAL_VENTAS_NUEVAS" Nullable="false" Precision="19" Scale="4" />
+        </EntityType>
+        <EntityType Name="CLIENTES_VIEW">
+          <Key>
+            <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
+            <PropertyRef Name="CODIGO_CLIENTE" />
+            <PropertyRef Name="NOMBRE_CLIENTE" />
+            <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
+            <PropertyRef Name="FECHA_CREACION" />
+            <PropertyRef Name="FECHA_ACTUALIZACION" />
+            <PropertyRef Name="SEGMENT_ID" />
+            <PropertyRef Name="SEGMENT_NAME" />
+            <PropertyRef Name="COD_SEGMENT_IMPORT" />
+            <PropertyRef Name="NAME_SEGMENT_IMPORT" />
+            <PropertyRef Name="Expr1" />
+          </Key>
+          <Property Type="String" Name="CODIGO_CLIENTE_COMPUESTO" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODIGO_CLIENTE" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOMBRE_CLIENTE" Nullable="false" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODIGO_DISTRIBUIDOR" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOMBRE_DISTRIBUIDOR" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CODIGO_VENDEDOR" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOMBRE_VENDEDOR" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CIUDAD" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DIRECCION" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TELEFONO_CLIENTE" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CEDULA_JURIDICA" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOMBRE_CONTACTO" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TELEFONO_CONTACTO" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NOMBRE_COMERCIAL" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ID_COUNTRY" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="E_MAIL" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Type="Int32" Name="SEGMENTO_SC_ID" />
+          <Property Type="Int32" Name="SEGMENTO_KC_ID" />
+          <Property Type="Int32" Name="SUBSEGMENTO_ID" />
+          <Property Type="String" Name="TIPO_ABC_DISTRIBUIDOR" MaxLength="5" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="TIPO_ABC_PAIS" MaxLength="5" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="TIPO_ABC_REGION" MaxLength="5" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="TIPO_ABC_SUBREGION" MaxLength="5" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="GRUPO_CLIENTE" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PLATAFORMAS" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="GLOBAL_ACCOUNT_ID" />
+          <Property Type="Boolean" Name="STATUS_CLIENTE" />
+          <Property Type="String" Name="SALES_TYPE" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="FECHA_CREACION" Nullable="false" />
+          <Property Type="DateTime" Name="FECHA_ACTUALIZACION" Nullable="false" />
+          <Property Type="Boolean" Name="AGRUPAR" />
+          <Property Type="Int32" Name="SEGMENT_ID" Nullable="false" />
+          <Property Type="String" Name="SEGMENT_NAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SEGMENT_NAME_ING" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="COD_SEGMENT_IMPORT" Nullable="false" />
+          <Property Type="String" Name="NAME_SEGMENT_IMPORT" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Expr1" Nullable="false" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CRMToolsEntitiesStoreContainer" CdmEntityContainer="CRMToolEntities">
+          <EntitySetMapping Name="CAJAS">
+            <EntityTypeMapping TypeName="CRMToolsEntities.CAJAS">
+              <MappingFragment StoreEntitySet="CAJAS">
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+                <ScalarProperty Name="Q" ColumnName="Q" />
+                <ScalarProperty Name="Folded_Bath" ColumnName="Folded Bath" />
+                <ScalarProperty Name="Jumbo_Roll_Bath" ColumnName="Jumbo Roll Bath" />
+                <ScalarProperty Name="Standard_Roll_Bath" ColumnName="Standard Roll Bath" />
+                <ScalarProperty Name="Group_Bath_Tissue" ColumnName="Group Bath Tissue" />
+                <ScalarProperty Name="Washroom_Facial_Flats" ColumnName="Washroom Facial Flats" />
+                <ScalarProperty Name="Washroom_Facial_Pocket_Pack" ColumnName="Washroom Facial Pocket Pack" />
+                <ScalarProperty Name="Washroom_Facial_Uprights" ColumnName="Washroom Facial Uprights" />
+                <ScalarProperty Name="Group_Facial" ColumnName="Group Facial" />
+                <ScalarProperty Name="Air_Fresheners" ColumnName="Air Fresheners" />
+                <ScalarProperty Name="Disposal_Containers" ColumnName="Disposal Containers" />
+                <ScalarProperty Name="Sanitary_Bags" ColumnName="Sanitary Bags" />
+                <ScalarProperty Name="Seat_Covers" ColumnName="Seat Covers" />
+                <ScalarProperty Name="Seat_Sanitizers" ColumnName="Seat Sanitizers" />
+                <ScalarProperty Name="Urinal_Screens" ColumnName="Urinal Screens" />
+                <ScalarProperty Name="Group_HH_T_Other" ColumnName="Group HH&amp;T Other" />
+                <ScalarProperty Name="Skincare_Bag_in_Box" ColumnName="Skincare Bag-in-Box" />
+                <ScalarProperty Name="Skincare_Bottles" ColumnName="Skincare Bottles" />
+                <ScalarProperty Name="Skincare_Bulk" ColumnName="Skincare Bulk" />
+                <ScalarProperty Name="Skincare_Cassette" ColumnName="Skincare Cassette" />
+                <ScalarProperty Name="Skincare_SureTouch" ColumnName="Skincare SureTouch" />
+                <ScalarProperty Name="Group_Skincare" ColumnName="Group Skincare" />
+                <ScalarProperty Name="Packaged_Beverage" ColumnName="Packaged Beverage" />
+                <ScalarProperty Name="Packaged_Dinner" ColumnName="Packaged Dinner" />
+                <ScalarProperty Name="Packaged_Luncheon" ColumnName="Packaged Luncheon" />
+                <ScalarProperty Name="Tabletop_Dispenser" ColumnName="Tabletop Dispenser" />
+                <ScalarProperty Name="Group_Tabletop" ColumnName="Group Tabletop" />
+                <ScalarProperty Name="Center_Pull_Towels" ColumnName="Center Pull Towels" />
+                <ScalarProperty Name="Folded_Towels" ColumnName="Folded Towels" />
+                <ScalarProperty Name="Hard_Rolled_Towels" ColumnName="Hard Rolled Towels" />
+                <ScalarProperty Name="Kitchen_Rolled_Towels" ColumnName="Kitchen Rolled Towels" />
+                <ScalarProperty Name="Group_Towels" ColumnName="Group Towels" />
+                <ScalarProperty Name="Skincare_Hand_Sanitizer_Bag_in" ColumnName="Skincare Hand Sanitizer Bag-in" />
+                <ScalarProperty Name="Group_Hand_Sanitizer" ColumnName="Group Hand Sanitizer" />
+                <ScalarProperty Name="Industrial_Apparel" ColumnName="Industrial Apparel" />
+                <ScalarProperty Name="Industrial_Face_Protection" ColumnName="Industrial Face Protection" />
+                <ScalarProperty Name="Industrial_Gloves" ColumnName="Industrial Gloves" />
+                <ScalarProperty Name="Industrial_Head_Protection" ColumnName="Industrial Head Protection" />
+                <ScalarProperty Name="Industrial_Hearing" ColumnName="Industrial Hearing" />
+                <ScalarProperty Name="Industrial_Respirators" ColumnName="Industrial Respirators" />
+                <ScalarProperty Name="Industrial_Vision" ColumnName="Industrial Vision" />
+                <ScalarProperty Name="Group_Industrial_PPE" ColumnName="Group Industrial PPE" />
+                <ScalarProperty Name="Industrial_Welding_Accessories" ColumnName="Industrial Welding Accessories" />
+                <ScalarProperty Name="Industrial_Welding_Helmets" ColumnName="Industrial Welding Helmets" />
+                <ScalarProperty Name="Group_Industrial_Welding" ColumnName="Group Industrial Welding" />
+                <ScalarProperty Name="Industrial_WKZ_Channelizers_Drums_Cones" ColumnName="Industrial WKZ Channelizers/Drums/Cones" />
+                <ScalarProperty Name="Industrial_WKZ_Highway_Safety" ColumnName="Industrial WKZ Highway Safety" />
+                <ScalarProperty Name="Industrial_WKZ_Hi_Viz___Seasonal" ColumnName="Industrial WKZ Hi-Viz &amp; Seasonal" />
+                <ScalarProperty Name="Industrial_WKZ_Other_Industrial_Safety" ColumnName="Industrial WKZ Other Industrial Safety" />
+                <ScalarProperty Name="Group_Industrial_Work_Zone" ColumnName="Group Industrial Work Zone" />
+                <ScalarProperty Name="Tissue_Parent_Roll_Sales_KCP" ColumnName="Tissue Parent Roll Sales KCP" />
+                <ScalarProperty Name="Group_Other_KCP" ColumnName="Group Other KCP" />
+                <ScalarProperty Name="Lab_Apparel" ColumnName="Lab Apparel" />
+                <ScalarProperty Name="Group_Scientific_PPE" ColumnName="Group Scientific PPE" />
+                <ScalarProperty Name="Extended_Use_Wipers" ColumnName="Extended Use Wipers" />
+                <ScalarProperty Name="Group_Extended_Use_Wipers" ColumnName="Group Extended Use Wipers" />
+                <ScalarProperty Name="Limited_Use_Wipers" ColumnName="Limited Use Wipers" />
+                <ScalarProperty Name="Group_Limited_Use_Wipers" ColumnName="Group Limited Use Wipers" />
+                <ScalarProperty Name="Other_Wipers" ColumnName="Other Wipers" />
+                <ScalarProperty Name="Group_Other_Wipers" ColumnName="Group Other Wipers" />
+                <ScalarProperty Name="Specialty_Wipers" ColumnName="Specialty Wipers" />
+                <ScalarProperty Name="Group_Specialty_Wipers" ColumnName="Group Specialty Wipers" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CLIENTES">
+            <EntityTypeMapping TypeName="CRMToolsEntities.CLIENTES">
+              <MappingFragment StoreEntitySet="CLIENTES">
+                <ScalarProperty Name="GLOBAL_ACCOUNT_NAME" ColumnName="GLOBAL_ACCOUNT_NAME" />
+                <ScalarProperty Name="AGRUPAR" ColumnName="AGRUPAR" />
+                <ScalarProperty Name="PLATAFORMAS" ColumnName="PLATAFORMAS" />
+                <ScalarProperty Name="NOMBRE_DISTRIBUIDOR" ColumnName="NOMBRE_DISTRIBUIDOR" />
+                <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+                <ScalarProperty Name="NOMBRE_COMERCIAL" ColumnName="NOMBRE_COMERCIAL" />
+                <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
+                <ScalarProperty Name="CODIGO_CLIENTE" ColumnName="CODIGO_CLIENTE" />
+                <ScalarProperty Name="NOMBRE_CLIENTE" ColumnName="NOMBRE_CLIENTE" />
+                <ScalarProperty Name="CODIGO_DISTRIBUIDOR" ColumnName="CODIGO_DISTRIBUIDOR" />
+                <ScalarProperty Name="CODIGO_VENDEDOR" ColumnName="CODIGO_VENDEDOR" />
+                <ScalarProperty Name="NOMBRE_VENDEDOR" ColumnName="NOMBRE_VENDEDOR" />
+                <ScalarProperty Name="CIUDAD" ColumnName="CIUDAD" />
+                <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+                <ScalarProperty Name="TELEFONO_CLIENTE" ColumnName="TELEFONO_CLIENTE" />
+                <ScalarProperty Name="CEDULA_JURIDICA" ColumnName="CEDULA_JURIDICA" />
+                <ScalarProperty Name="NOMBRE_CONTACTO" ColumnName="NOMBRE_CONTACTO" />
+                <ScalarProperty Name="TELEFONO_CONTACTO" ColumnName="TELEFONO_CONTACTO" />
+                <ScalarProperty Name="E_MAIL" ColumnName="E_MAIL" />
+                <ScalarProperty Name="SEGMENTO_SC_ID" ColumnName="SEGMENTO_SC_ID" />
+                <ScalarProperty Name="SEGMENTO_KC_ID" ColumnName="SEGMENTO_KC_ID" />
+                <ScalarProperty Name="SUBSEGMENTO_ID" ColumnName="SUBSEGMENTO_ID" />
+                <ScalarProperty Name="TIPO_ABC_DISTRIBUIDOR" ColumnName="TIPO_ABC_DISTRIBUIDOR" />
+                <ScalarProperty Name="TIPO_ABC_PAIS" ColumnName="TIPO_ABC_PAIS" />
+                <ScalarProperty Name="TIPO_ABC_REGION" ColumnName="TIPO_ABC_REGION" />
+                <ScalarProperty Name="TIPO_ABC_SUBREGION" ColumnName="TIPO_ABC_SUBREGION" />
+                <ScalarProperty Name="GRUPO_CLIENTE" ColumnName="GRUPO_CLIENTE" />
+                <ScalarProperty Name="GLOBAL_ACCOUNT_ID" ColumnName="GLOBAL_ACCOUNT_ID" />
+                <ScalarProperty Name="STATUS_CLIENTE" ColumnName="STATUS_CLIENTE" />
+                <ScalarProperty Name="SALES_TYPE" ColumnName="SALES_TYPE" />
+                <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+                <ScalarProperty Name="FECHA_ACTUALIZACION" ColumnName="FECHA_ACTUALIZACION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CLIENTESDI_X_KAM">
+            <EntityTypeMapping TypeName="CRMToolsEntities.CLIENTESDI_X_KAM">
+              <MappingFragment StoreEntitySet="CLIENTESDI_X_KAM">
+                <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
+                <ScalarProperty Name="KAM_ID" ColumnName="KAM_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DISTRIBUIDORES">
+            <EntityTypeMapping TypeName="CRMToolsEntities.DISTRIBUIDORES">
+              <MappingFragment StoreEntitySet="DISTRIBUIDORES">
+                <ScalarProperty Name="Import" ColumnName="Import" />
+                <ScalarProperty Name="CODIGO_DISTRIBUIDOR" ColumnName="CODIGO_DISTRIBUIDOR" />
+                <ScalarProperty Name="NOMBRE_DISTRIBUIDOR" ColumnName="NOMBRE_DISTRIBUIDOR" />
+                <ScalarProperty Name="NOMBRE_CORTO" ColumnName="NOMBRE_CORTO" />
+                <ScalarProperty Name="KAM_ID" ColumnName="KAM_ID" />
+                <ScalarProperty Name="PAIS" ColumnName="PAIS" />
+                <ScalarProperty Name="UseOnKPI" ColumnName="UseOnKPI" />
+                <ScalarProperty Name="GBA" ColumnName="GBA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DIVISION_TERRITORIAL">
+            <EntityTypeMapping TypeName="CRMToolsEntities.DIVISION_TERRITORIAL">
+              <MappingFragment StoreEntitySet="DIVISION_TERRITORIAL">
+                <ScalarProperty Name="COUNTRY_ID" ColumnName="COUNTRY_ID" />
+                <ScalarProperty Name="DIVISION_ID" ColumnName="DIVISION_ID" />
+                <ScalarProperty Name="CITY_ID" ColumnName="CITY_ID" />
+                <ScalarProperty Name="DIVISION_NAME" ColumnName="DIVISION_NAME" />
+                <ScalarProperty Name="CITY_NAME" ColumnName="CITY_NAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DOLARES">
+            <EntityTypeMapping TypeName="CRMToolsEntities.DOLARES">
+              <MappingFragment StoreEntitySet="DOLARES">
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+                <ScalarProperty Name="Q" ColumnName="Q" />
+                <ScalarProperty Name="Folded_Bath" ColumnName="Folded Bath" />
+                <ScalarProperty Name="Jumbo_Roll_Bath" ColumnName="Jumbo Roll Bath" />
+                <ScalarProperty Name="Standard_Roll_Bath" ColumnName="Standard Roll Bath" />
+                <ScalarProperty Name="Group_Bath_Tissue" ColumnName="Group Bath Tissue" />
+                <ScalarProperty Name="Washroom_Facial_Flats" ColumnName="Washroom Facial Flats" />
+                <ScalarProperty Name="Washroom_Facial_Pocket_Pack" ColumnName="Washroom Facial Pocket Pack" />
+                <ScalarProperty Name="Washroom_Facial_Uprights" ColumnName="Washroom Facial Uprights" />
+                <ScalarProperty Name="Group_Facial" ColumnName="Group Facial" />
+                <ScalarProperty Name="Air_Fresheners" ColumnName="Air Fresheners" />
+                <ScalarProperty Name="Disposal_Containers" ColumnName="Disposal Containers" />
+                <ScalarProperty Name="Sanitary_Bags" ColumnName="Sanitary Bags" />
+                <ScalarProperty Name="Seat_Covers" ColumnName="Seat Covers" />
+                <ScalarProperty Name="Seat_Sanitizers" ColumnName="Seat Sanitizers" />
+                <ScalarProperty Name="Urinal_Screens" ColumnName="Urinal Screens" />
+                <ScalarProperty Name="Group_HH_T_Other" ColumnName="Group HH&amp;T Other" />
+                <ScalarProperty Name="Skincare_Bag_in_Box" ColumnName="Skincare Bag-in-Box" />
+                <ScalarProperty Name="Skincare_Bottles" ColumnName="Skincare Bottles" />
+                <ScalarProperty Name="Skincare_Bulk" ColumnName="Skincare Bulk" />
+                <ScalarProperty Name="Skincare_Cassette" ColumnName="Skincare Cassette" />
+                <ScalarProperty Name="Skincare_SureTouch" ColumnName="Skincare SureTouch" />
+                <ScalarProperty Name="Group_Skincare" ColumnName="Group Skincare" />
+                <ScalarProperty Name="Packaged_Beverage" ColumnName="Packaged Beverage" />
+                <ScalarProperty Name="Packaged_Dinner" ColumnName="Packaged Dinner" />
+                <ScalarProperty Name="Packaged_Luncheon" ColumnName="Packaged Luncheon" />
+                <ScalarProperty Name="Tabletop_Dispenser" ColumnName="Tabletop Dispenser" />
+                <ScalarProperty Name="Group_Tabletop" ColumnName="Group Tabletop" />
+                <ScalarProperty Name="Center_Pull_Towels" ColumnName="Center Pull Towels" />
+                <ScalarProperty Name="Folded_Towels" ColumnName="Folded Towels" />
+                <ScalarProperty Name="Hard_Rolled_Towels" ColumnName="Hard Rolled Towels" />
+                <ScalarProperty Name="Kitchen_Rolled_Towels" ColumnName="Kitchen Rolled Towels" />
+                <ScalarProperty Name="Group_Towels" ColumnName="Group Towels" />
+                <ScalarProperty Name="Skincare_Hand_Sanitizer_Bag_in" ColumnName="Skincare Hand Sanitizer Bag-in" />
+                <ScalarProperty Name="Group_Hand_Sanitizer" ColumnName="Group Hand Sanitizer" />
+                <ScalarProperty Name="Industrial_Apparel" ColumnName="Industrial Apparel" />
+                <ScalarProperty Name="Industrial_Face_Protection" ColumnName="Industrial Face Protection" />
+                <ScalarProperty Name="Industrial_Gloves" ColumnName="Industrial Gloves" />
+                <ScalarProperty Name="Industrial_Head_Protection" ColumnName="Industrial Head Protection" />
+                <ScalarProperty Name="Industrial_Hearing" ColumnName="Industrial Hearing" />
+                <ScalarProperty Name="Industrial_Respirators" ColumnName="Industrial Respirators" />
+                <ScalarProperty Name="Industrial_Vision" ColumnName="Industrial Vision" />
+                <ScalarProperty Name="Group_Industrial_PPE" ColumnName="Group Industrial PPE" />
+                <ScalarProperty Name="Industrial_Welding_Accessories" ColumnName="Industrial Welding Accessories" />
+                <ScalarProperty Name="Industrial_Welding_Helmets" ColumnName="Industrial Welding Helmets" />
+                <ScalarProperty Name="Group_Industrial_Welding" ColumnName="Group Industrial Welding" />
+                <ScalarProperty Name="Industrial_WKZ_Channelizers_Drums_Cones" ColumnName="Industrial WKZ Channelizers/Drums/Cones" />
+                <ScalarProperty Name="Industrial_WKZ_Highway_Safety" ColumnName="Industrial WKZ Highway Safety" />
+                <ScalarProperty Name="Industrial_WKZ_Hi_Viz___Seasonal" ColumnName="Industrial WKZ Hi-Viz &amp; Seasonal" />
+                <ScalarProperty Name="Industrial_WKZ_Other_Industrial_Safety" ColumnName="Industrial WKZ Other Industrial Safety" />
+                <ScalarProperty Name="Group_Industrial_Work_Zone" ColumnName="Group Industrial Work Zone" />
+                <ScalarProperty Name="Tissue_Parent_Roll_Sales_KCP" ColumnName="Tissue Parent Roll Sales KCP" />
+                <ScalarProperty Name="Group_Other_KCP" ColumnName="Group Other KCP" />
+                <ScalarProperty Name="Lab_Apparel" ColumnName="Lab Apparel" />
+                <ScalarProperty Name="Group_Scientific_PPE" ColumnName="Group Scientific PPE" />
+                <ScalarProperty Name="Extended_Use_Wipers" ColumnName="Extended Use Wipers" />
+                <ScalarProperty Name="Group_Extended_Use_Wipers" ColumnName="Group Extended Use Wipers" />
+                <ScalarProperty Name="Limited_Use_Wipers" ColumnName="Limited Use Wipers" />
+                <ScalarProperty Name="Group_Limited_Use_Wipers" ColumnName="Group Limited Use Wipers" />
+                <ScalarProperty Name="Other_Wipers" ColumnName="Other Wipers" />
+                <ScalarProperty Name="Group_Other_Wipers" ColumnName="Group Other Wipers" />
+                <ScalarProperty Name="Specialty_Wipers" ColumnName="Specialty Wipers" />
+                <ScalarProperty Name="Group_Specialty_Wipers" ColumnName="Group Specialty Wipers" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GLOBAL_ACCOUNTS">
+            <EntityTypeMapping TypeName="CRMToolsEntities.GLOBAL_ACCOUNTS">
+              <MappingFragment StoreEntitySet="GLOBAL_ACCOUNTS">
+                <ScalarProperty Name="GLOBAL_ACCOUNT_ID" ColumnName="GLOBAL_ACCOUNT_ID" />
+                <ScalarProperty Name="NOMBRE_GLOBAL_ACCOUNT" ColumnName="NOMBRE_GLOBAL_ACCOUNT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JERARQUIA_GLOBAL">
+            <EntityTypeMapping TypeName="CRMToolsEntities.JERARQUIA_GLOBAL">
+              <MappingFragment StoreEntitySet="JERARQUIA_GLOBAL">
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+                <ScalarProperty Name="L4" ColumnName="L4" />
+                <ScalarProperty Name="L5" ColumnName="L5" />
+                <ScalarProperty Name="L12_MATERIAL" ColumnName="L12_MATERIAL" />
+                <ScalarProperty Name="LAO_GROUP" ColumnName="LAO_GROUP" />
+                <ScalarProperty Name="STRATEGIC_GROUP" ColumnName="STRATEGIC_GROUP" />
+                <ScalarProperty Name="NIVEL1" ColumnName="NIVEL1" />
+                <ScalarProperty Name="NIVEL2" ColumnName="NIVEL2" />
+                <ScalarProperty Name="NIVEL3" ColumnName="NIVEL3" />
+                <ScalarProperty Name="NIVEL4" ColumnName="NIVEL4" />
+                <ScalarProperty Name="NIVEL5" ColumnName="NIVEL5" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JERARQUIA_LAO">
+            <EntityTypeMapping TypeName="CRMToolsEntities.JERARQUIA_LAO">
+              <MappingFragment StoreEntitySet="JERARQUIA_LAO">
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+                <ScalarProperty Name="L1_SEGMENT" ColumnName="L1_SEGMENT" />
+                <ScalarProperty Name="L2_PLATFORM" ColumnName="L2_PLATFORM" />
+                <ScalarProperty Name="L3_BUSINESS" ColumnName="L3_BUSINESS" />
+                <ScalarProperty Name="L4_BUSINESS_SUBGROUP" ColumnName="L4_BUSINESS_SUBGROUP" />
+                <ScalarProperty Name="L5_CATEGORY" ColumnName="L5_CATEGORY" />
+                <ScalarProperty Name="L6_BRAND_CATEGORY" ColumnName="L6_BRAND_CATEGORY" />
+                <ScalarProperty Name="L7_VARIANT_1" ColumnName="L7_VARIANT_1" />
+                <ScalarProperty Name="L8_VARIANT_2" ColumnName="L8_VARIANT_2" />
+                <ScalarProperty Name="L9_FORMAT" ColumnName="L9_FORMAT" />
+                <ScalarProperty Name="L10_PACKING" ColumnName="L10_PACKING" />
+                <ScalarProperty Name="L11_SKU" ColumnName="L11_SKU" />
+                <ScalarProperty Name="L12_MATERIAL" ColumnName="L12_MATERIAL" />
+                <ScalarProperty Name="REGION" ColumnName="REGION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KAM">
+            <EntityTypeMapping TypeName="CRMToolsEntities.KAM">
+              <MappingFragment StoreEntitySet="KAM">
+                <ScalarProperty Name="KAM_ID" ColumnName="KAM_ID" />
+                <ScalarProperty Name="KAM_NAME" ColumnName="KAM_NAME" />
+                <ScalarProperty Name="KAM_eMAIL" ColumnName="KAM_eMAIL" />
+                <ScalarProperty Name="KAM_ACTIVE" ColumnName="KAM_ACTIVE" />
+                <ScalarProperty Name="GBA" ColumnName="GBA" />
+                <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LOG_LOGIN">
+            <EntityTypeMapping TypeName="CRMToolsEntities.LOG_LOGIN">
+              <MappingFragment StoreEntitySet="LOG_LOGIN">
+                <ScalarProperty Name="LOG_ID" ColumnName="LOG_ID" />
+                <ScalarProperty Name="LOGIN_ID" ColumnName="LOGIN_ID" />
+                <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+                <ScalarProperty Name="LOGIN" ColumnName="LOGIN" />
+                <ScalarProperty Name="LOGOUT" ColumnName="LOGOUT" />
+                <ScalarProperty Name="HISTORY" ColumnName="HISTORY" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PAISES">
+            <EntityTypeMapping TypeName="CRMToolsEntities.PAISES">
+              <MappingFragment StoreEntitySet="PAISES">
+                <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+                <ScalarProperty Name="COUNTRY_NAME" ColumnName="COUNTRY_NAME" />
+                <ScalarProperty Name="REGION" ColumnName="REGION" />
+                <ScalarProperty Name="SUB_REGION" ColumnName="SUB_REGION" />
+                <ScalarProperty Name="SALES_ORGANIZATION" ColumnName="SALES_ORGANIZATION" />
+                <ScalarProperty Name="TAX_RATE" ColumnName="TAX_RATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PLATAFORMA_X_CLIENTES">
+            <EntityTypeMapping TypeName="CRMToolsEntities.PLATAFORMA_X_CLIENTES">
+              <MappingFragment StoreEntitySet="PLATAFORMA_X_CLIENTES">
+                <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
+                <ScalarProperty Name="CODIGO_PLATAFORMA" ColumnName="CODIGO_PLATAFORMA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PLATAFORMAS">
+            <EntityTypeMapping TypeName="CRMToolsEntities.PLATAFORMAS">
+              <MappingFragment StoreEntitySet="PLATAFORMAS">
+                <ScalarProperty Name="CODIGO_PLATAFORMA" ColumnName="CODIGO_PLATAFORMA" />
+                <ScalarProperty Name="NOMBRE_PLATAFORMA" ColumnName="NOMBRE_PLATAFORMA" />
+                <ScalarProperty Name="DESCRIPCION_PLATAFORMA" ColumnName="DESCRIPCION_PLATAFORMA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRIVILEGIOS">
+            <EntityTypeMapping TypeName="CRMToolsEntities.PRIVILEGIOS">
+              <MappingFragment StoreEntitySet="PRIVILEGIOS">
+                <ScalarProperty Name="PRIVILEGIO_ID" ColumnName="PRIVILEGIO_ID" />
+                <ScalarProperty Name="PRIVILEGIO_LLAVE" ColumnName="PRIVILEGIO_LLAVE" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRIVILEGIOS_X_ROL">
+            <EntityTypeMapping TypeName="CRMToolsEntities.PRIVILEGIOS_X_ROL">
+              <MappingFragment StoreEntitySet="PRIVILEGIOS_X_ROL">
+                <ScalarProperty Name="PRIVILEGIOXROLID" ColumnName="PRIVILEGIOXROLID" />
+                <ScalarProperty Name="PRIVILEGIO_ID" ColumnName="PRIVILEGIO_ID" />
+                <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRODUCTOS">
+            <EntityTypeMapping TypeName="CRMToolsEntities.PRODUCTOS">
+              <MappingFragment StoreEntitySet="PRODUCTOS">
+                <ScalarProperty Name="CODIGO_MATERIAL" ColumnName="CODIGO_MATERIAL" />
+                <ScalarProperty Name="CODIGO_CORTO" ColumnName="CODIGO_CORTO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="STRATEGIC_GROUP" ColumnName="STRATEGIC_GROUP" />
+                <ScalarProperty Name="LAO_GROUP" ColumnName="LAO_GROUP" />
+                <ScalarProperty Name="NIVEL1" ColumnName="NIVEL1" />
+                <ScalarProperty Name="NIVEL2" ColumnName="NIVEL2" />
+                <ScalarProperty Name="NIVEL3" ColumnName="NIVEL3" />
+                <ScalarProperty Name="NIVEL4" ColumnName="NIVEL4" />
+                <ScalarProperty Name="NIVEL5" ColumnName="NIVEL5" />
+                <ScalarProperty Name="FACTOR_GSU" ColumnName="FACTOR_GSU" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ROLES">
+            <EntityTypeMapping TypeName="CRMToolsEntities.ROLES">
+              <MappingFragment StoreEntitySet="ROLES">
+                <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+                <ScalarProperty Name="NOMBRE_ROL" ColumnName="NOMBRE_ROL" />
+                <ScalarProperty Name="DESCRIPCION_ROL" ColumnName="DESCRIPCION_ROL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ROLES_X_USUARIO">
+            <EntityTypeMapping TypeName="CRMToolsEntities.ROLES_X_USUARIO">
+              <MappingFragment StoreEntitySet="ROLES_X_USUARIO">
+                <ScalarProperty Name="ROLXUSERID" ColumnName="ROLXUSERID" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SELLIN">
+            <EntityTypeMapping TypeName="CRMToolsEntities.SELLIN">
+              <MappingFragment StoreEntitySet="SELLIN">
+                <ScalarProperty Name="ID_SELLIN" ColumnName="ID_SELLIN" />
+                <ScalarProperty Name="CONCEPTO" ColumnName="CONCEPTO" />
+                <ScalarProperty Name="MES" ColumnName="MES" />
+                <ScalarProperty Name="ANIO" ColumnName="ANIO" />
+                <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+                <ScalarProperty Name="CODIGO_CLIENTE" ColumnName="CODIGO_CLIENTE" />
+                <ScalarProperty Name="NOMBRE_CLIENTE_FINAL" ColumnName="NOMBRE_CLIENTE_FINAL" />
+                <ScalarProperty Name="CODIGO_PRODUCTO_SAP" ColumnName="CODIGO_PRODUCTO_SAP" />
+                <ScalarProperty Name="NOMBRE_PRODUCTO" ColumnName="NOMBRE_PRODUCTO" />
+                <ScalarProperty Name="NETSALES_US" ColumnName="NETSALES_US" />
+                <ScalarProperty Name="SALES_CASES_US" ColumnName="SALES_CASES_US" />
+                <ScalarProperty Name="OPEN_US" ColumnName="OPEN_US" />
+                <ScalarProperty Name="FORECAST_US" ColumnName="FORECAST_US" />
+                <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="USERS">
+            <EntityTypeMapping TypeName="CRMToolsEntities.USERS">
+              <MappingFragment StoreEntitySet="USERS">
+                <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="LOGIN_ID" ColumnName="LOGIN_ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+                <ScalarProperty Name="E_MAIL" ColumnName="E_MAIL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRIVILEGIOSXUSER">
+            <EntityTypeMapping TypeName="CRMToolsEntities.PRIVILEGIOSXUSER">
+              <MappingFragment StoreEntitySet="PRIVILEGIOSXUSER">
+                <ScalarProperty Name="PRIVILEGIO_ID" ColumnName="PRIVILEGIO_ID" />
+                <ScalarProperty Name="PRIVILEGIO_LLAVE" ColumnName="PRIVILEGIO_LLAVE" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+                <ScalarProperty Name="NOMBRE_ROL" ColumnName="NOMBRE_ROL" />
+                <ScalarProperty Name="DESCRIPCION_ROL" ColumnName="DESCRIPCION_ROL" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="LOGIN_ID" ColumnName="LOGIN_ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+                <ScalarProperty Name="E_MAIL" ColumnName="E_MAIL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SUB_SEGMENTO">
+            <EntityTypeMapping TypeName="CRMToolsEntities.SUB_SEGMENTO">
+              <MappingFragment StoreEntitySet="SUB_SEGMENTO">
+                <ScalarProperty Name="SUB_SEGMENT" ColumnName="SUB_SEGMENT" />
+                <ScalarProperty Name="SEGMENT_ID" ColumnName="SEGMENT_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EQUIVALENCIAS_SEGMENTOS">
+            <EntityTypeMapping TypeName="CRMToolsEntities.EQUIVALENCIAS_SEGMENTOS">
+              <MappingFragment StoreEntitySet="EQUIVALENCIAS_SEGMENTOS">
+                <ScalarProperty Name="FECHA_ACTUALIZACION" ColumnName="FECHA_ACTUALIZACION" />
+                <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+                <ScalarProperty Name="SEGMENT_ID" ColumnName="SEGMENT_ID" />
+                <ScalarProperty Name="NAME_SEGMENT_IMPORT" ColumnName="NAME_SEGMENT_IMPORT" />
+                <ScalarProperty Name="COD_SEGMENT_IMPORT" ColumnName="COD_SEGMENT_IMPORT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SEGMENTOS">
+            <EntityTypeMapping TypeName="CRMToolsEntities.SEGMENTOS">
+              <MappingFragment StoreEntitySet="SEGMENTOS">
+                <ScalarProperty Name="SEGMENT_NAME_ING" ColumnName="SEGMENT_NAME_ING" />
+                <ScalarProperty Name="SEGMENT_NAME" ColumnName="SEGMENT_NAME" />
+                <ScalarProperty Name="SEGMENT_ID" ColumnName="SEGMENT_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GRUPOS_PRODUCTOS">
+            <EntityTypeMapping TypeName="CRMToolsEntities.GRUPOS_PRODUCTOS">
+              <MappingFragment StoreEntitySet="GRUPOS_PRODUCTOS">
+                <ScalarProperty Name="NIVEL5" ColumnName="NIVEL5" />
+                <ScalarProperty Name="NIVEL4" ColumnName="NIVEL4" />
+                <ScalarProperty Name="NIVEL3" ColumnName="NIVEL3" />
+                <ScalarProperty Name="NIVEL2" ColumnName="NIVEL2" />
+                <ScalarProperty Name="NIVEL1" ColumnName="NIVEL1" />
+                <ScalarProperty Name="ESTRATEGIC_GROUP" ColumnName="ESTRATEGIC_GROUP" />
+                <ScalarProperty Name="LAO_GROUP" ColumnName="LAO_GROUP" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRODUCTOS_EQUIVALENTES">
+            <EntityTypeMapping TypeName="CRMToolsEntities.PRODUCTOS_EQUIVALENTES">
+              <MappingFragment StoreEntitySet="PRODUCTOS_EQUIVALENTES">
+                <ScalarProperty Name="VALOR" ColumnName="VALOR" />
+                <ScalarProperty Name="VC" ColumnName="VC" />
+                <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+                <ScalarProperty Name="TIPO_MEDIDA" ColumnName="TIPO_MEDIDA" />
+                <ScalarProperty Name="CODIGO_PRODUCTO_SAP" ColumnName="CODIGO_PRODUCTO_SAP" />
+                <ScalarProperty Name="DESCRIPCION_PRODUCTO_DISTR" ColumnName="DESCRIPCION_PRODUCTO_DISTR" />
+                <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+                <ScalarProperty Name="CODIGO_DISTRIBUIDOR" ColumnName="CODIGO_DISTRIBUIDOR" />
+                <ScalarProperty Name="CODIGO_PRODUCTO_DISTRIBUIDOR" ColumnName="CODIGO_PRODUCTO_DISTRIBUIDOR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SELLOUT">
+            <EntityTypeMapping TypeName="CRMToolsEntities.SELLOUT">
+              <MappingFragment StoreEntitySet="SELLOUT">
+                <ScalarProperty Name="VENTA_DOLARES" ColumnName="VENTA_DOLARES" />
+                <ScalarProperty Name="VENTA_MONEDA_LOCAL" ColumnName="VENTA_MONEDA_LOCAL" />
+                <ScalarProperty Name="BULTOS" ColumnName="BULTOS" />
+                <ScalarProperty Name="CODIGO_PRODUCTOS_SAP" ColumnName="CODIGO_PRODUCTOS_SAP" />
+                <ScalarProperty Name="CODIGO_PRODUCTO_DISTRIBUIDOR" ColumnName="CODIGO_PRODUCTO_DISTRIBUIDOR" />
+                <ScalarProperty Name="NOMBRE_CLIENTE" ColumnName="NOMBRE_CLIENTE" />
+                <ScalarProperty Name="CODIGO_CLIENTE" ColumnName="CODIGO_CLIENTE" />
+                <ScalarProperty Name="NOMBRE_VENDEDOR" ColumnName="NOMBRE_VENDEDOR" />
+                <ScalarProperty Name="CODIGO_VENDEDOR" ColumnName="CODIGO_VENDEDOR" />
+                <ScalarProperty Name="CODIGO_DISTRIBUIDOR" ColumnName="CODIGO_DISTRIBUIDOR" />
+                <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
+                <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+                <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+                <ScalarProperty Name="SECUENCIA_MES" ColumnName="SECUENCIA_MES" />
+                <ScalarProperty Name="MES" ColumnName="MES" />
+                <ScalarProperty Name="ANIO" ColumnName="ANIO" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VENTAS_NUEVAS">
+            <EntityTypeMapping TypeName="CRMToolsEntities.VENTAS_NUEVAS">
+              <MappingFragment StoreEntitySet="VENTAS_NUEVAS">
+                <ScalarProperty Name="TOTAL_VENTAS_NUEVAS" ColumnName="TOTAL_VENTAS_NUEVAS" />
+                <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
+                <ScalarProperty Name="CODIGO_DISTRIBUIDOR" ColumnName="CODIGO_DISTRIBUIDOR" />
+                <ScalarProperty Name="SECUENCIA" ColumnName="SECUENCIA" />
+                <ScalarProperty Name="PAIS" ColumnName="PAIS" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CLIENTES_VIEW">
+            <EntityTypeMapping TypeName="CRMToolsEntities.CLIENTES_VIEW">
+              <MappingFragment StoreEntitySet="CLIENTES_VIEW">
+                <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+                <ScalarProperty Name="NAME_SEGMENT_IMPORT" ColumnName="NAME_SEGMENT_IMPORT" />
+                <ScalarProperty Name="COD_SEGMENT_IMPORT" ColumnName="COD_SEGMENT_IMPORT" />
+                <ScalarProperty Name="SEGMENT_NAME_ING" ColumnName="SEGMENT_NAME_ING" />
+                <ScalarProperty Name="SEGMENT_NAME" ColumnName="SEGMENT_NAME" />
+                <ScalarProperty Name="SEGMENT_ID" ColumnName="SEGMENT_ID" />
+                <ScalarProperty Name="AGRUPAR" ColumnName="AGRUPAR" />
+                <ScalarProperty Name="FECHA_ACTUALIZACION" ColumnName="FECHA_ACTUALIZACION" />
+                <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+                <ScalarProperty Name="SALES_TYPE" ColumnName="SALES_TYPE" />
+                <ScalarProperty Name="STATUS_CLIENTE" ColumnName="STATUS_CLIENTE" />
+                <ScalarProperty Name="GLOBAL_ACCOUNT_ID" ColumnName="GLOBAL_ACCOUNT_ID" />
+                <ScalarProperty Name="PLATAFORMAS" ColumnName="PLATAFORMAS" />
+                <ScalarProperty Name="GRUPO_CLIENTE" ColumnName="GRUPO_CLIENTE" />
+                <ScalarProperty Name="TIPO_ABC_SUBREGION" ColumnName="TIPO_ABC_SUBREGION" />
+                <ScalarProperty Name="TIPO_ABC_REGION" ColumnName="TIPO_ABC_REGION" />
+                <ScalarProperty Name="TIPO_ABC_PAIS" ColumnName="TIPO_ABC_PAIS" />
+                <ScalarProperty Name="TIPO_ABC_DISTRIBUIDOR" ColumnName="TIPO_ABC_DISTRIBUIDOR" />
+                <ScalarProperty Name="SUBSEGMENTO_ID" ColumnName="SUBSEGMENTO_ID" />
+                <ScalarProperty Name="SEGMENTO_KC_ID" ColumnName="SEGMENTO_KC_ID" />
+                <ScalarProperty Name="SEGMENTO_SC_ID" ColumnName="SEGMENTO_SC_ID" />
+                <ScalarProperty Name="E_MAIL" ColumnName="E_MAIL" />
+                <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+                <ScalarProperty Name="NOMBRE_COMERCIAL" ColumnName="NOMBRE_COMERCIAL" />
+                <ScalarProperty Name="TELEFONO_CONTACTO" ColumnName="TELEFONO_CONTACTO" />
+                <ScalarProperty Name="NOMBRE_CONTACTO" ColumnName="NOMBRE_CONTACTO" />
+                <ScalarProperty Name="CEDULA_JURIDICA" ColumnName="CEDULA_JURIDICA" />
+                <ScalarProperty Name="TELEFONO_CLIENTE" ColumnName="TELEFONO_CLIENTE" />
+                <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+                <ScalarProperty Name="CIUDAD" ColumnName="CIUDAD" />
+                <ScalarProperty Name="NOMBRE_VENDEDOR" ColumnName="NOMBRE_VENDEDOR" />
+                <ScalarProperty Name="CODIGO_VENDEDOR" ColumnName="CODIGO_VENDEDOR" />
+                <ScalarProperty Name="NOMBRE_DISTRIBUIDOR" ColumnName="NOMBRE_DISTRIBUIDOR" />
+                <ScalarProperty Name="CODIGO_DISTRIBUIDOR" ColumnName="CODIGO_DISTRIBUIDOR" />
+                <ScalarProperty Name="NOMBRE_CLIENTE" ColumnName="NOMBRE_CLIENTE" />
+                <ScalarProperty Name="CODIGO_CLIENTE" ColumnName="CODIGO_CLIENTE" />
+                <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="CRMTOOLEntity" ZoomLevel="101">
+        <EntityTypeShape EntityType="CRMToolsEntities.CAJAS" Width="1.5" PointX="3" PointY="15.625" Height="13.326070963541666" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.CLIENTES" Width="1.5" PointX="5.25" PointY="5.375" Height="7.1724251302083344" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.CLIENTESDI_X_KAM" Width="1.5" PointX="3" PointY="12.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.DISTRIBUIDORES" Width="1.5" PointX="12" PointY="12.125" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.DIVISION_TERRITORIAL" Width="1.5" PointX="3" PointY="4.125" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.DOLARES" Width="1.5" PointX="3" PointY="32" Height="13.326070963541667" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.GLOBAL_ACCOUNTS" Width="1.5" PointX="3" PointY="29.625" Height="1.595683593749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.JERARQUIA_GLOBAL" Width="1.5" PointX="15" PointY="16.375" Height="3.3263964843750031" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.JERARQUIA_LAO" Width="1.5" PointX="12.75" PointY="16.125" Height="3.9033007812500031" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.KAM" Width="1.5" PointX="0.75" PointY="12.5" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.LOG_LOGIN" Width="1.5" PointX="10" PointY="3.5" Height="2.3648893229166745" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.PAISES" Width="1.5" PointX="0.75" PointY="6.25" Height="2.5571907552083308" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.PLATAFORMA_X_CLIENTES" Width="1.5" PointX="3" PointY="46.125" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.PLATAFORMAS" Width="1.5" PointX="0.75" PointY="46.125" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.PRIVILEGIOS" Width="1.5" PointX="10.75" PointY="15.625" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.PRIVILEGIOS_X_ROL" Width="1.5" PointX="13" PointY="3.5" Height="1.9802864583333388" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.PRODUCTOS" Width="1.5" PointX="9.75" PointY="7.75" Height="3.3263964843750031" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.ROLES" Width="1.5" PointX="7.375" PointY="7" Height="1.9802864583333388" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.ROLES_X_USUARIO" Width="1.5" PointX="10" PointY="0.75" Height="1.9802864583333388" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.SELLIN" Width="1.5" PointX="3" PointY="7" Height="3.9033007812500076" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.USERS" Width="1.5" PointX="7.75" PointY="3.125" Height="3.1340950520833384" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRMToolsEntities.PRIVILEGIOSXUSER" Width="1.5" PointX="7.75" PointY="11.875" Height="3.9033007812500102" IsExpanded="true" />
+        <AssociationConnector ManuallyRouted="false" Association="CRMToolsEntities.FK_CLIENTES_CAJAS">
+          <ConnectorPoint PointX="4.5" PointY="26.948751627604167" />
+          <ConnectorPoint PointX="5.28125" PointY="26.948751627604167" />
+          <ConnectorPoint PointX="5.28125" PointY="13.124329427083332" />
+        </AssociationConnector>
+        <AssociationConnector Association="CRMToolsEntities.FK_CLIENTES_CLIENTESDI_X_KAM" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="13.71818365234375" />
+          <ConnectorPoint PointX="5.3710092643229173" PointY="13.71818365234375" />
+          <ConnectorPoint PointX="5.5376759309895833" PointY="13.71818365234375" />
+          <ConnectorPoint PointX="5.7211901953125" PointY="13.71818365234375" />
+          <ConnectorPoint PointX="5.7211901953125" PointY="12.739726562500001" />
+        </AssociationConnector>
+        <AssociationConnector ManuallyRouted="false" Association="CRMToolsEntities.FK_CLIENTES_DOLARES">
+          <ConnectorPoint PointX="4.5" PointY="38.663035481770834" />
+          <ConnectorPoint PointX="5.265625" PointY="38.663035481770834" />
+          <ConnectorPoint PointX="5.265625" PointY="13.124329427083332" />
+        </AssociationConnector>
+        <AssociationConnector Association="CRMToolsEntities.FK_CLIENTES_GLOBAL_ACCOUNTS" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="30.422841796874998" />
+          <ConnectorPoint PointX="5.296875" PointY="30.422841796874998" />
+          <ConnectorPoint PointX="5.296875" PointY="13.124329427083332" />
+        </AssociationConnector>
+        <AssociationConnector Association="CRMToolsEntities.FK_CLIENTESDI_X_KAM_KAM" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="13.643992513020834" />
+          <ConnectorPoint PointX="3" PointY="13.643992513020834" />
+        </AssociationConnector>
+        <AssociationConnector Association="CRMToolsEntities.FK_DIVISION_TERRITORIAL_PAISES" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="6.25" />
+          <ConnectorPoint PointX="1.5" PointY="5.1874994999999995" />
+          <ConnectorPoint PointX="3" PointY="5.1874994999999995" />
+        </AssociationConnector>
+        <AssociationConnector Association="CRMToolsEntities.FK_JERARQUIA_GLOBAL_JERARQUIA_LAO" ManuallyRouted="false">
+          <ConnectorPoint PointX="14.25" PointY="18.0381982421875" />
+          <ConnectorPoint PointX="15" PointY="18.0381982421875" />
+        </AssociationConnector>
+        <AssociationConnector Association="CRMToolsEntities.FK_LOG_LOGIN_USERS" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.25" PointY="4.6824446614583373" />
+          <ConnectorPoint PointX="10" PointY="4.6824446614583373" />
+        </AssociationConnector>
+        <AssociationConnector Association="CRMToolsEntities.FK_SELLIN_PAISES" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="7.9035953776041659" />
+          <ConnectorPoint PointX="3" PointY="7.9035953776041659" />
+        </AssociationConnector>
+        <AssociationConnector Association="CRMToolsEntities.FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="46.922841796875" />
+          <ConnectorPoint PointX="3" PointY="46.922841796875" />
+        </AssociationConnector>
+        <AssociationConnector Association="CRMToolsEntities.FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS" ManuallyRouted="false">
+          <ConnectorPoint PointX="12.25" PointY="16.518992513020834" />
+          <ConnectorPoint PointX="12.5" PointY="16.518992513020834" />
+          <ConnectorPoint PointX="12.5" PointY="15.875" />
+          <ConnectorPoint PointX="14.03125125" PointY="15.875" />
+          <ConnectorPoint PointX="14.03125125" PointY="5.4802864583333388" />
+        </AssociationConnector>
+        <AssociationConnector Association="CRMToolsEntities.FK_PRIVILEGIOS_X_ROL_ROLES" ManuallyRouted="false">
+          <ConnectorPoint PointX="8.875" PointY="7.03125" />
+          <ConnectorPoint PointX="13.6874975" PointY="7.03125" />
+          <ConnectorPoint PointX="13.6874975" PointY="5.4802864583333388" />
+        </AssociationConnector>
+        <AssociationConnector Association="CRMToolsEntities.FK_ROLES_X_USUARIO_ROLES" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.53125" PointY="7" />
+          <ConnectorPoint PointX="7.53125" PointY="1.4769811718750017" />
+          <ConnectorPoint PointX="10" PointY="1.4769811718750017" />
+        </AssociationConnector>
+        <AssociationConnector Association="CRMToolsEntities.FK_ROLES_X_USUARIO_USERS" ManuallyRouted="false">
+          <ConnectorPoint PointX="8.5" PointY="3.125" />
+          <ConnectorPoint PointX="8.5" PointY="2.2664673437500049" />
+          <ConnectorPoint PointX="10" PointY="2.2664673437500049" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="CRMToolsEntities.SUB_SEGMENTO" Width="1.5" PointX="4.125" PointY="0.75" Height="1.595683593749996" />
+        <EntityTypeShape EntityType="CRMToolsEntities.EQUIVALENCIAS_SEGMENTOS" Width="1.5" PointX="16.625" PointY="12.875" Height="2.172587890624996" />
+        <EntityTypeShape EntityType="CRMToolsEntities.SEGMENTOS" Width="1.5" PointX="14.375" PointY="13.125" Height="1.7879850260416674" />
+        <AssociationConnector Association="CRMToolsEntities.FK_EQUIVALENCIAS_SEGMENTOS_SEGMENTOS" >
+          <ConnectorPoint PointX="15.875" PointY="14.018992513020834" />
+          <ConnectorPoint PointX="16.625" PointY="14.018992513020834" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="CRMToolsEntities.GRUPOS_PRODUCTOS" Width="1.5" PointX="0.75" PointY="0.75" Height="2.5571907552083246" />
+        <EntityTypeShape EntityType="CRMToolsEntities.PRODUCTOS_EQUIVALENTES" PointX="12" PointY="8" Width="1.5" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="CRMToolsEntities.SELLOUT" PointX="15.625" PointY="7.125" Width="1.5" Height="4.6725065104166674" />
+        <AssociationConnector Association="CRMToolsEntities.FK_SELLOUT_DISTRIBUIDORES">
+          <ConnectorPoint PointX="13.5" PointY="12.46875" />
+          <ConnectorPoint PointX="13.947917916666667" PointY="12.46875" />
+          <ConnectorPoint PointX="14.114584583333334" PointY="12.46875" />
+          <ConnectorPoint PointX="16.25" PointY="12.46875" />
+          <ConnectorPoint PointX="16.25" PointY="11.797506510416667" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="CRMToolsEntities.VENTAS_NUEVAS" Width="1.5" PointX="15.375" PointY="0.75" Height="2.1725878906250102" />
+        <EntityTypeShape EntityType="CRMToolsEntities.CLIENTES_VIEW" Width="1.5" PointX="5.375" PointY="16.75" Height="8.1339322916666674" />
+        </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

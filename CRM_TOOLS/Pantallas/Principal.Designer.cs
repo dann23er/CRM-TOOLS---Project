@@ -1341,7 +1341,7 @@
             this.radPageView4.Controls.Add(this.radPageViewPage29);
             this.radPageView4.Location = new System.Drawing.Point(3, 3);
             this.radPageView4.Name = "radPageView4";
-            this.radPageView4.SelectedPage = this.radPageViewPage29;
+            this.radPageView4.SelectedPage = this.radPageViewPage28;
             this.radPageView4.Size = new System.Drawing.Size(1164, 568);
             this.radPageView4.TabIndex = 0;
             this.radPageView4.Text = "radPageView4";
@@ -1351,7 +1351,7 @@
             this.radPageViewPage28.Controls.Add(this.radChart1);
             this.radPageViewPage28.Location = new System.Drawing.Point(10, 37);
             this.radPageViewPage28.Name = "radPageViewPage28";
-            this.radPageViewPage28.Size = new System.Drawing.Size(1071, 428);
+            this.radPageViewPage28.Size = new System.Drawing.Size(1143, 520);
             this.radPageViewPage28.Text = "Indicadores";
             // 
             // radChart1
@@ -1678,7 +1678,7 @@
             this.gridSellout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.gridSellout.Location = new System.Drawing.Point(19, 264);
             // 
-            // gridSellout
+            // 
             // 
             gridViewTextBoxColumn1.EnableExpressionEditor = false;
             gridViewTextBoxColumn1.FormatString = "";
@@ -1989,7 +1989,7 @@
             this.radGridView2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.radGridView2.Location = new System.Drawing.Point(45, 272);
             // 
-            // radGridView2
+            // 
             // 
             this.radGridView2.MasterTemplate.AutoGenerateColumns = false;
             gridViewTextBoxColumn20.EnableExpressionEditor = false;
@@ -2177,7 +2177,7 @@
             this.radGridView3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.radGridView3.Location = new System.Drawing.Point(3, 169);
             // 
-            // radGridView3
+            // 
             // 
             this.radGridView3.MasterTemplate.AutoGenerateColumns = false;
             gridViewTextBoxColumn35.EnableExpressionEditor = false;
@@ -2313,7 +2313,7 @@
             this.radGridView4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.radGridView4.Location = new System.Drawing.Point(119, 92);
             // 
-            // radGridView4
+            // 
             // 
             gridViewTextBoxColumn50.EnableExpressionEditor = false;
             gridViewTextBoxColumn50.FormatString = "";
@@ -2383,7 +2383,7 @@
             this.radGridView5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.radGridView5.Location = new System.Drawing.Point(18, 223);
             // 
-            // radGridView5
+            // 
             // 
             gridViewTextBoxColumn51.EnableExpressionEditor = false;
             gridViewTextBoxColumn51.FormatString = "";
@@ -2490,7 +2490,7 @@
             this.radGridView6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.radGridView6.Location = new System.Drawing.Point(27, 242);
             // 
-            // radGridView6
+            // 
             // 
             this.radGridView6.MasterTemplate.AutoGenerateColumns = false;
             gridViewTextBoxColumn56.EnableExpressionEditor = false;
@@ -2650,7 +2650,7 @@
             this.radGridView13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.radGridView13.Location = new System.Drawing.Point(22, 60);
             // 
-            // radGridView13
+            // 
             // 
             gridViewTextBoxColumn62.EnableExpressionEditor = false;
             gridViewTextBoxColumn62.FormatString = "";
@@ -2741,7 +2741,7 @@
             this.radGridView7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.radGridView7.Location = new System.Drawing.Point(45, 57);
             // 
-            // radGridView7
+            // 
             // 
             this.radGridView7.MasterTemplate.AutoGenerateColumns = false;
             gridViewTextBoxColumn69.EnableExpressionEditor = false;
@@ -2829,7 +2829,6 @@
             // 
             // btNuevo
             // 
-            this.btNuevo.Image = global::CRM_TOOLS.Properties.Resources.Add;
             this.btNuevo.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.btNuevo.Location = new System.Drawing.Point(160, 14);
             this.btNuevo.Name = "btNuevo";
@@ -2981,7 +2980,6 @@
             // 
             // btNew
             // 
-            this.btNew.Image = global::CRM_TOOLS.Properties.Resources.Add;
             this.btNew.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.btNew.Location = new System.Drawing.Point(177, 16);
             this.btNew.Name = "btNew";

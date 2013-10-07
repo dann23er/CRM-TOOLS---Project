@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CRMTOOLSEntity.Designer.cs">
+    <Compile Include="CRMTOOLEntity.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CRMTOOLSEntity.edmx</DependentUpon>
+      <DependentUpon>CRMTOOLEntity.edmx</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -58,9 +58,9 @@
     <None Include="App.Config">
       <SubType>Designer</SubType>
     </None>
-    <EntityDeploy Include="CRMTOOLSEntity.edmx">
+    <EntityDeploy Include="CRMTOOLEntity.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CRMTOOLSEntity.Designer.cs</LastGenOutput>
+      <LastGenOutput>CRMTOOLEntity.Designer.cs</LastGenOutput>
     </EntityDeploy>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

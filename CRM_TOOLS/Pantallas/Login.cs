@@ -11,6 +11,7 @@ using Telerik.WinControls;
 using System.Data.SqlClient;
 using DataAccess;
 using System.Linq;
+using CRM_TOOLS.Clases;
 
 
 namespace CRM_TOOLS.Pantallas
@@ -36,13 +37,12 @@ namespace CRM_TOOLS.Pantallas
 
         #endregion
 
-        CRMTOOLSEntities Entity = new CRMTOOLSEntities();
+        CRMToolEntities Entity = new CRMToolEntities();
+        Class_User cu = new Class_User();
 
         public Login()
         {
           
-
- 
             InitializeComponent();
         }
 
@@ -57,7 +57,7 @@ namespace CRM_TOOLS.Pantallas
 
             if (txtPass.Text.Length > 0 && txtUser.Text.Length > 0)
             {
-                if (UserLogin(txtUser.Text, txtPass.Text))
+                if (cu.Login(txtUser.Text, txtPass.Text))
                 {
                     Authenticar = true;
                   
@@ -69,14 +69,15 @@ namespace CRM_TOOLS.Pantallas
                 else
                 {
                     Authenticar = false;
-                    MessageBox.Show("Usuario or Contraseña no reconocida ");
-
+                    //MessageBox.Show("Usuario or Contraseña no reconocida ");
+                    lbMsg.Text = "Usuario o Contraseña no reconocida ";
                 }
             }
             else // contraseña o usuario si esta vacio
             {
                 Authenticar = false;
-                MessageBox.Show("Necesita un Usuario y una Contraseña para continuar");
+                //MessageBox.Show("Necesita un Usuario y una Contraseña para continuar");
+                lbMsg.Text="Necesita un Usuario y Contraseña para continuar";
             }
 
         }

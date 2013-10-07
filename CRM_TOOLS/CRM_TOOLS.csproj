@@ -34,7 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
@@ -70,8 +73,13 @@
     <Reference Include="Telerik.WinControls.UI, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="TelerikCommon, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="TelerikData, Version=2012.1.12.215, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Class_Clientes.cs" />
+    <Compile Include="Clases\Class_Funciones.cs" />
+    <Compile Include="Clases\Class_User.cs" />
+    <Compile Include="Clases\IForm.cs" />
     <Compile Include="Pantallas\Calculos\Calc_ABC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +152,30 @@
     <Compile Include="Pantallas\Mantenimiento\frmMKTtool.Designer.cs">
       <DependentUpon>frmMKTtool.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmNuevoAgrupar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmNuevoAgrupar.Designer.cs">
+      <DependentUpon>frmNuevoAgrupar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmNuevoCuentasGlobales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmNuevoCuentasGlobales.Designer.cs">
+      <DependentUpon>frmNuevoCuentasGlobales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmNuevoKAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmNuevoKAM.Designer.cs">
+      <DependentUpon>frmNuevoKAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmNuevoSegmento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\frmNuevoSegmento.Designer.cs">
+      <DependentUpon>frmNuevoSegmento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas\Mantenimiento\frmPrivilegios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,12 +224,6 @@
     <Compile Include="Pantallas\Mantenimiento\Mante_KAM.Designer.cs">
       <DependentUpon>Mante_KAM.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pantallas\Mantenimiento\Mante_NuevoSegmento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pantallas\Mantenimiento\Mante_NuevoSegmento.Designer.cs">
-      <DependentUpon>Mante_NuevoSegmento.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pantallas\Mantenimiento\Mante_Paises.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +265,18 @@
     </Compile>
     <Compile Include="Pantallas\Mantenimiento\TipoActivacion.Designer.cs">
       <DependentUpon>TipoActivacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\UpdateSegmento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\UpdateSegmento.Designer.cs">
+      <DependentUpon>UpdateSegmento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\WinWait.cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Mantenimiento\WinWait.cs.Designer.cs">
+      <DependentUpon>WinWait.cs.cs</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\Principal.cs">
       <SubType>Form</SubType>
@@ -290,6 +328,18 @@
     <EmbeddedResource Include="Pantallas\Mantenimiento\frmMKTtool.resx">
       <DependentUpon>frmMKTtool.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\frmNuevoAgrupar.resx">
+      <DependentUpon>frmNuevoAgrupar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\frmNuevoCuentasGlobales.resx">
+      <DependentUpon>frmNuevoCuentasGlobales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\frmNuevoKAM.resx">
+      <DependentUpon>frmNuevoKAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\frmNuevoSegmento.resx">
+      <DependentUpon>frmNuevoSegmento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Mantenimiento\frmPrivilegios.resx">
       <DependentUpon>frmPrivilegios.cs</DependentUpon>
     </EmbeddedResource>
@@ -314,9 +364,6 @@
     <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_KAM.resx">
       <DependentUpon>Mante_KAM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_NuevoSegmento.resx">
-      <DependentUpon>Mante_NuevoSegmento.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Mantenimiento\Mante_Paises.resx">
       <DependentUpon>Mante_Paises.cs</DependentUpon>
     </EmbeddedResource>
@@ -338,6 +385,10 @@
     <EmbeddedResource Include="Pantallas\Mantenimiento\TipoActivacion.resx">
       <DependentUpon>TipoActivacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\UpdateSegmento.resx">
+      <DependentUpon>UpdateSegmento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Mantenimiento\WinWait.cs.resx" />
     <EmbeddedResource Include="Pantallas\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -346,21 +397,22 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="App.Config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\DataSources\DataAccess.PRIVILEGIOS.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -375,22 +427,137 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Clases\Stylesheet.css" />
-    <Content Include="Resources\Add.png" />
-    <Content Include="Resources\ControlDefault.png" />
-    <Content Include="Resources\Edit.png" />
+    <Content Include="Resources\ascii.png" />
     <None Include="Resources\KCP Logo %284%29.jpg" />
-    <Content Include="Resources\load-layout.png" />
-    <Content Include="Resources\Load.png" />
+    <None Include="Resources\fondo5.png" />
+    <None Include="Resources\fondo3.png" />
+    <None Include="Resources\fondo4.png" />
+    <Content Include="Resources\Icons\add.png" />
+    <Content Include="Resources\Icons\addressbook.png" />
+    <Content Include="Resources\Icons\alert.png" />
+    <Content Include="Resources\Icons\apple.png" />
+    <Content Include="Resources\Icons\arrow1_e.png" />
+    <Content Include="Resources\Icons\arrow1_n.png" />
+    <Content Include="Resources\Icons\arrow1_ne.png" />
+    <Content Include="Resources\Icons\arrow1_nw.png" />
+    <Content Include="Resources\Icons\arrow1_s.png" />
+    <Content Include="Resources\Icons\arrow1_se.png" />
+    <Content Include="Resources\Icons\arrow1_sw.png" />
+    <Content Include="Resources\Icons\arrow1_w.png" />
+    <Content Include="Resources\Icons\arrow2_e.png" />
+    <Content Include="Resources\Icons\arrow2_n.png" />
+    <Content Include="Resources\Icons\arrow2_ne.png" />
+    <Content Include="Resources\Icons\arrow2_nw.png" />
+    <Content Include="Resources\Icons\arrow2_s.png" />
+    <Content Include="Resources\Icons\arrow2_se.png" />
+    <Content Include="Resources\Icons\arrow2_sw.png" />
+    <Content Include="Resources\Icons\arrow2_w.png" />
+    <Content Include="Resources\Icons\arrow3_e.png" />
+    <Content Include="Resources\Icons\arrow3_n.png" />
+    <Content Include="Resources\Icons\arrow3_ne.png" />
+    <Content Include="Resources\Icons\arrow3_nw.png" />
+    <Content Include="Resources\Icons\arrow3_s.png" />
+    <Content Include="Resources\Icons\arrow3_se.png" />
+    <Content Include="Resources\Icons\arrow3_sw.png" />
+    <Content Include="Resources\Icons\arrow3_w.png" />
+    <Content Include="Resources\Icons\ascii.png" />
+    <Content Include="Resources\Icons\back.png" />
+    <Content Include="Resources\Icons\bigsmile.png" />
+    <Content Include="Resources\Icons\binary.png" />
+    <Content Include="Resources\Icons\blah.png" />
+    <Content Include="Resources\Icons\bstop.png" />
+    <Content Include="Resources\Icons\buy.png" />
+    <Content Include="Resources\Icons\calday.png" />
+    <Content Include="Resources\Icons\calendar.png" />
+    <Content Include="Resources\Icons\camera.png" />
+    <Content Include="Resources\Icons\cart.png" />
+    <Content Include="Resources\Icons\cd.png" />
+    <Content Include="Resources\Icons\cellphone.png" />
+    <Content Include="Resources\Icons\chat.png" />
+    <Content Include="Resources\Icons\check.png" />
+    <Content Include="Resources\Icons\close.png" />
+    <Content Include="Resources\Icons\comment.png" />
+    <Content Include="Resources\Icons\cube.png" />
+    <Content Include="Resources\Icons\day.png" />
+    <Content Include="Resources\Icons\denied.png" />
+    <Content Include="Resources\Icons\document.png" />
+    <Content Include="Resources\Icons\download.png" />
+    <Content Include="Resources\Icons\edit.png" />
+    <Content Include="Resources\Icons\eject.png" />
+    <Content Include="Resources\Icons\equalizer.png" />
+    <Content Include="Resources\Icons\first.png" />
+    <Content Include="Resources\Icons\flag.png" />
+    <Content Include="Resources\Icons\flash.png" />
+    <Content Include="Resources\Icons\folder.png" />
+    <Content Include="Resources\Icons\forward.png" />
+    <Content Include="Resources\Icons\frown.png" />
+    <Content Include="Resources\Icons\ftp.png" />
+    <Content Include="Resources\Icons\graph.png" />
+    <Content Include="Resources\Icons\heart.png" />
+    <Content Include="Resources\Icons\home.png" />
+    <Content Include="Resources\Icons\html.png" />
+    <Content Include="Resources\Icons\ipod.png" />
+    <Content Include="Resources\Icons\last.png" />
+    <Content Include="Resources\Icons\lock.png" />
+    <Content Include="Resources\Icons\loop.png" />
+    <Content Include="Resources\Icons\mail.png" />
+    <Content Include="Resources\Icons\man.png" />
+    <Content Include="Resources\Icons\manman.png" />
+    <Content Include="Resources\Icons\music.png" />
+    <Content Include="Resources\Icons\mute.png" />
+    <Content Include="Resources\Icons\mute_centered.png" />
+    <Content Include="Resources\Icons\newwindow.png" />
+    <Content Include="Resources\Icons\next.png" />
+    <Content Include="Resources\Icons\night.png" />
+    <Content Include="Resources\Icons\open.png" />
+    <Content Include="Resources\Icons\pause.png" />
+    <Content Include="Resources\Icons\phone.png" />
+    <Content Include="Resources\Icons\play.png" />
+    <Content Include="Resources\Icons\previous.png" />
+    <Content Include="Resources\Icons\quicktime.png" />
+    <Content Include="Resources\Icons\redo.png" />
+    <Content Include="Resources\Icons\reload.png" />
+    <Content Include="Resources\Icons\sad.png" />
+    <Content Include="Resources\Icons\save.png" />
+    <Content Include="Resources\Icons\scream.png" />
+    <Content Include="Resources\Icons\search.png" />
+    <Content Include="Resources\Icons\seconds.png" />
+    <Content Include="Resources\Icons\smile.png" />
+    <Content Include="Resources\Icons\smirk.png" />
+    <Content Include="Resources\Icons\star.png" />
+    <Content Include="Resources\Icons\stop.png" />
+    <Content Include="Resources\Icons\subtract.png" />
+    <Content Include="Resources\Icons\switch.png" />
+    <Content Include="Resources\Icons\target.png" />
+    <Content Include="Resources\Icons\tcp.png" />
+    <Content Include="Resources\Icons\time.png" />
+    <Content Include="Resources\Icons\toggle.png" />
+    <Content Include="Resources\Icons\tongue.png" />
+    <Content Include="Resources\Icons\tools.png" />
+    <Content Include="Resources\Icons\trackback.png" />
+    <Content Include="Resources\Icons\trash.png" />
+    <Content Include="Resources\Icons\tv.png" />
+    <Content Include="Resources\Icons\type.png" />
+    <Content Include="Resources\Icons\undo.png" />
+    <Content Include="Resources\Icons\unlock.png" />
+    <Content Include="Resources\Icons\upload.png" />
+    <Content Include="Resources\Icons\user.png" />
+    <Content Include="Resources\Icons\video.png" />
+    <Content Include="Resources\Icons\volume_high.png" />
+    <Content Include="Resources\Icons\volume_low.png" />
+    <Content Include="Resources\Icons\wifi.png" />
+    <Content Include="Resources\Icons\window.png" />
+    <Content Include="Resources\Icons\woman.png" />
+    <Content Include="Resources\Icons\womanman.png" />
+    <Content Include="Resources\Icons\work.png" />
+    <Content Include="Resources\Icons\zoomin.png" />
+    <Content Include="Resources\Icons\zoomout.png" />
     <Content Include="Resources\Office2010Black.png" />
     <Content Include="Resources\Office2010Blue.png" />
     <Content Include="Resources\Office2010Silver.png" />
-    <Content Include="Resources\Remove.png" />
-    <Content Include="Resources\Save-Layout.png" />
-    <Content Include="Resources\Save.png" />
-    <Content Include="Resources\Sort A to Z.png" />
     <Content Include="Resources\Telerik.png" />
-    <Content Include="Resources\Window Bring Front.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

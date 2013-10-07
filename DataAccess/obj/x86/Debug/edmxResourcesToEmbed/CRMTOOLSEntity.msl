@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="kcpdis0dbModelStoreContainer" CdmEntityContainer="CRMTOOLSEntities">
+  <EntityContainerMapping StorageEntityContainer="CRMTOOLSEntitiesModelStoreContainer" CdmEntityContainer="CRMTOOLEntities">
     <EntitySetMapping Name="CAJAS">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.CAJAS">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.CAJAS">
         <MappingFragment StoreEntitySet="CAJAS">
           <ScalarProperty Name="Codigo" ColumnName="Codigo" />
           <ScalarProperty Name="Q" ColumnName="Q" />
@@ -71,7 +71,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CLIENTES">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.CLIENTES">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.CLIENTES">
         <MappingFragment StoreEntitySet="CLIENTES">
           <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
           <ScalarProperty Name="CODIGO_CLIENTE" ColumnName="CODIGO_CLIENTE" />
@@ -103,7 +103,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CLIENTESDI_X_KAM">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.CLIENTESDI_X_KAM">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.CLIENTESDI_X_KAM">
         <MappingFragment StoreEntitySet="CLIENTESDI_X_KAM">
           <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
           <ScalarProperty Name="KAM_ID" ColumnName="KAM_ID" />
@@ -111,7 +111,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="DISTRIBUIDORES">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.DISTRIBUIDORES">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.DISTRIBUIDORES">
         <MappingFragment StoreEntitySet="DISTRIBUIDORES">
           <ScalarProperty Name="CODIGO_DISTRIBUIDOR" ColumnName="CODIGO_DISTRIBUIDOR" />
           <ScalarProperty Name="NOMBRE_DISTRIBUIDOR" ColumnName="NOMBRE_DISTRIBUIDOR" />
@@ -124,7 +124,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="DIVISION_TERRITORIAL">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.DIVISION_TERRITORIAL">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.DIVISION_TERRITORIAL">
         <MappingFragment StoreEntitySet="DIVISION_TERRITORIAL">
           <ScalarProperty Name="COUNTRY_ID" ColumnName="COUNTRY_ID" />
           <ScalarProperty Name="DIVISION_ID" ColumnName="DIVISION_ID" />
@@ -135,7 +135,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="DOLARES">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.DOLARES">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.DOLARES">
         <MappingFragment StoreEntitySet="DOLARES">
           <ScalarProperty Name="Codigo" ColumnName="Codigo" />
           <ScalarProperty Name="Q" ColumnName="Q" />
@@ -204,7 +204,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GLOBAL_ACCOUNTS">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.GLOBAL_ACCOUNTS">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.GLOBAL_ACCOUNTS">
         <MappingFragment StoreEntitySet="GLOBAL_ACCOUNTS">
           <ScalarProperty Name="GLOBAL_ACCOUNT_ID" ColumnName="GLOBAL_ACCOUNT_ID" />
           <ScalarProperty Name="NOMBRE_GLOBAL_ACCOUNT" ColumnName="NOMBRE_GLOBAL_ACCOUNT" />
@@ -212,7 +212,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="JERARQUIA_GLOBAL">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.JERARQUIA_GLOBAL">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.JERARQUIA_GLOBAL">
         <MappingFragment StoreEntitySet="JERARQUIA_GLOBAL">
           <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
           <ScalarProperty Name="L4" ColumnName="L4" />
@@ -229,7 +229,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="JERARQUIA_LAO">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.JERARQUIA_LAO">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.JERARQUIA_LAO">
         <MappingFragment StoreEntitySet="JERARQUIA_LAO">
           <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
           <ScalarProperty Name="L1_SEGMENT" ColumnName="L1_SEGMENT" />
@@ -249,7 +249,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="KAM">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.KAM">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.KAM">
         <MappingFragment StoreEntitySet="KAM">
           <ScalarProperty Name="KAM_ID" ColumnName="KAM_ID" />
           <ScalarProperty Name="KAM_NAME" ColumnName="KAM_NAME" />
@@ -261,7 +261,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="LOG_LOGIN">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.LOG_LOGIN">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.LOG_LOGIN">
         <MappingFragment StoreEntitySet="LOG_LOGIN">
           <ScalarProperty Name="LOG_ID" ColumnName="LOG_ID" />
           <ScalarProperty Name="LOGIN_ID" ColumnName="LOGIN_ID" />
@@ -273,7 +273,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PAISES">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.PAISES">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.PAISES">
         <MappingFragment StoreEntitySet="PAISES">
           <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
           <ScalarProperty Name="COUNTRY_NAME" ColumnName="COUNTRY_NAME" />
@@ -285,7 +285,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PLATAFORMA_X_CLIENTES">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.PLATAFORMA_X_CLIENTES">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.PLATAFORMA_X_CLIENTES">
         <MappingFragment StoreEntitySet="PLATAFORMA_X_CLIENTES">
           <ScalarProperty Name="CODIGO_CLIENTE_COMPUESTO" ColumnName="CODIGO_CLIENTE_COMPUESTO" />
           <ScalarProperty Name="CODIGO_PLATAFORMA" ColumnName="CODIGO_PLATAFORMA" />
@@ -293,7 +293,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PLATAFORMAS">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.PLATAFORMAS">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.PLATAFORMAS">
         <MappingFragment StoreEntitySet="PLATAFORMAS">
           <ScalarProperty Name="CODIGO_PLATAFORMA" ColumnName="CODIGO_PLATAFORMA" />
           <ScalarProperty Name="NOMBRE_PLATAFORMA" ColumnName="NOMBRE_PLATAFORMA" />
@@ -302,15 +302,25 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PRIVILEGIOS">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.PRIVILEGIOS">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.PRIVILEGIOS">
         <MappingFragment StoreEntitySet="PRIVILEGIOS">
           <ScalarProperty Name="PRIVILEGIO_ID" ColumnName="PRIVILEGIO_ID" />
+          <ScalarProperty Name="PRIVILEGIO_LLAVE" ColumnName="PRIVILEGIO_LLAVE" />
           <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="PRIVILEGIOS_X_ROL">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.PRIVILEGIOS_X_ROL">
+        <MappingFragment StoreEntitySet="PRIVILEGIOS_X_ROL">
+          <ScalarProperty Name="PRIVILEGIOXROLID" ColumnName="PRIVILEGIOXROLID" />
+          <ScalarProperty Name="PRIVILEGIO_ID" ColumnName="PRIVILEGIO_ID" />
+          <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="PRODUCTOS">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.PRODUCTOS">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.PRODUCTOS">
         <MappingFragment StoreEntitySet="PRODUCTOS">
           <ScalarProperty Name="CODIGO_MATERIAL" ColumnName="CODIGO_MATERIAL" />
           <ScalarProperty Name="CODIGO_CORTO" ColumnName="CODIGO_CORTO" />
@@ -327,7 +337,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PRODUCTOS_EQUIVALENTES">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.PRODUCTOS_EQUIVALENTES">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.PRODUCTOS_EQUIVALENTES">
         <MappingFragment StoreEntitySet="PRODUCTOS_EQUIVALENTES">
           <ScalarProperty Name="CODIGO_PRODUCTO_DISTRIBUIDOR" ColumnName="CODIGO_PRODUCTO_DISTRIBUIDOR" />
           <ScalarProperty Name="CODIGO_DISTRIBUIDOR" ColumnName="CODIGO_DISTRIBUIDOR" />
@@ -339,15 +349,25 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ROLES">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.ROLES">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.ROLES">
         <MappingFragment StoreEntitySet="ROLES">
           <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
           <ScalarProperty Name="NOMBRE_ROL" ColumnName="NOMBRE_ROL" />
+          <ScalarProperty Name="DESCRIPCION_ROL" ColumnName="DESCRIPCION_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROLES_X_USUARIO">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.ROLES_X_USUARIO">
+        <MappingFragment StoreEntitySet="ROLES_X_USUARIO">
+          <ScalarProperty Name="ROLXUSERID" ColumnName="ROLXUSERID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="SEGMENTOS">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.SEGMENTOS">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.SEGMENTOS">
         <MappingFragment StoreEntitySet="SEGMENTOS">
           <ScalarProperty Name="SEGMENT_ID" ColumnName="SEGMENT_ID" />
           <ScalarProperty Name="SEGMENT_NAME" ColumnName="SEGMENT_NAME" />
@@ -356,7 +376,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="SELLIN">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.SELLIN">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.SELLIN">
         <MappingFragment StoreEntitySet="SELLIN">
           <ScalarProperty Name="CONCEPTO" ColumnName="CONCEPTO" />
           <ScalarProperty Name="MES" ColumnName="MES" />
@@ -375,7 +395,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="SELLOUT">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.SELLOUT">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.SELLOUT">
         <MappingFragment StoreEntitySet="SELLOUT">
           <ScalarProperty Name="ANIO" ColumnName="ANIO" />
           <ScalarProperty Name="MES" ColumnName="MES" />
@@ -397,7 +417,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="SUB_SEGMENTO">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.SUB_SEGMENTO">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.SUB_SEGMENTO">
         <MappingFragment StoreEntitySet="SUB_SEGMENTO">
           <ScalarProperty Name="SEGMENT_ID" ColumnName="SEGMENT_ID" />
           <ScalarProperty Name="SUB_SEGMENT" ColumnName="SUB_SEGMENT" />
@@ -405,33 +425,40 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="USERS">
-      <EntityTypeMapping TypeName="kcpdis0dbModel.USERS">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.USERS">
         <MappingFragment StoreEntitySet="USERS">
           <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
           <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
           <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
           <ScalarProperty Name="LOGIN_ID" ColumnName="LOGIN_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
           <ScalarProperty Name="STATUS" ColumnName="STATUS" />
           <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
           <ScalarProperty Name="E_MAIL" ColumnName="E_MAIL" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="PRIVILEGIOS_X_ROL" TypeName="kcpdis0dbModel.PRIVILEGIOS_X_ROL" StoreEntitySet="PRIVILEGIOS_X_ROL">
-      <EndProperty Name="PRIVILEGIOS">
-        <ScalarProperty Name="PRIVILEGIO_ID" ColumnName="PRIVILEGIO_ID" />
-      </EndProperty>
-      <EndProperty Name="ROLES">
-        <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
-      </EndProperty>
-    </AssociationSetMapping>
-    <AssociationSetMapping Name="ROLES_X_USUARIO" TypeName="kcpdis0dbModel.ROLES_X_USUARIO" StoreEntitySet="ROLES_X_USUARIO">
-      <EndProperty Name="ROLES">
-        <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
-      </EndProperty>
-      <EndProperty Name="USERS">
-        <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
-      </EndProperty>
-    </AssociationSetMapping>
+    <EntitySetMapping Name="PRIVILEGIOSXUSER">
+      <EntityTypeMapping TypeName="CRMTOOLSEntitiesModel.PRIVILEGIOSXUSER">
+        <MappingFragment StoreEntitySet="PRIVILEGIOSXUSER">
+          <ScalarProperty Name="E_MAIL" ColumnName="E_MAIL" />
+          <ScalarProperty Name="ID_COUNTRY" ColumnName="ID_COUNTRY" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="LOGIN_ID" ColumnName="LOGIN_ID" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="DESCRIPCION_ROL" ColumnName="DESCRIPCION_ROL" />
+          <ScalarProperty Name="NOMBRE_ROL" ColumnName="NOMBRE_ROL" />
+          <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="PRIVILEGIO_LLAVE" ColumnName="PRIVILEGIO_LLAVE" />
+          <ScalarProperty Name="PRIVILEGIO_ID" ColumnName="PRIVILEGIO_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

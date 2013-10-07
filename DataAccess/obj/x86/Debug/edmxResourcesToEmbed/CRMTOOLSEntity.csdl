@@ -1,101 +1,112 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="kcpdis0dbModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
-  <EntityContainer Name="CRMTOOLSEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="CAJAS" EntityType="kcpdis0dbModel.CAJAS" />
-    <EntitySet Name="CLIENTES" EntityType="kcpdis0dbModel.CLIENTES" />
-    <EntitySet Name="CLIENTESDI_X_KAM" EntityType="kcpdis0dbModel.CLIENTESDI_X_KAM" />
-    <EntitySet Name="DISTRIBUIDORES" EntityType="kcpdis0dbModel.DISTRIBUIDORES" />
-    <EntitySet Name="DIVISION_TERRITORIAL" EntityType="kcpdis0dbModel.DIVISION_TERRITORIAL" />
-    <EntitySet Name="DOLARES" EntityType="kcpdis0dbModel.DOLARES" />
-    <EntitySet Name="GLOBAL_ACCOUNTS" EntityType="kcpdis0dbModel.GLOBAL_ACCOUNTS" />
-    <EntitySet Name="JERARQUIA_GLOBAL" EntityType="kcpdis0dbModel.JERARQUIA_GLOBAL" />
-    <EntitySet Name="JERARQUIA_LAO" EntityType="kcpdis0dbModel.JERARQUIA_LAO" />
-    <EntitySet Name="KAM" EntityType="kcpdis0dbModel.KAM" />
-    <EntitySet Name="LOG_LOGIN" EntityType="kcpdis0dbModel.LOG_LOGIN" />
-    <EntitySet Name="PAISES" EntityType="kcpdis0dbModel.PAISES" />
-    <EntitySet Name="PLATAFORMA_X_CLIENTES" EntityType="kcpdis0dbModel.PLATAFORMA_X_CLIENTES" />
-    <EntitySet Name="PLATAFORMAS" EntityType="kcpdis0dbModel.PLATAFORMAS" />
-    <EntitySet Name="PRIVILEGIOS" EntityType="kcpdis0dbModel.PRIVILEGIOS" />
-    <EntitySet Name="PRODUCTOS" EntityType="kcpdis0dbModel.PRODUCTOS" />
-    <EntitySet Name="PRODUCTOS_EQUIVALENTES" EntityType="kcpdis0dbModel.PRODUCTOS_EQUIVALENTES" />
-    <EntitySet Name="ROLES" EntityType="kcpdis0dbModel.ROLES" />
-    <EntitySet Name="SEGMENTOS" EntityType="kcpdis0dbModel.SEGMENTOS" />
-    <EntitySet Name="SELLIN" EntityType="kcpdis0dbModel.SELLIN" />
-    <EntitySet Name="SELLOUT" EntityType="kcpdis0dbModel.SELLOUT" />
-    <EntitySet Name="SUB_SEGMENTO" EntityType="kcpdis0dbModel.SUB_SEGMENTO" />
-    <EntitySet Name="USERS" EntityType="kcpdis0dbModel.USERS" />
-    <AssociationSet Name="FK_CLIENTES_CAJAS" Association="kcpdis0dbModel.FK_CLIENTES_CAJAS">
+<Schema Namespace="CRMTOOLSEntitiesModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="CRMTOOLEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CAJAS" EntityType="CRMTOOLSEntitiesModel.CAJAS" />
+    <EntitySet Name="CLIENTES" EntityType="CRMTOOLSEntitiesModel.CLIENTES" />
+    <EntitySet Name="CLIENTESDI_X_KAM" EntityType="CRMTOOLSEntitiesModel.CLIENTESDI_X_KAM" />
+    <EntitySet Name="DISTRIBUIDORES" EntityType="CRMTOOLSEntitiesModel.DISTRIBUIDORES" />
+    <EntitySet Name="DIVISION_TERRITORIAL" EntityType="CRMTOOLSEntitiesModel.DIVISION_TERRITORIAL" />
+    <EntitySet Name="DOLARES" EntityType="CRMTOOLSEntitiesModel.DOLARES" />
+    <EntitySet Name="GLOBAL_ACCOUNTS" EntityType="CRMTOOLSEntitiesModel.GLOBAL_ACCOUNTS" />
+    <EntitySet Name="JERARQUIA_GLOBAL" EntityType="CRMTOOLSEntitiesModel.JERARQUIA_GLOBAL" />
+    <EntitySet Name="JERARQUIA_LAO" EntityType="CRMTOOLSEntitiesModel.JERARQUIA_LAO" />
+    <EntitySet Name="KAM" EntityType="CRMTOOLSEntitiesModel.KAM" />
+    <EntitySet Name="LOG_LOGIN" EntityType="CRMTOOLSEntitiesModel.LOG_LOGIN" />
+    <EntitySet Name="PAISES" EntityType="CRMTOOLSEntitiesModel.PAISES" />
+    <EntitySet Name="PLATAFORMA_X_CLIENTES" EntityType="CRMTOOLSEntitiesModel.PLATAFORMA_X_CLIENTES" />
+    <EntitySet Name="PLATAFORMAS" EntityType="CRMTOOLSEntitiesModel.PLATAFORMAS" />
+    <EntitySet Name="PRIVILEGIOS" EntityType="CRMTOOLSEntitiesModel.PRIVILEGIOS" />
+    <EntitySet Name="PRIVILEGIOS_X_ROL" EntityType="CRMTOOLSEntitiesModel.PRIVILEGIOS_X_ROL" />
+    <EntitySet Name="PRODUCTOS" EntityType="CRMTOOLSEntitiesModel.PRODUCTOS" />
+    <EntitySet Name="PRODUCTOS_EQUIVALENTES" EntityType="CRMTOOLSEntitiesModel.PRODUCTOS_EQUIVALENTES" />
+    <EntitySet Name="ROLES" EntityType="CRMTOOLSEntitiesModel.ROLES" />
+    <EntitySet Name="ROLES_X_USUARIO" EntityType="CRMTOOLSEntitiesModel.ROLES_X_USUARIO" />
+    <EntitySet Name="SEGMENTOS" EntityType="CRMTOOLSEntitiesModel.SEGMENTOS" />
+    <EntitySet Name="SELLIN" EntityType="CRMTOOLSEntitiesModel.SELLIN" />
+    <EntitySet Name="SELLOUT" EntityType="CRMTOOLSEntitiesModel.SELLOUT" />
+    <EntitySet Name="SUB_SEGMENTO" EntityType="CRMTOOLSEntitiesModel.SUB_SEGMENTO" />
+    <EntitySet Name="USERS" EntityType="CRMTOOLSEntitiesModel.USERS" />
+    <AssociationSet Name="FK_CLIENTES_CAJAS" Association="CRMTOOLSEntitiesModel.FK_CLIENTES_CAJAS">
       <End Role="CAJAS" EntitySet="CAJAS" />
       <End Role="CLIENTES" EntitySet="CLIENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_CLIENTES_CLIENTESDI_X_KAM" Association="kcpdis0dbModel.FK_CLIENTES_CLIENTESDI_X_KAM">
+    <AssociationSet Name="FK_CLIENTES_CLIENTESDI_X_KAM" Association="CRMTOOLSEntitiesModel.FK_CLIENTES_CLIENTESDI_X_KAM">
       <End Role="CLIENTESDI_X_KAM" EntitySet="CLIENTESDI_X_KAM" />
       <End Role="CLIENTES" EntitySet="CLIENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_CLIENTES_DOLARES" Association="kcpdis0dbModel.FK_CLIENTES_DOLARES">
+    <AssociationSet Name="FK_CLIENTES_DOLARES" Association="CRMTOOLSEntitiesModel.FK_CLIENTES_DOLARES">
       <End Role="DOLARES" EntitySet="DOLARES" />
       <End Role="CLIENTES" EntitySet="CLIENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_CLIENTES_GLOBAL_ACCOUNTS" Association="kcpdis0dbModel.FK_CLIENTES_GLOBAL_ACCOUNTS">
+    <AssociationSet Name="FK_CLIENTES_GLOBAL_ACCOUNTS" Association="CRMTOOLSEntitiesModel.FK_CLIENTES_GLOBAL_ACCOUNTS">
       <End Role="GLOBAL_ACCOUNTS" EntitySet="GLOBAL_ACCOUNTS" />
       <End Role="CLIENTES" EntitySet="CLIENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_CLIENTES_PLATAFORMA_X_CLIENTES" Association="kcpdis0dbModel.FK_CLIENTES_PLATAFORMA_X_CLIENTES">
+    <AssociationSet Name="FK_CLIENTES_PLATAFORMA_X_CLIENTES" Association="CRMTOOLSEntitiesModel.FK_CLIENTES_PLATAFORMA_X_CLIENTES">
       <End Role="PLATAFORMA_X_CLIENTES" EntitySet="PLATAFORMA_X_CLIENTES" />
       <End Role="CLIENTES" EntitySet="CLIENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_CLIENTES_SELLIN" Association="kcpdis0dbModel.FK_CLIENTES_SELLIN">
+    <AssociationSet Name="FK_CLIENTES_SELLIN" Association="CRMTOOLSEntitiesModel.FK_CLIENTES_SELLIN">
       <End Role="SELLIN" EntitySet="SELLIN" />
       <End Role="CLIENTES" EntitySet="CLIENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_CLIENTESDI_X_KAM_KAM" Association="kcpdis0dbModel.FK_CLIENTESDI_X_KAM_KAM">
+    <AssociationSet Name="FK_CLIENTESDI_X_KAM_KAM" Association="CRMTOOLSEntitiesModel.FK_CLIENTESDI_X_KAM_KAM">
       <End Role="KAM" EntitySet="KAM" />
       <End Role="CLIENTESDI_X_KAM" EntitySet="CLIENTESDI_X_KAM" />
     </AssociationSet>
-    <AssociationSet Name="FK_SELLOUT_DISTRIBUIDORES" Association="kcpdis0dbModel.FK_SELLOUT_DISTRIBUIDORES">
+    <AssociationSet Name="FK_SELLOUT_DISTRIBUIDORES" Association="CRMTOOLSEntitiesModel.FK_SELLOUT_DISTRIBUIDORES">
       <End Role="DISTRIBUIDORES" EntitySet="DISTRIBUIDORES" />
       <End Role="SELLOUT" EntitySet="SELLOUT" />
     </AssociationSet>
-    <AssociationSet Name="FK_DIVISION_TERRITORIAL_PAISES" Association="kcpdis0dbModel.FK_DIVISION_TERRITORIAL_PAISES">
+    <AssociationSet Name="FK_DIVISION_TERRITORIAL_PAISES" Association="CRMTOOLSEntitiesModel.FK_DIVISION_TERRITORIAL_PAISES">
       <End Role="PAISES" EntitySet="PAISES" />
       <End Role="DIVISION_TERRITORIAL" EntitySet="DIVISION_TERRITORIAL" />
     </AssociationSet>
-    <AssociationSet Name="FK_JERARQUIA_GLOBAL_JERARQUIA_LAO" Association="kcpdis0dbModel.FK_JERARQUIA_GLOBAL_JERARQUIA_LAO">
+    <AssociationSet Name="FK_JERARQUIA_GLOBAL_JERARQUIA_LAO" Association="CRMTOOLSEntitiesModel.FK_JERARQUIA_GLOBAL_JERARQUIA_LAO">
       <End Role="JERARQUIA_LAO" EntitySet="JERARQUIA_LAO" />
       <End Role="JERARQUIA_GLOBAL" EntitySet="JERARQUIA_GLOBAL" />
     </AssociationSet>
-    <AssociationSet Name="FK_LOG_LOGIN_USERS" Association="kcpdis0dbModel.FK_LOG_LOGIN_USERS">
+    <AssociationSet Name="FK_LOG_LOGIN_USERS" Association="CRMTOOLSEntitiesModel.FK_LOG_LOGIN_USERS">
       <End Role="USERS" EntitySet="USERS" />
       <End Role="LOG_LOGIN" EntitySet="LOG_LOGIN" />
     </AssociationSet>
-    <AssociationSet Name="FK_SELLIN_PAISES" Association="kcpdis0dbModel.FK_SELLIN_PAISES">
+    <AssociationSet Name="FK_SELLIN_PAISES" Association="CRMTOOLSEntitiesModel.FK_SELLIN_PAISES">
       <End Role="PAISES" EntitySet="PAISES" />
       <End Role="SELLIN" EntitySet="SELLIN" />
     </AssociationSet>
-    <AssociationSet Name="FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS" Association="kcpdis0dbModel.FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS">
+    <AssociationSet Name="FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS" Association="CRMTOOLSEntitiesModel.FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS">
       <End Role="PLATAFORMAS" EntitySet="PLATAFORMAS" />
       <End Role="PLATAFORMA_X_CLIENTES" EntitySet="PLATAFORMA_X_CLIENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS" Association="kcpdis0dbModel.FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS">
+    <AssociationSet Name="FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS" Association="CRMTOOLSEntitiesModel.FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS">
+      <End Role="PRIVILEGIOS" EntitySet="PRIVILEGIOS" />
+      <End Role="PRIVILEGIOS_X_ROL" EntitySet="PRIVILEGIOS_X_ROL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRIVILEGIOS_X_ROL_ROLES" Association="CRMTOOLSEntitiesModel.FK_PRIVILEGIOS_X_ROL_ROLES">
+      <End Role="ROLES" EntitySet="ROLES" />
+      <End Role="PRIVILEGIOS_X_ROL" EntitySet="PRIVILEGIOS_X_ROL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS" Association="CRMTOOLSEntitiesModel.FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS">
       <End Role="PRODUCTOS" EntitySet="PRODUCTOS" />
       <End Role="PRODUCTOS_EQUIVALENTES" EntitySet="PRODUCTOS_EQUIVALENTES" />
     </AssociationSet>
-    <AssociationSet Name="FK_SELLOUT_PRODUCTOS_EQUIVALENTES" Association="kcpdis0dbModel.FK_SELLOUT_PRODUCTOS_EQUIVALENTES">
+    <AssociationSet Name="FK_SELLOUT_PRODUCTOS_EQUIVALENTES" Association="CRMTOOLSEntitiesModel.FK_SELLOUT_PRODUCTOS_EQUIVALENTES">
       <End Role="PRODUCTOS_EQUIVALENTES" EntitySet="PRODUCTOS_EQUIVALENTES" />
       <End Role="SELLOUT" EntitySet="SELLOUT" />
     </AssociationSet>
-    <AssociationSet Name="FK_SUB_SEGMENTO_SEGMENTOS" Association="kcpdis0dbModel.FK_SUB_SEGMENTO_SEGMENTOS">
+    <AssociationSet Name="FK_ROLES_X_USUARIO_ROLES" Association="CRMTOOLSEntitiesModel.FK_ROLES_X_USUARIO_ROLES">
+      <End Role="ROLES" EntitySet="ROLES" />
+      <End Role="ROLES_X_USUARIO" EntitySet="ROLES_X_USUARIO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ROLES_X_USUARIO_USERS" Association="CRMTOOLSEntitiesModel.FK_ROLES_X_USUARIO_USERS">
+      <End Role="USERS" EntitySet="USERS" />
+      <End Role="ROLES_X_USUARIO" EntitySet="ROLES_X_USUARIO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUB_SEGMENTO_SEGMENTOS" Association="CRMTOOLSEntitiesModel.FK_SUB_SEGMENTO_SEGMENTOS">
       <End Role="SEGMENTOS" EntitySet="SEGMENTOS" />
       <End Role="SUB_SEGMENTO" EntitySet="SUB_SEGMENTO" />
     </AssociationSet>
-    <AssociationSet Name="PRIVILEGIOS_X_ROL" Association="kcpdis0dbModel.PRIVILEGIOS_X_ROL">
-      <End Role="PRIVILEGIOS" EntitySet="PRIVILEGIOS" />
-      <End Role="ROLES" EntitySet="ROLES" />
-    </AssociationSet>
-    <AssociationSet Name="ROLES_X_USUARIO" Association="kcpdis0dbModel.ROLES_X_USUARIO">
-      <End Role="ROLES" EntitySet="ROLES" />
-      <End Role="USERS" EntitySet="USERS" />
-    </AssociationSet>
+    <EntitySet Name="PRIVILEGIOSXUSER" EntityType="CRMTOOLSEntitiesModel.PRIVILEGIOSXUSER" />
   </EntityContainer>
   <EntityType Name="CAJAS">
     <Key>
@@ -164,7 +175,7 @@
     <Property Name="Group_Other_Wipers" Type="Int32" Nullable="false" />
     <Property Name="Specialty_Wipers" Type="Int32" Nullable="false" />
     <Property Name="Group_Specialty_Wipers" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="CLIENTES" Relationship="kcpdis0dbModel.FK_CLIENTES_CAJAS" FromRole="CAJAS" ToRole="CLIENTES" />
+    <NavigationProperty Name="CLIENTES" Relationship="CRMTOOLSEntitiesModel.FK_CLIENTES_CAJAS" FromRole="CAJAS" ToRole="CLIENTES" />
   </EntityType>
   <EntityType Name="CLIENTES">
     <Key>
@@ -197,12 +208,12 @@
     <Property Name="SALES_TYPE" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
     <Property Name="FECHA_CREACION" Type="DateTime" Nullable="false" />
     <Property Name="FECHA_ACTUALIZACION" Type="DateTime" Nullable="false" />
-    <NavigationProperty Name="CAJAS" Relationship="kcpdis0dbModel.FK_CLIENTES_CAJAS" FromRole="CLIENTES" ToRole="CAJAS" />
-    <NavigationProperty Name="CLIENTESDI_X_KAM" Relationship="kcpdis0dbModel.FK_CLIENTES_CLIENTESDI_X_KAM" FromRole="CLIENTES" ToRole="CLIENTESDI_X_KAM" />
-    <NavigationProperty Name="DOLARES" Relationship="kcpdis0dbModel.FK_CLIENTES_DOLARES" FromRole="CLIENTES" ToRole="DOLARES" />
-    <NavigationProperty Name="GLOBAL_ACCOUNTS" Relationship="kcpdis0dbModel.FK_CLIENTES_GLOBAL_ACCOUNTS" FromRole="CLIENTES" ToRole="GLOBAL_ACCOUNTS" />
-    <NavigationProperty Name="PLATAFORMA_X_CLIENTES" Relationship="kcpdis0dbModel.FK_CLIENTES_PLATAFORMA_X_CLIENTES" FromRole="CLIENTES" ToRole="PLATAFORMA_X_CLIENTES" />
-    <NavigationProperty Name="SELLIN" Relationship="kcpdis0dbModel.FK_CLIENTES_SELLIN" FromRole="CLIENTES" ToRole="SELLIN" />
+    <NavigationProperty Name="CAJAS" Relationship="CRMTOOLSEntitiesModel.FK_CLIENTES_CAJAS" FromRole="CLIENTES" ToRole="CAJAS" />
+    <NavigationProperty Name="CLIENTESDI_X_KAM" Relationship="CRMTOOLSEntitiesModel.FK_CLIENTES_CLIENTESDI_X_KAM" FromRole="CLIENTES" ToRole="CLIENTESDI_X_KAM" />
+    <NavigationProperty Name="DOLARES" Relationship="CRMTOOLSEntitiesModel.FK_CLIENTES_DOLARES" FromRole="CLIENTES" ToRole="DOLARES" />
+    <NavigationProperty Name="GLOBAL_ACCOUNTS" Relationship="CRMTOOLSEntitiesModel.FK_CLIENTES_GLOBAL_ACCOUNTS" FromRole="CLIENTES" ToRole="GLOBAL_ACCOUNTS" />
+    <NavigationProperty Name="PLATAFORMA_X_CLIENTES" Relationship="CRMTOOLSEntitiesModel.FK_CLIENTES_PLATAFORMA_X_CLIENTES" FromRole="CLIENTES" ToRole="PLATAFORMA_X_CLIENTES" />
+    <NavigationProperty Name="SELLIN" Relationship="CRMTOOLSEntitiesModel.FK_CLIENTES_SELLIN" FromRole="CLIENTES" ToRole="SELLIN" />
   </EntityType>
   <EntityType Name="CLIENTESDI_X_KAM">
     <Key>
@@ -210,8 +221,8 @@
     </Key>
     <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
     <Property Name="KAM_ID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="CLIENTES" Relationship="kcpdis0dbModel.FK_CLIENTES_CLIENTESDI_X_KAM" FromRole="CLIENTESDI_X_KAM" ToRole="CLIENTES" />
-    <NavigationProperty Name="KAM" Relationship="kcpdis0dbModel.FK_CLIENTESDI_X_KAM_KAM" FromRole="CLIENTESDI_X_KAM" ToRole="KAM" />
+    <NavigationProperty Name="CLIENTES" Relationship="CRMTOOLSEntitiesModel.FK_CLIENTES_CLIENTESDI_X_KAM" FromRole="CLIENTESDI_X_KAM" ToRole="CLIENTES" />
+    <NavigationProperty Name="KAM" Relationship="CRMTOOLSEntitiesModel.FK_CLIENTESDI_X_KAM_KAM" FromRole="CLIENTESDI_X_KAM" ToRole="KAM" />
   </EntityType>
   <EntityType Name="DISTRIBUIDORES">
     <Key>
@@ -224,7 +235,7 @@
     <Property Name="PAIS" Type="String" MaxLength="6" Unicode="true" FixedLength="false" />
     <Property Name="UseOnKPI" Type="Boolean" />
     <Property Name="GBA" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
-    <NavigationProperty Name="SELLOUT" Relationship="kcpdis0dbModel.FK_SELLOUT_DISTRIBUIDORES" FromRole="DISTRIBUIDORES" ToRole="SELLOUT" />
+    <NavigationProperty Name="SELLOUT" Relationship="CRMTOOLSEntitiesModel.FK_SELLOUT_DISTRIBUIDORES" FromRole="DISTRIBUIDORES" ToRole="SELLOUT" />
   </EntityType>
   <EntityType Name="DIVISION_TERRITORIAL">
     <Key>
@@ -237,7 +248,7 @@
     <Property Name="CITY_ID" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
     <Property Name="DIVISION_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="CITY_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="PAISES" Relationship="kcpdis0dbModel.FK_DIVISION_TERRITORIAL_PAISES" FromRole="DIVISION_TERRITORIAL" ToRole="PAISES" />
+    <NavigationProperty Name="PAISES" Relationship="CRMTOOLSEntitiesModel.FK_DIVISION_TERRITORIAL_PAISES" FromRole="DIVISION_TERRITORIAL" ToRole="PAISES" />
   </EntityType>
   <EntityType Name="DOLARES">
     <Key>
@@ -306,7 +317,7 @@
     <Property Name="Group_Other_Wipers" Type="Int32" Nullable="false" />
     <Property Name="Specialty_Wipers" Type="Int32" Nullable="false" />
     <Property Name="Group_Specialty_Wipers" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="CLIENTES" Relationship="kcpdis0dbModel.FK_CLIENTES_DOLARES" FromRole="DOLARES" ToRole="CLIENTES" />
+    <NavigationProperty Name="CLIENTES" Relationship="CRMTOOLSEntitiesModel.FK_CLIENTES_DOLARES" FromRole="DOLARES" ToRole="CLIENTES" />
   </EntityType>
   <EntityType Name="GLOBAL_ACCOUNTS">
     <Key>
@@ -314,7 +325,7 @@
     </Key>
     <Property Name="GLOBAL_ACCOUNT_ID" Type="Int32" Nullable="false" />
     <Property Name="NOMBRE_GLOBAL_ACCOUNT" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="CLIENTES" Relationship="kcpdis0dbModel.FK_CLIENTES_GLOBAL_ACCOUNTS" FromRole="GLOBAL_ACCOUNTS" ToRole="CLIENTES" />
+    <NavigationProperty Name="CLIENTES" Relationship="CRMTOOLSEntitiesModel.FK_CLIENTES_GLOBAL_ACCOUNTS" FromRole="GLOBAL_ACCOUNTS" ToRole="CLIENTES" />
   </EntityType>
   <EntityType Name="JERARQUIA_GLOBAL">
     <Key>
@@ -331,7 +342,7 @@
     <Property Name="NIVEL3" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="NIVEL4" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="NIVEL5" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="JERARQUIA_LAO" Relationship="kcpdis0dbModel.FK_JERARQUIA_GLOBAL_JERARQUIA_LAO" FromRole="JERARQUIA_GLOBAL" ToRole="JERARQUIA_LAO" />
+    <NavigationProperty Name="JERARQUIA_LAO" Relationship="CRMTOOLSEntitiesModel.FK_JERARQUIA_GLOBAL_JERARQUIA_LAO" FromRole="JERARQUIA_GLOBAL" ToRole="JERARQUIA_LAO" />
   </EntityType>
   <EntityType Name="JERARQUIA_LAO">
     <Key>
@@ -351,7 +362,7 @@
     <Property Name="L11_SKU" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="L12_MATERIAL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="REGION" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="JERARQUIA_GLOBAL" Relationship="kcpdis0dbModel.FK_JERARQUIA_GLOBAL_JERARQUIA_LAO" FromRole="JERARQUIA_LAO" ToRole="JERARQUIA_GLOBAL" />
+    <NavigationProperty Name="JERARQUIA_GLOBAL" Relationship="CRMTOOLSEntitiesModel.FK_JERARQUIA_GLOBAL_JERARQUIA_LAO" FromRole="JERARQUIA_LAO" ToRole="JERARQUIA_GLOBAL" />
   </EntityType>
   <EntityType Name="KAM">
     <Key>
@@ -363,7 +374,7 @@
     <Property Name="KAM_ACTIVE" Type="Boolean" Nullable="false" />
     <Property Name="GBA" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
     <Property Name="COUNTRY" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="CLIENTESDI_X_KAM" Relationship="kcpdis0dbModel.FK_CLIENTESDI_X_KAM_KAM" FromRole="KAM" ToRole="CLIENTESDI_X_KAM" />
+    <NavigationProperty Name="CLIENTESDI_X_KAM" Relationship="CRMTOOLSEntitiesModel.FK_CLIENTESDI_X_KAM_KAM" FromRole="KAM" ToRole="CLIENTESDI_X_KAM" />
   </EntityType>
   <EntityType Name="LOG_LOGIN">
     <Key>
@@ -375,7 +386,7 @@
     <Property Name="LOGIN" Type="DateTime" Nullable="false" />
     <Property Name="LOGOUT" Type="DateTime" />
     <Property Name="HISTORY" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="USERS" Relationship="kcpdis0dbModel.FK_LOG_LOGIN_USERS" FromRole="LOG_LOGIN" ToRole="USERS" />
+    <NavigationProperty Name="USERS" Relationship="CRMTOOLSEntitiesModel.FK_LOG_LOGIN_USERS" FromRole="LOG_LOGIN" ToRole="USERS" />
   </EntityType>
   <EntityType Name="PAISES">
     <Key>
@@ -387,8 +398,8 @@
     <Property Name="SUB_REGION" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="SALES_ORGANIZATION" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="TAX_RATE" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="DIVISION_TERRITORIAL" Relationship="kcpdis0dbModel.FK_DIVISION_TERRITORIAL_PAISES" FromRole="PAISES" ToRole="DIVISION_TERRITORIAL" />
-    <NavigationProperty Name="SELLIN" Relationship="kcpdis0dbModel.FK_SELLIN_PAISES" FromRole="PAISES" ToRole="SELLIN" />
+    <NavigationProperty Name="DIVISION_TERRITORIAL" Relationship="CRMTOOLSEntitiesModel.FK_DIVISION_TERRITORIAL_PAISES" FromRole="PAISES" ToRole="DIVISION_TERRITORIAL" />
+    <NavigationProperty Name="SELLIN" Relationship="CRMTOOLSEntitiesModel.FK_SELLIN_PAISES" FromRole="PAISES" ToRole="SELLIN" />
   </EntityType>
   <EntityType Name="PLATAFORMA_X_CLIENTES">
     <Key>
@@ -396,8 +407,8 @@
     </Key>
     <Property Name="CODIGO_CLIENTE_COMPUESTO" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
     <Property Name="CODIGO_PLATAFORMA" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="CLIENTES" Relationship="kcpdis0dbModel.FK_CLIENTES_PLATAFORMA_X_CLIENTES" FromRole="PLATAFORMA_X_CLIENTES" ToRole="CLIENTES" />
-    <NavigationProperty Name="PLATAFORMAS" Relationship="kcpdis0dbModel.FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS" FromRole="PLATAFORMA_X_CLIENTES" ToRole="PLATAFORMAS" />
+    <NavigationProperty Name="CLIENTES" Relationship="CRMTOOLSEntitiesModel.FK_CLIENTES_PLATAFORMA_X_CLIENTES" FromRole="PLATAFORMA_X_CLIENTES" ToRole="CLIENTES" />
+    <NavigationProperty Name="PLATAFORMAS" Relationship="CRMTOOLSEntitiesModel.FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS" FromRole="PLATAFORMA_X_CLIENTES" ToRole="PLATAFORMAS" />
   </EntityType>
   <EntityType Name="PLATAFORMAS">
     <Key>
@@ -406,15 +417,26 @@
     <Property Name="CODIGO_PLATAFORMA" Type="Int32" Nullable="false" />
     <Property Name="NOMBRE_PLATAFORMA" Type="String" Nullable="false" MaxLength="70" Unicode="true" FixedLength="false" />
     <Property Name="DESCRIPCION_PLATAFORMA" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="PLATAFORMA_X_CLIENTES" Relationship="kcpdis0dbModel.FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS" FromRole="PLATAFORMAS" ToRole="PLATAFORMA_X_CLIENTES" />
+    <NavigationProperty Name="PLATAFORMA_X_CLIENTES" Relationship="CRMTOOLSEntitiesModel.FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS" FromRole="PLATAFORMAS" ToRole="PLATAFORMA_X_CLIENTES" />
   </EntityType>
   <EntityType Name="PRIVILEGIOS">
     <Key>
       <PropertyRef Name="PRIVILEGIO_ID" />
     </Key>
-    <Property Name="PRIVILEGIO_ID" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
-    <Property Name="DESCRIPCION" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
-    <NavigationProperty Name="ROLES" Relationship="kcpdis0dbModel.PRIVILEGIOS_X_ROL" FromRole="PRIVILEGIOS" ToRole="ROLES" />
+    <Property Name="PRIVILEGIO_ID" Type="Int32" Nullable="false" />
+    <Property Name="PRIVILEGIO_LLAVE" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DESCRIPCION" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="PRIVILEGIOS_X_ROL" Relationship="CRMTOOLSEntitiesModel.FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS" FromRole="PRIVILEGIOS" ToRole="PRIVILEGIOS_X_ROL" />
+  </EntityType>
+  <EntityType Name="PRIVILEGIOS_X_ROL">
+    <Key>
+      <PropertyRef Name="PRIVILEGIOXROLID" />
+    </Key>
+    <Property Name="PRIVILEGIOXROLID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PRIVILEGIO_ID" Type="Int32" Nullable="false" />
+    <Property Name="ID_ROL" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PRIVILEGIOS" Relationship="CRMTOOLSEntitiesModel.FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS" FromRole="PRIVILEGIOS_X_ROL" ToRole="PRIVILEGIOS" />
+    <NavigationProperty Name="ROLES" Relationship="CRMTOOLSEntitiesModel.FK_PRIVILEGIOS_X_ROL_ROLES" FromRole="PRIVILEGIOS_X_ROL" ToRole="ROLES" />
   </EntityType>
   <EntityType Name="PRODUCTOS">
     <Key>
@@ -431,7 +453,7 @@
     <Property Name="NIVEL4" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="NIVEL5" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="FACTOR_GSU" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="PRODUCTOS_EQUIVALENTES" Relationship="kcpdis0dbModel.FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS" FromRole="PRODUCTOS" ToRole="PRODUCTOS_EQUIVALENTES" />
+    <NavigationProperty Name="PRODUCTOS_EQUIVALENTES" Relationship="CRMTOOLSEntitiesModel.FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS" FromRole="PRODUCTOS" ToRole="PRODUCTOS_EQUIVALENTES" />
   </EntityType>
   <EntityType Name="PRODUCTOS_EQUIVALENTES">
     <Key>
@@ -445,17 +467,28 @@
     <Property Name="DESCRIPCION_PRODUCTO_DISTR" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="CODIGO_PRODUCTO_SAP" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
     <Property Name="TIPO_MEDIDA" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="PRODUCTOS" Relationship="kcpdis0dbModel.FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS" FromRole="PRODUCTOS_EQUIVALENTES" ToRole="PRODUCTOS" />
-    <NavigationProperty Name="SELLOUT" Relationship="kcpdis0dbModel.FK_SELLOUT_PRODUCTOS_EQUIVALENTES" FromRole="PRODUCTOS_EQUIVALENTES" ToRole="SELLOUT" />
+    <NavigationProperty Name="PRODUCTOS" Relationship="CRMTOOLSEntitiesModel.FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS" FromRole="PRODUCTOS_EQUIVALENTES" ToRole="PRODUCTOS" />
+    <NavigationProperty Name="SELLOUT" Relationship="CRMTOOLSEntitiesModel.FK_SELLOUT_PRODUCTOS_EQUIVALENTES" FromRole="PRODUCTOS_EQUIVALENTES" ToRole="SELLOUT" />
   </EntityType>
   <EntityType Name="ROLES">
     <Key>
       <PropertyRef Name="ID_ROL" />
     </Key>
-    <Property Name="ID_ROL" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
+    <Property Name="ID_ROL" Type="Int32" Nullable="false" />
     <Property Name="NOMBRE_ROL" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="PRIVILEGIOS" Relationship="kcpdis0dbModel.PRIVILEGIOS_X_ROL" FromRole="ROLES" ToRole="PRIVILEGIOS" />
-    <NavigationProperty Name="USERS" Relationship="kcpdis0dbModel.ROLES_X_USUARIO" FromRole="ROLES" ToRole="USERS" />
+    <Property Name="DESCRIPCION_ROL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="PRIVILEGIOS_X_ROL" Relationship="CRMTOOLSEntitiesModel.FK_PRIVILEGIOS_X_ROL_ROLES" FromRole="ROLES" ToRole="PRIVILEGIOS_X_ROL" />
+    <NavigationProperty Name="ROLES_X_USUARIO" Relationship="CRMTOOLSEntitiesModel.FK_ROLES_X_USUARIO_ROLES" FromRole="ROLES" ToRole="ROLES_X_USUARIO" />
+  </EntityType>
+  <EntityType Name="ROLES_X_USUARIO">
+    <Key>
+      <PropertyRef Name="ROLXUSERID" />
+    </Key>
+    <Property Name="ROLXUSERID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USER_ID" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="ID_ROL" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ROLES" Relationship="CRMTOOLSEntitiesModel.FK_ROLES_X_USUARIO_ROLES" FromRole="ROLES_X_USUARIO" ToRole="ROLES" />
+    <NavigationProperty Name="USERS" Relationship="CRMTOOLSEntitiesModel.FK_ROLES_X_USUARIO_USERS" FromRole="ROLES_X_USUARIO" ToRole="USERS" />
   </EntityType>
   <EntityType Name="SEGMENTOS">
     <Key>
@@ -464,7 +497,7 @@
     <Property Name="SEGMENT_ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="SEGMENT_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="SEGMENT_NAME_ING" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
-    <NavigationProperty Name="SUB_SEGMENTO" Relationship="kcpdis0dbModel.FK_SUB_SEGMENTO_SEGMENTOS" FromRole="SEGMENTOS" ToRole="SUB_SEGMENTO" />
+    <NavigationProperty Name="SUB_SEGMENTO" Relationship="CRMTOOLSEntitiesModel.FK_SUB_SEGMENTO_SEGMENTOS" FromRole="SEGMENTOS" ToRole="SUB_SEGMENTO" />
   </EntityType>
   <EntityType Name="SELLIN">
     <Key>
@@ -483,8 +516,8 @@
     <Property Name="OPEN_US" Type="Int32" Nullable="false" />
     <Property Name="FORECAST_US" Type="Int32" Nullable="false" />
     <Property Name="ID_COUNTRY" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="CLIENTES" Relationship="kcpdis0dbModel.FK_CLIENTES_SELLIN" FromRole="SELLIN" ToRole="CLIENTES" />
-    <NavigationProperty Name="PAISES" Relationship="kcpdis0dbModel.FK_SELLIN_PAISES" FromRole="SELLIN" ToRole="PAISES" />
+    <NavigationProperty Name="CLIENTES" Relationship="CRMTOOLSEntitiesModel.FK_CLIENTES_SELLIN" FromRole="SELLIN" ToRole="CLIENTES" />
+    <NavigationProperty Name="PAISES" Relationship="CRMTOOLSEntitiesModel.FK_SELLIN_PAISES" FromRole="SELLIN" ToRole="PAISES" />
   </EntityType>
   <EntityType Name="SELLOUT">
     <Key>
@@ -514,8 +547,8 @@
     <Property Name="BULTOS" Type="Decimal" Precision="19" Scale="4" />
     <Property Name="VENTA_MONEDA_LOCAL" Type="Decimal" Precision="19" Scale="4" />
     <Property Name="VENTA_DOLARES" Type="Decimal" Precision="19" Scale="4" />
-    <NavigationProperty Name="DISTRIBUIDORES" Relationship="kcpdis0dbModel.FK_SELLOUT_DISTRIBUIDORES" FromRole="SELLOUT" ToRole="DISTRIBUIDORES" />
-    <NavigationProperty Name="PRODUCTOS_EQUIVALENTES" Relationship="kcpdis0dbModel.FK_SELLOUT_PRODUCTOS_EQUIVALENTES" FromRole="SELLOUT" ToRole="PRODUCTOS_EQUIVALENTES" />
+    <NavigationProperty Name="DISTRIBUIDORES" Relationship="CRMTOOLSEntitiesModel.FK_SELLOUT_DISTRIBUIDORES" FromRole="SELLOUT" ToRole="DISTRIBUIDORES" />
+    <NavigationProperty Name="PRODUCTOS_EQUIVALENTES" Relationship="CRMTOOLSEntitiesModel.FK_SELLOUT_PRODUCTOS_EQUIVALENTES" FromRole="SELLOUT" ToRole="PRODUCTOS_EQUIVALENTES" />
   </EntityType>
   <EntityType Name="SUB_SEGMENTO">
     <Key>
@@ -524,7 +557,7 @@
     </Key>
     <Property Name="SEGMENT_ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="SUB_SEGMENT" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="SEGMENTOS" Relationship="kcpdis0dbModel.FK_SUB_SEGMENTO_SEGMENTOS" FromRole="SUB_SEGMENTO" ToRole="SEGMENTOS" />
+    <NavigationProperty Name="SEGMENTOS" Relationship="CRMTOOLSEntitiesModel.FK_SUB_SEGMENTO_SEGMENTOS" FromRole="SUB_SEGMENTO" ToRole="SEGMENTOS" />
   </EntityType>
   <EntityType Name="USERS">
     <Key>
@@ -534,15 +567,17 @@
     <Property Name="USER_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="PASSWORD" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
     <Property Name="LOGIN_ID" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="NAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LAST_NAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="STATUS" Type="Boolean" Nullable="false" />
     <Property Name="ID_COUNTRY" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
     <Property Name="E_MAIL" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="LOG_LOGIN" Relationship="kcpdis0dbModel.FK_LOG_LOGIN_USERS" FromRole="USERS" ToRole="LOG_LOGIN" />
-    <NavigationProperty Name="ROLES" Relationship="kcpdis0dbModel.ROLES_X_USUARIO" FromRole="USERS" ToRole="ROLES" />
+    <NavigationProperty Name="LOG_LOGIN" Relationship="CRMTOOLSEntitiesModel.FK_LOG_LOGIN_USERS" FromRole="USERS" ToRole="LOG_LOGIN" />
+    <NavigationProperty Name="ROLES_X_USUARIO" Relationship="CRMTOOLSEntitiesModel.FK_ROLES_X_USUARIO_USERS" FromRole="USERS" ToRole="ROLES_X_USUARIO" />
   </EntityType>
   <Association Name="FK_CLIENTES_CAJAS">
-    <End Role="CAJAS" Type="kcpdis0dbModel.CAJAS" Multiplicity="1" />
-    <End Role="CLIENTES" Type="kcpdis0dbModel.CLIENTES" Multiplicity="*" />
+    <End Role="CAJAS" Type="CRMTOOLSEntitiesModel.CAJAS" Multiplicity="1" />
+    <End Role="CLIENTES" Type="CRMTOOLSEntitiesModel.CLIENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CAJAS">
         <PropertyRef Name="Codigo" />
@@ -553,8 +588,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CLIENTES_CLIENTESDI_X_KAM">
-    <End Role="CLIENTESDI_X_KAM" Type="kcpdis0dbModel.CLIENTESDI_X_KAM" Multiplicity="1" />
-    <End Role="CLIENTES" Type="kcpdis0dbModel.CLIENTES" Multiplicity="*" />
+    <End Role="CLIENTESDI_X_KAM" Type="CRMTOOLSEntitiesModel.CLIENTESDI_X_KAM" Multiplicity="1" />
+    <End Role="CLIENTES" Type="CRMTOOLSEntitiesModel.CLIENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CLIENTESDI_X_KAM">
         <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
@@ -565,8 +600,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CLIENTES_DOLARES">
-    <End Role="DOLARES" Type="kcpdis0dbModel.DOLARES" Multiplicity="1" />
-    <End Role="CLIENTES" Type="kcpdis0dbModel.CLIENTES" Multiplicity="*" />
+    <End Role="DOLARES" Type="CRMTOOLSEntitiesModel.DOLARES" Multiplicity="1" />
+    <End Role="CLIENTES" Type="CRMTOOLSEntitiesModel.CLIENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="DOLARES">
         <PropertyRef Name="Codigo" />
@@ -577,8 +612,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CLIENTES_GLOBAL_ACCOUNTS">
-    <End Role="GLOBAL_ACCOUNTS" Type="kcpdis0dbModel.GLOBAL_ACCOUNTS" Multiplicity="0..1" />
-    <End Role="CLIENTES" Type="kcpdis0dbModel.CLIENTES" Multiplicity="*" />
+    <End Role="GLOBAL_ACCOUNTS" Type="CRMTOOLSEntitiesModel.GLOBAL_ACCOUNTS" Multiplicity="0..1" />
+    <End Role="CLIENTES" Type="CRMTOOLSEntitiesModel.CLIENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="GLOBAL_ACCOUNTS">
         <PropertyRef Name="GLOBAL_ACCOUNT_ID" />
@@ -589,8 +624,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CLIENTES_PLATAFORMA_X_CLIENTES">
-    <End Role="PLATAFORMA_X_CLIENTES" Type="kcpdis0dbModel.PLATAFORMA_X_CLIENTES" Multiplicity="1" />
-    <End Role="CLIENTES" Type="kcpdis0dbModel.CLIENTES" Multiplicity="*" />
+    <End Role="PLATAFORMA_X_CLIENTES" Type="CRMTOOLSEntitiesModel.PLATAFORMA_X_CLIENTES" Multiplicity="1" />
+    <End Role="CLIENTES" Type="CRMTOOLSEntitiesModel.CLIENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PLATAFORMA_X_CLIENTES">
         <PropertyRef Name="CODIGO_CLIENTE_COMPUESTO" />
@@ -601,8 +636,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CLIENTES_SELLIN">
-    <End Role="SELLIN" Type="kcpdis0dbModel.SELLIN" Multiplicity="1" />
-    <End Role="CLIENTES" Type="kcpdis0dbModel.CLIENTES" Multiplicity="*" />
+    <End Role="SELLIN" Type="CRMTOOLSEntitiesModel.SELLIN" Multiplicity="1" />
+    <End Role="CLIENTES" Type="CRMTOOLSEntitiesModel.CLIENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="SELLIN">
         <PropertyRef Name="CODIGO_CLIENTE" />
@@ -613,8 +648,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CLIENTESDI_X_KAM_KAM">
-    <End Role="KAM" Type="kcpdis0dbModel.KAM" Multiplicity="1" />
-    <End Role="CLIENTESDI_X_KAM" Type="kcpdis0dbModel.CLIENTESDI_X_KAM" Multiplicity="*" />
+    <End Role="KAM" Type="CRMTOOLSEntitiesModel.KAM" Multiplicity="1" />
+    <End Role="CLIENTESDI_X_KAM" Type="CRMTOOLSEntitiesModel.CLIENTESDI_X_KAM" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="KAM">
         <PropertyRef Name="KAM_ID" />
@@ -625,8 +660,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_SELLOUT_DISTRIBUIDORES">
-    <End Role="DISTRIBUIDORES" Type="kcpdis0dbModel.DISTRIBUIDORES" Multiplicity="1" />
-    <End Role="SELLOUT" Type="kcpdis0dbModel.SELLOUT" Multiplicity="*" />
+    <End Role="DISTRIBUIDORES" Type="CRMTOOLSEntitiesModel.DISTRIBUIDORES" Multiplicity="1" />
+    <End Role="SELLOUT" Type="CRMTOOLSEntitiesModel.SELLOUT" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="DISTRIBUIDORES">
         <PropertyRef Name="CODIGO_DISTRIBUIDOR" />
@@ -637,8 +672,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_DIVISION_TERRITORIAL_PAISES">
-    <End Role="PAISES" Type="kcpdis0dbModel.PAISES" Multiplicity="1" />
-    <End Role="DIVISION_TERRITORIAL" Type="kcpdis0dbModel.DIVISION_TERRITORIAL" Multiplicity="*" />
+    <End Role="PAISES" Type="CRMTOOLSEntitiesModel.PAISES" Multiplicity="1" />
+    <End Role="DIVISION_TERRITORIAL" Type="CRMTOOLSEntitiesModel.DIVISION_TERRITORIAL" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PAISES">
         <PropertyRef Name="ID_COUNTRY" />
@@ -649,8 +684,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_JERARQUIA_GLOBAL_JERARQUIA_LAO">
-    <End Role="JERARQUIA_LAO" Type="kcpdis0dbModel.JERARQUIA_LAO" Multiplicity="1" />
-    <End Role="JERARQUIA_GLOBAL" Type="kcpdis0dbModel.JERARQUIA_GLOBAL" Multiplicity="0..1" />
+    <End Role="JERARQUIA_LAO" Type="CRMTOOLSEntitiesModel.JERARQUIA_LAO" Multiplicity="1" />
+    <End Role="JERARQUIA_GLOBAL" Type="CRMTOOLSEntitiesModel.JERARQUIA_GLOBAL" Multiplicity="0..1" />
     <ReferentialConstraint>
       <Principal Role="JERARQUIA_LAO">
         <PropertyRef Name="CODIGO" />
@@ -661,8 +696,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_LOG_LOGIN_USERS">
-    <End Role="USERS" Type="kcpdis0dbModel.USERS" Multiplicity="1" />
-    <End Role="LOG_LOGIN" Type="kcpdis0dbModel.LOG_LOGIN" Multiplicity="*" />
+    <End Role="USERS" Type="CRMTOOLSEntitiesModel.USERS" Multiplicity="1" />
+    <End Role="LOG_LOGIN" Type="CRMTOOLSEntitiesModel.LOG_LOGIN" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="USERS">
         <PropertyRef Name="USER_ID" />
@@ -673,8 +708,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_SELLIN_PAISES">
-    <End Role="PAISES" Type="kcpdis0dbModel.PAISES" Multiplicity="1" />
-    <End Role="SELLIN" Type="kcpdis0dbModel.SELLIN" Multiplicity="*" />
+    <End Role="PAISES" Type="CRMTOOLSEntitiesModel.PAISES" Multiplicity="1" />
+    <End Role="SELLIN" Type="CRMTOOLSEntitiesModel.SELLIN" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PAISES">
         <PropertyRef Name="ID_COUNTRY" />
@@ -685,8 +720,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_PLATAFORMA_X_CLIENTES_PLATAFORMAS">
-    <End Role="PLATAFORMAS" Type="kcpdis0dbModel.PLATAFORMAS" Multiplicity="1" />
-    <End Role="PLATAFORMA_X_CLIENTES" Type="kcpdis0dbModel.PLATAFORMA_X_CLIENTES" Multiplicity="*" />
+    <End Role="PLATAFORMAS" Type="CRMTOOLSEntitiesModel.PLATAFORMAS" Multiplicity="1" />
+    <End Role="PLATAFORMA_X_CLIENTES" Type="CRMTOOLSEntitiesModel.PLATAFORMA_X_CLIENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PLATAFORMAS">
         <PropertyRef Name="CODIGO_PLATAFORMA" />
@@ -696,9 +731,33 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_PRIVILEGIOS_X_ROL_PRIVILEGIOS">
+    <End Role="PRIVILEGIOS" Type="CRMTOOLSEntitiesModel.PRIVILEGIOS" Multiplicity="1" />
+    <End Role="PRIVILEGIOS_X_ROL" Type="CRMTOOLSEntitiesModel.PRIVILEGIOS_X_ROL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRIVILEGIOS">
+        <PropertyRef Name="PRIVILEGIO_ID" />
+      </Principal>
+      <Dependent Role="PRIVILEGIOS_X_ROL">
+        <PropertyRef Name="PRIVILEGIO_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRIVILEGIOS_X_ROL_ROLES">
+    <End Role="ROLES" Type="CRMTOOLSEntitiesModel.ROLES" Multiplicity="1" />
+    <End Role="PRIVILEGIOS_X_ROL" Type="CRMTOOLSEntitiesModel.PRIVILEGIOS_X_ROL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROLES">
+        <PropertyRef Name="ID_ROL" />
+      </Principal>
+      <Dependent Role="PRIVILEGIOS_X_ROL">
+        <PropertyRef Name="ID_ROL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_PRODUCTOS_EQUIVALENTES_PRODUCTOS">
-    <End Role="PRODUCTOS" Type="kcpdis0dbModel.PRODUCTOS" Multiplicity="1" />
-    <End Role="PRODUCTOS_EQUIVALENTES" Type="kcpdis0dbModel.PRODUCTOS_EQUIVALENTES" Multiplicity="*" />
+    <End Role="PRODUCTOS" Type="CRMTOOLSEntitiesModel.PRODUCTOS" Multiplicity="1" />
+    <End Role="PRODUCTOS_EQUIVALENTES" Type="CRMTOOLSEntitiesModel.PRODUCTOS_EQUIVALENTES" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PRODUCTOS">
         <PropertyRef Name="CODIGO_MATERIAL" />
@@ -709,8 +768,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_SELLOUT_PRODUCTOS_EQUIVALENTES">
-    <End Role="PRODUCTOS_EQUIVALENTES" Type="kcpdis0dbModel.PRODUCTOS_EQUIVALENTES" Multiplicity="1" />
-    <End Role="SELLOUT" Type="kcpdis0dbModel.SELLOUT" Multiplicity="*" />
+    <End Role="PRODUCTOS_EQUIVALENTES" Type="CRMTOOLSEntitiesModel.PRODUCTOS_EQUIVALENTES" Multiplicity="1" />
+    <End Role="SELLOUT" Type="CRMTOOLSEntitiesModel.SELLOUT" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PRODUCTOS_EQUIVALENTES">
         <PropertyRef Name="CODIGO_PRODUCTO_DISTRIBUIDOR" />
@@ -724,9 +783,33 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_ROLES_X_USUARIO_ROLES">
+    <End Role="ROLES" Type="CRMTOOLSEntitiesModel.ROLES" Multiplicity="1" />
+    <End Role="ROLES_X_USUARIO" Type="CRMTOOLSEntitiesModel.ROLES_X_USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROLES">
+        <PropertyRef Name="ID_ROL" />
+      </Principal>
+      <Dependent Role="ROLES_X_USUARIO">
+        <PropertyRef Name="ID_ROL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ROLES_X_USUARIO_USERS">
+    <End Role="USERS" Type="CRMTOOLSEntitiesModel.USERS" Multiplicity="1" />
+    <End Role="ROLES_X_USUARIO" Type="CRMTOOLSEntitiesModel.ROLES_X_USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USERS">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="ROLES_X_USUARIO">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_SUB_SEGMENTO_SEGMENTOS">
-    <End Role="SEGMENTOS" Type="kcpdis0dbModel.SEGMENTOS" Multiplicity="1" />
-    <End Role="SUB_SEGMENTO" Type="kcpdis0dbModel.SUB_SEGMENTO" Multiplicity="*" />
+    <End Role="SEGMENTOS" Type="CRMTOOLSEntitiesModel.SEGMENTOS" Multiplicity="1" />
+    <End Role="SUB_SEGMENTO" Type="CRMTOOLSEntitiesModel.SUB_SEGMENTO" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="SEGMENTOS">
         <PropertyRef Name="SEGMENT_ID" />
@@ -736,12 +819,34 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="PRIVILEGIOS_X_ROL">
-    <End Role="PRIVILEGIOS" Type="kcpdis0dbModel.PRIVILEGIOS" Multiplicity="*" />
-    <End Role="ROLES" Type="kcpdis0dbModel.ROLES" Multiplicity="0..1" />
-  </Association>
-  <Association Name="ROLES_X_USUARIO">
-    <End Role="ROLES" Type="kcpdis0dbModel.ROLES" Multiplicity="*" />
-    <End Role="USERS" Type="kcpdis0dbModel.USERS" Multiplicity="*" />
-  </Association>
+  <EntityType Name="PRIVILEGIOSXUSER">
+    <Key>
+      <PropertyRef Name="PRIVILEGIO_ID" />
+      <PropertyRef Name="DESCRIPCION" />
+      <PropertyRef Name="ID_ROL" />
+      <PropertyRef Name="NOMBRE_ROL" />
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="USER_NAME" />
+      <PropertyRef Name="PASSWORD" />
+      <PropertyRef Name="LOGIN_ID" />
+      <PropertyRef Name="STATUS" />
+      <PropertyRef Name="ID_COUNTRY" />
+      <PropertyRef Name="E_MAIL" />
+    </Key>
+    <Property Type="Int32" Name="PRIVILEGIO_ID" Nullable="false" />
+    <Property Type="String" Name="PRIVILEGIO_LLAVE" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DESCRIPCION" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ID_ROL" Nullable="false" />
+    <Property Type="String" Name="NOMBRE_ROL" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DESCRIPCION_ROL" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="USER_ID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="USER_NAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PASSWORD" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LOGIN_ID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NAME" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LAST_NAME" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="STATUS" Nullable="false" />
+    <Property Type="String" Name="ID_COUNTRY" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="E_MAIL" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

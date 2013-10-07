@@ -43,30 +43,34 @@
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn13 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn14 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn15 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn16 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.Data.SortDescriptor sortDescriptor1 = new Telerik.WinControls.Data.SortDescriptor();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmImportCliente));
             this.radScrollablePanel1 = new Telerik.WinControls.UI.RadScrollablePanel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radButton12 = new Telerik.WinControls.UI.RadButton();
+            this.txtResumen = new System.Windows.Forms.TextBox();
+            this.btClientes = new Telerik.WinControls.UI.RadButton();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
-            this.radButton14 = new Telerik.WinControls.UI.RadButton();
+            this.btProcesar = new Telerik.WinControls.UI.RadButton();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
             this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
             this.radGroupBox3 = new Telerik.WinControls.UI.RadGroupBox();
-            this.radButton16 = new Telerik.WinControls.UI.RadButton();
             this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
-            this.radGridView2 = new Telerik.WinControls.UI.RadGridView();
+            this.gridCliente = new Telerik.WinControls.UI.RadGridView();
+            this.dgData = new System.Windows.Forms.DataGridView();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.radScrollablePanel1)).BeginInit();
             this.radScrollablePanel1.PanelContainer.SuspendLayout();
             this.radScrollablePanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btProcesar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).BeginInit();
@@ -75,11 +79,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).BeginInit();
             this.radGroupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCliente.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,55 +94,61 @@
             // 
             this.radScrollablePanel1.AutoScrollMargin = new System.Drawing.Size(0, 0);
             this.radScrollablePanel1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.radScrollablePanel1.Location = new System.Drawing.Point(12, 12);
+            this.radScrollablePanel1.Location = new System.Drawing.Point(-5, 12);
             this.radScrollablePanel1.Name = "radScrollablePanel1";
             this.radScrollablePanel1.Padding = new System.Windows.Forms.Padding(1);
             // 
             // radScrollablePanel1.PanelContainer
             // 
             this.radScrollablePanel1.PanelContainer.AutoScroll = true;
-            this.radScrollablePanel1.PanelContainer.Controls.Add(this.textBox1);
-            this.radScrollablePanel1.PanelContainer.Controls.Add(this.radButton12);
+            this.radScrollablePanel1.PanelContainer.Controls.Add(this.txtResumen);
+            this.radScrollablePanel1.PanelContainer.Controls.Add(this.btClientes);
             this.radScrollablePanel1.PanelContainer.Controls.Add(this.radGroupBox1);
             this.radScrollablePanel1.PanelContainer.Controls.Add(this.radGroupBox2);
             this.radScrollablePanel1.PanelContainer.Controls.Add(this.radGroupBox3);
-            this.radScrollablePanel1.PanelContainer.Controls.Add(this.radGridView2);
+            this.radScrollablePanel1.PanelContainer.Controls.Add(this.gridCliente);
+            this.radScrollablePanel1.PanelContainer.Controls.Add(this.dgData);
+            this.radScrollablePanel1.PanelContainer.Controls.Add(this.pictureBox3);
+            this.radScrollablePanel1.PanelContainer.Controls.Add(this.pictureBox4);
+            this.radScrollablePanel1.PanelContainer.Controls.Add(this.pictureBox2);
             this.radScrollablePanel1.PanelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radScrollablePanel1.PanelContainer.Location = new System.Drawing.Point(1, 1);
             this.radScrollablePanel1.PanelContainer.Name = "PanelContainer";
-            this.radScrollablePanel1.PanelContainer.Size = new System.Drawing.Size(1394, 780);
+            this.radScrollablePanel1.PanelContainer.Size = new System.Drawing.Size(1427, 800);
             this.radScrollablePanel1.PanelContainer.TabIndex = 0;
             // 
             // 
             // 
             this.radScrollablePanel1.RootElement.Padding = new System.Windows.Forms.Padding(1);
-            this.radScrollablePanel1.Size = new System.Drawing.Size(1396, 782);
+            this.radScrollablePanel1.Size = new System.Drawing.Size(1446, 802);
             this.radScrollablePanel1.TabIndex = 1;
             this.radScrollablePanel1.Text = "radScrollablePanel1";
             // 
-            // textBox1
+            // txtResumen
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBox1.Location = new System.Drawing.Point(669, 37);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 183);
-            this.textBox1.TabIndex = 25;
+            this.txtResumen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtResumen.Location = new System.Drawing.Point(669, 37);
+            this.txtResumen.Multiline = true;
+            this.txtResumen.Name = "txtResumen";
+            this.txtResumen.Size = new System.Drawing.Size(161, 183);
+            this.txtResumen.TabIndex = 25;
             // 
-            // radButton12
+            // btClientes
             // 
-            this.radButton12.Location = new System.Drawing.Point(845, 108);
-            this.radButton12.Name = "radButton12";
-            this.radButton12.Size = new System.Drawing.Size(99, 24);
-            this.radButton12.TabIndex = 24;
-            this.radButton12.Text = "Clientes";
-            this.radButton12.ThemeName = "TelerikMetroBlue";
+            this.btClientes.Image = global::CRM_TOOLS.Properties.Resources.forward1;
+            this.btClientes.Location = new System.Drawing.Point(845, 108);
+            this.btClientes.Name = "btClientes";
+            this.btClientes.Size = new System.Drawing.Size(99, 41);
+            this.btClientes.TabIndex = 24;
+            this.btClientes.Text = "      Clientes";
+            this.btClientes.ThemeName = "TelerikMetroBlue";
+            this.btClientes.Visible = false;
             // 
             // radGroupBox1
             // 
             this.radGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this.radGroupBox1.BackColor = System.Drawing.Color.White;
-            this.radGroupBox1.Controls.Add(this.radButton14);
+            this.radGroupBox1.Controls.Add(this.btProcesar);
             this.radGroupBox1.Controls.Add(this.radLabel1);
             this.radGroupBox1.Controls.Add(this.radLabel2);
             this.radGroupBox1.FooterImageIndex = -1;
@@ -154,28 +167,32 @@
             this.radGroupBox1.Size = new System.Drawing.Size(190, 183);
             this.radGroupBox1.TabIndex = 23;
             // 
-            // radButton14
+            // btProcesar
             // 
-            this.radButton14.Location = new System.Drawing.Point(51, 140);
-            this.radButton14.Name = "radButton14";
-            this.radButton14.Size = new System.Drawing.Size(81, 24);
-            this.radButton14.TabIndex = 10;
-            this.radButton14.Text = "Procesar";
-            this.radButton14.ThemeName = "TelerikMetro";
+            this.btProcesar.Image = global::CRM_TOOLS.Properties.Resources.loop1;
+            this.btProcesar.Location = new System.Drawing.Point(42, 128);
+            this.btProcesar.Name = "btProcesar";
+            this.btProcesar.Size = new System.Drawing.Size(90, 38);
+            this.btProcesar.TabIndex = 10;
+            this.btProcesar.Text = "      Procesar";
+            this.btProcesar.ThemeName = "TelerikMetroBlue";
+            this.btProcesar.Click += new System.EventHandler(this.btProcesar_Click);
             // 
             // radLabel1
             // 
-            this.radLabel1.Location = new System.Drawing.Point(70, 29);
+            this.radLabel1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.radLabel1.Location = new System.Drawing.Point(67, 21);
             this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(46, 18);
+            this.radLabel1.Size = new System.Drawing.Size(65, 25);
             this.radLabel1.TabIndex = 4;
             this.radLabel1.Text = "Paso #3";
             // 
             // radLabel2
             // 
-            this.radLabel2.Location = new System.Drawing.Point(51, 45);
+            this.radLabel2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.radLabel2.Location = new System.Drawing.Point(42, 45);
             this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(81, 18);
+            this.radLabel2.Size = new System.Drawing.Size(116, 25);
             this.radLabel2.TabIndex = 7;
             this.radLabel2.Text = "Procesar Datos";
             // 
@@ -204,25 +221,26 @@
             // 
             // radLabel3
             // 
-            this.radLabel3.Location = new System.Drawing.Point(82, 29);
+            this.radLabel3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.radLabel3.Location = new System.Drawing.Point(82, 21);
             this.radLabel3.Name = "radLabel3";
-            this.radLabel3.Size = new System.Drawing.Size(46, 18);
+            this.radLabel3.Size = new System.Drawing.Size(65, 25);
             this.radLabel3.TabIndex = 3;
             this.radLabel3.Text = "Paso #2";
             // 
             // radLabel4
             // 
-            this.radLabel4.Location = new System.Drawing.Point(25, 45);
+            this.radLabel4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.radLabel4.Location = new System.Drawing.Point(27, 45);
             this.radLabel4.Name = "radLabel4";
-            this.radLabel4.Size = new System.Drawing.Size(170, 18);
+            this.radLabel4.Size = new System.Drawing.Size(171, 25);
             this.radLabel4.TabIndex = 6;
-            this.radLabel4.Text = "Seleccion de Accion en los Datos";
+            this.radLabel4.Text = "Seleccion de los Datos";
             // 
             // radGroupBox3
             // 
             this.radGroupBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this.radGroupBox3.BackColor = System.Drawing.Color.White;
-            this.radGroupBox3.Controls.Add(this.radButton16);
             this.radGroupBox3.Controls.Add(this.radLabel5);
             this.radGroupBox3.Controls.Add(this.radLabel6);
             this.radGroupBox3.FooterImageIndex = -1;
@@ -241,111 +259,133 @@
             this.radGroupBox3.Size = new System.Drawing.Size(190, 183);
             this.radGroupBox3.TabIndex = 21;
             // 
-            // radButton16
-            // 
-            this.radButton16.Location = new System.Drawing.Point(35, 140);
-            this.radButton16.Name = "radButton16";
-            this.radButton16.Size = new System.Drawing.Size(112, 24);
-            this.radButton16.TabIndex = 8;
-            this.radButton16.Text = "Mostrar Tabla";
-            this.radButton16.ThemeName = "TelerikMetro";
-            // 
             // radLabel5
             // 
-            this.radLabel5.Location = new System.Drawing.Point(62, 21);
+            this.radLabel5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.radLabel5.Location = new System.Drawing.Point(59, 21);
             this.radLabel5.Name = "radLabel5";
-            this.radLabel5.Size = new System.Drawing.Size(46, 18);
+            this.radLabel5.Size = new System.Drawing.Size(65, 25);
             this.radLabel5.TabIndex = 2;
             this.radLabel5.Text = "Paso #1";
             // 
             // radLabel6
             // 
-            this.radLabel6.Location = new System.Drawing.Point(35, 45);
+            this.radLabel6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.radLabel6.Location = new System.Drawing.Point(15, 45);
             this.radLabel6.Name = "radLabel6";
-            this.radLabel6.Size = new System.Drawing.Size(112, 18);
+            this.radLabel6.Size = new System.Drawing.Size(161, 25);
             this.radLabel6.TabIndex = 5;
             this.radLabel6.Text = "Copiar Datos Nuevos";
             // 
-            // radGridView2
+            // gridCliente
             // 
-            this.radGridView2.BackColor = System.Drawing.Color.White;
-            this.radGridView2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.radGridView2.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.radGridView2.ForeColor = System.Drawing.Color.Black;
-            this.radGridView2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radGridView2.Location = new System.Drawing.Point(45, 272);
+            this.gridCliente.BackColor = System.Drawing.Color.White;
+            this.gridCliente.BeginEditMode = Telerik.WinControls.RadGridViewBeginEditMode.BeginEditOnEnter;
+            this.gridCliente.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridCliente.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.gridCliente.ForeColor = System.Drawing.Color.Black;
+            this.gridCliente.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.gridCliente.Location = new System.Drawing.Point(45, 272);
             // 
-            // radGridView2
+            // gridCliente
             // 
-            this.radGridView2.MasterTemplate.AutoGenerateColumns = false;
+            this.gridCliente.MasterTemplate.AddNewRowPosition = Telerik.WinControls.UI.SystemRowPosition.Bottom;
+            this.gridCliente.MasterTemplate.AllowColumnChooser = false;
+            this.gridCliente.MasterTemplate.AllowColumnReorder = false;
+            this.gridCliente.MasterTemplate.AllowColumnResize = false;
+            this.gridCliente.MasterTemplate.AllowDragToGroup = false;
+            this.gridCliente.MasterTemplate.AllowRowResize = false;
+            this.gridCliente.MasterTemplate.AutoGenerateColumns = false;
             gridViewTextBoxColumn1.EnableExpressionEditor = false;
+            gridViewTextBoxColumn1.FieldName = "Codigo_Cliente_Compuesto";
             gridViewTextBoxColumn1.FormatString = "";
             gridViewTextBoxColumn1.HeaderText = "Codigo Cliente Compuesto";
-            gridViewTextBoxColumn1.Name = "clCodCliComp";
+            gridViewTextBoxColumn1.Name = "Codigo_Cliente_Compuesto";
             gridViewTextBoxColumn1.Width = 234;
             gridViewTextBoxColumn2.EnableExpressionEditor = false;
+            gridViewTextBoxColumn2.FieldName = "Codigo_Cliente";
             gridViewTextBoxColumn2.FormatString = "";
             gridViewTextBoxColumn2.HeaderText = "Codigo Cliente";
-            gridViewTextBoxColumn2.Name = "clCodCli";
+            gridViewTextBoxColumn2.Name = "Codigo_Cliente";
             gridViewTextBoxColumn2.Width = 126;
             gridViewTextBoxColumn3.EnableExpressionEditor = false;
+            gridViewTextBoxColumn3.FieldName = "Nombre_Cliente";
             gridViewTextBoxColumn3.FormatString = "";
             gridViewTextBoxColumn3.HeaderText = "Nombre Cliente Final";
-            gridViewTextBoxColumn3.Name = "clNomCli";
+            gridViewTextBoxColumn3.Name = "Nombre_Cliente";
             gridViewTextBoxColumn3.Width = 175;
             gridViewTextBoxColumn4.EnableExpressionEditor = false;
+            gridViewTextBoxColumn4.FieldName = "Codigo_Distribuidor";
             gridViewTextBoxColumn4.FormatString = "";
             gridViewTextBoxColumn4.HeaderText = "Codigo Distribuidor";
-            gridViewTextBoxColumn4.Name = "clCodDist";
+            gridViewTextBoxColumn4.Name = "Codigo_Distribuidor";
             gridViewTextBoxColumn4.Width = 171;
             gridViewTextBoxColumn5.EnableExpressionEditor = false;
+            gridViewTextBoxColumn5.FieldName = "Nombre_Distribuidor";
             gridViewTextBoxColumn5.FormatString = "";
             gridViewTextBoxColumn5.HeaderText = "Nombre Distribuidor";
-            gridViewTextBoxColumn5.Name = "clNomDist";
+            gridViewTextBoxColumn5.Name = "Nombre_Distribuidor";
             gridViewTextBoxColumn5.Width = 182;
             gridViewTextBoxColumn6.EnableExpressionEditor = false;
+            gridViewTextBoxColumn6.FieldName = "Codigo_Vendedor";
             gridViewTextBoxColumn6.FormatString = "";
             gridViewTextBoxColumn6.HeaderText = "Codigo Vendedor";
-            gridViewTextBoxColumn6.Name = "clCodVen";
+            gridViewTextBoxColumn6.Name = "Codigo_Vendedor";
             gridViewTextBoxColumn6.Width = 172;
             gridViewTextBoxColumn7.EnableExpressionEditor = false;
-            gridViewTextBoxColumn7.HeaderText = "Nombre Vendedor";
-            gridViewTextBoxColumn7.Name = "clNomVen";
+            gridViewTextBoxColumn7.FieldName = "Nombre_Vendedor";
+            gridViewTextBoxColumn7.FormatString = "";
+            gridViewTextBoxColumn7.HeaderText = "Nombre_Vendedor";
+            gridViewTextBoxColumn7.Name = "Nombre_Vendedor";
             gridViewTextBoxColumn7.Width = 173;
             gridViewTextBoxColumn8.EnableExpressionEditor = false;
+            gridViewTextBoxColumn8.FieldName = "Direccion";
+            gridViewTextBoxColumn8.FormatString = "";
             gridViewTextBoxColumn8.HeaderText = "Direccion";
-            gridViewTextBoxColumn8.Name = "clDireccion";
+            gridViewTextBoxColumn8.Name = "Direccion";
             gridViewTextBoxColumn8.Width = 71;
             gridViewTextBoxColumn9.EnableExpressionEditor = false;
+            gridViewTextBoxColumn9.FieldName = "Ciudad";
+            gridViewTextBoxColumn9.FormatString = "";
             gridViewTextBoxColumn9.HeaderText = "Ciudad";
-            gridViewTextBoxColumn9.Name = "clCiudad";
-            gridViewTextBoxColumn9.SortOrder = Telerik.WinControls.UI.RadSortOrder.Ascending;
+            gridViewTextBoxColumn9.Name = "Ciudad";
             gridViewTextBoxColumn9.Width = 65;
             gridViewTextBoxColumn10.EnableExpressionEditor = false;
+            gridViewTextBoxColumn10.FieldName = "Telefono";
             gridViewTextBoxColumn10.HeaderText = "Telefono";
-            gridViewTextBoxColumn10.Name = "clTelefono";
+            gridViewTextBoxColumn10.Name = "Telefono";
             gridViewTextBoxColumn10.Width = 75;
             gridViewTextBoxColumn11.EnableExpressionEditor = false;
+            gridViewTextBoxColumn11.FieldName = "CedulaJuridica";
             gridViewTextBoxColumn11.HeaderText = "Cedula Juridica";
-            gridViewTextBoxColumn11.Name = "clCedula";
+            gridViewTextBoxColumn11.Name = "CedulaJuridica";
             gridViewTextBoxColumn11.Width = 101;
             gridViewTextBoxColumn12.EnableExpressionEditor = false;
+            gridViewTextBoxColumn12.FieldName = "NombreContacto";
             gridViewTextBoxColumn12.HeaderText = "Nombre Contacto";
-            gridViewTextBoxColumn12.Name = "clNomCont";
+            gridViewTextBoxColumn12.Name = "NombreContacto";
             gridViewTextBoxColumn12.Width = 142;
             gridViewTextBoxColumn13.EnableExpressionEditor = false;
+            gridViewTextBoxColumn13.FieldName = "Nombre_Comercial";
             gridViewTextBoxColumn13.HeaderText = "Nombre Comercial";
-            gridViewTextBoxColumn13.Name = "clNomComer";
+            gridViewTextBoxColumn13.Name = "Nombre_Comercial";
             gridViewTextBoxColumn13.Width = 128;
             gridViewTextBoxColumn14.EnableExpressionEditor = false;
-            gridViewTextBoxColumn14.HeaderText = "Codigo Segmento SC";
-            gridViewTextBoxColumn14.Name = "clCodSeg";
+            gridViewTextBoxColumn14.FieldName = "Codigo_Segmento";
+            gridViewTextBoxColumn14.HeaderText = "Codigo Segmento";
+            gridViewTextBoxColumn14.Name = "Codigo_Segmento";
             gridViewTextBoxColumn14.Width = 137;
             gridViewTextBoxColumn15.EnableExpressionEditor = false;
-            gridViewTextBoxColumn15.HeaderText = "Pais";
-            gridViewTextBoxColumn15.Name = "clPais";
-            gridViewTextBoxColumn15.Width = 60;
-            this.radGridView2.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewTextBoxColumn15.FieldName = "Segmento";
+            gridViewTextBoxColumn15.HeaderText = "Segmento";
+            gridViewTextBoxColumn15.Name = "Segmento";
+            gridViewTextBoxColumn15.Width = 127;
+            gridViewTextBoxColumn16.EnableExpressionEditor = false;
+            gridViewTextBoxColumn16.FieldName = "Pais";
+            gridViewTextBoxColumn16.HeaderText = "Pais";
+            gridViewTextBoxColumn16.Name = "Pais";
+            gridViewTextBoxColumn16.Width = 60;
+            this.gridCliente.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2,
             gridViewTextBoxColumn3,
@@ -360,16 +400,56 @@
             gridViewTextBoxColumn12,
             gridViewTextBoxColumn13,
             gridViewTextBoxColumn14,
-            gridViewTextBoxColumn15});
-            sortDescriptor1.PropertyName = "clCiudad";
-            this.radGridView2.MasterTemplate.SortDescriptors.AddRange(new Telerik.WinControls.Data.SortDescriptor[] {
+            gridViewTextBoxColumn15,
+            gridViewTextBoxColumn16});
+            this.gridCliente.MasterTemplate.EnableGrouping = false;
+            this.gridCliente.MasterTemplate.MultiSelect = true;
+            sortDescriptor1.PropertyName = "column1";
+            this.gridCliente.MasterTemplate.SortDescriptors.AddRange(new Telerik.WinControls.Data.SortDescriptor[] {
             sortDescriptor1});
-            this.radGridView2.Name = "radGridView2";
-            this.radGridView2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.radGridView2.Size = new System.Drawing.Size(1334, 499);
-            this.radGridView2.TabIndex = 20;
-            this.radGridView2.Text = "radGridView2";
-            this.radGridView2.ThemeName = "TelerikMetroBlue";
+            this.gridCliente.Name = "gridCliente";
+            this.gridCliente.NewRowEnterKeyMode = Telerik.WinControls.UI.RadGridViewNewRowEnterKeyMode.EnterMovesToLastAddedRow;
+            this.gridCliente.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.gridCliente.Size = new System.Drawing.Size(1334, 339);
+            this.gridCliente.TabIndex = 20;
+            this.gridCliente.ThemeName = "TelerikMetroBlue";
+            this.gridCliente.KeyUp += new System.Windows.Forms.KeyEventHandler(this.gridCliente_KeyUp);
+            // 
+            // dgData
+            // 
+            this.dgData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgData.Location = new System.Drawing.Point(45, 617);
+            this.dgData.Name = "dgData";
+            this.dgData.Size = new System.Drawing.Size(32, 19);
+            this.dgData.TabIndex = 26;
+            this.dgData.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgData_KeyDown);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::CRM_TOOLS.Properties.Resources.fondo5;
+            this.pictureBox3.Location = new System.Drawing.Point(-1, 19);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(281, 358);
+            this.pictureBox3.TabIndex = 27;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::CRM_TOOLS.Properties.Resources.fondo5;
+            this.pictureBox4.Location = new System.Drawing.Point(-1, 293);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(281, 152);
+            this.pictureBox4.TabIndex = 28;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(629, 185);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(798, 682);
+            this.pictureBox2.TabIndex = 29;
+            this.pictureBox2.TabStop = false;
             // 
             // frmImportCliente
             // 
@@ -392,11 +472,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.radScrollablePanel1)).EndInit();
             this.radScrollablePanel1.ResumeLayout(false);
             this.radScrollablePanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btClientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btProcesar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).EndInit();
@@ -407,11 +487,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).EndInit();
             this.radGroupBox3.ResumeLayout(false);
             this.radGroupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCliente.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -420,19 +503,22 @@
         #endregion
 
         private Telerik.WinControls.UI.RadScrollablePanel radScrollablePanel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private Telerik.WinControls.UI.RadButton radButton12;
+        private Telerik.WinControls.UI.RadButton btClientes;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox1;
-        private Telerik.WinControls.UI.RadButton radButton14;
+        private Telerik.WinControls.UI.RadButton btProcesar;
         private Telerik.WinControls.UI.RadLabel radLabel1;
         private Telerik.WinControls.UI.RadLabel radLabel2;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox2;
         private Telerik.WinControls.UI.RadLabel radLabel3;
         private Telerik.WinControls.UI.RadLabel radLabel4;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox3;
-        private Telerik.WinControls.UI.RadButton radButton16;
         private Telerik.WinControls.UI.RadLabel radLabel5;
         private Telerik.WinControls.UI.RadLabel radLabel6;
-        private Telerik.WinControls.UI.RadGridView radGridView2;
+        private Telerik.WinControls.UI.RadGridView gridCliente;
+        private System.Windows.Forms.DataGridView dgData;
+        private System.Windows.Forms.TextBox txtResumen;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

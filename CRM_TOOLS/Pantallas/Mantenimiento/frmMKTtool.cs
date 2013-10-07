@@ -14,6 +14,7 @@ namespace CRM_TOOLS.Pantallas.Mantenimiento
         public frmMKTtool()
         {
             InitializeComponent();
+            
         }
 
         
